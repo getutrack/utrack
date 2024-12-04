@@ -1,0 +1,6 @@
+{
+  "name": "@youtrack/constants",
+  "version": "0.23.1",
+  "private": true,
+  "main": "./index.ts"
+}

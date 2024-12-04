@@ -1,0 +1,17 @@
+{
+  "extends": "@youtrack/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["core/*"],
+      "@/helpers/*": ["helpers/*"],
+      "@/public/*": ["public/*"],
+      "@/styles/*": ["styles/*"],
+      "@/youtrack-web/*": ["ce/*"]
+    },
+    "plugins": [{ "name": "next" }],
+    "strictNullChecks": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
