@@ -9,7 +9,7 @@ The easiest way to get started with Youtrack is by creating a [Youtrack Cloud](h
 
 If you would like to self-host Youtrack, please see our [deployment guide](https://utrackdocs.digi-trans.org/docker-compose).
 
-`Instance admins` can configure instance settings with [God-mode](https://utrackdocs.digi-trans.org/instance-admin).
+`Instance admins` can configure instance settings with [admin-mode](https://utrackdocs.digi-trans.org/instance-admin).
 
 ## 🚀 Features
 
