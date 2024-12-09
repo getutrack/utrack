@@ -37,7 +37,7 @@ export const copyTextToClipboard = async (text: string) => {
  * @description Returns true if email is valid, false otherwise
  * @param {string} email string to check if it is a valid email
  * @example checkEmailIsValid("hello world") => false
- * @example checkEmailIsValid("example@youtrack.so") => true
+ * @example checkEmailIsValid("example@digi-trans.org") => true
  */
 export const checkEmailValidity = (email: string): boolean => {
   if (!email) return false;

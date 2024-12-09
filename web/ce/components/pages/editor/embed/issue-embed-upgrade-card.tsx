@@ -22,7 +22,7 @@ export const IssueEmbedUpgradeCard: React.FC<any> = (props) => (
         </p>
       </div>
       <a
-        href="https://youtrack.so/pro"
+        href="https://utrack.digi-trans.org/pro"
         target="_blank"
         rel="noopener noreferrer"
         className={cn(getButtonStyling("primary", "md"), "no-underline")}

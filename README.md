@@ -5,11 +5,11 @@ Meet [Youtrack](https://dub.sh/youtrack-website-readme), an open-source project 
 
 ## ⚡ Installation
 
-The easiest way to get started with Youtrack is by creating a [Youtrack Cloud](https://app.youtrack.so) account.
+The easiest way to get started with Youtrack is by creating a [Youtrack Cloud](https://utrackapp.digi-trans.org) account.
 
-If you would like to self-host Youtrack, please see our [deployment guide](https://docs.youtrack.so/docker-compose).
+If you would like to self-host Youtrack, please see our [deployment guide](https://utrackdocs.digi-trans.org/docker-compose).
 
-`Instance admins` can configure instance settings with [God-mode](https://docs.youtrack.so/instance-admin).
+`Instance admins` can configure instance settings with [God-mode](https://utrackdocs.digi-trans.org/instance-admin).
 
 ## 🚀 Features
 
@@ -59,61 +59,3 @@ Setting up local environment is extremely easy and straight forward. Follow the 
    ```
 
 You are ready to make changes to the code. Do not forget to refresh the browser (in case it does not auto-reload).
-
-## 📸 Screenshots
-
-<p>
-    <a href="https://youtrack.so" target="_blank">
-      <img
-        src="https://ik.imagekit.io/w2okwbtu2/Issues_rNZjrGgFl.png?updatedAt=1709298765880"
-        alt="Youtrack Views"
-        width="100%"
-      />
-    </a>
-  </p>
-<p>
-    <a href="https://youtrack.so" target="_blank">
-      <img
-        src="https://ik.imagekit.io/w2okwbtu2/Cycles_jCDhqmTl9.png?updatedAt=1709298780697"
-        width="100%"
-      />
-    </a>
-  </p>
-  <p>
-    <a href="https://youtrack.so" target="_blank">
-      <img
-        src="https://ik.imagekit.io/w2okwbtu2/Modules_PSCVsbSfI.png?updatedAt=1709298796783"
-        alt="Youtrack Cycles and Modules"
-        width="100%"
-      />
-    </a>
-  </p>
-  <p>
-    <a href="https://youtrack.so" target="_blank">
-      <img
-        src="https://ik.imagekit.io/w2okwbtu2/Views_uxXsRatS4.png?updatedAt=1709298834522"
-        alt="Youtrack Analytics"
-        width="100%"
-      />
-    </a>
-  </p>
-   <p>
-    <a href="https://youtrack.so" target="_blank">
-      <img
-        src="https://ik.imagekit.io/w2okwbtu2/Analytics_0o22gLRtp.png?updatedAt=1709298834389"
-        alt="Youtrack Pages"
-        width="100%"
-      />
-    </a>
-  </p>
-</p>
-   <p>
-    <a href="https://youtrack.so" target="_blank">
-      <img
-        src="https://ik.imagekit.io/w2okwbtu2/Drive_LlfeY4xn3.png?updatedAt=1709298837917"
-        alt="Youtrack Command Menu"
-        width="100%"
-      />
-    </a>
-  </p>
-</p>

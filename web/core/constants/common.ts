@@ -1,10 +1,10 @@
 export const MAX_STATIC_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
-export const MARKETING_PRICING_PAGE_LINK = "https://youtrack.so/pricing";
+export const MARKETING_PRICING_PAGE_LINK = "https://utrack.digi-trans.org/pricing";
 
-export const MARKETING_CONTACT_US_PAGE_LINK = "https://youtrack.so/contact";
+export const MARKETING_CONTACT_US_PAGE_LINK = "https://utrack.digi-trans.org/contact";
 
-export const MARKETING_YOUTRACK_ONE_PAGE_LINK = "https://youtrack.so/one";
+export const MARKETING_YOUTRACK_ONE_PAGE_LINK = "https://utrack.digi-trans.org/one";
 
 export const PROGRESS_STATE_GROUPS_DETAILS = [
   {

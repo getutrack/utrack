@@ -34,7 +34,7 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
       <Command.Item
         onSelect={() => {
           closePalette();
-          window.open("https://docs.youtrack.so/", "_blank");
+          window.open("https://utrackdocs.digi-trans.org/", "_blank");
         }}
         className="focus:outline-none"
       >

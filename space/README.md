@@ -1,7 +1,7 @@
 <br /><br />
 
 <p align="center">
-<a href="https://youtrack.so">
+<a href="https://utrack.digi-trans.org">
   <img src="https://youtrack-marketing.s3.ap-south-1.amazonaws.com/youtrack-readme/youtrack_logo_.webp" alt="Youtrack Logo" width="70">
 </a>
 </p>

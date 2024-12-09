@@ -78,7 +78,7 @@ export const SidebarHelpSection: React.FC<WorkspaceHelpSectionProps> = observer(
           >
             <CustomMenu.MenuItem>
               <a
-                href="https://go.youtrack.so/p-docs"
+                href="https://utrackgo.digi-trans.org/p-docs"
                 target="_blank"
                 className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
               >
@@ -100,7 +100,7 @@ export const SidebarHelpSection: React.FC<WorkspaceHelpSectionProps> = observer(
             )}
             <CustomMenu.MenuItem>
               <a
-                href="mailto:sales@youtrack.so"
+                href="mailto:developers@digi-trans.org"
                 target="_blank"
                 className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
               >
@@ -138,7 +138,7 @@ export const SidebarHelpSection: React.FC<WorkspaceHelpSectionProps> = observer(
             <ProductUpdates setIsChangeLogOpen={setIsChangeLogOpen} />
             <CustomMenu.MenuItem>
               <a
-                href="https://go.youtrack.so/p-discord"
+                href="https://utrackgo.digi-trans.org/p-discord"
                 target="_blank"
                 className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
               >

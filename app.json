@@ -1,9 +1,9 @@
 {
   "name": "Youtrack",
   "description": "Youtrack helps you track your issues, epics, and product roadmaps.",
-  "repository": "http://github.com/getyoutrack/youtrack",
+  "repository": "http://github.com/digitranslab/youtrack",
   "logo": "https://avatars.githubusercontent.com/u/115727700?s=200&v=4",
-  "website": "https://youtrack.so/",
+  "website": "https://utrack.digi-trans.org/",
   "success_url": "/",
   "stack": "heroku-22",
   "keywords": [

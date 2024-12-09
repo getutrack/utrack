@@ -4,7 +4,7 @@ Environment variables are distributed in various files. Please refer them carefu
 
 ## {PROJECT_FOLDER}/.env
 
-File is available in the project root folder​
+File is available in the project root folder
 
 ```
 # Database Settings
@@ -82,10 +82,3 @@ SPACE_BASE_URL=
 APP_BASE_URL=
 SECRET_KEY="gxoytl7dmnc1y37zahah820z5iq3iozu38cnfjtu3yaau9cd9z"
 ```
-
-## Updates​
-
-- The naming convention for containers and images has been updated.
-- The youtrack-worker image will no longer be maintained, as it has been merged with youtrack-backend.
-- The Tiptap pro-extension dependency has been removed, eliminating the need for Tiptap API keys.
-- The image name for Youtrack deployment has been changed to youtrack-space.

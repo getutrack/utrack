@@ -11,11 +11,11 @@ export const TermsAndConditions: FC<Props> = (props) => {
     <span className="flex items-center justify-center py-6">
       <p className="text-center text-sm text-onboarding-text-200 whitespace-pre-line">
         {isSignUp ? "By creating an account" : "By signing in"}, you agree to our{" \n"}
-        <Link href="https://youtrack.so/legals/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+        <Link href="https://utrack.digi-trans.org/legals/terms-and-conditions" target="_blank" rel="noopener noreferrer">
           <span className="text-sm font-medium underline hover:cursor-pointer">Terms of Service</span>
         </Link>{" "}
         and{" "}
-        <Link href="https://youtrack.so/legals/privacy-policy" target="_blank" rel="noopener noreferrer">
+        <Link href="https://utrack.digi-trans.org/legals/privacy-policy" target="_blank" rel="noopener noreferrer">
           <span className="text-sm font-medium underline hover:cursor-pointer">Privacy Policy</span>
         </Link>
         {"."}

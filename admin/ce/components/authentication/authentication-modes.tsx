@@ -35,7 +35,7 @@ export const getAuthenticationModes: (props: TGetBaseAuthenticationModeProps) =>
     description: "Authenticate your users via the OpenID Connect protocol.",
     icon: <Image src={OIDCLogo} height={22} width={22} alt="OIDC Logo" />,
     config: <UpgradeButton />,
-    unavailable: true,
+    unavailable: false,
   },
   {
     key: "saml",
@@ -43,7 +43,7 @@ export const getAuthenticationModes: (props: TGetBaseAuthenticationModeProps) =>
     description: "Authenticate your users via the Security Assertion Markup Language protocol.",
     icon: <Image src={SAMLLogo} height={22} width={22} alt="SAML Logo" className="pl-0.5" />,
     config: <UpgradeButton />,
-    unavailable: true,
+    unavailable: false,
   },
 ];
 

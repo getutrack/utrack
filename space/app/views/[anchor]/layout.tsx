@@ -54,7 +54,7 @@ const IssuesLayout = observer((props: Props) => {
       </div>
       <div className="relative h-full w-full overflow-hidden bg-custom-background-90">{children}</div>
       <a
-        href="https://youtrack.so"
+        href="https://utrack.digi-trans.org"
         className="fixed bottom-2.5 right-5 !z-[999999] flex items-center gap-1 rounded border border-custom-border-200 bg-custom-background-100 px-2 py-1 shadow-custom-shadow-2xs"
         target="_blank"
         rel="noreferrer noopener"

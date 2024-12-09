@@ -48,7 +48,7 @@ class WebhookSerializer(DynamicBaseSerializer):
         # Additional validation for multiple request domains and their subdomains
         request = self.context.get("request")
         disallowed_domains = [
-            "youtrack.so",
+            "digi-trans.org",
         ]  # Add your disallowed domains here
         if request:
             request_host = request.get_host().split(":")[
@@ -100,7 +100,7 @@ class WebhookSerializer(DynamicBaseSerializer):
             # Additional validation for multiple request domains and their subdomains
             request = self.context.get("request")
             disallowed_domains = [
-                "youtrack.so",
+                "digi-trans.org",
             ]  # Add your disallowed domains here
             if request:
                 request_host = request.get_host().split(":")[

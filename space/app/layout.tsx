@@ -10,11 +10,11 @@ import { ToastProvider } from "@/lib/toast-provider";
 
 export const metadata: Metadata = {
   title: "Youtrack Publish | Make your Youtrack boards public with one-click",
-  description: "Youtrack Publish is a customer feedback management tool built on top of youtrack.so",
+  description: "Youtrack Publish is a customer feedback management tool built on top of utrack.digi-trans.org",
   openGraph: {
     title: "Youtrack Publish | Make your Youtrack boards public with one-click",
-    description: "Youtrack Publish is a customer feedback management tool built on top of youtrack.so",
-    url: "https://sites.youtrack.so/",
+    description: "Youtrack Publish is a customer feedback management tool built on top of utrack.digi-trans.org",
+    url: "https://utracksites.digi-trans.org/",
   },
   keywords:
     "software development, customer feedback, software, accelerate, code management, release management, project management, issue tracking, agile, scrum, kanban, collaboration",
