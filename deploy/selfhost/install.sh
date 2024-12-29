@@ -5,7 +5,7 @@ SCRIPT_DIR=$PWD
 SERVICE_FOLDER=youtrack-app
 YOUTRACK_INSTALL_DIR=$PWD/$SERVICE_FOLDER
 export APP_RELEASE="latest"
-export DOCKERHUB_USER=getyoutrack
+export DOCKERHUB_USER=getutrack
 export PULL_POLICY=${PULL_POLICY:-if_not_present}
 
 CPU_ARCH=$(uname -m)
@@ -68,7 +68,7 @@ function initialize(){
         return 1
     fi
 
-    local IMAGE_NAME=getyoutrack/youtrack-proxy
+    local IMAGE_NAME=getutrack/youtrack-proxy
     local IMAGE_TAG=${APP_RELEASE}
     docker manifest inspect "${IMAGE_NAME}:${IMAGE_TAG}" | grep -q "\"architecture\": \"${CPU_ARCH}\"" &
     local pid=$!
@@ -542,7 +542,7 @@ if [ -f "$DOCKER_ENV_PATH" ]; then
     CUSTOM_BUILD=$(getEnvValue "CUSTOM_BUILD" "$DOCKER_ENV_PATH")
 
     if [ -z "$DOCKERHUB_USER" ]; then
-        DOCKERHUB_USER=getyoutrack
+        DOCKERHUB_USER=getutrack
         updateEnvFile "DOCKERHUB_USER" "$DOCKERHUB_USER" "$DOCKER_ENV_PATH"
     fi
 

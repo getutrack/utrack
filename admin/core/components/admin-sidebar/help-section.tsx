@@ -27,7 +27,7 @@ const helpOptions = [
   },
   {
     name: "Report a bug",
-    href: "https://github.com/getyoutrack/youtrack/issues/new/choose",
+    href: "https://github.com/getutrack/youtrack/issues/new/choose",
     Icon: GithubIcon,
   },
 ];

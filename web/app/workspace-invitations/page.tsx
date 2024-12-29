@@ -107,7 +107,7 @@ const WorkspaceInvitationPage = observer(() => {
               ) : (
                 <EmptySpaceItem Icon={Boxes} title="Continue to home" href="/" />
               )}
-              <EmptySpaceItem Icon={Star} title="Star us on GitHub" href="https://github.com/getyoutrack" />
+              <EmptySpaceItem Icon={Star} title="Star us on GitHub" href="https://github.com/getutrack" />
               <EmptySpaceItem
                 Icon={Share2}
                 title="Join our community of active creators"

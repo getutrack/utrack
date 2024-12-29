@@ -36,7 +36,7 @@ Setting up local environment is extremely easy and straight forward. Follow the 
 
 1. Clone the code locally using:
    ```
-   git clone https://github.com/getyoutrack/youtrack.git
+   git clone https://github.com/getutrack/youtrack.git
    ```
 2. Switch to the code folder:
    ```

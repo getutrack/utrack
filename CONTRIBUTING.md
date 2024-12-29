@@ -4,16 +4,16 @@ Thank you for showing an interest in contributing to Youtrack! All kinds of cont
 
 ## Submitting an issue
 
-Before submitting a new issue, please search the [issues](https://github.com/getyoutrack/youtrack/issues) tab. Maybe an issue or discussion already exists and might inform you of workarounds. Otherwise, you can give new information.
+Before submitting a new issue, please search the [issues](https://github.com/getutrack/youtrack/issues) tab. Maybe an issue or discussion already exists and might inform you of workarounds. Otherwise, you can give new information.
 
-While we want to fix all the [issues](https://github.com/getyoutrack/youtrack/issues), before fixing a bug we need to be able to reproduce and confirm it. Please provide us with a minimal reproduction scenario using a repository or [Gist](https://gist.github.com/). Having a live, reproducible scenario gives us the information without asking questions back & forth with additional questions like:
+While we want to fix all the [issues](https://github.com/getutrack/youtrack/issues), before fixing a bug we need to be able to reproduce and confirm it. Please provide us with a minimal reproduction scenario using a repository or [Gist](https://gist.github.com/). Having a live, reproducible scenario gives us the information without asking questions back & forth with additional questions like:
 
 - 3rd-party libraries being used and their versions
 - a use-case that fails
 
-Without said minimal reproduction, we won't be able to investigate all [issues](https://github.com/getyoutrack/youtrack/issues), and the issue might not be resolved.
+Without said minimal reproduction, we won't be able to investigate all [issues](https://github.com/getutrack/youtrack/issues), and the issue might not be resolved.
 
-You can open a new issue with this [issue form](https://github.com/getyoutrack/youtrack/issues/new).
+You can open a new issue with this [issue form](https://github.com/getutrack/youtrack/issues/new).
 
 ## Projects setup and Architecture
 
@@ -33,7 +33,7 @@ The backend is a django project which is kept inside apiserver
 1. Clone the repo
 
 ```bash
-git clone https://github.com/getyoutrack/youtrack.git [folder-name]
+git clone https://github.com/getutrack/youtrack.git [folder-name]
 cd [folder-name]
 chmod +x setup.sh
 ```
