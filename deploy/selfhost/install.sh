@@ -180,7 +180,7 @@ function buildYourOwnImage(){
     local YOUTRACK_TEMP_CODE_DIR=~/tmp/youtrack
     rm -rf $YOUTRACK_TEMP_CODE_DIR
     mkdir -p $YOUTRACK_TEMP_CODE_DIR
-    REPO=https://github.com/getyoutrack/youtrack.git
+    REPO=https://github.com/getutrack/youtrack.git
     git clone "$REPO" "$YOUTRACK_TEMP_CODE_DIR"  --branch "$BRANCH" --single-branch --depth 1
 
     cp "$YOUTRACK_TEMP_CODE_DIR/deploy/selfhost/build.yml" "$YOUTRACK_TEMP_CODE_DIR/build.yml"
@@ -230,8 +230,8 @@ function download() {
         mv $YOUTRACK_INSTALL_DIR/docker-compose.yaml $YOUTRACK_INSTALL_DIR/archive/$TS.docker-compose.yaml
     fi
 
-    curl -H 'Cache-Control: no-cache, no-store' -s -o $YOUTRACK_INSTALL_DIR/docker-compose.yaml  https://raw.githubusercontent.com/getyoutrack/youtrack/$BRANCH/deploy/selfhost/docker-compose.yml?$(date +%s)
-    curl -H 'Cache-Control: no-cache, no-store' -s -o $YOUTRACK_INSTALL_DIR/variables-upgrade.env https://raw.githubusercontent.com/getyoutrack/youtrack/$BRANCH/deploy/selfhost/variables.env?$(date +%s)
+    curl -H 'Cache-Control: no-cache, no-store' -s -o $YOUTRACK_INSTALL_DIR/docker-compose.yaml  https://raw.githubusercontent.com/getutrack/youtrack/$BRANCH/deploy/selfhost/docker-compose.yml?$(date +%s)
+    curl -H 'Cache-Control: no-cache, no-store' -s -o $YOUTRACK_INSTALL_DIR/variables-upgrade.env https://raw.githubusercontent.com/getutrack/youtrack/$BRANCH/deploy/selfhost/variables.env?$(date +%s)
 
     if [ -f "$DOCKER_ENV_PATH" ];
     then
