@@ -1,4 +1,4 @@
-import { TIssueActivityComment } from "@youtrack/types";
+import { TIssueActivityComment } from "@utrack/types";
 
 export enum EActivityFilterType {
   ACTIVITY = "ACTIVITY",

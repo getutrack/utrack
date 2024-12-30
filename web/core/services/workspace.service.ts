@@ -12,7 +12,7 @@ import {
   IUserProjectsRole,
   IWorkspaceView,
   TIssuesResponse,
-} from "@youtrack/types";
+} from "@utrack/types";
 import { APIService } from "@/services/api.service";
 // helpers
 // types

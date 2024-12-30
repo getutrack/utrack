@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 // constants
-import { CustomSelect } from "@youtrack/ui";
+import { CustomSelect } from "@utrack/ui";
 import { THEME_OPTIONS, I_THEME_OPTION } from "@/constants/themes";
 // ui
 

@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest a feature to improve Youtrack
+description: Suggest a feature to improve Utrack
 title: "[feature]: "
 labels: [✨feature]
 assignees: [vihar, pushya22]
@@ -7,7 +7,7 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thank you for taking the time to request a feature for Youtrack
+      Thank you for taking the time to request a feature for Utrack
 - type: checkboxes
   attributes:
     label: Is there an existing issue for this?

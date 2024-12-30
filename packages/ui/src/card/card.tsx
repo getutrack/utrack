@@ -36,6 +36,6 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>((props, ref) => {
   );
 });
 
-Card.displayName = "youtrack-ui-card";
+Card.displayName = "utrack-ui-card";
 
 export { Card, ECardVariant, ECardSpacing, ECardDirection };

@@ -1,5 +1,5 @@
 {
-  "extends": "@youtrack/typescript-config/react-library.json",
+  "extends": "@utrack/typescript-config/react-library.json",
   "compilerOptions": {
     "jsx": "react",
     "lib": ["esnext", "dom"]

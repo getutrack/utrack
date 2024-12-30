@@ -8,7 +8,7 @@ import { PageHead } from "@/components/core";
 import { ProjectStateRoot } from "@/components/project-states";
 // hook
 import { useProject, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const StatesSettingsPage = observer(() => {
   const { workspaceSlug, projectId } = useParams();

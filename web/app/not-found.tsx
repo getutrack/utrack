@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // images
 import Image404 from "@/public/404.svg";
 

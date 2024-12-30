@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Layers } from "lucide-react";
 // types
-import { IProjectView, IIssueFilterOptions, IIssueDisplayProperties, IIssueDisplayFilterOptions } from "@youtrack/types";
+import { IProjectView, IIssueFilterOptions, IIssueDisplayProperties, IIssueDisplayFilterOptions } from "@utrack/types";
 // ui
-import { Button, EmojiIconPicker, EmojiIconPickerTypes, Input, TextArea } from "@youtrack/ui";
+import { Button, EmojiIconPicker, EmojiIconPickerTypes, Input, TextArea } from "@utrack/ui";
 // components
 import { Logo } from "@/components/common";
 import { AppliedFiltersList, DisplayFiltersSelection, FilterSelection, FiltersDropdown } from "@/components/issues";
@@ -23,7 +23,7 @@ import { getTabIndex } from "@/helpers/tab-indices.helper";
 import { useLabel, useMember, useProject, useProjectState } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 
-import { AccessController } from "@/youtrack-web/components/views/access-controller";
+import { AccessController } from "@/utrack-web/components/views/access-controller";
 import { LayoutDropDown } from "../dropdowns/layout";
 
 type Props = {

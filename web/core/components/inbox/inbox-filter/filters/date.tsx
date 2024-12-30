@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 import concat from "lodash/concat";
 import uniq from "lodash/uniq";
 import { observer } from "mobx-react";
-import { TInboxIssueFilterDateKeys } from "@youtrack/types";
+import { TInboxIssueFilterDateKeys } from "@utrack/types";
 // components
 import { DateFilterModal } from "@/components/core";
 import { FilterHeader, FilterOption } from "@/components/issues";

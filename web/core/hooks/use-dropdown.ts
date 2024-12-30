@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // hooks
 import { useDropdownKeyDown } from "@/hooks/use-dropdown-key-down";
 import { usePlatformOS } from "./use-platform-os";

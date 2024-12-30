@@ -3,11 +3,11 @@ import { useParams, usePathname } from "next/navigation";
 // hooks
 import { useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-// youtrack web constants
-import { EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
-import { WORKSPACE_SETTINGS_LINKS } from "@/youtrack-web/constants/workspace";
-// youtrack web helpers
-import { shouldRenderSettingLink } from "@/youtrack-web/helpers/workspace.helper";
+// utrack web constants
+import { EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
+import { WORKSPACE_SETTINGS_LINKS } from "@/utrack-web/constants/workspace";
+// utrack web helpers
+import { shouldRenderSettingLink } from "@/utrack-web/helpers/workspace.helper";
 
 export const MobileWorkspaceSettingsTabs = observer(() => {
   const router = useAppRouter();

@@ -3,9 +3,9 @@
 import { FormEvent, useState } from "react";
 // types
 import { FileText } from "lucide-react";
-import { TPage } from "@youtrack/types";
+import { TPage } from "@utrack/types";
 // ui
-import { Button, EmojiIconPicker, EmojiIconPickerTypes, Input } from "@youtrack/ui";
+import { Button, EmojiIconPicker, EmojiIconPickerTypes, Input } from "@utrack/ui";
 import { Logo } from "@/components/common";
 // constants
 import { AccessField } from "@/components/common/access-field";

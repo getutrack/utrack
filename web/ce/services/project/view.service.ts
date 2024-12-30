@@ -1,4 +1,4 @@
-import { TPublishViewSettings } from "@youtrack/types";
+import { TPublishViewSettings } from "@utrack/types";
 import { EViewAccess } from "@/constants/views";
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { ViewService as CoreViewService } from "@/services/view.service";

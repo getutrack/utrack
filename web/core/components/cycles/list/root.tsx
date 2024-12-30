@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import { observer } from "mobx-react";
 import { Disclosure } from "@headlessui/react";
 // components
-import { ContentWrapper, ERowVariant } from "@youtrack/ui";
+import { ContentWrapper, ERowVariant } from "@utrack/ui";
 import { ListLayout } from "@/components/core/list";
 import { CycleListGroupHeader, CyclePeekOverview, CyclesListMap } from "@/components/cycles";
-import { ActiveCycleRoot } from "@/youtrack-web/components/cycles";
+import { ActiveCycleRoot } from "@/utrack-web/components/cycles";
 
 export interface ICyclesList {
   completedCycleIds: string[];

@@ -1,7 +1,7 @@
 import { action, computed, makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { TIssueGroupByOptions } from "@youtrack/types";
+import { TIssueGroupByOptions } from "@utrack/types";
 // constants
 import { DRAG_ALLOWED_GROUPS } from "@/constants/issue";
 // store

@@ -7,7 +7,7 @@ import { useParams } from "next/navigation";
 // icons
 import { Pencil, Trash2 } from "lucide-react";
 // ui
-import { CustomMenu } from "@youtrack/ui";
+import { CustomMenu } from "@utrack/ui";
 // components
 import { CreateUpdateWorkspaceViewModal, DeleteGlobalViewModal } from "@/components/workspace";
 // helpers

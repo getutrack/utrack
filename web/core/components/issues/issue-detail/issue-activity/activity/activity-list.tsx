@@ -2,8 +2,8 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 // hooks
 import { useIssueDetail } from "@/hooks/store";
-// youtrack web components
-import { IssueTypeActivity } from "@/youtrack-web/components/issues/issue-details";
+// utrack web components
+import { IssueTypeActivity } from "@/utrack-web/components/issues/issue-details";
 // local components
 import {
   IssueDefaultActivity,

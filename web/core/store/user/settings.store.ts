@@ -1,5 +1,5 @@
 import { action, makeObservable, observable, runInAction } from "mobx";
-import { IUserSettings } from "@youtrack/types";
+import { IUserSettings } from "@utrack/types";
 // hooks
 import { getValueFromLocalStorage, setValueIntoLocalStorage } from "@/hooks/use-local-storage";
 // local

@@ -1,8 +1,8 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { TIssue, TIssueGroupByOptions, TIssueOrderByOptions } from "@youtrack/types";
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TIssue, TIssueGroupByOptions, TIssueOrderByOptions } from "@utrack/types";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 import { GroupDropLocation, handleGroupDragDrop } from "@/components/issues/issue-layouts/utils";
 import { EIssuesStoreType } from "@/constants/issue";
 import { ISSUE_FILTER_DEFAULT_DATA } from "@/store/issue/helpers/base-issues.store";

@@ -6,7 +6,7 @@ type TPageHeader = {
 };
 
 export const PageHeader: React.FC<TPageHeader> = (props) => {
-  const { title = "God Mode - Youtrack", description = "Youtrack god mode" } = props;
+  const { title = "God Mode - Utrack", description = "Utrack god mode" } = props;
 
   return (
     <>

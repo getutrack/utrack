@@ -8,13 +8,13 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 // hooks
 // components
-import { Button, TButtonVariant } from "@youtrack/ui";
+import { Button, TButtonVariant } from "@utrack/ui";
 // constant
 import { EMPTY_STATE_DETAILS, EmptyStateType } from "@/constants/empty-state";
 // helpers
 import { cn } from "@/helpers/common.helper";
 import { useUserPermissions } from "@/hooks/store";
-import { EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import { ComicBoxButton } from "./comic-box-button";
 
 export type EmptyStateProps = {

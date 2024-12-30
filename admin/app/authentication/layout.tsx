@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { AdminLayout } from "@/layouts/admin-layout";
 
 export const metadata: Metadata = {
-  title: "Authentication Settings - Youtrack Web",
+  title: "Authentication Settings - Utrack Web",
 };
 
 export default function AuthenticationLayout({ children }: { children: ReactNode }) {

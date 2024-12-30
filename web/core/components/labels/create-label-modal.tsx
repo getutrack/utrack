@@ -8,9 +8,9 @@ import { Controller, useForm } from "react-hook-form";
 import { ChevronDown } from "lucide-react";
 import { Dialog, Popover, Transition } from "@headlessui/react";
 // types
-import type { IIssueLabel, IState } from "@youtrack/types";
+import type { IIssueLabel, IState } from "@utrack/types";
 // ui
-import { Button, Input, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Input, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { LABEL_COLOR_OPTIONS, getRandomLabelColor } from "@/constants/label";
 import { ETabIndices } from "@/constants/tab-indices";

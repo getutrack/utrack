@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { Info, SquareUser } from "lucide-react";
 // ui
-import { IModule } from "@youtrack/types";
+import { IModule } from "@utrack/types";
 import {
   Card,
   FavoriteStar,
@@ -16,7 +16,7 @@ import {
   Tooltip,
   setPromiseToast,
   setToast,
-} from "@youtrack/ui";
+} from "@utrack/ui";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";
@@ -33,8 +33,8 @@ import { generateQueryParams } from "@/helpers/router.helper";
 import { useEventTracker, useMember, useModule, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web constants
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   moduleId: string;

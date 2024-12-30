@@ -1,7 +1,7 @@
 // types
-import { IDefaultAnalyticsResponse, TStateGroups } from "@youtrack/types";
+import { IDefaultAnalyticsResponse, TStateGroups } from "@utrack/types";
 // constants
-import { Card } from "@youtrack/ui";
+import { Card } from "@utrack/ui";
 import { STATE_GROUPS } from "@/constants/state";
 
 type Props = {

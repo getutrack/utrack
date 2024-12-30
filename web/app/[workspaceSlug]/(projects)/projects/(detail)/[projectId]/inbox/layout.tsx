@@ -2,7 +2,7 @@
 
 // components
 import { AppHeader, ContentWrapper } from "@/components/core";
-import { ProjectInboxHeader } from "@/youtrack-web/components/projects/settings/intake";
+import { ProjectInboxHeader } from "@/utrack-web/components/projects/settings/intake";
 
 export default function ProjectInboxIssuesLayout({ children }: { children: React.ReactNode }) {
   return (

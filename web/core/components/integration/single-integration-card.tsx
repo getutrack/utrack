@@ -6,16 +6,16 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import useSWR, { mutate } from "swr";
 import { CheckCircle } from "lucide-react";
-import { IAppIntegration, IWorkspaceIntegration } from "@youtrack/types";
+import { IAppIntegration, IWorkspaceIntegration } from "@utrack/types";
 // ui
-import { Button, Loader, Tooltip, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Loader, Tooltip, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { WORKSPACE_INTEGRATIONS } from "@/constants/fetch-keys";
 // hooks
 import { useInstance, useUserPermissions } from "@/hooks/store";
 import useIntegrationPopup from "@/hooks/use-integration-popup";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // services
 // icons
 import GithubLogo from "@/public/services/github.png";
@@ -30,12 +30,12 @@ const integrationDetails: { [key: string]: any } = {
   github: {
     logo: GithubLogo,
     installed: "Activate GitHub on individual projects to sync with specific repositories.",
-    notInstalled: "Connect with GitHub with your Youtrack workspace to sync project issues.",
+    notInstalled: "Connect with GitHub with your Utrack workspace to sync project issues.",
   },
   slack: {
     logo: SlackLogo,
     installed: "Activate Slack on individual projects to sync with specific channels.",
-    notInstalled: "Connect with Slack with your Youtrack workspace to sync project issues.",
+    notInstalled: "Connect with Slack with your Utrack workspace to sync project issues.",
   },
 };
 

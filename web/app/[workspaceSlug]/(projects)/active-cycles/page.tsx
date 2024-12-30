@@ -4,9 +4,9 @@ import { observer } from "mobx-react";
 // components
 import { PageHead } from "@/components/core";
 // hooks
-import { WorkspaceActiveCyclesRoot } from "@/youtrack-web/components/active-cycles";
+import { WorkspaceActiveCyclesRoot } from "@/utrack-web/components/active-cycles";
 import { useWorkspace } from "@/hooks/store";
-// youtrack web components
+// utrack web components
 
 const WorkspaceActiveCyclesPage = observer(() => {
   const { currentWorkspace } = useWorkspace();

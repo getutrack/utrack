@@ -4,7 +4,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { PenSquare } from "lucide-react";
 // ui
-import { Breadcrumbs, Button, Header } from "@youtrack/ui";
+import { Breadcrumbs, Button, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink, CountChip } from "@/components/common";
 import { CreateUpdateIssueModal } from "@/components/issues";
@@ -12,8 +12,8 @@ import { CreateUpdateIssueModal } from "@/components/issues";
 import { EIssuesStoreType } from "@/constants/issue";
 // hooks
 import { useProject, useUserPermissions, useWorkspaceDraftIssues } from "@/hooks/store";
-// youtrack-web
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack-web
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const WorkspaceDraftHeader = observer(() => {
   // state

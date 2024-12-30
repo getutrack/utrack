@@ -9,8 +9,8 @@ import { useParams } from "next/navigation";
 import { ChevronRight, FolderPlus } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
 // ui
-import { IFavorite } from "@youtrack/types";
-import { setToast, TOAST_TYPE, Tooltip } from "@youtrack/ui";
+import { IFavorite } from "@utrack/types";
+import { setToast, TOAST_TYPE, Tooltip } from "@utrack/ui";
 // constants
 
 // helpers
@@ -20,7 +20,7 @@ import { useAppTheme } from "@/hooks/store";
 import { useFavorite } from "@/hooks/store/use-favorite";
 import useLocalStorage from "@/hooks/use-local-storage";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
+// utrack web components
 import { FavoriteFolder } from "./favorite-folder";
 import { FavoriteRoot } from "./favorite-items";
 import { NewFavoriteFolder } from "./new-fav-folder";

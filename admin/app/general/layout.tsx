@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { AdminLayout } from "@/layouts/admin-layout";
 
 export const metadata: Metadata = {
-  title: "General Settings - Youtrack Web",
+  title: "General Settings - Utrack Web",
 };
 
 export default function GeneralLayout({ children }: { children: ReactNode }) {

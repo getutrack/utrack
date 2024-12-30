@@ -7,9 +7,9 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { Search } from "lucide-react";
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 // types
-import { ISearchIssueResponse, IUser } from "@youtrack/types";
+import { ISearchIssueResponse, IUser } from "@utrack/types";
 // ui
-import { Button, Loader, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Loader, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/empty-state";
 // constants

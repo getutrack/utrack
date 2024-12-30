@@ -3,10 +3,10 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
-// youtrack types
-import { TInboxIssueFilterMemberKeys } from "@youtrack/types";
-// youtrack ui
-import { Avatar, Tag } from "@youtrack/ui";
+// utrack types
+import { TInboxIssueFilterMemberKeys } from "@utrack/types";
+// utrack ui
+import { Avatar, Tag } from "@utrack/ui";
 // helpers
 import { getFileURL } from "@/helpers/file.helper";
 // hooks

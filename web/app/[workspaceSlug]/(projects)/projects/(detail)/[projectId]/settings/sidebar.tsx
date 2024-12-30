@@ -5,14 +5,14 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 // components
 import { SidebarNavItem } from "@/components/sidebar";
 // hooks
 import { useUserPermissions } from "@/hooks/store";
-// youtrack web constants
-import { PROJECT_SETTINGS_LINKS } from "@/youtrack-web/constants/project";
-import { EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web constants
+import { PROJECT_SETTINGS_LINKS } from "@/utrack-web/constants/project";
+import { EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const ProjectSettingsSidebar = observer(() => {
   const { workspaceSlug, projectId } = useParams();

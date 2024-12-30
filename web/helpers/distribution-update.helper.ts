@@ -2,7 +2,7 @@ import { format } from "date-fns";
 import get from "lodash/get";
 import set from "lodash/set";
 // types
-import { ICycle, IEstimatePoint, IModule, IState, TIssue } from "@youtrack/types";
+import { ICycle, IEstimatePoint, IModule, IState, TIssue } from "@utrack/types";
 // constants
 import { STATE_GROUPS, COMPLETED_STATE_GROUPS } from "@/constants/state";
 // helper

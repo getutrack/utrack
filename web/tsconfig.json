@@ -1,5 +1,5 @@
 {
-  "extends": "@youtrack/typescript-config/nextjs.json",
+  "extends": "@utrack/typescript-config/nextjs.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -7,7 +7,7 @@
       "@/helpers/*": ["helpers/*"],
       "@/public/*": ["public/*"],
       "@/styles/*": ["styles/*"],
-      "@/youtrack-web/*": ["ce/*"]
+      "@/utrack-web/*": ["ce/*"]
     },
     "plugins": [{ "name": "next" }],
     "strictNullChecks": true

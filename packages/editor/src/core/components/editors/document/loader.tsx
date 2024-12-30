@@ -1,5 +1,5 @@
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 
 export const DocumentContentLoader = () => (
   <div className="size-full px-5">

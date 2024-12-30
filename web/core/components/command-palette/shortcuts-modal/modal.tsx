@@ -4,7 +4,7 @@ import { FC, useState, Fragment } from "react";
 import { Search, X } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // components
-import { Input } from "@youtrack/ui";
+import { Input } from "@utrack/ui";
 import { ShortcutCommandsList } from "@/components/command-palette";
 // ui
 

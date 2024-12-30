@@ -1,15 +1,15 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { IIssueFilterOptions } from "@youtrack/types";
+import { IIssueFilterOptions } from "@utrack/types";
 // hooks
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { AppliedFiltersList, SaveFilterView } from "@/components/issues";
 // constants
 import { EIssueFilterType, EIssuesStoreType } from "@/constants/issue";
 import { useLabel, useProjectState, useUserPermissions } from "@/hooks/store";
 import { useIssues } from "@/hooks/store/use-issues";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 // types
 

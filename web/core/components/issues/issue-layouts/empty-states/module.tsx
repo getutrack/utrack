@@ -5,9 +5,9 @@ import size from "lodash/size";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { IIssueFilterOptions, ISearchIssueResponse } from "@youtrack/types";
+import { IIssueFilterOptions, ISearchIssueResponse } from "@utrack/types";
 // ui
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ExistingIssuesListModal } from "@/components/core";
 import { EmptyState } from "@/components/empty-state";

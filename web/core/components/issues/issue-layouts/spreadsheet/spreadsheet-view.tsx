@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { observer } from "mobx-react";
 // types
-import { TIssue, IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@youtrack/types";
+import { TIssue, IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@utrack/types";
 // components
 import { LogoSpinner } from "@/components/common";
 import { MultipleSelectGroup } from "@/components/core";
@@ -11,10 +11,10 @@ import { EIssueLayoutTypes } from "@/constants/issue";
 import { SPREADSHEET_PROPERTY_LIST, SPREADSHEET_SELECT_GROUP } from "@/constants/spreadsheet";
 // hooks
 import { useProject } from "@/hooks/store";
-// youtrack web components
-import { IssueBulkOperationsRoot } from "@/youtrack-web/components/issues";
-// youtrack web hooks
-import { useBulkOperationStatus } from "@/youtrack-web/hooks/use-bulk-operation-status";
+// utrack web components
+import { IssueBulkOperationsRoot } from "@/utrack-web/components/issues";
+// utrack web hooks
+import { useBulkOperationStatus } from "@/utrack-web/hooks/use-bulk-operation-status";
 // types
 import { TRenderQuickActions } from "../list/list-view-types";
 import { SpreadsheetTable } from "./spreadsheet-table";
@@ -57,7 +57,7 @@ export const SpreadsheetView: React.FC<Props> = observer((props) => {
   const portalRef = useRef<HTMLDivElement | null>(null);
   // store hooks
   const { currentProjectDetails } = useProject();
-  // youtrack web hooks
+  // utrack web hooks
   const isBulkOperationsEnabled = useBulkOperationStatus();
 
   const isEstimateEnabled: boolean = currentProjectDetails?.estimate !== null;

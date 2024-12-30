@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { RotateCcw } from "lucide-react";
 // hooks
-import { ArchiveIcon } from "@youtrack/ui";
+import { ArchiveIcon } from "@utrack/ui";
 import { useIssueDetail } from "@/hooks/store";
 // components
 import { IssueActivityBlockComponent } from "./";
@@ -34,7 +34,7 @@ export const IssueArchivedAtActivity: FC<TIssueArchivedAtActivity> = observer((p
       }
       activityId={activityId}
       ends={ends}
-      customUserName={activity.new_value === "archive" ? "Youtrack" : undefined}
+      customUserName={activity.new_value === "archive" ? "Utrack" : undefined}
     >
       {activity.new_value === "restore" ? "restored the issue" : "archived the issue"}.
     </IssueActivityBlockComponent>

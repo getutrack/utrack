@@ -4,7 +4,7 @@ import React, { FC, useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { ArchiveIcon, ArchiveRestoreIcon, LinkIcon, Trash2 } from "lucide-react";
-import { TOAST_TYPE, Tooltip, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, Tooltip, setToast } from "@utrack/ui";
 // components
 import { ArchiveIssueModal, DeleteIssueModal, IssueSubscription } from "@/components/issues";
 // constants
@@ -25,7 +25,7 @@ import {
 } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   workspaceSlug: string;

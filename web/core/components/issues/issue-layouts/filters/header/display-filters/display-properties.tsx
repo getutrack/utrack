@@ -2,11 +2,11 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { IIssueDisplayProperties } from "@youtrack/types";
+import { IIssueDisplayProperties } from "@utrack/types";
 // constants
 import { ISSUE_DISPLAY_PROPERTIES } from "@/constants/issue";
-// youtrack web helpers
-import { shouldRenderDisplayProperty } from "@/youtrack-web/helpers/issue-filter.helper";
+// utrack web helpers
+import { shouldRenderDisplayProperty } from "@/utrack-web/helpers/issue-filter.helper";
 // components
 import { FilterHeader } from "../helpers/filter-header";
 

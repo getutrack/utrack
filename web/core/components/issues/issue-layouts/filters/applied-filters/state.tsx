@@ -4,8 +4,8 @@ import { observer } from "mobx-react";
 
 // icons
 import { X } from "lucide-react";
-import { IState } from "@youtrack/types";
-import { StateGroupIcon } from "@youtrack/ui";
+import { IState } from "@utrack/types";
+import { StateGroupIcon } from "@utrack/ui";
 // types
 
 type Props = {

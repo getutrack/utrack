@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
 // ui
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // constants
 import { ISSUE_LAYOUTS } from "@/constants/issue";
 // helpers

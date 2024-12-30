@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 // ui
-import { ContextMenu, CustomMenu, TContextMenuItem } from "@youtrack/ui";
+import { ContextMenu, CustomMenu, TContextMenuItem } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 

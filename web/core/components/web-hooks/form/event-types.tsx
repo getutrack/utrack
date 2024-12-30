@@ -1,5 +1,5 @@
 // types
-import { TWebhookEventTypes } from "@youtrack/types";
+import { TWebhookEventTypes } from "@utrack/types";
 
 type Props = {
   value: string;

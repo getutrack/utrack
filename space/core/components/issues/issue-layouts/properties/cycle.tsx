@@ -2,8 +2,8 @@
 
 import { observer } from "mobx-react";
 // ui
-import { cn } from "@youtrack/editor";
-import { ContrastIcon, Tooltip } from "@youtrack/ui";
+import { cn } from "@utrack/editor";
+import { ContrastIcon, Tooltip } from "@utrack/ui";
 //hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 

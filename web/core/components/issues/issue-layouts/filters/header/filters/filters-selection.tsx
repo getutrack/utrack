@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Search, X } from "lucide-react";
 // types
-import { IIssueDisplayFilterOptions, IIssueFilterOptions, IIssueLabel, IState } from "@youtrack/types";
+import { IIssueDisplayFilterOptions, IIssueFilterOptions, IIssueLabel, IState } from "@utrack/types";
 // components
 import {
   FilterAssignees,
@@ -24,8 +24,8 @@ import {
 import { ILayoutDisplayFiltersOptions } from "@/constants/issue";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { FilterIssueTypes } from "@/youtrack-web/components/issues";
+// utrack web components
+import { FilterIssueTypes } from "@/utrack-web/components/issues";
 
 type Props = {
   filters: IIssueFilterOptions;

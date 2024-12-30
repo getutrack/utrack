@@ -1,9 +1,9 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { IAnalyticsParams, TXAxisValues } from "@youtrack/types";
+import { IAnalyticsParams, TXAxisValues } from "@utrack/types";
 // ui
-import { CustomSelect } from "@youtrack/ui";
+import { CustomSelect } from "@utrack/ui";
 
 type Props = {
   value: TXAxisValues;

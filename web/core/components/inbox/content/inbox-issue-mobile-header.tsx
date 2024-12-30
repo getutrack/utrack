@@ -15,7 +15,7 @@ import {
   PanelLeft,
   MoveRight,
 } from "lucide-react";
-import { Header, CustomMenu, EHeaderVariant } from "@youtrack/ui";
+import { Header, CustomMenu, EHeaderVariant } from "@utrack/ui";
 // components
 import { InboxIssueStatus } from "@/components/inbox";
 import { IssueUpdateStatus } from "@/components/issues";

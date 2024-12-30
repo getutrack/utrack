@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 // hooks
-import { CustomSearchSelect } from "@youtrack/ui";
+import { CustomSearchSelect } from "@utrack/ui";
 import { useProject } from "@/hooks/store";
 // ui
 

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 // images
-import BlueYoutrackLogoWithoutText from "@/public/youtrack-logos/blue-without-text.png";
+import BlueUtrackLogoWithoutText from "@/public/utrack-logos/blue-without-text.png";
 // components
 import { OnboardingStepIndicator } from "./step-indicator";
 
@@ -16,7 +16,7 @@ export const OnboardingHeader: FC<OnboardingHeaderProps> = (props) => {
   return (
     <div className="flex w-full items-center justify-between font-semibold ">
       <div className="flex items-center gap-x-2">
-        <Image src={BlueYoutrackLogoWithoutText} height={30} width={30} alt="Youtrack Logo" className="mr-3" />
+        <Image src={BlueUtrackLogoWithoutText} height={30} width={30} alt="Utrack Logo" className="mr-3" />
         <OnboardingStepIndicator currentStep={currentStep} totalSteps={totalSteps} />
       </div>
     </div>

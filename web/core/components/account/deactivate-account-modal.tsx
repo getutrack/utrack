@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Trash2 } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { Button, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, TOAST_TYPE, setToast } from "@utrack/ui";
 // hooks
 import { useUser } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";

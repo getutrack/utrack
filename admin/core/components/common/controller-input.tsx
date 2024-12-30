@@ -5,7 +5,7 @@ import { Controller, Control } from "react-hook-form";
 // icons
 import { Eye, EyeOff } from "lucide-react";
 // ui
-import { Input } from "@youtrack/ui";
+import { Input } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 

@@ -3,10 +3,10 @@
 import React from "react";
 import { useParams } from "next/navigation";
 import useSWRInfinite from "swr/infinite";
-import { IWorkspaceIntegration } from "@youtrack/types";
+import { IWorkspaceIntegration } from "@utrack/types";
 // services
 // ui
-import { CustomSearchSelect } from "@youtrack/ui";
+import { CustomSearchSelect } from "@utrack/ui";
 // helpers
 import { truncateText } from "@/helpers/string.helper";
 import { ProjectService } from "@/services/project";

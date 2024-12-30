@@ -2,8 +2,8 @@
 
 // ui
 import { Trash2 } from "lucide-react";
-import { IImporterService } from "@youtrack/types";
-import { CustomMenu } from "@youtrack/ui";
+import { IImporterService } from "@utrack/types";
+import { CustomMenu } from "@utrack/ui";
 // icons
 // helpers
 import { IMPORTERS_LIST } from "@/constants/workspace";

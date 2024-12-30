@@ -3,9 +3,9 @@
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
 // types
-import { ICycle } from "@youtrack/types";
+import { ICycle } from "@utrack/types";
 // ui
-import { Button, Input, TextArea } from "@youtrack/ui";
+import { Button, Input, TextArea } from "@utrack/ui";
 // components
 import { DateRangeDropdown, ProjectDropdown } from "@/components/dropdowns";
 // constants

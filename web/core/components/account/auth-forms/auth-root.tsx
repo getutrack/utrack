@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
-import { IEmailCheckData } from "@youtrack/types";
+import { IEmailCheckData } from "@utrack/types";
 // components
 import {
   AuthHeader,

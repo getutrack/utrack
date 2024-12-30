@@ -1,4 +1,4 @@
-import { IApiToken } from "@youtrack/types";
+import { IApiToken } from "@utrack/types";
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { APIService } from "./api.service";
 

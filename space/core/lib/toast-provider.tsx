@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 import { useTheme } from "next-themes"
 // ui
-import { Toast } from "@youtrack/ui";
+import { Toast } from "@utrack/ui";
 // helpers
 import { resolveGeneralTheme } from "@/helpers/common.helper";
 

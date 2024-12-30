@@ -6,9 +6,9 @@ import isEmpty from "lodash/isEmpty";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { IIssueFilterOptions } from "@youtrack/types";
+import { IIssueFilterOptions } from "@utrack/types";
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { AppliedFiltersList } from "@/components/issues";
 import { CreateUpdateProjectViewModal } from "@/components/views";
 import { UpdateViewComponent } from "@/components/views/update-view-component";
@@ -17,7 +17,7 @@ import { EIssueFilterType, EIssuesStoreType } from "@/constants/issue";
 import { EViewAccess } from "@/constants/views";
 // hooks
 import { useIssues, useLabel, useProjectState, useProjectView, useUser, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import { getAreFiltersEqual } from "../../../utils";
 
 export const ProjectViewAppliedFiltersRoot: React.FC = observer(() => {

@@ -1,6 +1,6 @@
 import clone from "lodash/clone";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-import { IState } from "@youtrack/types";
+import { IState } from "@utrack/types";
 import { sortStates } from "@/helpers/state.helper";
 import { StateService } from "@/services/state.service";
 import { CoreRootStore } from "./root.store";

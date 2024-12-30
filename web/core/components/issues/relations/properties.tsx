@@ -2,7 +2,7 @@
 import React, { FC } from "react";
 import { observer } from "mobx-react";
 // components
-import { TIssuePriorities } from "@youtrack/types";
+import { TIssuePriorities } from "@utrack/types";
 import { PriorityDropdown, MemberDropdown, StateDropdown } from "@/components/dropdowns";
 // hooks
 import { useIssueDetail } from "@/hooks/store";

@@ -3,9 +3,9 @@ import set from "lodash/set";
 import { makeObservable, observable, action, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 import { v4 as uuidv4 } from "uuid";
-// youtrack types
-import { TFileSignedURLResponse } from "@youtrack/types";
-import { EFileAssetType } from "@youtrack/types/src/enums";
+// utrack types
+import { TFileSignedURLResponse } from "@utrack/types";
+import { EFileAssetType } from "@utrack/types/src/enums";
 // services
 import { FileService } from "@/services/file.service";
 import IssueService from "@/services/issue.service";

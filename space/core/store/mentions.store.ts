@@ -1,6 +1,6 @@
 import { computed, makeObservable } from "mobx";
 // editor
-import { IMentionHighlight } from "@youtrack/editor";
+import { IMentionHighlight } from "@utrack/editor";
 // store
 import { CoreRootStore } from "@/store/root.store";
 

@@ -2,7 +2,7 @@
 
 import { FC, useMemo } from "react";
 // hooks
-import { TOAST_TYPE, setPromiseToast, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@utrack/ui";
 import { useEventTracker, useIssueDetail } from "@/hooks/store";
 // ui
 // components

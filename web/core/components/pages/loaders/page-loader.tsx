@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 
 export const PageLoader: React.FC = (props) => {
   const {} = props;

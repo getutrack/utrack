@@ -1,9 +1,9 @@
 "use client";
 
 // ui
-import { getButtonStyling } from "@youtrack/ui";
+import { getButtonStyling } from "@utrack/ui";
 // constants
-import { MARKETING_YOUTRACK_ONE_PAGE_LINK } from "@/constants/common";
+import { MARKETING_UTRACK_ONE_PAGE_LINK } from "@/constants/common";
 // helpers
 import { cn } from "@/helpers/common.helper";
 
@@ -21,7 +21,7 @@ export const BulkOperationsUpgradeBanner: React.FC<Props> = (props) => {
           Change state, priority, and more for several issues at once. Save three minutes on an average per operation.
         </p>
         <a
-          href={MARKETING_YOUTRACK_ONE_PAGE_LINK}
+          href={MARKETING_UTRACK_ONE_PAGE_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className={cn(getButtonStyling("primary", "sm"), "flex-shrink-0")}

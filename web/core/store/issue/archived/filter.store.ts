@@ -13,7 +13,7 @@ import {
   IIssueFilters,
   TIssueParams,
   IssuePaginationOptions,
-} from "@youtrack/types";
+} from "@utrack/types";
 import { EIssueFilterType, EIssuesStoreType } from "@/constants/issue";
 import { handleIssueQueryParamsByLayout } from "@/helpers/issue.helper";
 import { IssueFiltersService } from "@/services/issue_filter.service";

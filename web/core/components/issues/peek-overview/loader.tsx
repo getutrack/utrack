@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import { MoveRight } from "lucide-react";
-import { Loader, Tooltip } from "@youtrack/ui";
+import { Loader, Tooltip } from "@utrack/ui";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 

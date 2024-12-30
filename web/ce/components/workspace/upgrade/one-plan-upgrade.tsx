@@ -12,19 +12,19 @@ export type OnePlanUpgradeProps = {
 export const OnePlanUpgrade: FC<OnePlanUpgradeProps> = (props) => {
   const { features, verticalFeatureList = false, extraFeatures } = props;
   // env
-  const YOUTRACK_ONE_PAYMENT_URL = "https://utrackprime.digi-trans.org/";
+  const UTRACK_ONE_PAYMENT_URL = "https://utrackprime.digi-trans.org/";
 
   return (
     <div className="py-4 px-2 border border-custom-border-90 rounded-xl bg-custom-background-90">
       <div className="flex w-full justify-center h-10" />
       <div className="pt-6 pb-4 text-center font-semibold">
-        <div className="text-2xl">Youtrack One</div>
+        <div className="text-2xl">Utrack One</div>
         <div className="text-3xl">$799</div>
         <div className="text-sm text-custom-text-300">for two years’ support and updates</div>
       </div>
       <div className="flex justify-center w-full">
         <a
-          href={YOUTRACK_ONE_PAYMENT_URL}
+          href={UTRACK_ONE_PAYMENT_URL}
           target="_blank"
           className="relative inline-flex items-center justify-center w-56 px-4 py-2.5 text-white text-sm font-medium border border-[#525252] bg-gradient-to-r from-[#353535] via-[#1111118C] to-[#21212153] rounded-lg focus:outline-none"
         >

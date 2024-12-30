@@ -4,7 +4,7 @@ import { useState, FC } from "react";
 import { observer } from "mobx-react";
 import { FormProvider, useForm } from "react-hook-form";
 // ui
-import { setToast, TOAST_TYPE } from "@youtrack/ui";
+import { setToast, TOAST_TYPE } from "@utrack/ui";
 // constants
 import ProjectCommonAttributes from "@/components/project/create/common-attributes";
 import ProjectCreateHeader from "@/components/project/create/header";
@@ -16,8 +16,8 @@ import { getRandomEmoji } from "@/helpers/emoji.helper";
 // hooks
 import { useEventTracker, useProject } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web types
-import { TProject } from "@/youtrack-web/types/projects";
+// utrack web types
+import { TProject } from "@/utrack-web/types/projects";
 import ProjectAttributes from "./attributes";
 
 export type TCreateProjectFormProps = {

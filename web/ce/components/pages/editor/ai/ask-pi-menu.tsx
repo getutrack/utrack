@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CircleArrowUp, CornerDownRight, RefreshCcw, Sparkles } from "lucide-react";
 // ui
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // components
 import { RichTextReadOnlyEditor } from "@/components/editor";
 // helpers

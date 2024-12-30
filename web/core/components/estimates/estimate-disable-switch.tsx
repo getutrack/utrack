@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import { observer } from "mobx-react";
-import { TOAST_TYPE, ToggleSwitch, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, ToggleSwitch, setToast } from "@utrack/ui";
 // hooks
 import { useProject, useProjectEstimates } from "@/hooks/store";
 

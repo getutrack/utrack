@@ -1,4 +1,4 @@
-import { useHead } from "@youtrack/ui";
+import { useHead } from "@utrack/ui";
 
 type PageHeadTitleProps = {
   title?: string;

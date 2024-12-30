@@ -11,12 +11,12 @@ import {
   TDisplayConfig,
   TRealtimeConfig,
   TServerHandler,
-} from "@youtrack/editor";
+} from "@utrack/editor";
 // types
-import { IUserLite } from "@youtrack/types";
-import { EFileAssetType } from "@youtrack/types/src/enums";
+import { IUserLite } from "@utrack/types";
+import { EFileAssetType } from "@utrack/types/src/enums";
 // components
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 import { PageContentBrowser, PageContentLoader, PageEditorTitle } from "@/components/pages";
 // helpers
 import { cn, LIVE_BASE_PATH, LIVE_BASE_URL } from "@/helpers/common.helper";
@@ -25,12 +25,12 @@ import { generateRandomColor } from "@/helpers/string.helper";
 // hooks
 import { useMember, useMention, useUser, useWorkspace } from "@/hooks/store";
 import { usePageFilters } from "@/hooks/use-page-filters";
-// youtrack web components
-import { EditorAIMenu } from "@/youtrack-web/components/pages";
-// youtrack web hooks
-import { useEditorFlagging } from "@/youtrack-web/hooks/use-editor-flagging";
-import { useFileSize } from "@/youtrack-web/hooks/use-file-size";
-import { useIssueEmbed } from "@/youtrack-web/hooks/use-issue-embed";
+// utrack web components
+import { EditorAIMenu } from "@/utrack-web/components/pages";
+// utrack web hooks
+import { useEditorFlagging } from "@/utrack-web/hooks/use-editor-flagging";
+import { useFileSize } from "@/utrack-web/hooks/use-file-size";
+import { useIssueEmbed } from "@/utrack-web/hooks/use-issue-embed";
 // services
 import { FileService } from "@/services/file.service";
 // store

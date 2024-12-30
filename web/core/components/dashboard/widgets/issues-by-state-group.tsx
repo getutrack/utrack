@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 // types
-import { TIssuesByStateGroupsWidgetFilters, TIssuesByStateGroupsWidgetResponse, TStateGroups } from "@youtrack/types";
+import { TIssuesByStateGroupsWidgetFilters, TIssuesByStateGroupsWidgetResponse, TStateGroups } from "@utrack/types";
 // components
-import { Card } from "@youtrack/ui";
+import { Card } from "@utrack/ui";
 import {
   DurationFilterDropdown,
   IssuesByStateGroupEmptyState,

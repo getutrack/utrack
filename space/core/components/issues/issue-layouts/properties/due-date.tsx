@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 import { CalendarCheck2 } from "lucide-react";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 import { renderFormattedDate } from "@/helpers/date-time.helper";

@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import { observer } from "mobx-react";
 import { LayoutPanelTop } from "lucide-react";
-import { ISearchIssueResponse, TIssue } from "@youtrack/types";
-import { CustomMenu } from "@youtrack/ui";
+import { ISearchIssueResponse, TIssue } from "@utrack/types";
+import { CustomMenu } from "@utrack/ui";
 // components
 import {
   CycleDropdown,

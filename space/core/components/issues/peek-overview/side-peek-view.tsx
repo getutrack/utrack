@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 // components
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 import {
   PeekOverviewHeader,
   PeekOverviewIssueActivity,

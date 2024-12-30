@@ -3,8 +3,8 @@
 import { useMemo, useState } from "react";
 import sortBy from "lodash/sortBy";
 import { observer } from "mobx-react";
-// youtrack ui
-import { Avatar, Loader } from "@youtrack/ui";
+// utrack ui
+import { Avatar, Loader } from "@utrack/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues";
 // helpers

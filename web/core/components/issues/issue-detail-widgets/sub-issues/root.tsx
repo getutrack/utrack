@@ -1,7 +1,7 @@
 "use client";
 import React, { FC } from "react";
 import { observer } from "mobx-react";
-import { Collapsible } from "@youtrack/ui";
+import { Collapsible } from "@utrack/ui";
 // components
 import { SubIssuesCollapsibleContent, SubIssuesCollapsibleTitle } from "@/components/issues/issue-detail-widgets";
 // hooks

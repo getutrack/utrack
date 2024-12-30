@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 import { queryParamGenerator } from "@/helpers/query-param-generator";

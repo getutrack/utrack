@@ -1,6 +1,6 @@
 "use client";
 
-import { Input } from "@youtrack/ui";
+import { Input } from "@utrack/ui";
 
 type Props = {
   value: string;

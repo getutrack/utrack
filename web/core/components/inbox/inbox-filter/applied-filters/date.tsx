@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
-import { TInboxIssueFilterDateKeys } from "@youtrack/types";
+import { TInboxIssueFilterDateKeys } from "@utrack/types";
 // helpers
-import { Tag } from "@youtrack/ui";
+import { Tag } from "@utrack/ui";
 import { renderFormattedDate } from "@/helpers/date-time.helper";
 // constants
 import { PAST_DURATION_FILTER_OPTIONS } from "@/helpers/inbox.helper";

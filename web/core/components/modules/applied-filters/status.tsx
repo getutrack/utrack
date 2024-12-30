@@ -3,7 +3,7 @@
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
 // ui
-import { ModuleStatusIcon } from "@youtrack/ui";
+import { ModuleStatusIcon } from "@utrack/ui";
 // constants
 import { MODULE_STATUS } from "@/constants/module";
 

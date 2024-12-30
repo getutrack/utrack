@@ -11,7 +11,7 @@ import useSWRImmutable from "swr/immutable";
 
 import { LogOut } from "lucide-react";
 // hooks
-import { Button, setToast, TOAST_TYPE, Tooltip } from "@youtrack/ui";
+import { Button, setToast, TOAST_TYPE, Tooltip } from "@utrack/ui";
 import { LogoSpinner } from "@/components/common";
 import { useMember, useProject, useUser, useUserPermissions, useWorkspace } from "@/hooks/store";
 import { useFavorite } from "@/hooks/store/use-favorite";
@@ -19,10 +19,10 @@ import { usePlatformOS } from "@/hooks/use-platform-os";
 // local
 import { persistence } from "@/local-db/storage.sqlite";
 // constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // images
-import YoutrackBlackLogo from "@/public/youtrack-logos/black-horizontal-with-blue-logo.png";
-import YoutrackWhiteLogo from "@/public/youtrack-logos/white-horizontal-with-blue-logo.png";
+import UtrackBlackLogo from "@/public/utrack-logos/black-horizontal-with-blue-logo.png";
+import UtrackWhiteLogo from "@/public/utrack-logos/white-horizontal-with-blue-logo.png";
 import WorkSpaceNotAvailable from "@/public/workspace/workspace-not-available.png";
 
 export interface IWorkspaceAuthWrapper {
@@ -52,7 +52,7 @@ export const WorkspaceAuthWrapper: FC<IWorkspaceAuthWrapper> = observer((props) 
     EUserPermissionsLevel.WORKSPACE
   );
 
-  const youtrackLogo = resolvedTheme === "dark" ? YoutrackWhiteLogo : YoutrackBlackLogo;
+  const utrackLogo = resolvedTheme === "dark" ? UtrackWhiteLogo : UtrackBlackLogo;
   const allWorkspaces = workspaces ? Object.values(workspaces) : undefined;
   const currentWorkspace =
     (allWorkspaces && allWorkspaces.find((workspace) => workspace?.slug === workspaceSlug)) || undefined;
@@ -137,7 +137,7 @@ export const WorkspaceAuthWrapper: FC<IWorkspaceAuthWrapper> = observer((props) 
         <div className="container relative mx-auto flex h-full w-full flex-col overflow-hidden overflow-y-auto px-5 py-14 md:px-0">
           <div className="relative flex flex-shrink-0 items-center justify-between gap-4">
             <div className="z-10 flex-shrink-0 bg-custom-background-90 py-4">
-              <Image src={youtrackLogo} className="h-[26px] w-full" alt="Youtrack logo" />
+              <Image src={utrackLogo} className="h-[26px] w-full" alt="Utrack logo" />
             </div>
             <div className="relative flex items-center gap-2">
               <div className="text-sm font-medium">{currentUser?.email}</div>
@@ -153,7 +153,7 @@ export const WorkspaceAuthWrapper: FC<IWorkspaceAuthWrapper> = observer((props) 
           </div>
           <div className="relative flex h-full w-full flex-grow flex-col items-center justify-center space-y-3">
             <div className="relative flex-shrink-0">
-              <Image src={WorkSpaceNotAvailable} className="h-[220px] object-contain object-center" alt="Youtrack logo" />
+              <Image src={WorkSpaceNotAvailable} className="h-[220px] object-contain object-center" alt="Utrack logo" />
             </div>
             <h3 className="text-center text-lg font-semibold">Workspace not found</h3>
             <p className="text-center text-sm text-custom-text-200">

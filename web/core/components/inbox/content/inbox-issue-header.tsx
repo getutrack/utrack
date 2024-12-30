@@ -15,7 +15,7 @@ import {
   MoveRight,
   Copy,
 } from "lucide-react";
-import { Button, ControlLink, CustomMenu, Row, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, ControlLink, CustomMenu, Row, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import {
   DeclineIssueModal,
@@ -33,7 +33,7 @@ import { copyUrlToClipboard } from "@/helpers/string.helper";
 // hooks
 import { useUser, useProjectInbox, useProject, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // store types
 import type { IInboxIssueStore } from "@/store/inbox/inbox-issue.store";
 

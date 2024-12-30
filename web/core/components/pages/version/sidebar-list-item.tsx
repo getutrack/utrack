@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
-// youtrack types
-import { TPageVersion } from "@youtrack/types";
-// youtrack ui
-import { Avatar } from "@youtrack/ui";
+// utrack types
+import { TPageVersion } from "@utrack/types";
+// utrack ui
+import { Avatar } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 import { renderFormattedDate, renderFormattedTime } from "@/helpers/date-time.helper";
@@ -17,7 +17,7 @@ type Props = {
   version: TPageVersion;
 };
 
-export const YoutrackVersionsSidebarListItem: React.FC<Props> = observer((props) => {
+export const UtrackVersionsSidebarListItem: React.FC<Props> = observer((props) => {
   const { href, isActive, version } = props;
   // store hooks
   const { getUserDetails } = useMember();

@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { Button, Input } from "@youtrack/ui";
+import { Button, Input } from "@utrack/ui";
 // services
 import { InstanceService } from "@/services/instance.service";
 

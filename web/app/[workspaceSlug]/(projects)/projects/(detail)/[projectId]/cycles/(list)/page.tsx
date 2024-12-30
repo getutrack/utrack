@@ -4,9 +4,9 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { TCycleFilters } from "@youtrack/types";
+import { TCycleFilters } from "@utrack/types";
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { PageHead } from "@/components/core";
 import { CyclesView, CycleCreateUpdateModal, CycleAppliedFiltersList } from "@/components/cycles";
 import { EmptyState } from "@/components/empty-state";

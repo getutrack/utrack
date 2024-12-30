@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 // icons
 import { ArchiveRestoreIcon, ExternalLink, Link, Trash2 } from "lucide-react";
 // ui
-import { ContextMenu, CustomMenu, TContextMenuItem, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { ContextMenu, CustomMenu, TContextMenuItem, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { DeleteIssueModal } from "@/components/issues";
 // constants
@@ -16,7 +16,7 @@ import { cn } from "@/helpers/common.helper";
 import { copyUrlToClipboard } from "@/helpers/string.helper";
 // hooks
 import { useEventTracker, useIssues, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // types
 import { IQuickActionProps } from "../list/list-view-types";
 

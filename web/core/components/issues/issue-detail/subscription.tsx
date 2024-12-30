@@ -5,10 +5,10 @@ import isNil from "lodash/isNil";
 import { observer } from "mobx-react";
 import { Bell, BellOff } from "lucide-react";
 // UI
-import { Button, Loader, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Loader, TOAST_TYPE, setToast } from "@utrack/ui";
 // hooks
 import { useIssueDetail, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export type TIssueSubscription = {
   workspaceSlug: string;

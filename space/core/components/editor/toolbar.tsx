@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState, useCallback } from "react";
 // editor
-import { EditorRefApi, TEditorCommands, TNonColorEditorCommands } from "@youtrack/editor";
+import { EditorRefApi, TEditorCommands, TNonColorEditorCommands } from "@utrack/editor";
 // ui
-import { Button, Tooltip } from "@youtrack/ui";
+import { Button, Tooltip } from "@utrack/ui";
 // constants
 import { TOOLBAR_ITEMS } from "@/constants/editor";
 // helpers

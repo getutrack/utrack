@@ -44,9 +44,9 @@ After installation, you can verify the installation by opening a terminal (Comma
 
 ---
 
-## Installing Youtrack
+## Installing Utrack
 
-Installing youtrack is a very easy and minimal step process.
+Installing utrack is a very easy and minimal step process.
 
 ### Prerequisite
 
@@ -58,11 +58,11 @@ Installing youtrack is a very easy and minimal step process.
 ### Downloading Latest Stable Release
 
 ```
-mkdir youtrack-selfhost
+mkdir utrack-selfhost
 
-cd youtrack-selfhost
+cd utrack-selfhost
 
-curl -fsSL -o setup.sh https://raw.githubusercontent.com/getutrack/youtrack/master/deploy/selfhost/install.sh
+curl -fsSL -o setup.sh https://raw.githubusercontent.com/getutrack/utrack/master/deploy/selfhost/install.sh
 
 chmod +x setup.sh
 ```
@@ -71,7 +71,7 @@ chmod +x setup.sh
 
 ### Proceed with setup
 
-Above steps will set you ready to install and start youtrack services.
+Above steps will set you ready to install and start utrack services.
 
 Lets get started by running the `./setup.sh` command.
 
@@ -92,10 +92,10 @@ Action [2]: 1
 
 For the 1st time setup, type "1" as action input.
 
-This will create a create a folder `youtrack-app` or `youtrack-app-preview` (in case of preview deployment) and will download 2 files inside that
+This will create a create a folder `utrack-app` or `utrack-app-preview` (in case of preview deployment) and will download 2 files inside that
 
 - `docker-compose.yaml`
-- `youtrack.env`
+- `utrack.env`
 
 Again the `options [1-8]` will be popped up and this time hit `8` to exit.
 
@@ -108,9 +108,9 @@ Below are the most import keys you must refer to. _<span style="color: #fcba03">
 
 > `NGINX_PORT` - This is default set to `80`. Make sure the port you choose to use is not preoccupied. (e.g `NGINX_PORT=8080`)
 
-> `WEB_URL` - This is default set to `http://localhost`. Change this to the FQDN you plan to use along with NGINX_PORT (eg. `https://youtrack.example.com:8080` or `http://[IP-ADDRESS]:8080`)
+> `WEB_URL` - This is default set to `http://localhost`. Change this to the FQDN you plan to use along with NGINX_PORT (eg. `https://utrack.example.com:8080` or `http://[IP-ADDRESS]:8080`)
 
-> `CORS_ALLOWED_ORIGINS` - This is default set to `http://localhost`. Change this to the FQDN you plan to use along with NGINX_PORT (eg. `https://youtrack.example.com:8080` or `http://[IP-ADDRESS]:8080`)
+> `CORS_ALLOWED_ORIGINS` - This is default set to `http://localhost`. Change this to the FQDN you plan to use along with NGINX_PORT (eg. `https://utrack.example.com:8080` or `http://[IP-ADDRESS]:8080`)
 
 There are many other settings you can play with, but we suggest you configure `EMAIL SETTINGS` as it will enable you to invite your teammates onto the platform.
 
@@ -134,16 +134,9 @@ Select a Action you want to perform:
 Action [2]: 2
 ```
 
-Expect something like this.  
-![Downloading docker images](images/download.png)
-
-Be patient as it might take sometime based on download speed and system configuration. If all goes well, you must see something like this
-
-![Downloading completed](images/started.png)
-
 This is the confirmation that all images were downloaded and the services are up & running.
 
-You have successfully self hosted `Youtrack` instance. Access the application by going to IP or domain you have configured it (e.g `https://youtrack.example.com:8080` or `http://[IP-ADDRESS]:8080`)
+You have successfully self hosted `Utrack` instance. Access the application by going to IP or domain you have configured it (e.g `https://utrack.example.com:8080` or `http://[IP-ADDRESS]:8080`)
 
 ---
 
@@ -167,10 +160,6 @@ Select a Action you want to perform:
 Action [2]: 3
 ```
 
-If all goes well, you must see something like this
-
-![Stop Services](images/stopped.png)
-
 ---
 
 ### Restarting the Server
@@ -193,15 +182,11 @@ Select a Action you want to perform:
 Action [2]: 4
 ```
 
-If all goes well, you must see something like this
-
-![Restart Services](images/restart.png)
-
 ---
 
-### Upgrading Youtrack Version
+### Upgrading Utrack Version
 
-It is always advised to keep Youtrack up to date with the latest release.
+It is always advised to keep Utrack up to date with the latest release.
 
 Lets again run the `./setup.sh` command. You will again be prompted with the below options. This time select `5` to upgrade the release.
 
@@ -219,17 +204,13 @@ Select a Action you want to perform:
 Action [2]: 5
 ```
 
-By choosing this, it will stop the services and then will download the latest `docker-compose.yaml` and `youtrack.env`.
-
-You must expect the below message
-
-![Alt text](images/upgrade.png)
+By choosing this, it will stop the services and then will download the latest `docker-compose.yaml` and `utrack.env`.
 
 Once done, choose `8` to exit from prompt.
 
-> It is very important for you to validate the `youtrack.env` for the new changes.
+> It is very important for you to validate the `utrack.env` for the new changes.
 
-Once done with making changes in `youtrack.env` file, jump on to `Start Server`
+Once done with making changes in `utrack.env` file, jump on to `Start Server`
 
 ---
 
@@ -346,11 +327,11 @@ Action [2]: 7
 In response, you can find the backup folder
 
 ```bash
-Backing Up youtrack-app_pgdata
-Backing Up youtrack-app_redisdata
-Backing Up youtrack-app_uploads
+Backing Up utrack-app_pgdata
+Backing Up utrack-app_redisdata
+Backing Up utrack-app_uploads
 
-Backup completed successfully. Backup files are stored in /....../youtrack-app/backup/20240502-1120
+Backup completed successfully. Backup files are stored in /....../utrack-app/backup/20240502-1120
 ```
 
 ---
@@ -359,12 +340,12 @@ Backup completed successfully. Backup files are stored in /....../youtrack-app/b
 
 When you want to restore the previously backed-up data, follow the instructions below.
 
-1. Make sure that Youtrack-CE is installed, started, and then stopped. This ensures that the Docker volumes are created.
+1. Make sure that Utrack-CE is installed, started, and then stopped. This ensures that the Docker volumes are created.
 
 1. Download the restore script using the command below. We suggest downloading it in the same folder as `setup.sh`.
 
    ```bash
-   curl -fsSL -o restore.sh https://raw.githubusercontent.com/getutrack/youtrack/master/deploy/selfhost/restore.sh
+   curl -fsSL -o restore.sh https://raw.githubusercontent.com/getutrack/utrack/master/deploy/selfhost/restore.sh
    chmod +x restore.sh
    ```
 
@@ -374,7 +355,7 @@ When you want to restore the previously backed-up data, follow the instructions 
    ./restore.sh <path to backup folder containing *.tar.gz files>
    ```
 
-   As an example, for a backup folder `/opt/youtrack-selfhost/youtrack-app/backup/20240722-0914`, expect the response below:
+   As an example, for a backup folder `/opt/utrack-selfhost/utrack-app/backup/20240722-0914`, expect the response below:
 
    ```bash
    --------------------------------------------------------------------
@@ -385,71 +366,20 @@ When you want to restore the previously backed-up data, follow the instructions 
    ██║   ╚██████╔╝╚██████╔╝   ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗
    ╚═╝    ╚═════╝  ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
    --------------------------------------------------------------------
-   Found /opt/youtrack-selfhost/youtrack-app/backup/20240722-0914/pgdata.tar.gz
-   .....Restoring youtrack-app_pgdata
-   .....Successfully restored volume youtrack-app_pgdata from pgdata.tar.gz
+   Found /opt/utrack-selfhost/utrack-app/backup/20240722-0914/pgdata.tar.gz
+   .....Restoring utrack-app_pgdata
+   .....Successfully restored volume utrack-app_pgdata from pgdata.tar.gz
 
-   Found /opt/youtrack-selfhost/youtrack-app/backup/20240722-0914/redisdata.tar.gz
-   .....Restoring youtrack-app_redisdata
-   .....Successfully restored volume youtrack-app_redisdata from redisdata.tar.gz
+   Found /opt/utrack-selfhost/utrack-app/backup/20240722-0914/redisdata.tar.gz
+   .....Restoring utrack-app_redisdata
+   .....Successfully restored volume utrack-app_redisdata from redisdata.tar.gz
 
-   Found /opt/youtrack-selfhost/youtrack-app/backup/20240722-0914/uploads.tar.gz
-   .....Restoring youtrack-app_uploads
-   .....Successfully restored volume youtrack-app_uploads from uploads.tar.gz
+   Found /opt/utrack-selfhost/utrack-app/backup/20240722-0914/uploads.tar.gz
+   .....Restoring utrack-app_uploads
+   .....Successfully restored volume utrack-app_uploads from uploads.tar.gz
 
 
    Restore completed successfully.
    ```
 
-1. Start the Youtrack instance using `./setup.sh start`.
-
----
-
-<details>
-   <summary><h2>Upgrading from v0.13.2 to v0.14.x</h2></summary>
-
-This is one time activity for users who are upgrading from v0.13.2 to v0.14.0
-
-As there has been significant changes to Self Hosting process, this step mainly covers the data migration from current (v0.13.2) docker volumes from newly created volumes
-
-> Before we begin with migration, make sure your v0.14.0 was started and then stopped. This is required to know the newly created docker volume names.
-
-Begin with downloading the migration script using below command
-
-```
-
-curl -fsSL -o migrate.sh https://raw.githubusercontent.com/getutrack/youtrack/master/deploy/selfhost/migration-0.13-0.14.sh
-
-chmod +x migrate.sh
-
-```
-
-Now run the `./migrate.sh` command and expect the instructions as below
-
-```
-******************************************************************
-
-This script is solely for the migration purpose only.
-This is a 1 time migration of volume data from v0.13.2 => v0.14.x
-
-Assumption:
-1. Postgres data volume name ends with _pgdata
-2. Minio data volume name ends with _uploads
-3. Redis data volume name ends with _redisdata
-
-Any changes to this script can break the migration.
-
-Before you proceed, make sure you run the below command
-to know the docker volumes
-
-docker volume ls -q | grep -i "_pgdata"
-docker volume ls -q | grep -i "_uploads"
-docker volume ls -q | grep -i "_redisdata"
-
-*******************************************************
-
-Given below list of REDIS volumes, identify the prefix of source and destination volumes leaving "_redisdata"
----------------------
-youtrack-app_redisdata
-v0132_redisdata
-
+1. Start the Utrack instance using `./setup.sh start`.

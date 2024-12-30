@@ -4,7 +4,7 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { ChevronDown, X } from "lucide-react";
 // ui
-import { ComboDropDown, DiceIcon, Tooltip } from "@youtrack/ui";
+import { ComboDropDown, DiceIcon, Tooltip } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks

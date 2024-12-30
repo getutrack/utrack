@@ -1,5 +1,5 @@
 // helpers
-import { IWebhook, IWorkspace } from "@youtrack/types";
+import { IWebhook, IWorkspace } from "@utrack/types";
 import { renderFormattedPayloadDate } from "@/helpers/date-time.helper";
 // types
 

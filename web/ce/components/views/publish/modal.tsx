@@ -1,6 +1,6 @@
 "use client";
 
-import { IProjectView } from "@youtrack/types";
+import { IProjectView } from "@utrack/types";
 
 type Props = {
   isOpen: boolean;

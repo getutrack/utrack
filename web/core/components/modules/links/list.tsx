@@ -1,8 +1,8 @@
 "use client";
 import { useCallback } from "react";
 import { observer } from "mobx-react";
-// youtrack types
-import { ILinkDetails } from "@youtrack/types";
+// utrack types
+import { ILinkDetails } from "@utrack/types";
 // components
 import { ModulesLinksListItem } from "@/components/modules";
 // hooks

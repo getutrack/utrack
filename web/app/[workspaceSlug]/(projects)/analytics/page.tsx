@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { Tab } from "@headlessui/react";
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { CustomAnalytics, ScopeAndDemand } from "@/components/analytics";
 import { PageHead } from "@/components/core";
 import { EmptyState } from "@/components/empty-state";

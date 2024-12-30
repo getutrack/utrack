@@ -5,8 +5,8 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { draggable, dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { attachInstruction, extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { observer } from "mobx-react";
-import { useOutsideClickDetector } from "@youtrack/helpers";
-import { DropIndicator, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { useOutsideClickDetector } from "@utrack/helpers";
+import { DropIndicator, TOAST_TYPE, setToast } from "@utrack/ui";
 import { HIGHLIGHT_WITH_LINE, highlightIssueOnDrop } from "@/components/issues/issue-layouts/utils";
 
 type Props = {

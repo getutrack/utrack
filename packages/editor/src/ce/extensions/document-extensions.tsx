@@ -1,8 +1,8 @@
 import { HocuspocusProvider } from "@hocuspocus/provider";
 import { Extensions } from "@tiptap/core";
 import { SlashCommands } from "@/extensions";
-// youtrack editor types
-import { TIssueEmbedConfig } from "@/youtrack-editor/types";
+// utrack editor types
+import { TIssueEmbedConfig } from "@/utrack-editor/types";
 // types
 import { TExtensions, TUserDetails } from "@/types";
 

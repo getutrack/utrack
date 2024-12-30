@@ -1,13 +1,13 @@
 import { useEffect, FC, useState } from "react";
-// youtrack ui
-import { EModalPosition, EModalWidth, ModalCore } from "@youtrack/ui";
+// utrack ui
+import { EModalPosition, EModalWidth, ModalCore } from "@utrack/ui";
 // helpers
 import { getAssetIdFromUrl } from "@/helpers/file.helper";
 import { checkURLValidity } from "@/helpers/string.helper";
-// youtrack web components
-import { CreateProjectForm } from "@/youtrack-web/components/projects/create/root";
-// youtrack web types
-import { TProject } from "@/youtrack-web/types/projects";
+// utrack web components
+import { CreateProjectForm } from "@/utrack-web/components/projects/create/root";
+// utrack web types
+import { TProject } from "@/utrack-web/types/projects";
 // services
 import { FileService } from "@/services/file.service";
 const fileService = new FileService();

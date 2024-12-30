@@ -1,5 +1,5 @@
 // type
-import { IModule } from "@youtrack/types";
+import { IModule } from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 // services

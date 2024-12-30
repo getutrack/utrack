@@ -3,10 +3,10 @@
 import { FC, useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// youtrack types
-import type { TIssueLinkEditableFields } from "@youtrack/types";
-// youtrack ui
-import { Button, Input, ModalCore } from "@youtrack/ui";
+// utrack types
+import type { TIssueLinkEditableFields } from "@utrack/types";
+// utrack ui
+import { Button, Input, ModalCore } from "@utrack/ui";
 // helpers
 import { checkURLValidity } from "@/helpers/string.helper";
 // hooks

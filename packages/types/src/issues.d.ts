@@ -10,7 +10,7 @@ import type {
   Properties,
   IIssueDisplayFilterOptions,
   TIssue,
-} from "@youtrack/types";
+} from "@utrack/types";
 
 export interface IIssueCycle {
   id: string;

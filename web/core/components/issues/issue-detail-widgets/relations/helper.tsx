@@ -2,8 +2,8 @@
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
 import { CircleDot, CopyPlus, XCircle } from "lucide-react";
-import { TIssue } from "@youtrack/types";
-import { RelatedIcon, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TIssue } from "@utrack/types";
+import { RelatedIcon, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { ISSUE_DELETED, ISSUE_UPDATED } from "@/constants/event-tracker";
 // helper

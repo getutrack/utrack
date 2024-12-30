@@ -14,8 +14,8 @@ import {
   TSubGroupedIssues,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@youtrack/types";
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+} from "@utrack/types";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 import { KanbanQuickAddIssueButton, QuickAddIssueRoot } from "@/components/issues";
 import { highlightIssueOnDrop } from "@/components/issues/issue-layouts/utils";
 import { KanbanIssueBlockLoader } from "@/components/ui";

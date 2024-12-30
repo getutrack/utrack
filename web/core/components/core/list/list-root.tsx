@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Row, ERowVariant } from "@youtrack/ui";
+import { Row, ERowVariant } from "@utrack/ui";
 
 interface IListContainer {
   children: React.ReactNode;

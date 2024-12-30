@@ -1,5 +1,5 @@
-// youtrack ui
-import { getButtonStyling } from "@youtrack/ui";
+// utrack ui
+import { getButtonStyling } from "@utrack/ui";
 // components
 import { ProIcon } from "@/components/common";
 // helpers
@@ -18,7 +18,7 @@ export const IssueEmbedUpgradeCard: React.FC<any> = (props) => (
       <div className="flex items-center gap-4">
         <ProIcon className="flex-shrink-0 size-4" />
         <p className="text-custom-text !text-base">
-          Embed and access issues in pages seamlessly, upgrade to Youtrack Pro now.
+          Embed and access issues in pages seamlessly, upgrade to Utrack Pro now.
         </p>
       </div>
       <a

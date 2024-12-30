@@ -1,4 +1,4 @@
-import type { TIssue, IIssueFilterOptions, ILinkDetails } from "@youtrack/types";
+import type { TIssue, IIssueFilterOptions, ILinkDetails } from "@utrack/types";
 
 export type TModuleStatus =
   | "backlog"

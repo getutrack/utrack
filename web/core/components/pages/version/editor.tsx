@@ -1,18 +1,18 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// youtrack editor
-import { DocumentReadOnlyEditorWithRef, TDisplayConfig } from "@youtrack/editor";
-// youtrack types
-import { IUserLite, TPageVersion } from "@youtrack/types";
-// youtrack ui
-import { Loader } from "@youtrack/ui";
+// utrack editor
+import { DocumentReadOnlyEditorWithRef, TDisplayConfig } from "@utrack/editor";
+// utrack types
+import { IUserLite, TPageVersion } from "@utrack/types";
+// utrack ui
+import { Loader } from "@utrack/ui";
 // helpers
 import { getReadOnlyEditorFileHandlers } from "@/helpers/editor.helper";
 // hooks
 import { useMember, useMention, useUser } from "@/hooks/store";
 import { usePageFilters } from "@/hooks/use-page-filters";
-// youtrack web hooks
-import { useIssueEmbed } from "@/youtrack-web/hooks/use-issue-embed";
+// utrack web hooks
+import { useIssueEmbed } from "@/utrack-web/hooks/use-issue-embed";
 
 export type TVersionEditorProps = {
   activeVersion: string | null;

@@ -4,9 +4,9 @@ import { Dispatch, SetStateAction, useEffect, useState, FC } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // types
-import { IWorkspace } from "@youtrack/types";
+import { IWorkspace } from "@utrack/types";
 // ui
-import { Button, CustomSelect, Input, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, CustomSelect, Input, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { WORKSPACE_CREATED } from "@/constants/event-tracker";
 import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@/constants/workspace";
@@ -14,7 +14,7 @@ import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@/constants/workspace";
 import { useEventTracker, useWorkspace } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
 // services
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 
 type Props = {
   onSubmit?: (res: IWorkspace) => Promise<void>;

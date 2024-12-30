@@ -2,8 +2,8 @@
 import React, { FC } from "react";
 import { observer } from "mobx-react";
 import { LayersIcon, Plus } from "lucide-react";
-import { TIssue } from "@youtrack/types";
-import { CustomMenu } from "@youtrack/ui";
+import { TIssue } from "@utrack/types";
+import { CustomMenu } from "@utrack/ui";
 // hooks
 import { useEventTracker, useIssueDetail } from "@/hooks/store";
 

@@ -1,5 +1,5 @@
 // services
-import type { IState } from "@youtrack/types";
+import type { IState } from "@utrack/types";
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { APIService } from "@/services/api.service";
 // helpers

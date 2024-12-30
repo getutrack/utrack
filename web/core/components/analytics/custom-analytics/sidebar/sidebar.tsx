@@ -7,9 +7,9 @@ import { mutate } from "swr";
 // icons
 import { CalendarDays, Download, RefreshCw } from "lucide-react";
 // types
-import { IAnalyticsParams, IAnalyticsResponse, IExportAnalyticsFormData, IWorkspace } from "@youtrack/types";
+import { IAnalyticsParams, IAnalyticsResponse, IExportAnalyticsFormData, IWorkspace } from "@utrack/types";
 // ui
-import { Button, LayersIcon, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, LayersIcon, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { CustomAnalyticsSidebarHeader, CustomAnalyticsSidebarProjectsList } from "@/components/analytics";
 // constants

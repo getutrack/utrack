@@ -65,7 +65,7 @@ http {
             proxy_set_header Upgrade ${dollar}http_upgrade;
             proxy_set_header Connection "upgrade";
             proxy_set_header Host ${dollar}http_host;
-            proxy_pass http://youtrack-minio:9000/${BUCKET_NAME};
+            proxy_pass http://utrack-minio:9000/${BUCKET_NAME};
         }
     }
 }

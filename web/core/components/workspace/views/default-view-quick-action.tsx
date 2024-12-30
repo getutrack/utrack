@@ -4,8 +4,8 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { ExternalLink, LinkIcon } from "lucide-react";
 // ui
-import { TStaticViewTypes } from "@youtrack/types";
-import { ContextMenu, CustomMenu, TContextMenuItem, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TStaticViewTypes } from "@utrack/types";
+import { ContextMenu, CustomMenu, TContextMenuItem, TOAST_TYPE, setToast } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 import { copyUrlToClipboard } from "@/helpers/string.helper";

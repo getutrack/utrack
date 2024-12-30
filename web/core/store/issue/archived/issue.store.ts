@@ -1,6 +1,6 @@
 import { action, makeObservable, runInAction } from "mobx";
 // base class
-import { TLoader, IssuePaginationOptions, TIssuesResponse, ViewFlags, TBulkOperationsPayload } from "@youtrack/types";
+import { TLoader, IssuePaginationOptions, TIssuesResponse, ViewFlags, TBulkOperationsPayload } from "@utrack/types";
 // services
 // types
 import { BaseIssuesStore, IBaseIssuesStore } from "../helpers/base-issues.store";

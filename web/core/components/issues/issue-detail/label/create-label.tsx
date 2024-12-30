@@ -6,9 +6,9 @@ import { Controller, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { Plus, X, Loader } from "lucide-react";
 import { Popover } from "@headlessui/react";
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 // hooks
-import { Input } from "@youtrack/ui";
+import { Input } from "@utrack/ui";
 // ui
 // types
 import { TLabelOperations } from "./root";

@@ -1,4 +1,4 @@
-import { IProjectLite, IWorkspaceLite } from "@youtrack/types";
+import { IProjectLite, IWorkspaceLite } from "@utrack/types";
 
 export interface IGptResponse {
   response: string;

@@ -3,7 +3,7 @@
 import React, { FC, useState } from "react";
 import { useParams } from "next/navigation";
 // ui
-import { AlertModalCore, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { AlertModalCore, TOAST_TYPE, setToast } from "@utrack/ui";
 // hooks
 import { useWebhook } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";

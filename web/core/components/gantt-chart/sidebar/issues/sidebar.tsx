@@ -3,7 +3,7 @@
 import { RefObject, useState } from "react";
 import { observer } from "mobx-react";
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 // components
 import { IGanttBlock, IBlockUpdateData } from "@/components/gantt-chart/types";
 //hooks

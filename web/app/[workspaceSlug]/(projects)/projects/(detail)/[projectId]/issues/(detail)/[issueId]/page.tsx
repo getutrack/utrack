@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/common";
 import { PageHead } from "@/components/core";

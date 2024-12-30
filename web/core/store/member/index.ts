@@ -1,7 +1,7 @@
 import { makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
 // type
-import { IUserLite } from "@youtrack/types";
+import { IUserLite } from "@utrack/types";
 // store
 import { CoreRootStore } from "../root.store";
 import { IProjectMemberStore, ProjectMemberStore } from "./project-member.store";

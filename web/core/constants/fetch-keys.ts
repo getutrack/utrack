@@ -1,4 +1,4 @@
-import { IAnalyticsParams, IJiraMetadata } from "@youtrack/types";
+import { IAnalyticsParams, IJiraMetadata } from "@utrack/types";
 
 const paramsToKey = (params: any) => {
   const {

@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // ui
-import { ArchiveIcon, Breadcrumbs, Tooltip, Header } from "@youtrack/ui";
+import { ArchiveIcon, Breadcrumbs, Tooltip, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink, Logo } from "@/components/common";
 // constants

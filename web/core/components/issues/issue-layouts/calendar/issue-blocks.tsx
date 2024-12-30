@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { TIssue, TPaginationData } from "@youtrack/types";
+import { TIssue, TPaginationData } from "@utrack/types";
 // components
 import { CalendarQuickAddIssueActions, CalendarIssueBlockRoot } from "@/components/issues";
 // helpers

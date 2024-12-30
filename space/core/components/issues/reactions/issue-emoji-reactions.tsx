@@ -3,7 +3,7 @@
 import { observer } from "mobx-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 // lib
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 import { ReactionSelector } from "@/components/ui";
 // helpers
 import { groupReactions, renderEmoji } from "@/helpers/emoji.helper";

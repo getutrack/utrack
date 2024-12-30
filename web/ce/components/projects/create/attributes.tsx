@@ -1,9 +1,9 @@
 "use client";
 import { FC } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-import { IProject } from "@youtrack/types";
+import { IProject } from "@utrack/types";
 // ui
-import { CustomSelect } from "@youtrack/ui";
+import { CustomSelect } from "@utrack/ui";
 // components
 import { MemberDropdown } from "@/components/dropdowns";
 // constants

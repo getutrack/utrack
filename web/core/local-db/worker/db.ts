@@ -34,7 +34,7 @@ export class DBClass {
     try {
       const m = await SQLiteESMFactory();
       this.sqlite3 = SQLite.Factory(m);
-      const vfs = await MyVFS.create("youtrack", m);
+      const vfs = await MyVFS.create("utrack", m);
       this.sqlite3.vfs_register(vfs, true);
       const db = await this.sqlite3.open_v2(`${dbName}.sqlite3`);
       this.instance.db = db;

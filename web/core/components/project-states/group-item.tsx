@@ -3,7 +3,7 @@
 import { FC, useState } from "react";
 import { observer } from "mobx-react";
 import { Plus } from "lucide-react";
-import { IState, TStateGroups } from "@youtrack/types";
+import { IState, TStateGroups } from "@utrack/types";
 // components
 import { StateList, StateCreate } from "@/components/project-states";
 import { useUserPermissions } from "@/hooks/store";

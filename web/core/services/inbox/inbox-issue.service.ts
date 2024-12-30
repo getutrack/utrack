@@ -1,5 +1,5 @@
 // types
-import type { TInboxIssue, TIssue, TInboxIssueWithPagination, TInboxForm } from "@youtrack/types";
+import type { TInboxIssue, TIssue, TInboxIssueWithPagination, TInboxForm } from "@utrack/types";
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { APIService } from "@/services/api.service";
 // helpers

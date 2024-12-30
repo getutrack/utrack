@@ -4,7 +4,7 @@ import { FC, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 // services
 import { Eye, EyeOff } from "lucide-react";
-import { Button, Input, Spinner } from "@youtrack/ui";
+import { Button, Input, Spinner } from "@utrack/ui";
 // components
 import { Banner } from "@/components/common";
 // helpers
@@ -114,7 +114,7 @@ export const InstanceSignInForm: FC = (props) => {
       <div className="relative flex flex-col space-y-6">
         <div className="text-center space-y-1">
           <h3 className="flex gap-4 justify-center text-3xl font-bold text-onboarding-text-100">
-            Manage your Youtrack instance
+            Manage your Utrack instance
           </h3>
           <p className="font-medium text-onboarding-text-400">
             Configure instance-wide settings to secure your instance

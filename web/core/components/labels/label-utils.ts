@@ -1,5 +1,5 @@
 import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
-import { IIssueLabel, IPragmaticPayloadLocation, InstructionType, TDropTarget } from "@youtrack/types";
+import { IIssueLabel, IPragmaticPayloadLocation, InstructionType, TDropTarget } from "@utrack/types";
 
 export type TargetData = {
   id: string;

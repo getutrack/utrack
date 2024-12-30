@@ -1,8 +1,8 @@
 import differenceInCalendarDays from "date-fns/differenceInCalendarDays";
 // helpers
-import { IIssueFilters } from "@youtrack/types";
+import { IIssueFilters } from "@utrack/types";
 import { getDate } from "./date-time.helper";
-// import { IIssueFilterOptions } from "@youtrack/types";
+// import { IIssueFilterOptions } from "@utrack/types";
 
 /**
  * @description calculates the total number of filters applied

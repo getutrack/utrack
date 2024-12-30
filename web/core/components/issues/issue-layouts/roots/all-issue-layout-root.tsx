@@ -3,9 +3,9 @@ import isEmpty from "lodash/isEmpty";
 import { observer } from "mobx-react";
 import { useParams, useSearchParams } from "next/navigation";
 import useSWR from "swr";
-// youtrack constants
-import { ALL_ISSUES } from "@youtrack/constants";
-import { IIssueDisplayFilterOptions } from "@youtrack/types";
+// utrack constants
+import { ALL_ISSUES } from "@utrack/constants";
+import { IIssueDisplayFilterOptions } from "@utrack/types";
 // hooks
 // components
 import { EmptyState } from "@/components/common";
@@ -25,7 +25,7 @@ import { useAppRouter } from "@/hooks/use-app-router";
 import { IssuesStoreContext } from "@/hooks/use-issue-layout-store";
 import { useIssuesActions } from "@/hooks/use-issues-actions";
 import { useWorkspaceIssueProperties } from "@/hooks/use-workspace-issue-properties";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // store
 import emptyView from "@/public/empty-state/view.svg";
 import { IssuePeekOverview } from "../../peek-overview";

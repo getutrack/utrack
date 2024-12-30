@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { TPageNavigationTabs } from "@youtrack/types";
+import { TPageNavigationTabs } from "@utrack/types";
 // components
 import { PagesListHeaderRoot, PagesListMainContent } from "@/components/pages";
 // hooks

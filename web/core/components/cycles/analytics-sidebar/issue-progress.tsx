@@ -7,7 +7,7 @@ import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { ICycle, IIssueFilterOptions, TCyclePlotType, TProgressSnapshot } from "@youtrack/types";
+import { ICycle, IIssueFilterOptions, TCyclePlotType, TProgressSnapshot } from "@utrack/types";
 // components
 import { CycleProgressStats } from "@/components/cycles";
 // constants
@@ -16,8 +16,8 @@ import { EIssueFilterType, EIssuesStoreType } from "@/constants/issue";
 import { getDate } from "@/helpers/date-time.helper";
 // hooks
 import { useIssues, useCycle } from "@/hooks/store";
-// youtrack web components
-import { SidebarChartRoot } from "@/youtrack-web/components/cycles";
+// utrack web components
+import { SidebarChartRoot } from "@/utrack-web/components/cycles";
 
 type TCycleAnalyticsProgress = {
   workspaceSlug: string;

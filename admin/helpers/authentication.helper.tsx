@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { KeyRound, Mails } from "lucide-react";
 // types
-import { TGetBaseAuthenticationModeProps, TInstanceAuthenticationModes } from "@youtrack/types";
+import { TGetBaseAuthenticationModeProps, TInstanceAuthenticationModes } from "@utrack/types";
 // components
 import {
   EmailCodesConfiguration,
@@ -161,7 +161,7 @@ export const getBaseAuthenticationModes: (props: TGetBaseAuthenticationModeProps
       key: "unique-codes",
       name: "Unique codes",
       description:
-        "Log in or sign up for Youtrack using codes sent via email. You need to have set up SMTP to use this method.",
+        "Log in or sign up for Utrack using codes sent via email. You need to have set up SMTP to use this method.",
       icon: <Mails className="h-6 w-6 p-0.5 text-custom-text-300/80" />,
       config: <EmailCodesConfiguration disabled={disabled} updateConfig={updateConfig} />,
     },
@@ -175,14 +175,14 @@ export const getBaseAuthenticationModes: (props: TGetBaseAuthenticationModeProps
     {
       key: "google",
       name: "Google",
-      description: "Allow members to log in or sign up for Youtrack with their Google accounts.",
+      description: "Allow members to log in or sign up for Utrack with their Google accounts.",
       icon: <Image src={GoogleLogo} height={20} width={20} alt="Google Logo" />,
       config: <GoogleConfiguration disabled={disabled} updateConfig={updateConfig} />,
     },
     {
       key: "github",
       name: "GitHub",
-      description: "Allow members to log in or sign up for Youtrack with their GitHub accounts.",
+      description: "Allow members to log in or sign up for Utrack with their GitHub accounts.",
       icon: (
         <Image
           src={resolveGeneralTheme(resolvedTheme) === "dark" ? githubDarkModeImage : githubLightModeImage}
@@ -196,7 +196,7 @@ export const getBaseAuthenticationModes: (props: TGetBaseAuthenticationModeProps
     {
       key: "gitlab",
       name: "GitLab",
-      description: "Allow members to log in or sign up to youtrack with their GitLab accounts.",
+      description: "Allow members to log in or sign up to utrack with their GitLab accounts.",
       icon: <Image src={GitlabLogo} height={20} width={20} alt="GitLab Logo" />,
       config: <GitlabConfiguration disabled={disabled} updateConfig={updateConfig} />,
     },

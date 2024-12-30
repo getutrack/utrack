@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Youtrack | Accelerate software development with peace.",
-  "short_name": "Youtrack",
-  "description": "Youtrack accelerated the software development by order of magnitude for agencies and product companies.",
+  "name": "Utrack | Accelerate software development with peace.",
+  "short_name": "Utrack",
+  "description": "Utrack accelerated the software development by order of magnitude for agencies and product companies.",
   "icons": [
     {
       "src": "/icon-192x192.png",

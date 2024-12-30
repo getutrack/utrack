@@ -8,9 +8,9 @@ import useSWR from "swr";
 import { FolderPlus, Search, Settings } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // types
-import { IWorkspaceSearchResults } from "@youtrack/types";
+import { IWorkspaceSearchResults } from "@utrack/types";
 // ui
-import { LayersIcon, Loader, ToggleSwitch, Tooltip } from "@youtrack/ui";
+import { LayersIcon, Loader, ToggleSwitch, Tooltip } from "@utrack/ui";
 // components
 import {
   ChangeIssueAssignee,
@@ -35,10 +35,10 @@ import { useCommandPalette, useEventTracker, useProject, useUser, useUserPermiss
 import { useAppRouter } from "@/hooks/use-app-router";
 import useDebounce from "@/hooks/use-debounce";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
-// youtrack web services
-import { WorkspaceService } from "@/youtrack-web/services";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
+// utrack web services
+import { WorkspaceService } from "@/utrack-web/services";
 // services
 import { IssueService } from "@/services/issue";
 import { EUserPermissions, EUserPermissionsLevel } from "ee/constants/user-permissions";

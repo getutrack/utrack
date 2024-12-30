@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { Control, Controller, UseFormSetValue } from "react-hook-form";
 // types
-import { IAnalyticsParams } from "@youtrack/types";
+import { IAnalyticsParams } from "@utrack/types";
 // ui
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 // components
 import { SelectProject, SelectSegment, SelectXAxis, SelectYAxis } from "@/components/analytics";
 import { ANALYTICS_X_AXIS_VALUES } from "@/constants/analytics";

@@ -4,7 +4,7 @@ import { APIService } from "@/services/api.service";
 // helper
 // types
 // FIXME:
-// import { TAppConfig } from "@youtrack/types";
+// import { TAppConfig } from "@utrack/types";
 
 export class AppConfigService extends APIService {
   constructor() {

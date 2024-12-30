@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 // components
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 import { SidebarNavItem } from "@/components/sidebar";
 import { NotificationAppSidebarOption } from "@/components/workspace-notifications";
 // constants
@@ -16,7 +16,7 @@ import { cn } from "@/helpers/common.helper";
 // hooks
 import { useAppTheme, useEventTracker, useUser, useUserPermissions } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-import { EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const SidebarUserMenu = observer(() => {
   // store hooks

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { observer } from "mobx-react";
 import { Tab } from "@headlessui/react";
-import { ICycle, IModule, IProject } from "@youtrack/types";
+import { ICycle, IModule, IProject } from "@utrack/types";
 // components
 import { CustomAnalytics, ScopeAndDemand } from "@/components/analytics";
 // types

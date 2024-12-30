@@ -1,7 +1,7 @@
 import { endOfMonth, endOfWeek, endOfYear, startOfMonth, startOfWeek, startOfYear } from "date-fns";
 // helpers
 // types
-import { TIssuesListTypes } from "@youtrack/types";
+import { TIssuesListTypes } from "@utrack/types";
 // constants
 import { DURATION_FILTER_OPTIONS, EDurationFilters } from "@/constants/dashboard";
 import { renderFormattedDate, renderFormattedPayloadDate } from "./date-time.helper";

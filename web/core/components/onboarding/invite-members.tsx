@@ -18,9 +18,9 @@ import {
 import { Check, ChevronDown, Plus, XCircle } from "lucide-react";
 import { Listbox, Transition } from "@headlessui/react";
 // types
-import { IUser, IWorkspace } from "@youtrack/types";
+import { IUser, IWorkspace } from "@utrack/types";
 // ui
-import { Button, Input, Spinner, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Input, Spinner, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { MEMBER_INVITED } from "@/constants/event-tracker";
 import { ROLE, ROLE_DETAILS } from "@/constants/workspace";
@@ -29,10 +29,10 @@ import { getUserRole } from "@/helpers/user.helper";
 // hooks
 import { useEventTracker } from "@/hooks/store";
 import useDynamicDropdownPosition from "@/hooks/use-dynamic-dropdown";
-// youtrack web constants
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+// utrack web constants
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 // services
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 // assets
 import InviteMembersDark from "@/public/onboarding/invite-members-dark.webp";
 import InviteMembersLight from "@/public/onboarding/invite-members-light.webp";
@@ -76,16 +76,16 @@ const workspaceService = new WorkspaceService();
 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
 const placeholderEmails = [
-  "charlie.taylor@youtrack.com",
-  "octave.chanute@youtrack.com",
-  "george.spratt@youtrack.com",
-  "frank.coffyn@youtrack.com",
-  "amos.root@youtrack.com",
-  "edward.deeds@youtrack.com",
-  "charles.m.manly@youtrack.com",
-  "glenn.curtiss@youtrack.com",
-  "thomas.selfridge@youtrack.com",
-  "albert.zahm@youtrack.com",
+  "charlie.taylor@utrack.com",
+  "octave.chanute@utrack.com",
+  "george.spratt@utrack.com",
+  "frank.coffyn@utrack.com",
+  "amos.root@utrack.com",
+  "edward.deeds@utrack.com",
+  "charles.m.manly@utrack.com",
+  "glenn.curtiss@utrack.com",
+  "thomas.selfridge@utrack.com",
+  "albert.zahm@utrack.com",
 ];
 const InviteMemberInput: React.FC<InviteMemberFormProps> = (props) => {
   const {
@@ -377,7 +377,7 @@ export const InviteMembers: React.FC<Props> = (props) => {
           <div className="text-center space-y-1 py-4 mx-auto w-4/5">
             <h3 className="text-3xl font-bold text-onboarding-text-100">Invite your teammates</h3>
             <p className="font-medium text-onboarding-text-400">
-              Work in youtrack happens best with your team. Invite them now to use Youtrack to its potential.
+              Work in utrack happens best with your team. Invite them now to use Utrack to its potential.
             </p>
           </div>
           <form

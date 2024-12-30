@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import useSWR from "swr";
 // mobx store
 // components
-import { Row, ERowVariant } from "@youtrack/ui";
+import { Row, ERowVariant } from "@utrack/ui";
 import { LogoSpinner } from "@/components/common";
 import {
   IssuePeekOverview,

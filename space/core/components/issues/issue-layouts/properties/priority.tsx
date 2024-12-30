@@ -1,8 +1,8 @@
 "use client";
 
 // types
-import { TIssuePriorities } from "@youtrack/types";
-import { Tooltip } from "@youtrack/ui";
+import { TIssuePriorities } from "@utrack/types";
+import { Tooltip } from "@utrack/ui";
 // constants
 import { issuePriorityFilter } from "@/constants/issue";
 

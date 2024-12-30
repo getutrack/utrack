@@ -4,7 +4,7 @@ import React, { FC } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 // ui
-import { Button, getButtonStyling, Row } from "@youtrack/ui";
+import { Button, getButtonStyling, Row } from "@utrack/ui";
 // components
 import { Logo } from "@/components/common";
 import { ProjectFeaturesList } from "@/components/project/settings";

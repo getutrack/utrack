@@ -40,6 +40,6 @@ const Badge = React.forwardRef<HTMLButtonElement, BadgeProps>((props, ref) => {
   );
 });
 
-Badge.displayName = "youtrack-ui-badge";
+Badge.displayName = "utrack-ui-badge";
 
 export { Badge };

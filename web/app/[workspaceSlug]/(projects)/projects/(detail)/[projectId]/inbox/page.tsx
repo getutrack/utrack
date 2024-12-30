@@ -36,7 +36,7 @@ const ProjectInboxPage = observer(() => {
     );
 
   // derived values
-  const pageTitle = currentProjectDetails?.name ? `${currentProjectDetails?.name} - Intake` : "Youtrack - Intake";
+  const pageTitle = currentProjectDetails?.name ? `${currentProjectDetails?.name} - Intake` : "Utrack - Intake";
 
   const currentNavigationTab = navigationTab
     ? navigationTab === "open"

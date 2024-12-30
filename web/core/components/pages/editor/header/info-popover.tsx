@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { usePopper } from "react-popper";
 import { Info } from "lucide-react";
-// youtrack editor
-import { EditorReadOnlyRefApi, EditorRefApi } from "@youtrack/editor";
+// utrack editor
+import { EditorReadOnlyRefApi, EditorRefApi } from "@utrack/editor";
 // helpers
 import { getReadTimeFromWordsCount } from "@/helpers/date-time.helper";
 

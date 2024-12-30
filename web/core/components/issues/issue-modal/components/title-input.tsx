@@ -4,9 +4,9 @@ import React from "react";
 import { observer } from "mobx-react";
 import { Control, Controller, FieldErrors } from "react-hook-form";
 // types
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // ui
-import { Input } from "@youtrack/ui";
+import { Input } from "@utrack/ui";
 // constants
 import { ETabIndices } from "@/constants/tab-indices";
 // helpers

@@ -3,10 +3,10 @@
 import { Dispatch, SetStateAction, useEffect, useMemo } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
-// youtrack types
-import { TIssue } from "@youtrack/types";
-// youtrack ui
-import { Loader, TOAST_TYPE, setToast } from "@youtrack/ui";
+// utrack types
+import { TIssue } from "@utrack/types";
+// utrack ui
+import { Loader, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { InboxIssueContentProperties } from "@/components/inbox/content";
 import {

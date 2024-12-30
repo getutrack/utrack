@@ -1,5 +1,5 @@
 import sortBy from "lodash/sortBy";
-import { IModule, TModuleDisplayFilters, TModuleFilters, TModuleOrderByOptions } from "@youtrack/types";
+import { IModule, TModuleDisplayFilters, TModuleFilters, TModuleOrderByOptions } from "@utrack/types";
 // helpers
 import { getDate } from "@/helpers/date-time.helper";
 import { satisfiesDateFilter } from "@/helpers/filter.helper";

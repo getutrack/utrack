@@ -6,8 +6,8 @@ import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { AlertCircle, ChevronUp, ChevronDown } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { IIssueFilterOptions, TModulePlotType } from "@youtrack/types";
-import { CustomSelect, Spinner } from "@youtrack/ui";
+import { IIssueFilterOptions, TModulePlotType } from "@utrack/types";
+import { CustomSelect, Spinner } from "@utrack/ui";
 // components
 import ProgressChart from "@/components/core/sidebar/progress-chart";
 import { ModuleProgressStats } from "@/components/modules";
@@ -17,8 +17,8 @@ import { EIssueFilterType, EIssuesStoreType } from "@/constants/issue";
 import { getDate } from "@/helpers/date-time.helper";
 // hooks
 import { useIssues, useModule, useProjectEstimates } from "@/hooks/store";
-// youtrack web constants
-import { EEstimateSystem } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { EEstimateSystem } from "@/utrack-web/constants/estimates";
 
 type TModuleAnalyticsProgress = {
   workspaceSlug: string;

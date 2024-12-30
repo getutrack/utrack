@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // components
 import { PageHead } from "@/components/core";
 import { EmptyState } from "@/components/empty-state";

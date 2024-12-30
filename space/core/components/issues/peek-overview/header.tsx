@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { Link2, MoveRight } from "lucide-react";
 import { Listbox, Transition } from "@headlessui/react";
 // ui
-import { CenterPanelIcon, FullScreenPanelIcon, setToast, SidePanelIcon, TOAST_TYPE } from "@youtrack/ui";
+import { CenterPanelIcon, FullScreenPanelIcon, setToast, SidePanelIcon, TOAST_TYPE } from "@utrack/ui";
 // helpers
 import { copyTextToClipboard } from "@/helpers/string.helper";
 // hooks

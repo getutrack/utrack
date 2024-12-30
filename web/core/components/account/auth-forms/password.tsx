@@ -6,7 +6,7 @@ import Link from "next/link";
 // icons
 import { Eye, EyeOff, Info, X, XCircle } from "lucide-react";
 // ui
-import { Button, Input, Spinner } from "@youtrack/ui";
+import { Button, Input, Spinner } from "@utrack/ui";
 // components
 import { ForgotPasswordPopover, PasswordStrengthMeter } from "@/components/account";
 // constants

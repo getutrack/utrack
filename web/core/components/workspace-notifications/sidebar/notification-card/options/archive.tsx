@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { ArchiveRestore } from "lucide-react";
-import { ArchiveIcon, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { ArchiveIcon, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { NotificationItemOptionButton } from "@/components/workspace-notifications";
 // constants

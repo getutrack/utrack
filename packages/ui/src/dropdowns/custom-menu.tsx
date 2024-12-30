@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import { Menu } from "@headlessui/react";
 import { usePopper } from "react-popper";
 import { ChevronDown, MoreHorizontal } from "lucide-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // hooks
 import { useDropdownKeyDown } from "../hooks/use-dropdown-key-down";
 // helpers

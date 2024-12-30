@@ -2,7 +2,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import { CalendarClock } from "lucide-react";
 // types
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // components
 import { DateDropdown } from "@/components/dropdowns";
 // helpers

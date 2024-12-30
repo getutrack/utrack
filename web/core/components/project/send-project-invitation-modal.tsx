@@ -7,7 +7,7 @@ import { useForm, Controller, useFieldArray } from "react-hook-form";
 import { ChevronDown, Plus, X } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { Avatar, Button, CustomSelect, CustomSearchSelect, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Avatar, Button, CustomSelect, CustomSearchSelect, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { PROJECT_MEMBER_ADDED } from "@/constants/event-tracker";
 import { ROLE } from "@/constants/workspace";
@@ -15,8 +15,8 @@ import { ROLE } from "@/constants/workspace";
 import { getFileURL } from "@/helpers/file.helper";
 // hooks
 import { useEventTracker, useMember, useUserPermissions } from "@/hooks/store";
-// youtrack-web constants
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+// utrack-web constants
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   isOpen: boolean;

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { PlusIcon } from "lucide-react";
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 import { TQuickAddIssueButton } from "../root";
 
 export const GanttQuickAddIssueButton: FC<TQuickAddIssueButton> = observer((props) => {

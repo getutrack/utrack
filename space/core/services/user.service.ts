@@ -1,5 +1,5 @@
 // types
-import { IUser, TUserProfile } from "@youtrack/types";
+import { IUser, TUserProfile } from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 // services

@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import { observer } from "mobx-react";
-import { IState, TStateGroups } from "@youtrack/types";
+import { IState, TStateGroups } from "@utrack/types";
 // components
 import { StateItem } from "@/components/project-states";
 

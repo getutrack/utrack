@@ -3,10 +3,10 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { Control, Controller, UseFormWatch } from "react-hook-form";
-import { IWorkspaceIntegration } from "@youtrack/types";
+import { IWorkspaceIntegration } from "@utrack/types";
 // hooks
 // components
-import { Button, CustomSearchSelect, ToggleSwitch } from "@youtrack/ui";
+import { Button, CustomSearchSelect, ToggleSwitch } from "@utrack/ui";
 import { SelectRepository, TFormValues, TIntegrationSteps } from "@/components/integration";
 // ui
 // helpers

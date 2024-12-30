@@ -1,7 +1,7 @@
 import isEmpty from "lodash/isEmpty";
 import uniq from "lodash/uniq";
-import { ALL_ISSUES } from "@youtrack/constants";
-import { TIssue } from "@youtrack/types";
+import { ALL_ISSUES } from "@utrack/constants";
+import { TIssue } from "@utrack/types";
 import { EIssueGroupedAction } from "./base-issues.store";
 
 /**

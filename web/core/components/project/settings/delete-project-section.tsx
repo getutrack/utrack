@@ -4,9 +4,9 @@ import React from "react";
 import { ChevronRight, ChevronUp } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
 // types
-import { IProject } from "@youtrack/types";
+import { IProject } from "@utrack/types";
 // ui
-import { Button, Loader } from "@youtrack/ui";
+import { Button, Loader } from "@utrack/ui";
 
 export interface IDeleteProjectSection {
   projectDetails: IProject;

@@ -1,5 +1,5 @@
-// youtrack editor
-import { TFileHandler } from "@youtrack/editor";
+// utrack editor
+import { TFileHandler } from "@utrack/editor";
 // constants
 import { MAX_FILE_SIZE } from "@/constants/common";
 // helpers

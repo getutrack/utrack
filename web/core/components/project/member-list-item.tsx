@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 
-import { TOAST_TYPE, Table, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, Table, setToast } from "@utrack/ui";
 // components
 import { ConfirmProjectMemberRemove } from "@/components/project";
 // constants
@@ -11,7 +11,7 @@ import { PROJECT_MEMBER_LEAVE } from "@/constants/event-tracker";
 // hooks
 import { useEventTracker, useMember, useProject, useUser, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-import { useProjectColumns } from "@/youtrack-web/components/projects/settings/useProjectColumns";
+import { useProjectColumns } from "@/utrack-web/components/projects/settings/useProjectColumns";
 import { IProjectMemberDetails } from "@/store/member/project-member.store";
 
 type Props = {

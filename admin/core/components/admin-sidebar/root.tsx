@@ -2,8 +2,8 @@
 
 import { FC, useEffect, useRef } from "react";
 import { observer } from "mobx-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // components
 import { HelpSection, SidebarMenu, SidebarDropdown } from "@/components/admin-sidebar";
 // hooks

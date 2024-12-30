@@ -1,7 +1,7 @@
 "use client";
 import React, { FC } from "react";
 import { observer } from "mobx-react";
-import { TIssue, TIssueRelationTypes } from "@youtrack/types";
+import { TIssue, TIssueRelationTypes } from "@utrack/types";
 // components
 import { RelationIssueListItem } from "@/components/issues/relations";
 // types

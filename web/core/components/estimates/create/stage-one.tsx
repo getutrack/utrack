@@ -2,13 +2,13 @@
 
 import { FC } from "react";
 import { Info } from "lucide-react";
-import { TEstimateSystemKeys } from "@youtrack/types";
-import { Tooltip } from "@youtrack/ui";
+import { TEstimateSystemKeys } from "@utrack/types";
+import { Tooltip } from "@utrack/ui";
 // components
 import { ProIcon } from "@/components/common";
 import { RadioInput } from "@/components/estimates";
-// youtrack web constants
-import { ESTIMATE_SYSTEMS } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { ESTIMATE_SYSTEMS } from "@/utrack-web/constants/estimates";
 
 type TEstimateCreateStageOne = {
   estimateSystem: TEstimateSystemKeys;

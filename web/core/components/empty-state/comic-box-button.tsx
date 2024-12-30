@@ -5,7 +5,7 @@ import { usePopper } from "react-popper";
 import { Popover } from "@headlessui/react";
 // popper
 // helper
-import { getButtonStyling } from "@youtrack/ui";
+import { getButtonStyling } from "@utrack/ui";
 
 type Props = {
   label: string;

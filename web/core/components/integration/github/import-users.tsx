@@ -5,7 +5,7 @@ import { FC } from "react";
 // react-hook-form
 import { UseFormWatch } from "react-hook-form";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // types
 import { IUserDetails, SingleUserSelect, TFormValues, TIntegrationSteps } from "@/components/integration";
 

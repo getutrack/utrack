@@ -6,10 +6,10 @@ import isEmpty from "lodash/isEmpty";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { IIssueFilterOptions, TStaticViewTypes } from "@youtrack/types";
+import { IIssueFilterOptions, TStaticViewTypes } from "@utrack/types";
 //ui
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { AppliedFiltersList } from "@/components/issues";
 import { UpdateViewComponent } from "@/components/views/update-view-component";
 import { CreateUpdateWorkspaceViewModal } from "@/components/workspace";
@@ -22,7 +22,7 @@ import { DEFAULT_GLOBAL_VIEWS_LIST } from "@/constants/workspace";
 import { cn } from "@/helpers/common.helper";
 // hooks
 import { useEventTracker, useGlobalView, useIssues, useLabel, useUser, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import { getAreFiltersEqual } from "../../../utils";
 
 type Props = {

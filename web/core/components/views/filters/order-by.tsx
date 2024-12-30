@@ -2,9 +2,9 @@
 
 import { ArrowDownWideNarrow, ArrowUpWideNarrow, Check, ChevronDown } from "lucide-react";
 // types
-import { TViewFiltersSortBy, TViewFiltersSortKey } from "@youtrack/types";
+import { TViewFiltersSortBy, TViewFiltersSortKey } from "@utrack/types";
 // ui
-import { CustomMenu, getButtonStyling } from "@youtrack/ui";
+import { CustomMenu, getButtonStyling } from "@utrack/ui";
 // constants
 import { VIEW_SORTING_KEY_OPTIONS } from "@/constants/views";
 

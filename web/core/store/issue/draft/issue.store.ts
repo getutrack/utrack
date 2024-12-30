@@ -2,7 +2,7 @@ import { action, makeObservable, runInAction } from "mobx";
 // base class
 // services
 // types
-import { TIssue, TLoader, ViewFlags, IssuePaginationOptions, TIssuesResponse, TBulkOperationsPayload } from "@youtrack/types";
+import { TIssue, TLoader, ViewFlags, IssuePaginationOptions, TIssuesResponse, TBulkOperationsPayload } from "@utrack/types";
 import { BaseIssuesStore, IBaseIssuesStore } from "../helpers/base-issues.store";
 import { IIssueRootStore } from "../root.store";
 import { IDraftIssuesFilter } from "./filter.store";

@@ -1,6 +1,6 @@
 import { action, makeObservable, runInAction } from "mobx";
 // types
-import { IssuePaginationOptions, TLoader } from "@youtrack/types";
+import { IssuePaginationOptions, TLoader } from "@utrack/types";
 // services
 import IssueService from "@/services/issue.service";
 // store

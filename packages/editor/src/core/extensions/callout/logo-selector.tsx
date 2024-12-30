@@ -1,7 +1,7 @@
-// youtrack helpers
-import { convertHexEmojiToDecimal } from "@youtrack/helpers";
-// youtrack ui
-import { EmojiIconPicker, EmojiIconPickerTypes, Logo, TEmojiLogoProps } from "@youtrack/ui";
+// utrack helpers
+import { convertHexEmojiToDecimal } from "@utrack/helpers";
+// utrack ui
+import { EmojiIconPicker, EmojiIconPickerTypes, Logo, TEmojiLogoProps } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common";
 // types

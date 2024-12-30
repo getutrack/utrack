@@ -14,11 +14,11 @@ import {
   TIssueParams,
   TStaticViewTypes,
   IssuePaginationOptions,
-} from "@youtrack/types";
+} from "@utrack/types";
 import { EIssueFilterType, EIssueLayoutTypes, EIssuesStoreType } from "@/constants/issue";
 // services
 import { handleIssueQueryParamsByLayout } from "@/helpers/issue.helper";
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 import { IBaseIssueFilterStore, IssueFilterHelperStore } from "../helpers/issue-filter-helper.store";
 // helpers
 // types

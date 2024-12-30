@@ -1,8 +1,8 @@
 import React from "react";
 // editor
-import { EditorRefApi, ILiteTextEditor, LiteTextEditorWithRef, TNonColorEditorCommands } from "@youtrack/editor";
+import { EditorRefApi, ILiteTextEditor, LiteTextEditorWithRef, TNonColorEditorCommands } from "@utrack/editor";
 // types
-import { IUserLite } from "@youtrack/types";
+import { IUserLite } from "@utrack/types";
 // components
 import { IssueCommentToolbar } from "@/components/editor";
 // constants
@@ -13,8 +13,8 @@ import { getEditorFileHandlers } from "@/helpers/editor.helper";
 import { isCommentEmpty } from "@/helpers/string.helper";
 // hooks
 import { useMember, useMention, useUser } from "@/hooks/store";
-// youtrack web hooks
-import { useFileSize } from "@/youtrack-web/hooks/use-file-size";
+// utrack web hooks
+import { useFileSize } from "@/utrack-web/hooks/use-file-size";
 
 interface LiteTextEditorWrapperProps extends Omit<ILiteTextEditor, "fileHandler" | "mentionHandler"> {
   workspaceSlug: string;

@@ -1,5 +1,5 @@
-// youtrack types
-import { TFileEntityInfo, TFileSignedURLResponse } from "@youtrack/types";
+// utrack types
+import { TFileEntityInfo, TFileSignedURLResponse } from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { generateFileUploadPayload, getAssetIdFromUrl, getFileMetaDataForUpload } from "@/helpers/file.helper";

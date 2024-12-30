@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // components
-import { Spinner } from "@youtrack/ui";
+import { Spinner } from "@utrack/ui";
 import { LogoSpinner } from "@/components/common";
 import {
   ListLayout,

@@ -51,6 +51,6 @@ const ToggleSwitch: React.FC<IToggleSwitchProps> = (props) => {
   );
 };
 
-ToggleSwitch.displayName = "youtrack-ui-toggle-switch";
+ToggleSwitch.displayName = "utrack-ui-toggle-switch";
 
 export { ToggleSwitch };

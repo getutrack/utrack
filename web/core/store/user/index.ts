@@ -2,15 +2,15 @@ import cloneDeep from "lodash/cloneDeep";
 import set from "lodash/set";
 import { action, makeObservable, observable, runInAction, computed } from "mobx";
 // types
-import { IUser } from "@youtrack/types";
-import { TUserPermissions } from "@youtrack/types/src/enums";
+import { IUser } from "@utrack/types";
+import { TUserPermissions } from "@utrack/types/src/enums";
 // constants
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 // local
 import { persistence } from "@/local-db/storage.sqlite";
-import { ENABLE_LOCAL_DB_CACHE } from "@/youtrack-web/constants/issues";
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+import { ENABLE_LOCAL_DB_CACHE } from "@/utrack-web/constants/issues";
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 // services
 import { AuthService } from "@/services/auth.service";
 import { UserService } from "@/services/user.service";

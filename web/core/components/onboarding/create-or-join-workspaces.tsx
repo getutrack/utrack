@@ -4,7 +4,7 @@ import Image from "next/image";
 // icons
 import { useTheme } from "next-themes";
 // types
-import { IWorkspaceMemberInvitation, TOnboardingSteps } from "@youtrack/types";
+import { IWorkspaceMemberInvitation, TOnboardingSteps } from "@utrack/types";
 // components
 import { Invitations, OnboardingHeader, SwitchAccountDropdown, CreateWorkspace } from "@/components/onboarding";
 // hooks

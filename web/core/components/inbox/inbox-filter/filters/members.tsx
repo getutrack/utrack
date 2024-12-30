@@ -3,10 +3,10 @@
 import { FC, useMemo, useState } from "react";
 import sortBy from "lodash/sortBy";
 import { observer } from "mobx-react";
-// youtrack types
-import { TInboxIssueFilterMemberKeys } from "@youtrack/types";
-// youtrack ui
-import { Avatar, Loader } from "@youtrack/ui";
+// utrack types
+import { TInboxIssueFilterMemberKeys } from "@utrack/types";
+// utrack ui
+import { Avatar, Loader } from "@utrack/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues";
 // helpers

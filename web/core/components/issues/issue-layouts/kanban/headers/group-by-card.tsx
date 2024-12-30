@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 // lucide icons
 import { Minimize2, Maximize2, Circle, Plus } from "lucide-react";
-import { TIssue, ISearchIssueResponse, TIssueKanbanFilters, TIssueGroupByOptions } from "@youtrack/types";
+import { TIssue, ISearchIssueResponse, TIssueKanbanFilters, TIssueGroupByOptions } from "@utrack/types";
 // ui
-import { CustomMenu, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { CustomMenu, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ExistingIssuesListModal } from "@/components/core";
 import { CreateUpdateIssueModal } from "@/components/issues";

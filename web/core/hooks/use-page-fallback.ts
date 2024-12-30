@@ -1,8 +1,8 @@
 import { useCallback, useEffect } from "react";
-// youtrack editor
-import { EditorRefApi } from "@youtrack/editor";
-// youtrack types
-import { TDocumentPayload } from "@youtrack/types";
+// utrack editor
+import { EditorRefApi } from "@utrack/editor";
+// utrack types
+import { TDocumentPayload } from "@utrack/types";
 // hooks
 import useAutoSave from "@/hooks/use-auto-save";
 

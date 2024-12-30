@@ -3,9 +3,9 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { Check, ChevronDown } from "lucide-react";
 // editor
-import { EditorRefApi, TNonColorEditorCommands } from "@youtrack/editor";
+import { EditorRefApi, TNonColorEditorCommands } from "@utrack/editor";
 // ui
-import { CustomMenu, Tooltip } from "@youtrack/ui";
+import { CustomMenu, Tooltip } from "@utrack/ui";
 // components
 import { ColorDropdown } from "@/components/pages";
 // constants

@@ -2,8 +2,8 @@ import { getSchema } from "@tiptap/core";
 import { generateHTML, generateJSON } from "@tiptap/html";
 import { prosemirrorJSONToYDoc, yXmlFragmentToProseMirrorRootNode } from "y-prosemirror";
 import * as Y from "yjs"
-// youtrack editor
-import { CoreEditorExtensionsWithoutProps, DocumentEditorExtensionsWithoutProps } from "@youtrack/editor/lib";
+// utrack editor
+import { CoreEditorExtensionsWithoutProps, DocumentEditorExtensionsWithoutProps } from "@utrack/editor/lib";
 
 const DOCUMENT_EDITOR_EXTENSIONS = [
   ...CoreEditorExtensionsWithoutProps,

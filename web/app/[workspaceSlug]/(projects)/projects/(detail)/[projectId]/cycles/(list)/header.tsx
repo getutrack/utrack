@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // ui
-import { Breadcrumbs, Button, ContrastIcon, Header } from "@youtrack/ui";
+import { Breadcrumbs, Button, ContrastIcon, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink, Logo } from "@/components/common";
 import { CyclesViewHeader } from "@/components/cycles";
@@ -12,7 +12,7 @@ import { CyclesViewHeader } from "@/components/cycles";
 import { useCommandPalette, useEventTracker, useProject, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
 // constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const CyclesListHeader: FC = observer(() => {
   // router

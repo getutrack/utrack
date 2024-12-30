@@ -1,12 +1,12 @@
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
-import { TCycleFilters } from "@youtrack/types";
+import { TCycleFilters } from "@utrack/types";
 // hooks
-import { Tag } from "@youtrack/ui";
+import { Tag } from "@utrack/ui";
 import { AppliedDateFilters, AppliedStatusFilters } from "@/components/cycles";
 import { replaceUnderscoreIfSnakeCase } from "@/helpers/string.helper";
 import { useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 // components
 // helpers

@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
 // constants
-import { Header, EHeaderVariant, Tag } from "@youtrack/ui";
+import { Header, EHeaderVariant, Tag } from "@utrack/ui";
 import { ENotificationFilterType, FILTER_TYPE_OPTIONS } from "@/constants/notification";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store";

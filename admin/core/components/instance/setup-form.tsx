@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 // icons
 import { Eye, EyeOff } from "lucide-react";
 // ui
-import { Button, Checkbox, Input, Spinner } from "@youtrack/ui";
+import { Button, Checkbox, Input, Spinner } from "@utrack/ui";
 // components
 import { Banner, PasswordStrengthMeter } from "@/components/common";
 // helpers
@@ -137,10 +137,10 @@ export const InstanceSetupForm: FC = (props) => {
       <div className="relative flex flex-col space-y-6">
         <div className="text-center space-y-1">
           <h3 className="flex gap-4 justify-center text-3xl font-bold text-onboarding-text-100">
-            Setup your Youtrack Instance
+            Setup your Utrack Instance
           </h3>
           <p className="font-medium text-onboarding-text-400">
-            Post setup you will be able to manage this Youtrack instance.
+            Post setup you will be able to manage this Utrack instance.
           </p>
         </div>
 
@@ -334,7 +334,7 @@ export const InstanceSetupForm: FC = (props) => {
               className="text-sm text-onboarding-text-300 font-medium cursor-pointer"
               htmlFor="is_telemetry_enabled"
             >
-              Allow Youtrack to anonymously collect usage events.
+              Allow Utrack to anonymously collect usage events.
             </label>
             <a
               tabIndex={-1}

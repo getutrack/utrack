@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import { ThemeProvider, useTheme } from "next-themes";
 import { SWRConfig } from "swr";
 // ui
-import { Toast } from "@youtrack/ui";
+import { Toast } from "@utrack/ui";
 // constants
 import { SWR_CONFIG } from "@/constants/swr-config";
 // helpers

@@ -4,7 +4,7 @@ import { Controller, useForm } from "react-hook-form";
 import { Check, MessageSquare, MoreVertical, X } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
 // components
-import { EditorRefApi } from "@youtrack/editor";
+import { EditorRefApi } from "@utrack/editor";
 import { LiteTextEditor, LiteTextReadOnlyEditor } from "@/components/editor";
 import { CommentReactions } from "@/components/issues/peek-overview";
 // helpers

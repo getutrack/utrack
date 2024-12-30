@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 // types
-import { IIssueDisplayProperties, TIssue } from "@youtrack/types";
+import { IIssueDisplayProperties, TIssue } from "@utrack/types";
 // constants
 import { SPREADSHEET_PROPERTY_DETAILS } from "@/constants/spreadsheet";
 // hooks

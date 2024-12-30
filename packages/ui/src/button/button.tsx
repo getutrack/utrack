@@ -40,6 +40,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => 
   );
 });
 
-Button.displayName = "youtrack-ui-button";
+Button.displayName = "utrack-ui-button";
 
 export { Button };

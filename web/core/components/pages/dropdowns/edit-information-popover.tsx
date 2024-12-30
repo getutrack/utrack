@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-// youtrack ui
-import { Avatar } from "@youtrack/ui";
+// utrack ui
+import { Avatar } from "@utrack/ui";
 // helpers
 import { calculateTimeAgoShort, renderFormattedDate } from "@/helpers/date-time.helper";
 import { getFileURL } from "@/helpers/file.helper";

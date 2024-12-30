@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // components
 import { ContextMenuItem } from "./item";
 // helpers

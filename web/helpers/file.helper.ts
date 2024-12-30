@@ -1,5 +1,5 @@
 // types
-import { TFileMetaDataLite, TFileSignedURLResponse } from "@youtrack/types";
+import { TFileMetaDataLite, TFileSignedURLResponse } from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 

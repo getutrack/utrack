@@ -2,7 +2,7 @@ import size from "lodash/size";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { IIssueFilterOptions } from "@youtrack/types";
+import { IIssueFilterOptions } from "@utrack/types";
 // components
 import { EmptyState } from "@/components/empty-state";
 // constants

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { getButtonStyling } from "@youtrack/ui";
+import { getButtonStyling } from "@utrack/ui";
 // components
 import { LogoSpinner } from "@/components/common";
 import { PageHead } from "@/components/core";

@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { TModuleFilters } from "@youtrack/types";
+import { TModuleFilters } from "@utrack/types";
 // components
 import { PageHead } from "@/components/core";
 import { EmptyState } from "@/components/empty-state";

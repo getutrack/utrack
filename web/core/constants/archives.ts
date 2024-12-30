@@ -1,9 +1,9 @@
 "use client";
 
 // types
-import { IProject } from "@youtrack/types";
+import { IProject } from "@utrack/types";
 // icons
-import { ContrastIcon, DiceIcon, LayersIcon } from "@youtrack/ui";
+import { ContrastIcon, DiceIcon, LayersIcon } from "@utrack/ui";
 
 export const ARCHIVES_TAB_LIST: {
   key: string;

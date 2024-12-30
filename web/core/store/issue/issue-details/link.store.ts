@@ -1,7 +1,7 @@
 import set from "lodash/set";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 // services
-import { TIssueLink, TIssueLinkMap, TIssueLinkIdMap } from "@youtrack/types";
+import { TIssueLink, TIssueLinkMap, TIssueLinkIdMap } from "@utrack/types";
 import { IssueService } from "@/services/issue";
 // types
 import { IIssueDetail } from "./root.store";

@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
 import Image from "next/image";
 // components
-import { ContentWrapper } from "@youtrack/ui";
+import { ContentWrapper } from "@utrack/ui";
 import { EmptyState } from "@/components/empty-state";
 import { ProjectCard } from "@/components/project";
 import { ProjectsLoader } from "@/components/ui";

@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { observer } from "mobx-react";
 // types
-import { TInboxIssueStatus } from "@youtrack/types";
+import { TInboxIssueStatus } from "@utrack/types";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues";
 // constants

@@ -6,9 +6,9 @@ import Link from "next/link";
 // icons
 import { Settings2 } from "lucide-react";
 // types
-import { TInstanceAuthenticationMethodKeys } from "@youtrack/types";
+import { TInstanceAuthenticationMethodKeys } from "@utrack/types";
 // ui
-import { ToggleSwitch, getButtonStyling } from "@youtrack/ui";
+import { ToggleSwitch, getButtonStyling } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks

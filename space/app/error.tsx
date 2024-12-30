@@ -1,7 +1,7 @@
 "use client";
 
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 const ErrorPage = () => {
   const handleRetry = () => {
@@ -14,7 +14,7 @@ const ErrorPage = () => {
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Yikes! That doesn{"'"}t look good.</h3>
           <p className="mx-auto md:w-1/2 text-sm text-custom-text-200">
-            That crashed Youtrack, pun intended. No worries, though. Our engineers have been notified. If you have more
+            That crashed Utrack, pun intended. No worries, though. Our engineers have been notified. If you have more
             details, please write to{" "}
             <a href="mailto:developers@digi-trans.org" className="text-custom-primary">
               developers@digi-trans.org

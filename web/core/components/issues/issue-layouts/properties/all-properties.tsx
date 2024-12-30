@@ -7,9 +7,9 @@ import { useParams, usePathname } from "next/navigation";
 // icons
 import { CalendarCheck2, CalendarClock, Layers, Link, Paperclip } from "lucide-react";
 // types
-import { TIssue, IIssueDisplayProperties, TIssuePriorities } from "@youtrack/types";
+import { TIssue, IIssueDisplayProperties, TIssuePriorities } from "@utrack/types";
 // ui
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // components
 import {
   DateDropdown,

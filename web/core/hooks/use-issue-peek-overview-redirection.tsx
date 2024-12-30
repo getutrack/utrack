@@ -1,6 +1,6 @@
 import { useRouter } from "next/navigation";
 // types
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // hooks
 import { useIssueDetail } from "./store";
 

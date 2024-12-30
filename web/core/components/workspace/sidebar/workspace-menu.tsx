@@ -6,10 +6,10 @@ import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { ArchiveIcon, ChevronRight, MoreHorizontal, Settings } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // ui
-import { CustomMenu, Tooltip } from "@youtrack/ui";
+import { CustomMenu, Tooltip } from "@utrack/ui";
 // components
 import { SidebarNavItem } from "@/components/sidebar";
 // constants
@@ -21,9 +21,9 @@ import { cn } from "@/helpers/common.helper";
 import { useAppTheme, useEventTracker, useUserPermissions } from "@/hooks/store";
 import useLocalStorage from "@/hooks/use-local-storage";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { UpgradeBadge } from "@/youtrack-web/components/workspace";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web components
+import { UpgradeBadge } from "@/utrack-web/components/workspace";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const SidebarWorkspaceMenu = observer(() => {
   // state

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { CheckCheck, RefreshCw } from "lucide-react";
-import { Spinner, Tooltip } from "@youtrack/ui";
+import { Spinner, Tooltip } from "@utrack/ui";
 // components
 import { NotificationFilter, NotificationHeaderMenuOption } from "@/components/workspace-notifications";
 // constants

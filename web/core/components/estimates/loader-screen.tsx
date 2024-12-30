@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 
 export const EstimateLoaderScreen: FC = () => (
   <Loader className="mt-5 space-y-5">

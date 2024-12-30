@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-import { PopoverMenu, Tooltip } from "@youtrack/ui";
+import { PopoverMenu, Tooltip } from "@utrack/ui";
 // components
 import { NotificationFilterOptionItem } from "@/components/workspace-notifications";
 // constants

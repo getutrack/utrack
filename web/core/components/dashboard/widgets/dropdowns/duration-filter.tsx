@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 // components
-import { CustomMenu } from "@youtrack/ui";
+import { CustomMenu } from "@utrack/ui";
 import { DateFilterModal } from "@/components/core";
 // ui
 // helpers

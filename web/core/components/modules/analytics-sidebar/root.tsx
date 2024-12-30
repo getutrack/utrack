@@ -17,9 +17,9 @@ import {
   Users,
 } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// youtrack types
-import { ILinkDetails, IModule, ModuleLink } from "@youtrack/types";
-// youtrack ui
+// utrack types
+import { ILinkDetails, IModule, ModuleLink } from "@utrack/types";
+// utrack ui
 import {
   CustomMenu,
   Loader,
@@ -30,7 +30,7 @@ import {
   setToast,
   ArchiveIcon,
   TextArea,
-} from "@youtrack/ui";
+} from "@utrack/ui";
 // components
 import { DateRangeDropdown, MemberDropdown } from "@/components/dropdowns";
 import {
@@ -53,9 +53,9 @@ import { copyUrlToClipboard } from "@/helpers/string.helper";
 // hooks
 import { useModule, useEventTracker, useProjectEstimates, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-// youtrack web constants
-import { EEstimateSystem } from "@/youtrack-web/constants/estimates";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web constants
+import { EEstimateSystem } from "@/utrack-web/constants/estimates";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const defaultValues: Partial<IModule> = {
   lead_id: "",

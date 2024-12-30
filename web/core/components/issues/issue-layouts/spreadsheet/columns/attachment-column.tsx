@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 // types
-import { TIssue } from "@youtrack/types";
-import { Row } from "@youtrack/ui";
+import { TIssue } from "@utrack/types";
+import { Row } from "@utrack/ui";
 
 type Props = {
   issue: TIssue;

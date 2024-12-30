@@ -7,7 +7,7 @@ import { CycleIssueQuickActions } from "@/components/issues";
 import { EIssuesStoreType } from "@/constants/issue";
 // hooks
 import { useCycle, useIssues, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // components
 import { BaseKanBanRoot } from "../base-kanban-root";
 

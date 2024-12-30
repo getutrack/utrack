@@ -3,8 +3,8 @@ import isEqual from "lodash/isEqual";
 import set from "lodash/set";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// youtrack types
-import { IssuePaginationOptions, TIssueParams } from "@youtrack/types";
+// utrack types
+import { IssuePaginationOptions, TIssueParams } from "@utrack/types";
 // constants
 import { ISSUE_DISPLAY_FILTERS_BY_LAYOUT } from "@/constants/issue";
 // store

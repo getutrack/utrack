@@ -3,10 +3,10 @@ import { observer } from "mobx-react";
 import { FileRejection, useDropzone } from "react-dropzone";
 import { UploadCloud } from "lucide-react";
 // hooks
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 import { useIssueDetail } from "@/hooks/store";
-// youtrack web hooks
-import { useFileSize } from "@/youtrack-web/hooks/use-file-size";
+// utrack web hooks
+import { useFileSize } from "@/utrack-web/hooks/use-file-size";
 // components
 import { IssueAttachmentsListItem } from "./attachment-list-item";
 // types

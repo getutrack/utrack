@@ -10,7 +10,7 @@
     "paths": {
       "@/*": ["src/core/*"],
       "@/styles/*": ["src/styles/*"],
-      "@/youtrack-editor/*": ["src/ce/*"]
+      "@/utrack-editor/*": ["src/ce/*"]
     },
     "allowSyntheticDefaultImports": true
   },

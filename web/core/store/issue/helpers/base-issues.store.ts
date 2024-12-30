@@ -13,7 +13,7 @@ import update from "lodash/update";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { ALL_ISSUES } from "@youtrack/constants";
+import { ALL_ISSUES } from "@utrack/constants";
 import {
   TIssue,
   TIssueGroupByOptions,
@@ -28,7 +28,7 @@ import {
   TGroupedIssueCount,
   TPaginationData,
   TBulkOperationsPayload,
-} from "@youtrack/types";
+} from "@utrack/types";
 import { EIssueLayoutTypes, ISSUE_PRIORITIES } from "@/constants/issue";
 import { convertToISODateString } from "@/helpers/date-time.helper";
 import { updatePersistentLayer } from "@/local-db/utils/utils";

@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import { observer } from "mobx-react";
 import { Check, ListFilter } from "lucide-react";
-import { Button, PopoverMenu } from "@youtrack/ui";
+import { Button, PopoverMenu } from "@utrack/ui";
 // helper
 import { cn } from "@/helpers/common.helper";
 // constants
-import { TActivityFilterOption, TActivityFilters } from "@/youtrack-web/constants/issues";
+import { TActivityFilterOption, TActivityFilters } from "@/utrack-web/constants/issues";
 
 type TActivityFilter = {
   selectedFilters: TActivityFilters[];

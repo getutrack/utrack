@@ -31,6 +31,6 @@ const ContentWrapper = React.forwardRef<HTMLDivElement, ContentWrapperProps>((pr
   );
 });
 
-ContentWrapper.displayName = "youtrack-ui-wrapper";
+ContentWrapper.displayName = "utrack-ui-wrapper";
 
 export { ContentWrapper };

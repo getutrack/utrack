@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// youtrack constants
-import { ALL_ISSUES } from "@youtrack/constants";
-import { TIssue } from "@youtrack/types";
+// utrack constants
+import { ALL_ISSUES } from "@utrack/constants";
+import { TIssue } from "@utrack/types";
 // hooks
 import { ChartDataType, GanttChartRoot, IBlockUpdateData, IssueGanttSidebar } from "@/components/gantt-chart";
 import { getMonthChartItemPositionWidthInMonth } from "@/components/gantt-chart/views";
@@ -17,9 +17,9 @@ import { getIssueBlocksStructure } from "@/helpers/issue.helper";
 import { useIssues, useUserPermissions } from "@/hooks/store";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import { useIssuesActions } from "@/hooks/use-issues-actions";
-// youtrack web hooks
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
-import { useBulkOperationStatus } from "@/youtrack-web/hooks/use-bulk-operation-status";
+// utrack web hooks
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
+import { useBulkOperationStatus } from "@/utrack-web/hooks/use-bulk-operation-status";
 
 import { IssueLayoutHOC } from "../issue-layout-HOC";
 
@@ -46,7 +46,7 @@ export const BaseGanttRoot: React.FC<IBaseGanttRoot> = observer((props: IBaseGan
   const { allowPermissions } = useUserPermissions();
 
   const appliedDisplayFilters = issuesFilter.issueFilters?.displayFilters;
-  // youtrack web hooks
+  // utrack web hooks
   const isBulkOperationsEnabled = useBulkOperationStatus();
   // derived values
   const targetDate = new Date();

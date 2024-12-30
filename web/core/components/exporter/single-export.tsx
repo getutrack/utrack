@@ -2,8 +2,8 @@
 
 import { useState, FC } from "react";
 // ui
-import { IExportData } from "@youtrack/types";
-import { Button } from "@youtrack/ui";
+import { IExportData } from "@utrack/types";
+import { Button } from "@utrack/ui";
 // helpers
 import { getDate, renderFormattedDate } from "@/helpers/date-time.helper";
 // types

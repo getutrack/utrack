@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
-import { TInboxIssueStatus } from "@youtrack/types";
+import { TInboxIssueStatus } from "@utrack/types";
 // constants
-import { Tag } from "@youtrack/ui";
+import { Tag } from "@utrack/ui";
 import { INBOX_STATUS } from "@/constants/inbox";
 // hooks
 import { useProjectInbox } from "@/hooks/store";

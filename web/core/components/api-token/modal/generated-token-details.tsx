@@ -1,9 +1,9 @@
 "use client";
 
 import { Copy } from "lucide-react";
-import { IApiToken } from "@youtrack/types";
+import { IApiToken } from "@utrack/types";
 // ui
-import { Button, Tooltip, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Tooltip, TOAST_TYPE, setToast } from "@utrack/ui";
 // helpers
 import { renderFormattedDate } from "@/helpers/date-time.helper";
 import { copyTextToClipboard } from "@/helpers/string.helper";
@@ -34,7 +34,7 @@ export const GeneratedTokenDetails: React.FC<Props> = (props) => {
       <div className="w-full space-y-3 text-wrap">
         <h3 className="text-lg font-medium leading-6 text-custom-text-100">Key created</h3>
         <p className="text-sm text-custom-text-400">
-          Copy and save this secret key in Youtrack Pages. You can{"'"}t see this key after you hit Close. A CSV file
+          Copy and save this secret key in Utrack Pages. You can{"'"}t see this key after you hit Close. A CSV file
           containing the key has been downloaded.
         </p>
       </div>

@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import useSWR from "swr";
 // types
-import { TRecentCollaboratorsWidgetResponse } from "@youtrack/types";
+import { TRecentCollaboratorsWidgetResponse } from "@utrack/types";
 // ui
-import { Avatar } from "@youtrack/ui";
+import { Avatar } from "@utrack/ui";
 // helpers
 import { getFileURL } from "@/helpers/file.helper";
 // hooks

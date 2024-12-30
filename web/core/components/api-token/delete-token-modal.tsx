@@ -4,9 +4,9 @@ import { useState, FC } from "react";
 import { useParams } from "next/navigation";
 import { mutate } from "swr";
 // types
-import { IApiToken } from "@youtrack/types";
+import { IApiToken } from "@utrack/types";
 // ui
-import { AlertModalCore, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { AlertModalCore, TOAST_TYPE, setToast } from "@utrack/ui";
 // fetch-keys
 import { API_TOKENS_LIST } from "@/constants/fetch-keys";
 // services
@@ -73,7 +73,7 @@ export const DeleteApiTokenModal: FC<Props> = (props) => {
       title="Delete API token"
       content={
         <>
-          Any application using this token will no longer have the access to Youtrack data. This action cannot be undone.
+          Any application using this token will no longer have the access to Utrack data. This action cannot be undone.
         </>
       }
     />

@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { ArrowDownWideNarrow, ArrowUpWideNarrow, Check, ChevronDown } from "lucide-react";
-import { CustomMenu, getButtonStyling } from "@youtrack/ui";
+import { CustomMenu, getButtonStyling } from "@utrack/ui";
 // constants
 import { INBOX_ISSUE_ORDER_BY_OPTIONS, INBOX_ISSUE_SORT_BY_OPTIONS } from "@/constants/inbox";
 // helpers

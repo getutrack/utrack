@@ -6,9 +6,9 @@ import { Controller, useForm } from "react-hook-form";
 import { AlertTriangle } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // types
-import type { IProject } from "@youtrack/types";
+import type { IProject } from "@utrack/types";
 // ui
-import { Button, Input, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Input, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { PROJECT_DELETED } from "@/constants/event-tracker";
 // hooks

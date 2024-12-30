@@ -20,6 +20,6 @@ const Tag = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
   );
 });
 
-Tag.displayName = "youtrack-ui-container";
+Tag.displayName = "utrack-ui-container";
 
 export { Tag, ETagVariant, ETagSize };

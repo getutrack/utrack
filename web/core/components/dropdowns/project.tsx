@@ -4,7 +4,7 @@ import { usePopper } from "react-popper";
 import { Check, ChevronDown, Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
 // ui
-import { ComboDropDown } from "@youtrack/ui";
+import { ComboDropDown } from "@utrack/ui";
 // components
 import { Logo } from "@/components/common";
 // helpers
@@ -12,8 +12,8 @@ import { cn } from "@/helpers/common.helper";
 // hooks
 import { useProject } from "@/hooks/store";
 import { useDropdown } from "@/hooks/use-dropdown";
-// youtrack web types
-import { TProject } from "@/youtrack-web/types";
+// utrack web types
+import { TProject } from "@/utrack-web/types";
 // components
 import { DropdownButton } from "./buttons";
 // constants

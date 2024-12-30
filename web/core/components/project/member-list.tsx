@@ -5,13 +5,13 @@ import { observer } from "mobx-react";
 import { Search } from "lucide-react";
 // hooks
 // components
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 import { ProjectMemberListItem, SendProjectInvitationModal } from "@/components/project";
 // ui
 import { MembersSettingsLoader } from "@/components/ui";
 import { useEventTracker, useMember, useUserPermissions } from "@/hooks/store";
-// youtrack-web constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack-web constants
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const ProjectMemberList: React.FC = observer(() => {
   // states

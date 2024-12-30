@@ -6,10 +6,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 // icons
 import { ChevronLeft, LogOut, MoveLeft, Plus, UserPlus } from "lucide-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // ui
-import { TOAST_TYPE, Tooltip, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, Tooltip, setToast } from "@utrack/ui";
 // components
 import { SidebarNavItem } from "@/components/sidebar";
 // constants

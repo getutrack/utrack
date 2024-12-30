@@ -8,7 +8,7 @@ import type {
   TIssueLink,
   TIssuesResponse,
   TIssueSubIssues,
-} from "@youtrack/types";
+} from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { persistence } from "@/local-db/storage.sqlite";

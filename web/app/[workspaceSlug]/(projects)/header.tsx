@@ -7,7 +7,7 @@ import { Home } from "lucide-react";
 import githubBlackImage from "/public/logos/github-black.png";
 import githubWhiteImage from "/public/logos/github-white.png";
 // ui
-import { Breadcrumbs, Header } from "@youtrack/ui";
+import { Breadcrumbs, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink } from "@/components/common";
 // constants
@@ -41,7 +41,7 @@ export const WorkspaceDashboardHeader = () => {
               })
             }
             className="flex flex-shrink-0 items-center gap-1.5 rounded bg-custom-background-80 px-3 py-1.5"
-            href="https://github.com/getutrack/youtrack"
+            href="https://github.com/getutrack/utrack"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -2,7 +2,7 @@ import set from "lodash/set";
 import { action, computed, observable, makeObservable, runInAction, reaction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { TModuleDisplayFilters, TModuleFilters, TModuleFiltersByState } from "@youtrack/types";
+import { TModuleDisplayFilters, TModuleFilters, TModuleFiltersByState } from "@utrack/types";
 // store
 import { CoreRootStore } from "./root.store";
 

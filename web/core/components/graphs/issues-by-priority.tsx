@@ -1,7 +1,7 @@
 import { ComputedDatum } from "@nivo/bar";
 import { Theme } from "@nivo/core";
 // components
-import { TIssuePriorities } from "@youtrack/types";
+import { TIssuePriorities } from "@utrack/types";
 import { BarGraph } from "@/components/ui";
 // helpers
 import { PRIORITY_GRAPH_GRADIENTS } from "@/constants/dashboard";

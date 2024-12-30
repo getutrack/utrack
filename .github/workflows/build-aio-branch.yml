@@ -93,7 +93,7 @@ jobs:
     env:
       BUILD_TYPE: full
       AIO_BASE_TAG: ${{ needs.branch_build_setup.outputs.aio_base_tag }}
-      AIO_IMAGE_TAGS: getutrack/youtrack-aio:full-${{ needs.branch_build_setup.outputs.flat_branch_name }}
+      AIO_IMAGE_TAGS: getutrack/utrack-aio:full-${{ needs.branch_build_setup.outputs.flat_branch_name }}
       TARGET_BRANCH: ${{ needs.branch_build_setup.outputs.gh_branch_name }}
       BUILDX_DRIVER: ${{ needs.branch_build_setup.outputs.gh_buildx_driver }}
       BUILDX_VERSION: ${{ needs.branch_build_setup.outputs.gh_buildx_version }}
@@ -103,9 +103,9 @@ jobs:
       - name: Set Docker Tag
         run: |
           if [ "${{ github.event_name }}" == "release" ]; then
-            TAG=getutrack/youtrack-aio:${{env.BUILD_TYPE}}-stable,getutrack/youtrack-aio:${{env.BUILD_TYPE}}-${{ github.event.release.tag_name }}
+            TAG=getutrack/utrack-aio:${{env.BUILD_TYPE}}-stable,getutrack/utrack-aio:${{env.BUILD_TYPE}}-${{ github.event.release.tag_name }}
           elif [ "${{ env.TARGET_BRANCH }}" == "master" ]; then
-            TAG=getutrack/youtrack-aio:${{env.BUILD_TYPE}}-latest
+            TAG=getutrack/utrack-aio:${{env.BUILD_TYPE}}-latest
           else
             TAG=${{ env.AIO_IMAGE_TAGS }}
           fi
@@ -153,7 +153,7 @@ jobs:
     env:
       BUILD_TYPE: slim
       AIO_BASE_TAG: ${{ needs.branch_build_setup.outputs.aio_base_tag }}
-      AIO_IMAGE_TAGS: getutrack/youtrack-aio:slim-${{ needs.branch_build_setup.outputs.flat_branch_name }}
+      AIO_IMAGE_TAGS: getutrack/utrack-aio:slim-${{ needs.branch_build_setup.outputs.flat_branch_name }}
       TARGET_BRANCH: ${{ needs.branch_build_setup.outputs.gh_branch_name }}
       BUILDX_DRIVER: ${{ needs.branch_build_setup.outputs.gh_buildx_driver }}
       BUILDX_VERSION: ${{ needs.branch_build_setup.outputs.gh_buildx_version }}
@@ -163,9 +163,9 @@ jobs:
       - name: Set Docker Tag
         run: |
           if [ "${{ github.event_name }}" == "release" ]; then
-            TAG=getutrack/youtrack-aio:${{env.BUILD_TYPE}}-stable,getutrack/youtrack-aio:${{env.BUILD_TYPE}}-${{ github.event.release.tag_name }}
+            TAG=getutrack/utrack-aio:${{env.BUILD_TYPE}}-stable,getutrack/utrack-aio:${{env.BUILD_TYPE}}-${{ github.event.release.tag_name }}
           elif [ "${{ env.TARGET_BRANCH }}" == "master" ]; then
-            TAG=getutrack/youtrack-aio:${{env.BUILD_TYPE}}-latest
+            TAG=getutrack/utrack-aio:${{env.BUILD_TYPE}}-latest
           else
             TAG=${{ env.AIO_IMAGE_TAGS }}
           fi

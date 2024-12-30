@@ -1,12 +1,12 @@
 import { FC, ReactNode } from "react";
 import useSWR from "swr";
-import { IWorkspaceMemberInvitation } from "@youtrack/types";
+import { IWorkspaceMemberInvitation } from "@utrack/types";
 // components
 import { LogoSpinner } from "@/components/common";
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // helpers
 import { EAuthModes, EAuthSteps } from "@/helpers/authentication.helper";
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 // services
 
 type TAuthHeader = {

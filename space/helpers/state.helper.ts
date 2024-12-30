@@ -1,4 +1,4 @@
-import { IState } from "@youtrack/types";
+import { IState } from "@utrack/types";
 import { STATE_GROUPS } from "@/constants/state";
 
 export const sortStates = (states: IState[]) => {

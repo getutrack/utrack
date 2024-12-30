@@ -1,7 +1,7 @@
 import { FC, useState, useRef, useEffect } from "react";
 import { Search, X } from "lucide-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // helpers
 import { cn } from "@/helpers/common.helper";
 

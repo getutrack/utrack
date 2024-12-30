@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import { AccountTypeColumn, NameColumn, RowData } from "@/components/workspace/settings/member-columns";
 import { useUser, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const useMemberColumns = () => {
   // states

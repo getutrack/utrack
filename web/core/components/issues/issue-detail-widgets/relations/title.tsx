@@ -1,7 +1,7 @@
 "use client";
 import React, { FC, useMemo } from "react";
 import { observer } from "mobx-react";
-import { CollapsibleButton } from "@youtrack/ui";
+import { CollapsibleButton } from "@utrack/ui";
 // components
 import { RelationActionButton } from "@/components/issues/issue-detail-widgets";
 // hooks

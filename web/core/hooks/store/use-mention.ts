@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-// youtrack editor
-import { IMentionSuggestion } from "@youtrack/editor";
-// youtrack types
-import { IUser, IUserLite } from "@youtrack/types";
+// utrack editor
+import { IMentionSuggestion } from "@utrack/editor";
+// utrack types
+import { IUser, IUserLite } from "@utrack/types";
 // helpers
 import { getFileURL } from "@/helpers/file.helper";
 // hooks

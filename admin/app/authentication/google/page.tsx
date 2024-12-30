@@ -4,7 +4,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import Image from "next/image";
 import useSWR from "swr";
-import { Loader, ToggleSwitch, setPromiseToast } from "@youtrack/ui";
+import { Loader, ToggleSwitch, setPromiseToast } from "@utrack/ui";
 // components
 import { AuthenticationMethodCard } from "@/components/authentication";
 import { PageHeader } from "@/components/common";
@@ -57,12 +57,12 @@ const InstanceGoogleAuthenticationPage = observer(() => {
   };
   return (
     <>
-      <PageHeader title="Google Authentication - Youtrack Web" />
+      <PageHeader title="Google Authentication - Utrack Web" />
       <div className="relative container mx-auto w-full h-full p-4 py-4 space-y-6 flex flex-col">
         <div className="border-b border-custom-border-100 mx-4 py-4 space-y-1 flex-shrink-0">
           <AuthenticationMethodCard
             name="Google"
-            description="Allow members to login or sign up to youtrack with their Google
+            description="Allow members to login or sign up to utrack with their Google
             accounts."
             icon={<Image src={GoogleLogo} height={24} width={24} alt="Google Logo" />}
             config={

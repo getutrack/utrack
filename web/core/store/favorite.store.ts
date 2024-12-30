@@ -2,7 +2,7 @@ import { uniqBy } from "lodash";
 import set from "lodash/set";
 import { action, observable, makeObservable, runInAction, computed } from "mobx";
 import { v4 as uuidv4 } from "uuid";
-import { IFavorite } from "@youtrack/types";
+import { IFavorite } from "@utrack/types";
 import { FavoriteService } from "@/services/favorite";
 import { CoreRootStore } from "./root.store";
 

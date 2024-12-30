@@ -1,6 +1,6 @@
 import { Fragment, forwardRef } from "react";
-import { cn } from "@youtrack/editor";
-import { Row } from "@youtrack/ui";
+import { cn } from "@utrack/editor";
+import { Row } from "@utrack/ui";
 import { getRandomInt, getRandomLength } from "../utils";
 
 export const ListLoaderItemRow = forwardRef<

@@ -8,12 +8,12 @@ import { useParams } from "next/navigation";
 // swr
 import { useFormContext, Controller } from "react-hook-form";
 import useSWR from "swr";
-import { IJiraImporterForm, IJiraMetadata } from "@youtrack/types";
+import { IJiraImporterForm, IJiraMetadata } from "@utrack/types";
 
 // react hook form
 
 // services
-import { ToggleSwitch, Spinner } from "@youtrack/ui";
+import { ToggleSwitch, Spinner } from "@utrack/ui";
 import { JIRA_IMPORTER_DETAIL } from "@/constants/fetch-keys";
 import { JiraImporterService } from "@/services/integrations";
 

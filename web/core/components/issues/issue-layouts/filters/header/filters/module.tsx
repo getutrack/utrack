@@ -5,7 +5,7 @@ import sortBy from "lodash/sortBy";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // components
-import { Loader, DiceIcon } from "@youtrack/ui";
+import { Loader, DiceIcon } from "@utrack/ui";
 import { FilterHeader, FilterOption } from "@/components/issues";
 import { useModule } from "@/hooks/store";
 // ui

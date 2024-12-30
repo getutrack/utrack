@@ -7,12 +7,12 @@ import { useParams } from "next/navigation";
 import { usePopper } from "react-popper";
 import { Check, ChevronDown, Search, Tags } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // types
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 // ui
-import { ComboDropDown, Tooltip } from "@youtrack/ui";
+import { ComboDropDown, Tooltip } from "@utrack/ui";
 // hooks
 import { useLabel } from "@/hooks/store";
 import { useDropdownKeyDown } from "@/hooks/use-dropdown-key-down";

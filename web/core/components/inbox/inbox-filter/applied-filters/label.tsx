@@ -2,7 +2,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
 // hooks
-import { Tag } from "@youtrack/ui";
+import { Tag } from "@utrack/ui";
 import { useLabel, useProjectInbox } from "@/hooks/store";
 
 const LabelIcons = ({ color }: { color: string }) => (

@@ -3,9 +3,9 @@
 import React, { useMemo, useState } from "react";
 import sortBy from "lodash/sortBy";
 import { observer } from "mobx-react";
-import { IState } from "@youtrack/types";
+import { IState } from "@utrack/types";
 // components
-import { Loader, StateGroupIcon } from "@youtrack/ui";
+import { Loader, StateGroupIcon } from "@utrack/ui";
 import { FilterHeader, FilterOption } from "@/components/issues";
 // ui
 // types

@@ -55,20 +55,20 @@ function restoreData() {
     local BACKUP_FOLDER=${1:-$PWD}
 
     local dockerServiceStatus
-    dockerServiceStatus=$($COMPOSE_CMD ls --filter name=youtrack-app --format=json | jq -r .[0].Status)
+    dockerServiceStatus=$($COMPOSE_CMD ls --filter name=utrack-app --format=json | jq -r .[0].Status)
     local dockerServicePrefix
     dockerServicePrefix="running"
 
     if [[ $dockerServiceStatus == $dockerServicePrefix* ]]; then
-        echo "Youtrack App is running. Please STOP the Youtrack App before restoring data."
+        echo "Utrack App is running. Please STOP the Utrack App before restoring data."
         exit 1
     fi
 
     local volumes
-    volumes=$(docker volume ls -f "name=youtrack-app" --format "{{.Name}}" | grep -E "_pgdata|_redisdata|_uploads")
+    volumes=$(docker volume ls -f "name=utrack-app" --format "{{.Name}}" | grep -E "_pgdata|_redisdata|_uploads")
     # Check if there are any matching volumes
     if [ -z "$volumes" ]; then
-        echo ".....No volumes found starting with 'youtrack-app'"
+        echo ".....No volumes found starting with 'utrack-app'"
         exit 1
     fi
     
@@ -81,7 +81,7 @@ function restoreData() {
             restoreFileName="${restoreFileName%.tar.gz}"
 
             local restoreVolName
-            restoreVolName="youtrack-app_${restoreFileName}"
+            restoreVolName="utrack-app_${restoreFileName}"
             echo "Found $BACKUP_FILE"
 
             local docVol

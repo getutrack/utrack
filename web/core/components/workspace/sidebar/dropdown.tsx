@@ -10,16 +10,16 @@ import { Check, ChevronDown, LogOut, Mails, PlusSquare, Settings } from "lucide-
 // ui
 import { Menu, Transition } from "@headlessui/react";
 // types
-import { IWorkspace } from "@youtrack/types";
-// youtrack ui
-import { Avatar, Loader, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { IWorkspace } from "@utrack/types";
+// utrack ui
+import { Avatar, Loader, TOAST_TYPE, setToast } from "@utrack/ui";
 import { GOD_MODE_URL, cn } from "@/helpers/common.helper";
 // helpers
 import { getFileURL } from "@/helpers/file.helper";
 // hooks
 import { useAppTheme, useUser, useUserPermissions, useUserProfile, useWorkspace } from "@/hooks/store";
-// youtrack web constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web constants
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import { WorkspaceLogo } from "../logo";
 
 // Static Data

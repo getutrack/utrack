@@ -1,7 +1,7 @@
 import { useRef } from "react";
 //types
 import { observer } from "mobx-react";
-import { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@youtrack/types";
+import { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@utrack/types";
 //components
 import { WithDisplayPropertiesHOC } from "../properties/with-display-properties-HOC";
 import { HeaderColumn } from "./columns/header-column";

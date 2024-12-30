@@ -5,16 +5,16 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { FileText, HelpCircle, MessagesSquare, MoveLeft, User } from "lucide-react";
 // ui
-import { CustomMenu, ToggleSwitch, Tooltip } from "@youtrack/ui";
+import { CustomMenu, ToggleSwitch, Tooltip } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks
 import { useAppTheme, useCommandPalette, useInstance, useTransient, useUserSettings } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { YoutrackVersionNumber, ProductUpdates, ProductUpdatesModal } from "@/youtrack-web/components/global";
-import { WorkspaceEditionBadge } from "@/youtrack-web/components/workspace";
-import { ENABLE_LOCAL_DB_CACHE } from "@/youtrack-web/constants/issues";
+// utrack web components
+import { UtrackVersionNumber, ProductUpdates, ProductUpdatesModal } from "@/utrack-web/components/global";
+import { WorkspaceEditionBadge } from "@/utrack-web/components/workspace";
+import { ENABLE_LOCAL_DB_CACHE } from "@/utrack-web/constants/issues";
 
 export interface WorkspaceHelpSectionProps {
   setSidebarActive?: React.Dispatch<React.SetStateAction<boolean>>;
@@ -146,7 +146,7 @@ export const SidebarHelpSection: React.FC<WorkspaceHelpSectionProps> = observer(
               </a>
             </CustomMenu.MenuItem>
             <div className="px-1 pt-2 mt-1 text-xs text-custom-text-200 border-t border-custom-border-200">
-              <YoutrackVersionNumber />
+              <UtrackVersionNumber />
             </div>
           </CustomMenu>
         </div>

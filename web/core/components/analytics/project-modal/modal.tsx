@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { Dialog, Transition } from "@headlessui/react";
-import { ICycle, IModule, IProject } from "@youtrack/types";
+import { ICycle, IModule, IProject } from "@utrack/types";
 
 // components
 import { ProjectAnalyticsModalHeader, ProjectAnalyticsModalMainContent } from "@/components/analytics";

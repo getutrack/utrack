@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { Settings } from "lucide-react";
 // ui
-import { Breadcrumbs, Header } from "@youtrack/ui";
+import { Breadcrumbs, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink } from "@/components/common";
 // hooks

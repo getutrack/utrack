@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { XCircle } from "lucide-react";
-import { IApiToken } from "@youtrack/types";
+import { IApiToken } from "@utrack/types";
 // components
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 import { DeleteApiTokenModal } from "@/components/api-token";
 import { renderFormattedDate, calculateTimeAgo } from "@/helpers/date-time.helper";
 import { usePlatformOS } from "@/hooks/use-platform-os";

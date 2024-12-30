@@ -3,7 +3,7 @@ import unset from "lodash/unset";
 import { makeObservable, observable, runInAction, action, reaction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { TPage, TPageFilters, TPageNavigationTabs } from "@youtrack/types";
+import { TPage, TPageFilters, TPageNavigationTabs } from "@utrack/types";
 // helpers
 import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@/helpers/page.helper";
 // services

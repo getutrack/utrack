@@ -2,8 +2,8 @@
 
 BRANCH=${BRANCH:-master}
 SCRIPT_DIR=$PWD
-SERVICE_FOLDER=youtrack-app
-YOUTRACK_INSTALL_DIR=$PWD/$SERVICE_FOLDER
+SERVICE_FOLDER=utrack-app
+UTRACK_INSTALL_DIR=$PWD/$SERVICE_FOLDER
 export APP_RELEASE="latest"
 export DOCKERHUB_USER=getutrack
 export PULL_POLICY=${PULL_POLICY:-if_not_present}
@@ -12,9 +12,9 @@ CPU_ARCH=$(uname -m)
 OS_NAME=$(uname)
 UPPER_CPU_ARCH=$(tr '[:lower:]' '[:upper:]' <<< "$CPU_ARCH")
 
-mkdir -p $YOUTRACK_INSTALL_DIR/archive
-DOCKER_FILE_PATH=$YOUTRACK_INSTALL_DIR/docker-compose.yaml
-DOCKER_ENV_PATH=$YOUTRACK_INSTALL_DIR/youtrack.env
+mkdir -p $UTRACK_INSTALL_DIR/archive
+DOCKER_FILE_PATH=$UTRACK_INSTALL_DIR/docker-compose.yaml
+DOCKER_ENV_PATH=$UTRACK_INSTALL_DIR/utrack.env
 
 SED_PREFIX=()
 if [ "$OS_NAME" == "Darwin" ]; then
@@ -68,7 +68,7 @@ function initialize(){
         return 1
     fi
 
-    local IMAGE_NAME=getutrack/youtrack-proxy
+    local IMAGE_NAME=getutrack/utrack-proxy
     local IMAGE_TAG=${APP_RELEASE}
     docker manifest inspect "${IMAGE_NAME}:${IMAGE_TAG}" | grep -q "\"architecture\": \"${CPU_ARCH}\"" &
     local pid=$!
@@ -79,7 +79,7 @@ function initialize(){
     wait "$pid"
 
     if [ $? -eq 0 ]; then
-        echo "Youtrack supports ${CPU_ARCH}" >&2
+        echo "Utrack supports ${CPU_ARCH}" >&2
         echo "available"
         return 0
     else
@@ -148,10 +148,10 @@ function updateCustomVariables(){
 
 function syncEnvFile(){
     echo "Syncing environment variables..." >&2
-    if [ -f "$YOUTRACK_INSTALL_DIR/youtrack.env.bak" ]; then
+    if [ -f "$UTRACK_INSTALL_DIR/utrack.env.bak" ]; then
         updateCustomVariables
         
-        # READ keys of youtrack.env and update the values from youtrack.env.bak
+        # READ keys of utrack.env and update the values from utrack.env.bak
         while IFS= read -r line
         do
             # ignore is the line is empty or starts with #
@@ -159,7 +159,7 @@ function syncEnvFile(){
                 continue
             fi
             key=$(echo "$line" | cut -d'=' -f1)
-            value=$(getEnvValue "$key" "$YOUTRACK_INSTALL_DIR/youtrack.env.bak")
+            value=$(getEnvValue "$key" "$UTRACK_INSTALL_DIR/utrack.env.bak")
             if [ -n "$value" ]; then
                 updateEnvFile "$key" "$value" "$DOCKER_ENV_PATH"
             fi
@@ -171,21 +171,21 @@ function syncEnvFile(){
 function buildYourOwnImage(){
     echo "Building images locally..."
 
-    export DOCKERHUB_USER="youtrack"
+    export DOCKERHUB_USER="getutrack"
     export APP_RELEASE="latest"
     export PULL_POLICY="never"
     CUSTOM_BUILD="true"
 
-    # checkout the code to ~/tmp/youtrack folder and build the images
-    local YOUTRACK_TEMP_CODE_DIR=~/tmp/youtrack
-    rm -rf $YOUTRACK_TEMP_CODE_DIR
-    mkdir -p $YOUTRACK_TEMP_CODE_DIR
-    REPO=https://github.com/getutrack/youtrack.git
-    git clone "$REPO" "$YOUTRACK_TEMP_CODE_DIR"  --branch "$BRANCH" --single-branch --depth 1
+    # checkout the code to ~/tmp/utrack folder and build the images
+    local UTRACK_TEMP_CODE_DIR=~/tmp/utrack
+    rm -rf $UTRACK_TEMP_CODE_DIR
+    mkdir -p $UTRACK_TEMP_CODE_DIR
+    REPO=https://github.com/getutrack/utrack.git
+    git clone "$REPO" "$UTRACK_TEMP_CODE_DIR"  --branch "$BRANCH" --single-branch --depth 1
 
-    cp "$YOUTRACK_TEMP_CODE_DIR/deploy/selfhost/build.yml" "$YOUTRACK_TEMP_CODE_DIR/build.yml"
+    cp "$UTRACK_TEMP_CODE_DIR/deploy/selfhost/build.yml" "$UTRACK_TEMP_CODE_DIR/build.yml"
 
-    cd "$YOUTRACK_TEMP_CODE_DIR" || exit
+    cd "$UTRACK_TEMP_CODE_DIR" || exit
 
     /bin/bash -c "$COMPOSE_CMD -f build.yml build --no-cache"  >&2
     if [ $? -ne 0 ]; then
@@ -199,7 +199,7 @@ function buildYourOwnImage(){
 }
 
 function install() {
-    echo "Begin Installing Youtrack"
+    echo "Begin Installing Utrack"
     echo ""
 
     local build_image=$(initialize)
@@ -225,26 +225,26 @@ function download() {
     local LOCAL_BUILD=$1
     cd $SCRIPT_DIR
     TS=$(date +%s)
-    if [ -f "$YOUTRACK_INSTALL_DIR/docker-compose.yaml" ]
+    if [ -f "$UTRACK_INSTALL_DIR/docker-compose.yaml" ]
     then
-        mv $YOUTRACK_INSTALL_DIR/docker-compose.yaml $YOUTRACK_INSTALL_DIR/archive/$TS.docker-compose.yaml
+        mv $UTRACK_INSTALL_DIR/docker-compose.yaml $UTRACK_INSTALL_DIR/archive/$TS.docker-compose.yaml
     fi
 
-    curl -H 'Cache-Control: no-cache, no-store' -s -o $YOUTRACK_INSTALL_DIR/docker-compose.yaml  https://raw.githubusercontent.com/getutrack/youtrack/$BRANCH/deploy/selfhost/docker-compose.yml?$(date +%s)
-    curl -H 'Cache-Control: no-cache, no-store' -s -o $YOUTRACK_INSTALL_DIR/variables-upgrade.env https://raw.githubusercontent.com/getutrack/youtrack/$BRANCH/deploy/selfhost/variables.env?$(date +%s)
+    curl -H 'Cache-Control: no-cache, no-store' -s -o $UTRACK_INSTALL_DIR/docker-compose.yaml  https://raw.githubusercontent.com/getutrack/utrack/$BRANCH/deploy/selfhost/docker-compose.yml?$(date +%s)
+    curl -H 'Cache-Control: no-cache, no-store' -s -o $UTRACK_INSTALL_DIR/variables-upgrade.env https://raw.githubusercontent.com/getutrack/utrack/$BRANCH/deploy/selfhost/variables.env?$(date +%s)
 
     if [ -f "$DOCKER_ENV_PATH" ];
     then
-        cp "$DOCKER_ENV_PATH" "$YOUTRACK_INSTALL_DIR/archive/$TS.env"
-        cp "$DOCKER_ENV_PATH" "$YOUTRACK_INSTALL_DIR/youtrack.env.bak"
+        cp "$DOCKER_ENV_PATH" "$UTRACK_INSTALL_DIR/archive/$TS.env"
+        cp "$DOCKER_ENV_PATH" "$UTRACK_INSTALL_DIR/utrack.env.bak"
     fi
 
-    mv $YOUTRACK_INSTALL_DIR/variables-upgrade.env $DOCKER_ENV_PATH
+    mv $UTRACK_INSTALL_DIR/variables-upgrade.env $DOCKER_ENV_PATH
 
     syncEnvFile
 
     if [ "$LOCAL_BUILD" == "true" ]; then
-        export DOCKERHUB_USER="youtrack"
+        export DOCKERHUB_USER="getutrack"
         export APP_RELEASE="latest"
         export PULL_POLICY="never"
         CUSTOM_BUILD="true"
@@ -270,9 +270,9 @@ function download() {
     fi
     
     echo ""
-    echo "Most recent version of Youtrack is now available for you to use"
+    echo "Most recent version of Utrack is now available for you to use"
     echo ""
-    echo "In case of 'Upgrade', please check the 'youtrack.env 'file for any new variables and update them accordingly"
+    echo "In case of 'Upgrade', please check the 'utrack.env 'file for any new variables and update them accordingly"
     echo ""
 }
 function startServices() {
@@ -297,7 +297,7 @@ function startServices() {
     if [ -n "$migrator_container_id" ]; then
         local migrator_exit_code=$(docker inspect --format='{{.State.ExitCode}}' $migrator_container_id)
         if [ $migrator_exit_code -ne 0 ]; then
-            echo "Youtrack Server failed to start ❌"
+            echo "Utrack Server failed to start ❌"
             # stopServices
             echo
             echo "Please check the logs for the 'migrator' service and resolve the issue(s)."
@@ -319,7 +319,7 @@ function startServices() {
     printf "\r\033[K"
     echo "   API Service started successfully ✅"
     source "${DOCKER_ENV_PATH}"
-    echo "   Youtrack Server started successfully ✅"
+    echo "   Utrack Server started successfully ✅"
     echo ""
     echo "   You can access the application at $WEB_URL"
     echo ""
@@ -392,9 +392,9 @@ function viewLogs(){
                 5) viewSpecificLogs "beat-worker";;
                 6) viewSpecificLogs "migrator";;
                 7) viewSpecificLogs "proxy";;
-                8) viewSpecificLogs "youtrack-redis";;
-                9) viewSpecificLogs "youtrack-db";;
-                10) viewSpecificLogs "youtrack-minio";;
+                8) viewSpecificLogs "utrack-redis";;
+                9) viewSpecificLogs "utrack-db";;
+                10) viewSpecificLogs "utrack-minio";;
                 0) askForAction;;
                 *) echo "INVALID SERVICE NAME SUPPLIED";;
             esac
@@ -410,9 +410,9 @@ function viewLogs(){
             beat-worker) viewSpecificLogs "beat-worker";;
             migrator) viewSpecificLogs "migrator";;
             proxy) viewSpecificLogs "proxy";;
-            redis) viewSpecificLogs "youtrack-redis";;
-            postgres) viewSpecificLogs "youtrack-db";;
-            minio) viewSpecificLogs "youtrack-minio";;
+            redis) viewSpecificLogs "utrack-redis";;
+            postgres) viewSpecificLogs "utrack-db";;
+            minio) viewSpecificLogs "utrack-minio";;
             *) echo "INVALID SERVICE NAME SUPPLIED";;
         esac
     else
@@ -424,7 +424,7 @@ function backupSingleVolume() {
     selectedVolume=$2
     # Backup data from Docker volume to the backup folder
     # docker run --rm -v "$selectedVolume":/source -v "$backupFolder":/backup busybox sh -c 'cp -r /source/* /backup/'
-    local tobereplaced="youtrack-app_"
+    local tobereplaced="utrack-app_"
     local replacewith=""
 
     local svcName="${selectedVolume//$tobereplaced/$replacewith}"
@@ -437,7 +437,7 @@ function backupSingleVolume() {
 }
 function backupData() {
     local datetime=$(date +"%Y%m%d-%H%M")
-    local BACKUP_FOLDER=$YOUTRACK_INSTALL_DIR/backup/$datetime
+    local BACKUP_FOLDER=$UTRACK_INSTALL_DIR/backup/$datetime
     mkdir -p "$BACKUP_FOLDER"
 
     volumes=$(docker volume ls -f "name=$SERVICE_FOLDER" --format "{{.Name}}" | grep -E "_pgdata|_redisdata|_uploads")

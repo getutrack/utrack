@@ -5,7 +5,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 // store
 // icons
 // types
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 // components
 import { CreateUpdateLabelInline } from "./create-update-label-inline";
 import { ICustomMenuItem, LabelItemBlock } from "./label-block/label-item-block";

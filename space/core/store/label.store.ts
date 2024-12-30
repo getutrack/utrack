@@ -1,6 +1,6 @@
 import set from "lodash/set";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 import { LabelService } from "@/services/label.service";
 import { CoreRootStore } from "./root.store";
 

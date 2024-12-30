@@ -1,5 +1,5 @@
-// youtrack web constants
-import { EEstimateSystem } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { EEstimateSystem } from "@/utrack-web/constants/estimates";
 
 export const isEstimatePointValuesRepeated = (
   estimatePoints: string[],

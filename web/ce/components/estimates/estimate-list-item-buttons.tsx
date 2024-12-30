@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { Pen, Trash } from "lucide-react";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // components
 import { ProIcon } from "@/components/common";
 

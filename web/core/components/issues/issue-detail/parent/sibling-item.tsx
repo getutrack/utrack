@@ -4,11 +4,11 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 // ui
-import { CustomMenu } from "@youtrack/ui";
+import { CustomMenu } from "@utrack/ui";
 // hooks
 import { useIssueDetail, useProject } from "@/hooks/store";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 
 type TIssueParentSiblingItem = {
   workspaceSlug: string;

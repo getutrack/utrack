@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react";
-import { TIssueGroupingFilters } from "@youtrack/types";
+import { TIssueGroupingFilters } from "@utrack/types";
 
 // components
 import { FilterHeader, FilterOption } from "@/components/issues";

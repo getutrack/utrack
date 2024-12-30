@@ -11,7 +11,7 @@ import {
   TIssueSubIssuesStateDistributionMap,
   TIssueSubIssuesIdMap,
   TSubIssuesStateDistribution,
-} from "@youtrack/types";
+} from "@utrack/types";
 // services
 import { updatePersistentLayer } from "@/local-db/utils/utils";
 import { IssueService } from "@/services/issue";

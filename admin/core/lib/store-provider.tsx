@@ -1,8 +1,8 @@
 "use client";
 
 import { ReactNode, createContext } from "react";
-// youtrack admin store
-import { RootStore } from "@/youtrack-admin/store/root.store";
+// utrack admin store
+import { RootStore } from "@/utrack-admin/store/root.store";
 
 let rootStore = new RootStore();
 

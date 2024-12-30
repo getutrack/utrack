@@ -2,7 +2,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 // ui
-import { CustomMenu } from "@youtrack/ui";
+import { CustomMenu } from "@utrack/ui";
 
 export type ProductUpdatesProps = {
   setIsChangeLogOpen: (isOpen: boolean) => void;

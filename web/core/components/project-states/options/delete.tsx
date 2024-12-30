@@ -3,8 +3,8 @@
 import { FC, useState } from "react";
 import { observer } from "mobx-react";
 import { Loader, X } from "lucide-react";
-import { IState } from "@youtrack/types";
-import { AlertModalCore, TOAST_TYPE, Tooltip, setToast } from "@youtrack/ui";
+import { IState } from "@utrack/types";
+import { AlertModalCore, TOAST_TYPE, Tooltip, setToast } from "@utrack/ui";
 // constants
 import { STATE_DELETED } from "@/constants/event-tracker";
 // helpers

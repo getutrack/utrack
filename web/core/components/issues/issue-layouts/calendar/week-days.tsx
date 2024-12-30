@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { TGroupedIssues, TIssue, TIssueMap, TPaginationData } from "@youtrack/types";
+import { TGroupedIssues, TIssue, TIssueMap, TPaginationData } from "@utrack/types";
 // components
 import { CalendarDayTile } from "@/components/issues";
 // helpers

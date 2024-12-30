@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { IModule } from "@youtrack/types";
+import { IModule } from "@utrack/types";
 // mobx store
 // components
 import { ChartDataType, GanttChartRoot, IBlockUpdateData, ModuleGanttSidebar } from "@/components/gantt-chart";

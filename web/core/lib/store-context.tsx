@@ -1,8 +1,8 @@
 "use client";
 
 import { ReactElement, createContext } from "react";
-// youtrack web store
-import { RootStore } from "@/youtrack-web/store/root.store";
+// utrack web store
+import { RootStore } from "@/utrack-web/store/root.store";
 
 export let rootStore = new RootStore();
 

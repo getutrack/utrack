@@ -1,5 +1,5 @@
 {
-  "extends": "@youtrack/typescript-config/base.json",
+  "extends": "@utrack/typescript-config/base.json",
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
@@ -9,7 +9,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/youtrack-live/*": ["./src/ce/*"]
+      "@/utrack-live/*": ["./src/ce/*"]
     },
     "removeComments": true,
     "esModuleInterop": true,

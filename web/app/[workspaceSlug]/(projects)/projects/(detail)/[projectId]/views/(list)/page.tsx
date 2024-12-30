@@ -4,8 +4,8 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // components
-import { TViewFilterProps } from "@youtrack/types";
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { TViewFilterProps } from "@utrack/types";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { PageHead } from "@/components/core";
 import { EmptyState } from "@/components/empty-state";
 import { ProjectViewsList } from "@/components/views";

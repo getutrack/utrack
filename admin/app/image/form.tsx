@@ -1,8 +1,8 @@
 "use client";
 import { FC } from "react";
 import { useForm } from "react-hook-form";
-import { IFormattedInstanceConfiguration, TInstanceImageConfigurationKeys } from "@youtrack/types";
-import { Button, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { IFormattedInstanceConfiguration, TInstanceImageConfigurationKeys } from "@utrack/types";
+import { Button, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ControllerInput } from "@/components/common";
 // hooks

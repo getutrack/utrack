@@ -28,7 +28,7 @@ export const LatestFeatureBlock = () => {
         <div className="h-[90%]">
           <Image
             src={latestFeatures}
-            alt="Youtrack Issues"
+            alt="Utrack Issues"
             className={`-mt-2 ml-10 h-full rounded-md ${
               resolvedTheme === "dark" ? "bg-onboarding-background-100" : "bg-custom-primary-70"
             }`}

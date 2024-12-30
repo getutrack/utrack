@@ -1,7 +1,7 @@
 // icons
 import { AlertTriangle, CheckCircle2, Clock, Copy, LucideIcon, XCircle } from "lucide-react";
 // types
-import { TInboxIssueSortingOrderByKeys, TInboxIssueSortingSortByKeys, TInboxIssueStatus } from "@youtrack/types";
+import { TInboxIssueSortingOrderByKeys, TInboxIssueSortingSortByKeys, TInboxIssueStatus } from "@utrack/types";
 // helpers
 import { findHowManyDaysLeft } from "@/helpers/date-time.helper";
 import { EInboxIssueStatus } from "@/helpers/inbox.helper";

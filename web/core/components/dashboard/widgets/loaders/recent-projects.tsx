@@ -1,7 +1,7 @@
 "use client";
 
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 
 export const RecentProjectsWidgetLoader = () => (
   <Loader className="bg-custom-background-100 rounded-xl p-6 space-y-6">

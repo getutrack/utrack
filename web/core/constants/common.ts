@@ -4,7 +4,7 @@ export const MARKETING_PRICING_PAGE_LINK = "https://utrack.digi-trans.org/pricin
 
 export const MARKETING_CONTACT_US_PAGE_LINK = "https://utrack.digi-trans.org/contact";
 
-export const MARKETING_YOUTRACK_ONE_PAGE_LINK = "https://utrack.digi-trans.org/one";
+export const MARKETING_UTRACK_ONE_PAGE_LINK = "https://utrack.digi-trans.org/one";
 
 export const PROGRESS_STATE_GROUPS_DETAILS = [
   {

@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { CommandModal, ShortcutsModal } from "@/components/command-palette";
 import { BulkDeleteIssuesModal } from "@/components/core";
@@ -24,7 +24,7 @@ import { useEventTracker, useUser, useAppTheme, useCommandPalette, useUserPermis
 import { useAppRouter } from "@/hooks/use-app-router";
 import { useIssuesStore } from "@/hooks/use-issue-layout-store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // services
 import { IssueService } from "@/services/issue";
 

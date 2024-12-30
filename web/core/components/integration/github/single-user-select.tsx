@@ -2,16 +2,16 @@
 
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// youtrack types
-import { IGithubRepoCollaborator } from "@youtrack/types";
-// youtrack ui
-import { Avatar, CustomSelect, CustomSearchSelect, Input } from "@youtrack/ui";
+// utrack types
+import { IGithubRepoCollaborator } from "@utrack/types";
+// utrack ui
+import { Avatar, CustomSelect, CustomSearchSelect, Input } from "@utrack/ui";
 // constants
 import { WORKSPACE_MEMBERS } from "@/constants/fetch-keys";
 // helpers
 import { getFileURL } from "@/helpers/file.helper";
-// youtrack web services
-import { WorkspaceService } from "@/youtrack-web/services";
+// utrack web services
+import { WorkspaceService } from "@/utrack-web/services";
 // types
 import { IUserDetails } from "./root";
 

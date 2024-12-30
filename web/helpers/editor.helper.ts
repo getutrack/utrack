@@ -1,5 +1,5 @@
-// youtrack editor
-import { TFileHandler } from "@youtrack/editor";
+// utrack editor
+import { TFileHandler } from "@utrack/editor";
 // helpers
 import { getBase64Image, getFileURL } from "@/helpers/file.helper";
 // services

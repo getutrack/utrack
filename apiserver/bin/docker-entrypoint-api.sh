@@ -32,4 +32,4 @@ python manage.py create_bucket
 # Clear Cache before starting to remove stale values
 python manage.py clear_cache
 
-exec gunicorn -w "$GUNICORN_WORKERS" -k uvicorn.workers.UvicornWorker youtrack.asgi:application --bind 0.0.0.0:"${PORT:-8000}" --max-requests 1200 --max-requests-jitter 1000 --access-logfile -
+exec gunicorn -w "$GUNICORN_WORKERS" -k uvicorn.workers.UvicornWorker utrack.asgi:application --bind 0.0.0.0:"${PORT:-8000}" --max-requests 1200 --max-requests-jitter 1000 --access-logfile -

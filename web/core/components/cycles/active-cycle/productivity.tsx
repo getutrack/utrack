@@ -1,16 +1,16 @@
 import { FC, Fragment } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
-import { ICycle, TCycleEstimateType } from "@youtrack/types";
-import { Loader } from "@youtrack/ui";
+import { ICycle, TCycleEstimateType } from "@utrack/types";
+import { Loader } from "@utrack/ui";
 // components
 import ProgressChart from "@/components/core/sidebar/progress-chart";
 import { EmptyState } from "@/components/empty-state";
 // constants
 import { EmptyStateType } from "@/constants/empty-state";
 import { useCycle, useProjectEstimates } from "@/hooks/store";
-// youtrack web constants
-import { EEstimateSystem } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { EEstimateSystem } from "@/utrack-web/constants/estimates";
 import { EstimateTypeDropdown } from "../dropdowns/estimate-type-dropdown";
 
 export type ActiveCycleProductivityProps = {

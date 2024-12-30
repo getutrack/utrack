@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { Pencil, X } from "lucide-react";
 // ui
-import { TOAST_TYPE, Tooltip, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, Tooltip, setToast } from "@utrack/ui";
 // components
 import { ParentIssuesListModal } from "@/components/issues";
 // helpers
@@ -13,8 +13,8 @@ import { cn } from "@/helpers/common.helper";
 // hooks
 import { useIssueDetail, useProject } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 // types
 import { TIssueOperations } from "./root";
 

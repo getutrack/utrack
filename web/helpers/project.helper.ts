@@ -1,13 +1,13 @@
 import sortBy from "lodash/sortBy";
 // types
-import { TProjectDisplayFilters, TProjectFilters, TProjectOrderByOptions } from "@youtrack/types";
+import { TProjectDisplayFilters, TProjectFilters, TProjectOrderByOptions } from "@utrack/types";
 // helpers
 import { getDate } from "@/helpers/date-time.helper";
 import { satisfiesDateFilter } from "@/helpers/filter.helper";
-// youtrack web constants
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+// utrack web constants
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 // types
-import { TProject } from "@/youtrack-web/types";
+import { TProject } from "@/utrack-web/types";
 
 /**
  * Updates the sort order of the project.

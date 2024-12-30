@@ -1,5 +1,5 @@
 // types
-import { TEstimateSystems } from "@youtrack/types";
+import { TEstimateSystems } from "@utrack/types";
 
 export const MAX_ESTIMATE_POINT_INPUT_LENGTH = 20;
 

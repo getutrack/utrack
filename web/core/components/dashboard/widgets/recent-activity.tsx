@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { History } from "lucide-react";
 // types
-import { TRecentActivityWidgetResponse } from "@youtrack/types";
+import { TRecentActivityWidgetResponse } from "@utrack/types";
 // components
-import { Card, Avatar, getButtonStyling } from "@youtrack/ui";
+import { Card, Avatar, getButtonStyling } from "@utrack/ui";
 import { ActivityIcon, ActivityMessage, IssueLink } from "@/components/core";
 import { RecentActivityEmptyState, WidgetLoader, WidgetProps } from "@/components/dashboard/widgets";
 // helpers

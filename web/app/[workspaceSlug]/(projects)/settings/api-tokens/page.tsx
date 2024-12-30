@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // component
 import { ApiTokenListItem, CreateApiTokenModal } from "@/components/api-token";
 import { NotAuthorizedView } from "@/components/auth-screens";
@@ -17,7 +17,7 @@ import { EmptyStateType } from "@/constants/empty-state";
 import { API_TOKENS_LIST } from "@/constants/fetch-keys";
 // store hooks
 import { useUserPermissions, useWorkspace } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // services
 import { APITokenService } from "@/services/api_token.service";
 

@@ -3,9 +3,9 @@
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // types
-import { IUserStateDistribution, TStateGroups } from "@youtrack/types";
+import { IUserStateDistribution, TStateGroups } from "@utrack/types";
 // components
-import { ContentWrapper } from "@youtrack/ui";
+import { ContentWrapper } from "@utrack/ui";
 import { PageHead } from "@/components/core";
 import {
   ProfileActivity,

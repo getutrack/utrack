@@ -6,7 +6,7 @@ import { useParams, usePathname, useSearchParams } from "next/navigation";
 // icons
 import { Check, Info } from "lucide-react";
 // ui
-import { CircularProgressIndicator } from "@youtrack/ui";
+import { CircularProgressIndicator } from "@utrack/ui";
 // components
 import { ListItem } from "@/components/core/list";
 import { ModuleListItemAction, ModuleQuickActions } from "@/components/modules";

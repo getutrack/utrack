@@ -9,14 +9,14 @@ import {
   TIssueReaction,
   TIssueRelationTypes,
   TIssueDetailWidget,
-} from "@youtrack/types";
-// youtrack web store
+} from "@utrack/types";
+// utrack web store
 import {
   IIssueActivityStore,
   IssueActivityStore,
   IIssueActivityStoreActions,
   TActivityLoader,
-} from "@/youtrack-web/store/issue/issue-details/activity.store";
+} from "@/utrack-web/store/issue/issue-details/activity.store";
 import { IIssueRootStore } from "../root.store";
 import { IIssueAttachmentStore, IssueAttachmentStore, IIssueAttachmentStoreActions } from "./attachment.store";
 import { IIssueCommentStore, IssueCommentStore, IIssueCommentStoreActions, TCommentLoader } from "./comment.store";

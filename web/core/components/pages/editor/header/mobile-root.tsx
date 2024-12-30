@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
-import { EditorReadOnlyRefApi, EditorRefApi, IMarking } from "@youtrack/editor";
+import { EditorReadOnlyRefApi, EditorRefApi, IMarking } from "@utrack/editor";
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { PageExtraOptions, PageSummaryPopover, PageToolbar } from "@/components/pages";
 // hooks
 import { usePageFilters } from "@/hooks/use-page-filters";

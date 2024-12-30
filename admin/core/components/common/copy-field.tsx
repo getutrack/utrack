@@ -3,7 +3,7 @@
 import React from "react";
 // ui
 import { Copy } from "lucide-react";
-import { Button, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, TOAST_TYPE, setToast } from "@utrack/ui";
 // icons
 
 type Props = {

@@ -4,9 +4,9 @@ import React, { useMemo, useState } from "react";
 import sortBy from "lodash/sortBy";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { TCycleGroups } from "@youtrack/types";
+import { TCycleGroups } from "@utrack/types";
 // components
-import { Loader, CycleGroupIcon } from "@youtrack/ui";
+import { Loader, CycleGroupIcon } from "@utrack/ui";
 import { FilterHeader, FilterOption } from "@/components/issues";
 import { useCycle } from "@/hooks/store";
 // ui

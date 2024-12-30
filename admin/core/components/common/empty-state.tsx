@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 type Props = {
   title: string;

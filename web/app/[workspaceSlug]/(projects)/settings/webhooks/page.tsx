@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // components
 import { NotAuthorizedView } from "@/components/auth-screens";
 import { PageHead } from "@/components/core";
@@ -16,7 +16,7 @@ import { WebhooksList, CreateWebhookModal } from "@/components/web-hooks";
 import { EmptyStateType } from "@/constants/empty-state";
 // hooks
 import { useUserPermissions, useWebhook, useWorkspace } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const WebhooksListPage = observer(() => {
   // states

@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
-    "@youtrack/constants": "*",
-    "@youtrack/helpers": "*",
-    "@youtrack/types": "*",
-    "@youtrack/ui": "*",
+    "@utrack/constants": "*",
+    "@utrack/helpers": "*",
+    "@utrack/types": "*",
+    "@utrack/ui": "*",
     "@sentry/nextjs": "^8.32.0",
     "@tailwindcss/typography": "^0.5.9",
     "@types/lodash": "^4.17.0",
@@ -38,8 +38,8 @@
     "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
-    "@youtrack/eslint-config": "*",
-    "@youtrack/typescript-config": "*",
+    "@utrack/eslint-config": "*",
+    "@utrack/typescript-config": "*",
     "@types/node": "18.16.1",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.2.18",

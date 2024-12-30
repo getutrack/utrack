@@ -11,9 +11,9 @@ import {
   TIssueKanbanFilters,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@youtrack/types";
+} from "@utrack/types";
 // UI
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 // hooks
 import { useCycle, useLabel, useMember, useModule, useProject, useProjectState } from "@/hooks/store";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";

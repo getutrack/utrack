@@ -2,12 +2,12 @@ import { FC, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
 // components
-import { ContentWrapper } from "@youtrack/ui";
+import { ContentWrapper } from "@utrack/ui";
 import { InboxIssueActionsHeader, InboxIssueMainContent } from "@/components/inbox";
 // hooks
 import { useProjectInbox, useUser, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type TInboxContentRoot = {
   workspaceSlug: string;

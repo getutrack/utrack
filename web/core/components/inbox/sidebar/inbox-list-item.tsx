@@ -4,7 +4,7 @@ import { FC, MouseEvent } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Tooltip, PriorityIcon, Row } from "@youtrack/ui";
+import { Tooltip, PriorityIcon, Row } from "@utrack/ui";
 // components
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";
 import { InboxIssueStatus } from "@/components/inbox";

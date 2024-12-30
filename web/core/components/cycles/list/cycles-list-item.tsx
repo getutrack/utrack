@@ -6,9 +6,9 @@ import { usePathname, useSearchParams } from "next/navigation";
 // icons
 import { Check, Info } from "lucide-react";
 // types
-import type { TCycleGroups } from "@youtrack/types";
+import type { TCycleGroups } from "@utrack/types";
 // ui
-import { CircularProgressIndicator } from "@youtrack/ui";
+import { CircularProgressIndicator } from "@utrack/ui";
 // components
 import { ListItem } from "@/components/core/list";
 import { CycleListItemAction } from "@/components/cycles/list";

@@ -2,9 +2,9 @@
 // lucide
 import { Briefcase, FileText, Layers } from "lucide-react";
 // types
-import { IFavorite, TLogoProps } from "@youtrack/types";
+import { IFavorite, TLogoProps } from "@utrack/types";
 // ui
-import { ContrastIcon, DiceIcon, FavoriteFolderIcon } from "@youtrack/ui";
+import { ContrastIcon, DiceIcon, FavoriteFolderIcon } from "@utrack/ui";
 import { Logo } from "@/components/common";
 
 const iconClassName = `flex-shrink-0 size-4 stroke-[1.5] m-auto`;

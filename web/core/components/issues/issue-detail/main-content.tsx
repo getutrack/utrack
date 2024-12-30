@@ -17,8 +17,8 @@ import {
 import { useIssueDetail, useUser } from "@/hooks/store";
 import useReloadConfirmations from "@/hooks/use-reload-confirmation";
 import useSize from "@/hooks/use-window-size";
-// youtrack web components
-import { IssueTypeSwitcher } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueTypeSwitcher } from "@/utrack-web/components/issues";
 // types
 import { TIssueOperations } from "./root";
 

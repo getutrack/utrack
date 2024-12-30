@@ -7,7 +7,7 @@ import { Controller, useForm } from "react-hook-form";
 import { X } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 import { renderFormattedPayloadDate, renderFormattedDate, getDate } from "@/helpers/date-time.helper";
 import { DateFilterSelect } from "./date-filter-select";

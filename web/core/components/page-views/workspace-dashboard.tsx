@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // components
-import { ContentWrapper } from "@youtrack/ui";
+import { ContentWrapper } from "@utrack/ui";
 import { DashboardWidgets } from "@/components/dashboard";
 import { EmptyState } from "@/components/empty-state";
 import { IssuePeekOverview } from "@/components/issues";

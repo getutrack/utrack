@@ -83,12 +83,12 @@ jobs:
           BR_NAME=$( echo "${{ env.TARGET_BRANCH }}" |sed 's/[^a-zA-Z0-9.-]//g')
           echo "TARGET_BRANCH=$BR_NAME" >> $GITHUB_OUTPUT
 
-          echo "DH_IMG_WEB=youtrack-frontend" >> $GITHUB_OUTPUT
-          echo "DH_IMG_SPACE=youtrack-space" >> $GITHUB_OUTPUT
-          echo "DH_IMG_ADMIN=youtrack-admin" >> $GITHUB_OUTPUT
-          echo "DH_IMG_LIVE=youtrack-live" >> $GITHUB_OUTPUT
-          echo "DH_IMG_BACKEND=youtrack-backend" >> $GITHUB_OUTPUT
-          echo "DH_IMG_PROXY=youtrack-proxy" >> $GITHUB_OUTPUT
+          echo "DH_IMG_WEB=utrack-frontend" >> $GITHUB_OUTPUT
+          echo "DH_IMG_SPACE=utrack-space" >> $GITHUB_OUTPUT
+          echo "DH_IMG_ADMIN=utrack-admin" >> $GITHUB_OUTPUT
+          echo "DH_IMG_LIVE=utrack-live" >> $GITHUB_OUTPUT
+          echo "DH_IMG_BACKEND=utrack-backend" >> $GITHUB_OUTPUT
+          echo "DH_IMG_PROXY=utrack-proxy" >> $GITHUB_OUTPUT
 
           echo "BUILD_TYPE=${{env.BUILD_TYPE}}" >> $GITHUB_OUTPUT
           BUILD_RELEASE=false
@@ -369,8 +369,8 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v2.0.8
         env:
-          GITHUB_TOKEN: ${{ secrets.DIGITRANS_GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          GITHUB_TOKEN: ${{ secrets.DIGITRANS_GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ env.REL_VERSION }}
           name: ${{ env.REL_VERSION }}

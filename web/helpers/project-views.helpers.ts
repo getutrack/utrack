@@ -1,6 +1,6 @@
 import isNil from "lodash/isNil";
 import orderBy from "lodash/orderBy";
-import { IProjectView, TViewFilterProps, TViewFiltersSortBy, TViewFiltersSortKey } from "@youtrack/types";
+import { IProjectView, TViewFilterProps, TViewFiltersSortBy, TViewFiltersSortKey } from "@utrack/types";
 import { getDate } from "@/helpers/date-time.helper";
 import { SPACE_BASE_PATH, SPACE_BASE_URL } from "./common.helper";
 import { satisfiesDateFilter } from "./filter.helper";

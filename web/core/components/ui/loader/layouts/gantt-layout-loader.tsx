@@ -1,4 +1,4 @@
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 import { getRandomLength } from "../utils";
 
 export const GanttLayoutLoader = () => (

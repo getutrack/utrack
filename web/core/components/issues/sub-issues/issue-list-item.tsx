@@ -3,17 +3,17 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { ChevronRight, X, Pencil, Trash, Link as LinkIcon, Loader } from "lucide-react";
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // ui
-import { ControlLink, CustomMenu, Tooltip } from "@youtrack/ui";
+import { ControlLink, CustomMenu, Tooltip } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks
 import { useIssueDetail, useProject, useProjectState } from "@/hooks/store";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 // local components
 import { IssueList } from "./issues-list";
 import { IssueProperty } from "./properties";

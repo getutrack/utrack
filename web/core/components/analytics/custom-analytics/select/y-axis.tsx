@@ -2,14 +2,14 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { TYAxisValues } from "@youtrack/types";
-import { CustomSelect } from "@youtrack/ui";
+import { TYAxisValues } from "@utrack/types";
+import { CustomSelect } from "@utrack/ui";
 // constants
 import { ANALYTICS_Y_AXIS_VALUES } from "@/constants/analytics";
 // hooks
 import { useProjectEstimates } from "@/hooks/store";
-// youtrack web constants
-import { EEstimateSystem } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { EEstimateSystem } from "@/utrack-web/constants/estimates";
 
 type Props = {
   value: TYAxisValues;

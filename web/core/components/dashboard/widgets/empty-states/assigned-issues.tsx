@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { TIssuesListTypes } from "@youtrack/types";
+import { TIssuesListTypes } from "@utrack/types";
 // types
 import { ASSIGNED_ISSUES_EMPTY_STATES } from "@/constants/dashboard";
 // constants

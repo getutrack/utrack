@@ -1,7 +1,7 @@
-// youtrack types
-import { IDefaultAnalyticsUser } from "@youtrack/types";
-// youtrack ui
-import { Card } from "@youtrack/ui";
+// utrack types
+import { IDefaultAnalyticsUser } from "@utrack/types";
+// utrack ui
+import { Card } from "@utrack/ui";
 // components
 import { BarGraph, ProfileEmptyState } from "@/components/ui";
 // helpers

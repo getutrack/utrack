@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react";
 import Link from "next/link";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 
 type Props = {

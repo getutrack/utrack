@@ -6,9 +6,9 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { PlusIcon } from "lucide-react";
 // types
-import { ISearchIssueResponse, TIssue } from "@youtrack/types";
+import { ISearchIssueResponse, TIssue } from "@utrack/types";
 // ui
-import { CustomMenu, setPromiseToast } from "@youtrack/ui";
+import { CustomMenu, setPromiseToast } from "@utrack/ui";
 // components
 import { ExistingIssuesListModal } from "@/components/core";
 import { QuickAddIssueRoot } from "@/components/issues";

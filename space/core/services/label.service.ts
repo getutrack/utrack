@@ -1,4 +1,4 @@
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { APIService } from "./api.service";
 

@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { ChevronDown } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
-import { Collapsible } from "@youtrack/ui";
+import { Collapsible } from "@utrack/ui";
 import { CountChip } from "@/components/common";
 import { MembersSettingsLoader } from "@/components/ui";
 import { WorkspaceInvitationsListItem, WorkspaceMembersListItem } from "@/components/workspace";

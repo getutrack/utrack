@@ -1,9 +1,9 @@
 import { FC, useRef, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
-// youtrack editor
-import { EditorRefApi } from "@youtrack/editor";
+// utrack editor
+import { EditorRefApi } from "@utrack/editor";
 // types
-import { TIssueComment } from "@youtrack/types";
+import { TIssueComment } from "@utrack/types";
 // components
 import { LiteTextEditor } from "@/components/editor";
 // constants

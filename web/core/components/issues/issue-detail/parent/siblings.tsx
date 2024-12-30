@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // components
 // hooks
 import { useIssueDetail } from "@/hooks/store";

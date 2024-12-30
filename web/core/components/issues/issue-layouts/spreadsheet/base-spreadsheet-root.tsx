@@ -1,16 +1,16 @@
 import { FC, useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// youtrack constants
-import { ALL_ISSUES } from "@youtrack/constants";
-import { IIssueDisplayFilterOptions } from "@youtrack/types";
+// utrack constants
+import { ALL_ISSUES } from "@utrack/constants";
+import { IIssueDisplayFilterOptions } from "@utrack/types";
 // hooks
 import { EIssueFilterType, EIssueLayoutTypes, EIssuesStoreType } from "@/constants/issue";
 // hooks
 import { useIssues, useUserPermissions } from "@/hooks/store";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import { useIssuesActions } from "@/hooks/use-issues-actions";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // views
 // stores
 // components

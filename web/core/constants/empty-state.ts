@@ -115,13 +115,13 @@ const emptyStateDetails = {
     key: EmptyStateType.WORKSPACE_DASHBOARD,
     title: "Overview of your projects, activity, and metrics",
     description:
-      " Welcome to Youtrack, we are excited to have you here. Create your first project and track your issues, and this page will transform into a space that helps you progress. Admins will also see items which help their team progress.",
+      " Welcome to Utrack, we are excited to have you here. Create your first project and track your issues, and this page will transform into a space that helps you progress. Admins will also see items which help their team progress.",
     path: "/empty-state/onboarding/dashboard",
     // path: "/empty-state/onboarding/",
     primaryButton: {
       text: "Build your first project",
       comicBox: {
-        title: "Everything starts with a project in Youtrack",
+        title: "Everything starts with a project in Utrack",
         description: "A project could be a product’s roadmap, a marketing campaign, or launching a new car.",
       },
     },
@@ -155,7 +155,7 @@ const emptyStateDetails = {
     primaryButton: {
       text: "Start your first project",
       comicBox: {
-        title: "Everything starts with a project in Youtrack",
+        title: "Everything starts with a project in Utrack",
         description: "A project could be a product’s roadmap, a marketing campaign, or launching a new car.",
       },
     },
@@ -216,7 +216,7 @@ const emptyStateDetails = {
     primaryButton: {
       text: "Start your first project",
       comicBox: {
-        title: "Everything starts with a project in Youtrack",
+        title: "Everything starts with a project in Utrack",
         description: "A project could be a product’s roadmap, a marketing campaign, or launching a new car.",
       },
     },
@@ -228,7 +228,7 @@ const emptyStateDetails = {
     key: EmptyStateType.WORKSPACE_SETTINGS_API_TOKENS,
     title: "No API tokens created",
     description:
-      "Youtrack APIs can be used to integrate your data in Youtrack with any external system. Create a token to get started.",
+      "Utrack APIs can be used to integrate your data in Utrack with any external system. Create a token to get started.",
     path: "/empty-state/workspace-settings/api-tokens",
   },
   [EmptyStateType.WORKSPACE_SETTINGS_WEBHOOKS]: {
@@ -254,7 +254,7 @@ const emptyStateDetails = {
     key: EmptyStateType.PROFILE_ASSIGNED,
     title: "No activities yet",
     description:
-      "Get started by creating a new issue! Add details and properties to it. Explore more in Youtrack to see your activity.",
+      "Get started by creating a new issue! Add details and properties to it. Explore more in Utrack to see your activity.",
     path: "/empty-state/profile/activity",
   },
   [EmptyStateType.PROFILE_ASSIGNED]: {
@@ -394,9 +394,9 @@ const emptyStateDetails = {
     primaryButton: {
       text: "Create your first issue",
       comicBox: {
-        title: "Issues are building blocks in Youtrack.",
+        title: "Issues are building blocks in Utrack.",
         description:
-          "Redesign the Youtrack UI, Rebrand the company, or Launch the new fuel injection system are examples of issues that likely have sub-issues.",
+          "Redesign the Utrack UI, Rebrand the company, or Launch the new fuel injection system are examples of issues that likely have sub-issues.",
       },
     },
     accessType: "project",
@@ -496,9 +496,9 @@ const emptyStateDetails = {
   // project pages
   [EmptyStateType.PROJECT_PAGE]: {
     key: EmptyStateType.PROJECT_PAGE,
-    title: "Write a note, a doc, or a full knowledge base. Get Galileo, Youtrack’s AI assistant, to help you get started",
+    title: "Write a note, a doc, or a full knowledge base. Get Galileo, Utrack’s AI assistant, to help you get started",
     description:
-      "Pages are thoughts potting space in Youtrack. Take down meeting notes, format them easily, embed issues, lay them out using a library of components, and keep them all in your project’s context. To make short work of any doc, invoke Galileo, Youtrack’s AI, with a shortcut or the click of a button.",
+      "Pages are thoughts potting space in Utrack. Take down meeting notes, format them easily, embed issues, lay them out using a library of components, and keep them all in your project’s context. To make short work of any doc, invoke Galileo, Utrack’s AI, with a shortcut or the click of a button.",
     path: "/empty-state/onboarding/pages",
     primaryButton: {
       text: "Create your first page",
@@ -536,9 +536,9 @@ const emptyStateDetails = {
   },
   [EmptyStateType.WORKSPACE_PAGE]: {
     key: EmptyStateType.WORKSPACE_PAGE,
-    title: "Write a note, a doc, or a full knowledge base. Get Galileo, Youtrack’s AI assistant, to help you get started",
+    title: "Write a note, a doc, or a full knowledge base. Get Galileo, Utrack’s AI assistant, to help you get started",
     description:
-      "Pages are thoughts potting space in Youtrack. Take down meeting notes, format them easily, embed issues, lay them out using a library of components, and keep them all in your project’s context. To make short work of any doc, invoke Galileo, Youtrack’s AI, with a shortcut or the click of a button.",
+      "Pages are thoughts potting space in Utrack. Take down meeting notes, format them easily, embed issues, lay them out using a library of components, and keep them all in your project’s context. To make short work of any doc, invoke Galileo, Utrack’s AI, with a shortcut or the click of a button.",
     path: "/empty-state/onboarding/pages",
     primaryButton: {
       text: "Create your first page",
@@ -716,7 +716,7 @@ const emptyStateDetails = {
     key: EmptyStateType.DISABLED_PROJECT_PAGE,
     title: "Pages are not enabled for the project.",
     description:
-      "Pages are thought spotting space in Youtrack. Take down meeting notes, format them easily, embed issues, lay them out using a library of components, and keep them all in your project’s context. Enable the pages feature to start creating them in your project.",
+      "Pages are thought spotting space in Utrack. Take down meeting notes, format them easily, embed issues, lay them out using a library of components, and keep them all in your project’s context. Enable the pages feature to start creating them in your project.",
     accessType: "project",
     access: [EUserPermissions.ADMIN],
     path: "/empty-state/disabled-feature/pages",

@@ -7,7 +7,7 @@ interface IUseHeadParams {
 export const useHead = ({ title }: IUseHeadParams) => {
   useEffect(() => {
     if (title) {
-      document.title = title ?? "Youtrack | Simple, extensible, open-source project management tool.";
+      document.title = title ?? "Utrack | Simple, extensible, open-source project management tool.";
     }
   }, [title]);
 };

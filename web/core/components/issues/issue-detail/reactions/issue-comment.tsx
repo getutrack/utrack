@@ -2,9 +2,9 @@
 
 import { FC, useMemo } from "react";
 import { observer } from "mobx-react";
-import { IUser } from "@youtrack/types";
+import { IUser } from "@utrack/types";
 // components
-import { TOAST_TYPE, Tooltip, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, Tooltip, setToast } from "@utrack/ui";
 // helper
 import { cn } from "@/helpers/common.helper";
 import { renderEmoji } from "@/helpers/emoji.helper";

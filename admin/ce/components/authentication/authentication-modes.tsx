@@ -6,13 +6,13 @@ import {
   TGetBaseAuthenticationModeProps,
   TInstanceAuthenticationMethodKeys,
   TInstanceAuthenticationModes,
-} from "@youtrack/types";
+} from "@utrack/types";
 // components
 import { AuthenticationMethodCard } from "@/components/authentication";
 // helpers
 import { getBaseAuthenticationModes } from "@/helpers/authentication.helper";
-// youtrack admin components
-import { UpgradeButton } from "@/youtrack-admin/components/common";
+// utrack admin components
+import { UpgradeButton } from "@/utrack-admin/components/common";
 // images
 import OIDCLogo from "@/public/logos/oidc-logo.svg";
 import SAMLLogo from "@/public/logos/saml-logo.svg";

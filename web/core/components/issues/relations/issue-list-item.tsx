@@ -3,16 +3,16 @@
 import React, { FC } from "react";
 import { observer } from "mobx-react";
 import { X, Pencil, Trash, Link as LinkIcon } from "lucide-react";
-import { TIssue, TIssueRelationTypes } from "@youtrack/types";
-import { ControlLink, CustomMenu, Tooltip } from "@youtrack/ui";
+import { TIssue, TIssueRelationTypes } from "@utrack/types";
+import { ControlLink, CustomMenu, Tooltip } from "@utrack/ui";
 // components
 import { RelationIssueProperty } from "@/components/issues/relations";
 // hooks
 import { useIssueDetail, useProject, useProjectState } from "@/hooks/store";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 // types
 import { TRelationIssueOperations } from "../issue-detail-widgets/relations/helper";
 

@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { Signal, Tag, Triangle, LayoutPanelTop, CalendarClock, CalendarCheck2, Users, UserCircle2 } from "lucide-react";
 // hooks
 // ui icons
-import { DiceIcon, DoubleCircleIcon, ContrastIcon } from "@youtrack/ui";
+import { DiceIcon, DoubleCircleIcon, ContrastIcon } from "@utrack/ui";
 // components
 import {
   DateDropdown,
@@ -27,9 +27,9 @@ import { cn } from "@/helpers/common.helper";
 import { getDate, renderFormattedPayloadDate } from "@/helpers/date-time.helper";
 import { shouldHighlightIssueDueDate } from "@/helpers/issue.helper";
 import { useIssueDetail, useMember, useProject, useProjectState } from "@/hooks/store";
-// youtrack web components
-import { IssueAdditionalPropertyValuesUpdate } from "@/youtrack-web/components/issue-types/values";
-import { IssueWorklogProperty } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueAdditionalPropertyValuesUpdate } from "@/utrack-web/components/issue-types/values";
+import { IssueWorklogProperty } from "@/utrack-web/components/issues";
 
 interface IPeekOverviewProperties {
   workspaceSlug: string;

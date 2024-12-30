@@ -1,6 +1,6 @@
 import { GanttChartSquare, LayoutGrid, List } from "lucide-react";
 // types
-import { TModuleLayoutOptions, TModuleOrderByOptions, TModuleStatus } from "@youtrack/types";
+import { TModuleLayoutOptions, TModuleOrderByOptions, TModuleStatus } from "@utrack/types";
 
 export const MODULE_STATUS: {
   label: string;

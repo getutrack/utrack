@@ -14,7 +14,7 @@ import {
   TOAST_TYPE,
   Tooltip,
   setToast,
-} from "@youtrack/ui";
+} from "@utrack/ui";
 // components
 import { IssueSubscription, IssueUpdateStatus } from "@/components/issues";
 import { ARCHIVABLE_STATE_GROUPS } from "@/constants/state";

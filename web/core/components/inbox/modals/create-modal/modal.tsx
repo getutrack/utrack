@@ -1,6 +1,6 @@
 import { FC } from "react";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@youtrack/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@utrack/ui";
 // components
 import { InboxIssueCreateRoot } from "@/components/inbox/modals/create-modal";
 

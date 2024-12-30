@@ -2,9 +2,9 @@
 
 import { FC, useCallback, useMemo, useState } from "react";
 import { Plus } from "lucide-react";
-import { TIssueLink } from "@youtrack/types";
+import { TIssueLink } from "@utrack/types";
 // hooks
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 import { useIssueDetail } from "@/hooks/store";
 // ui
 // components

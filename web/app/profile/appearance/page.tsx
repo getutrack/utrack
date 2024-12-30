@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
-import { IUserTheme } from "@youtrack/types";
-import { setPromiseToast } from "@youtrack/ui";
+import { IUserTheme } from "@utrack/types";
+import { setPromiseToast } from "@utrack/ui";
 // components
 import { LogoSpinner } from "@/components/common";
 import { CustomThemeSelector, ThemeSwitch, PageHead } from "@/components/core";

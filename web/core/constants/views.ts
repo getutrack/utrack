@@ -1,5 +1,5 @@
 import { Globe2, Lock, LucideIcon } from "lucide-react";
-import { TViewFiltersSortBy, TViewFiltersSortKey } from "@youtrack/types";
+import { TViewFiltersSortBy, TViewFiltersSortKey } from "@utrack/types";
 
 export enum EViewAccess {
   PRIVATE,

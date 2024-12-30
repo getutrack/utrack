@@ -3,9 +3,9 @@
 import { FC, useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Info, Lock } from "lucide-react";
-// youtrack types
-import { IProject, IWorkspace } from "@youtrack/types";
-// youtrack ui
+// utrack types
+import { IProject, IWorkspace } from "@utrack/types";
+// utrack ui
 import {
   Button,
   CustomSelect,
@@ -17,7 +17,7 @@ import {
   EmojiIconPickerTypes,
   Tooltip,
   // CustomSearchSelect,
-} from "@youtrack/ui";
+} from "@utrack/ui";
 // components
 import { Logo } from "@/components/common";
 import { ImagePickerPopover } from "@/components/core";

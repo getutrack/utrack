@@ -1,4 +1,4 @@
-import { IProjectView } from "@youtrack/types";
+import { IProjectView } from "@utrack/types";
 import { APIService } from "@/services/api.service";
 // types
 // helpers

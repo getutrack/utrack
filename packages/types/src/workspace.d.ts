@@ -4,7 +4,7 @@ import type {
   IUser,
   IUserLite,
   IWorkspaceViewProps,
-} from "@youtrack/types";
+} from "@utrack/types";
 import { TUserPermissions } from "./enums";
 
 export interface IWorkspace {

@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import type { IIssueLabel } from "@youtrack/types";
+import type { IIssueLabel } from "@utrack/types";
 // ui
-import { AlertModalCore, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { AlertModalCore, TOAST_TYPE, setToast } from "@utrack/ui";
 // hooks
 import { useLabel } from "@/hooks/store";
 

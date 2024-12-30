@@ -6,14 +6,14 @@ import { useParams } from "next/navigation";
 import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { Plus, X } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
-import { IWorkspaceBulkInviteFormData } from "@youtrack/types";
+import { IWorkspaceBulkInviteFormData } from "@utrack/types";
 // ui
-import { Button, CustomSelect, Input } from "@youtrack/ui";
+import { Button, CustomSelect, Input } from "@utrack/ui";
 // constants
 import { ROLE } from "@/constants/workspace";
 // hooks
 import { useUserPermissions } from "@/hooks/store";
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 // types
 
 type Props = {

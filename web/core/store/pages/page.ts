@@ -1,10 +1,10 @@
 import set from "lodash/set";
 import { action, computed, makeObservable, observable, reaction, runInAction } from "mobx";
 // types
-import { TDocumentPayload, TLogoProps, TPage } from "@youtrack/types";
+import { TDocumentPayload, TLogoProps, TPage } from "@utrack/types";
 // constants
 import { EPageAccess } from "@/constants/page";
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 // services
 import { ProjectPageService } from "@/services/page";
 // store

@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 // hooks
 import { useInstance } from "@/hooks/store";
 // components
@@ -20,7 +20,7 @@ const InstanceAIPage = observer(() => {
         <div className="border-b border-custom-border-100 mx-4 py-4 space-y-1 flex-shrink-0">
           <div className="text-xl font-medium text-custom-text-100">AI features for all your workspaces</div>
           <div className="text-sm font-normal text-custom-text-300">
-            Configure your AI API credentials so Youtrack AI features are turned on for all your workspaces.
+            Configure your AI API credentials so Utrack AI features are turned on for all your workspaces.
           </div>
         </div>
         <div className="flex-grow overflow-hidden overflow-y-scroll vertical-scrollbar scrollbar-md px-4">

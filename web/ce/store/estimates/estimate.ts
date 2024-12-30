@@ -6,9 +6,9 @@ import set from "lodash/set";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { IEstimate as IEstimateType, IEstimatePoint as IEstimatePointType, TEstimateSystemKeys } from "@youtrack/types";
-// youtrack web services
-import estimateService from "@/youtrack-web/services/project/estimate.service";
+import { IEstimate as IEstimateType, IEstimatePoint as IEstimatePointType, TEstimateSystemKeys } from "@utrack/types";
+// utrack web services
+import estimateService from "@/utrack-web/services/project/estimate.service";
 // store
 import { IEstimatePoint, EstimatePoint } from "@/store/estimates/estimate-point";
 import { CoreRootStore } from "@/store/root.store";

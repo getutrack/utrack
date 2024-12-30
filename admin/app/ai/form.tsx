@@ -2,8 +2,8 @@
 import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { Lightbulb } from "lucide-react";
-import { IFormattedInstanceConfiguration, TInstanceAIConfigurationKeys } from "@youtrack/types";
-import { Button, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { IFormattedInstanceConfiguration, TInstanceAIConfigurationKeys } from "@utrack/types";
+import { Button, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ControllerInput, TControllerInputFormField } from "@/components/common";
 // hooks

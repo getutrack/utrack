@@ -3,7 +3,7 @@
 import { observer } from "mobx-react";
 import { Disclosure } from "@headlessui/react";
 // ui
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 // components
 import {
   ActiveCycleProductivity,

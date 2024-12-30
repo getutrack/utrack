@@ -2,8 +2,8 @@ import { FC } from "react";
 // types
 import { CircleX } from "lucide-react";
 // services
-import { EModalWidth, ModalCore } from "@youtrack/ui";
-// youtrack web components
+import { EModalWidth, ModalCore } from "@utrack/ui";
+// utrack web components
 import { cn } from "@/helpers/common.helper";
 // local components
 import { OnePlanUpgrade } from "./one-plan-upgrade";
@@ -15,7 +15,7 @@ const PRO_PLAN_FEATURES = [
   "Workflow manager",
   "Automations",
   "Popular integrations",
-  "Youtrack AI",
+  "Utrack AI",
 ];
 
 const ONE_PLAN_FEATURES = [

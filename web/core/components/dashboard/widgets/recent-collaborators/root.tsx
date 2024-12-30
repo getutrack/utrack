@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
 // types
-import { Card } from "@youtrack/ui";
+import { Card } from "@utrack/ui";
 import { WidgetProps } from "@/components/dashboard/widgets";
 // components
 import { CollaboratorsList } from "./collaborators-list";

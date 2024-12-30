@@ -1,7 +1,7 @@
 import { startOfToday, format } from "date-fns";
 import { isEmpty, orderBy, uniqBy } from "lodash";
 import sortBy from "lodash/sortBy";
-import { ICycle, TCycleFilters } from "@youtrack/types";
+import { ICycle, TCycleFilters } from "@utrack/types";
 // helpers
 import { findTotalDaysInRange, generateDateArray, getDate } from "@/helpers/date-time.helper";
 import { satisfiesDateFilter } from "@/helpers/filter.helper";

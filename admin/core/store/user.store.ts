@@ -1,5 +1,5 @@
 import { action, observable, runInAction, makeObservable } from "mobx";
-import { IUser } from "@youtrack/types";
+import { IUser } from "@utrack/types";
 // helpers
 import { EUserStatus, TUserStatus } from "@/helpers/user.helper";
 // services

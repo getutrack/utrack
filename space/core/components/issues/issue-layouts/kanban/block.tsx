@@ -4,10 +4,10 @@ import { MutableRefObject } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
-// youtrack
-import { cn } from "@youtrack/editor";
-import { IIssueDisplayProperties } from "@youtrack/types";
-import { Tooltip } from "@youtrack/ui";
+// utrack
+import { cn } from "@utrack/editor";
+import { IIssueDisplayProperties } from "@utrack/types";
+import { Tooltip } from "@utrack/ui";
 // components
 import { WithDisplayPropertiesHOC } from "@/components/issues/issue-layouts/with-display-properties-HOC";
 // helpers

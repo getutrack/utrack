@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // types
-import { TModuleFilters } from "@youtrack/types";
+import { TModuleFilters } from "@utrack/types";
 // components
 import { EmptyState } from "@/components/empty-state";
 import { ArchivedModulesView, ModuleAppliedFiltersList } from "@/components/modules";

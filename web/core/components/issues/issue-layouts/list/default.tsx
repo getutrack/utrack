@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { autoScrollForElements } from "@atlaskit/pragmatic-drag-and-drop-auto-scroll/element";
 import { observer } from "mobx-react";
-// youtrack constants
-import { ALL_ISSUES } from "@youtrack/constants";
+// utrack constants
+import { ALL_ISSUES } from "@utrack/constants";
 // types
 import {
   GroupByColumnTypes,
@@ -15,17 +15,17 @@ import {
   TIssueOrderByOptions,
   IGroupByColumn,
   TIssueKanbanFilters,
-} from "@youtrack/types";
+} from "@utrack/types";
 // components
 import { MultipleSelectGroup } from "@/components/core";
 
 // hooks
 import { useCycle, useLabel, useMember, useModule, useProject, useProjectState } from "@/hooks/store";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
-// youtrack web components
-import { IssueBulkOperationsRoot } from "@/youtrack-web/components/issues";
-// youtrack web hooks
-import { useBulkOperationStatus } from "@/youtrack-web/hooks/use-bulk-operation-status";
+// utrack web components
+import { IssueBulkOperationsRoot } from "@/utrack-web/components/issues";
+// utrack web hooks
+import { useBulkOperationStatus } from "@/utrack-web/hooks/use-bulk-operation-status";
 // utils
 import { getGroupByColumns, isWorkspaceLevel, GroupDropLocation, isSubGrouped } from "../utils";
 import { ListGroup } from "./list-group";
@@ -82,7 +82,7 @@ export const List: React.FC<IList> = observer((props) => {
   const projectState = useProjectState();
   const cycle = useCycle();
   const projectModule = useModule();
-  // youtrack web hooks
+  // utrack web hooks
   const isBulkOperationsEnabled = useBulkOperationStatus();
 
   const containerRef = useRef<HTMLDivElement | null>(null);

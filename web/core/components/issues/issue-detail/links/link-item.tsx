@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { Pencil, Trash2, LinkIcon, ExternalLink } from "lucide-react";
 // ui
-import { Tooltip, TOAST_TYPE, setToast, CustomMenu } from "@youtrack/ui";
+import { Tooltip, TOAST_TYPE, setToast, CustomMenu } from "@utrack/ui";
 // helpers
 import { calculateTimeAgoShort } from "@/helpers/date-time.helper";
 import { copyTextToClipboard } from "@/helpers/string.helper";

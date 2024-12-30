@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
 // types
-import { cn } from "@youtrack/editor";
-import { IIssueDisplayProperties } from "@youtrack/types";
-import { Tooltip } from "@youtrack/ui";
+import { cn } from "@utrack/editor";
+import { IIssueDisplayProperties } from "@utrack/types";
+import { Tooltip } from "@utrack/ui";
 // helpers
 import { queryParamGenerator } from "@/helpers/query-param-generator";
 // hooks

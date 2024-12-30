@@ -1,6 +1,6 @@
 // ui
-import { IDefaultAnalyticsResponse } from "@youtrack/types";
-import { Card } from "@youtrack/ui";
+import { IDefaultAnalyticsResponse } from "@utrack/types";
+import { Card } from "@utrack/ui";
 import { LineGraph, ProfileEmptyState } from "@/components/ui";
 // image
 import { MONTHS_LIST } from "@/constants/calendar";

@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 import { observer } from "mobx-react";
 // types
 // ui
-import { AlertModalCore } from "@youtrack/ui";
+import { AlertModalCore } from "@utrack/ui";
 // helper
 import { getFileName } from "@/helpers/attachment.helper";
 // hooks

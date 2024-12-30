@@ -7,4 +7,4 @@ export * from "./extensions";
 export * from "./image";
 export * from "./mention-suggestion";
 export * from "./slash-commands-suggestion";
-export * from "@/youtrack-editor/types";
+export * from "@/utrack-editor/types";

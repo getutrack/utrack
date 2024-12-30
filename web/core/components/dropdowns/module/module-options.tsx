@@ -8,7 +8,7 @@ import { usePopper } from "react-popper";
 import { Check, Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
 //components
-import { DiceIcon } from "@youtrack/ui";
+import { DiceIcon } from "@utrack/ui";
 //store
 import { cn } from "@/helpers/common.helper";
 import { useModule } from "@/hooks/store";

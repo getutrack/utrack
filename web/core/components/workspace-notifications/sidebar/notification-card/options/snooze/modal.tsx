@@ -5,8 +5,8 @@ import { useParams } from "next/navigation";
 import { useForm, Controller } from "react-hook-form";
 import { X } from "lucide-react";
 import { Transition, Dialog } from "@headlessui/react";
-import { TNotification } from "@youtrack/types";
-import { Button, CustomSelect } from "@youtrack/ui";
+import { TNotification } from "@utrack/types";
+import { Button, CustomSelect } from "@utrack/ui";
 // components
 import { DateDropdown } from "@/components/dropdowns";
 // constants

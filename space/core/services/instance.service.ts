@@ -1,5 +1,5 @@
 // types
-import type { IInstanceInfo } from "@youtrack/types";
+import type { IInstanceInfo } from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 // services

@@ -1,7 +1,7 @@
 import { MutableRefObject, useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // types
-import { IIssueDisplayFilterOptions, IIssueDisplayProperties, TIssue } from "@youtrack/types";
+import { IIssueDisplayFilterOptions, IIssueDisplayProperties, TIssue } from "@utrack/types";
 import { SpreadsheetIssueRowLoader } from "@/components/ui/loader";
 //hooks
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";

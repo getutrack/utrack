@@ -9,10 +9,10 @@ import {
   TWidgetStatsResponse,
   TWidgetKeys,
   TWidgetStatsRequestParams,
-} from "@youtrack/types";
+} from "@utrack/types";
 // services
 import { DashboardService } from "@/services/dashboard.service";
-// youtrack web store
+// utrack web store
 import { CoreRootStore } from "./root.store";
 
 export interface IDashboardStore {

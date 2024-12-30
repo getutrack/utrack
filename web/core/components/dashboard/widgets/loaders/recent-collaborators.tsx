@@ -1,7 +1,7 @@
 "use client";
 
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 
 export const RecentCollaboratorsWidgetLoader = () => (
   <>

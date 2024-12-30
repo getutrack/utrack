@@ -4,16 +4,16 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // types
-import { IUser, IWorkspace, TOnboardingSteps } from "@youtrack/types";
+import { IUser, IWorkspace, TOnboardingSteps } from "@utrack/types";
 // ui
-import { Button, CustomSelect, Input, Spinner, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, CustomSelect, Input, Spinner, TOAST_TYPE, setToast } from "@utrack/ui";
 // constants
 import { E_ONBOARDING, WORKSPACE_CREATED } from "@/constants/event-tracker";
 import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@/constants/workspace";
 // hooks
 import { useEventTracker, useUserProfile, useUserSettings, useWorkspace } from "@/hooks/store";
 // services
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 
 type Props = {
   stepChange: (steps: Partial<TOnboardingSteps>) => Promise<void>;
@@ -145,7 +145,7 @@ export const CreateWorkspace: React.FC<Props> = observer((props) => {
       <div className="text-center space-y-1 py-4 mx-auto">
         <h3 className="text-3xl font-bold text-onboarding-text-100">Create a workspace</h3>
         <p className="font-medium text-onboarding-text-400">
-          To start using Youtrack, you need to create or join a workspace.
+          To start using Utrack, you need to create or join a workspace.
         </p>
       </div>
       <form className="w-full mx-auto mt-2 space-y-4" onSubmit={handleSubmit(handleCreateWorkspace)}>

@@ -2,7 +2,7 @@
 import React from "react";
 import { AlertCircle } from "lucide-react";
 // ui
-import { Button, TransferIcon } from "@youtrack/ui";
+import { Button, TransferIcon } from "@utrack/ui";
 
 type Props = {
   handleClick: () => void;

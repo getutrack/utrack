@@ -1,9 +1,9 @@
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { Check } from "lucide-react";
-// youtrack packages
-import { cn } from "@youtrack/editor";
-import { Dropdown } from "@youtrack/ui";
+// utrack packages
+import { cn } from "@utrack/editor";
+import { Dropdown } from "@utrack/ui";
 // constants
 import { EIssueLayoutTypes, ISSUE_LAYOUT_MAP } from "@/constants/issue";
 

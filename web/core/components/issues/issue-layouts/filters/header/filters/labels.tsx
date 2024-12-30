@@ -3,9 +3,9 @@
 import React, { useMemo, useState } from "react";
 import sortBy from "lodash/sortBy";
 import { observer } from "mobx-react";
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 // components
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 import { FilterHeader, FilterOption } from "@/components/issues";
 // ui
 // types

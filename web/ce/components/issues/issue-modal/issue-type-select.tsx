@@ -1,6 +1,6 @@
 import { Control } from "react-hook-form";
 // types
-import { TBulkIssueProperties, TIssue } from "@youtrack/types";
+import { TBulkIssueProperties, TIssue } from "@utrack/types";
 
 export type TIssueFields = TIssue & TBulkIssueProperties;
 

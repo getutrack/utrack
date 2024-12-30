@@ -6,7 +6,7 @@ import { EmptyState } from "@/components/common";
 import { EIssuesStoreType } from "@/constants/issue";
 // hooks
 import { useCommandPalette, useEventTracker, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // assets
 import emptyIssue from "@/public/empty-state/issue.svg";
 

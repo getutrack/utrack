@@ -1,5 +1,5 @@
-// youtrack editor
-import { TEditorFontSize, TEditorFontStyle } from "@youtrack/editor";
+// utrack editor
+import { TEditorFontSize, TEditorFontStyle } from "@utrack/editor";
 // hooks
 import useLocalStorage from "@/hooks/use-local-storage";
 

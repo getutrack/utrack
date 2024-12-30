@@ -3,9 +3,9 @@
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 // types
-import { IIssueDisplayFilterOptions, IIssueDisplayProperties, IIssueFilterOptions } from "@youtrack/types";
+import { IIssueDisplayFilterOptions, IIssueDisplayProperties, IIssueFilterOptions } from "@utrack/types";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 import { DisplayFiltersSelection, FiltersDropdown, FilterSelection, LayoutSelection } from "@/components/issues";
 // constants
@@ -19,8 +19,8 @@ import {
 import { isIssueFilterActive } from "@/helpers/filter.helper";
 // hooks
 import { useLabel, useProjectState, useMember, useIssues } from "@/hooks/store";
-// youtrack web types
-import { TProject } from "@/youtrack-web/types";
+// utrack web types
+import { TProject } from "@/utrack-web/types";
 // local components
 import { ProjectAnalyticsModal } from "../analytics";
 

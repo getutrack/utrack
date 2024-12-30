@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { observer } from "mobx-react";
-import { ISearchIssueResponse, TIssue } from "@youtrack/types";
-import { setToast, TOAST_TYPE } from "@youtrack/ui";
+import { ISearchIssueResponse, TIssue } from "@utrack/types";
+import { setToast, TOAST_TYPE } from "@utrack/ui";
 // components
 import { ExistingIssuesListModal } from "@/components/core";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal";

@@ -1,6 +1,6 @@
 import React from "react";
 import { eachDayOfInterval, isValid } from "date-fns";
-import { TModuleCompletionChartDistribution } from "@youtrack/types";
+import { TModuleCompletionChartDistribution } from "@utrack/types";
 // ui
 import { LineGraph } from "@/components/ui";
 // helpers

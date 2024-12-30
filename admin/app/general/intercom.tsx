@@ -4,8 +4,8 @@ import { FC, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
 import { MessageSquare } from "lucide-react";
-import { IFormattedInstanceConfiguration } from "@youtrack/types";
-import { ToggleSwitch } from "@youtrack/ui";
+import { IFormattedInstanceConfiguration } from "@utrack/types";
+import { ToggleSwitch } from "@utrack/ui";
 // hooks
 import { useInstance } from "@/hooks/store";
 
@@ -60,7 +60,7 @@ export const IntercomConfig: FC<TIntercomConfig> = observer((props) => {
           </div>
 
           <div className="grow">
-            <div className="text-sm font-medium text-custom-text-100 leading-5">Talk to Youtrack</div>
+            <div className="text-sm font-medium text-custom-text-100 leading-5">Talk to Utrack</div>
             <div className="text-xs font-normal text-custom-text-300 leading-5">
               Let your members chat with us via Intercom or another service. Toggling Telemetry off turns this off
               automatically.

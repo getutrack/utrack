@@ -1,13 +1,13 @@
 {
-  "name": "Youtrack",
-  "description": "Youtrack helps you track your issues, epics, and product roadmaps.",
-  "repository": "http://github.com/digitranslab/youtrack",
+  "name": "Utrack",
+  "description": "Utrack helps you track your issues, epics, and product roadmaps.",
+  "repository": "http://github.com/digitranslab/utrack",
   "logo": "https://avatars.githubusercontent.com/u/115727700?s=200&v=4",
   "website": "https://utrack.digi-trans.org/",
   "success_url": "/",
   "stack": "heroku-22",
   "keywords": [
-    "youtrack",
+    "utrack",
     "project management",
     "django",
     "next"
@@ -66,7 +66,7 @@
       "value": ""
     },
     "WEB_URL": {
-      "description": "Web URL for Youtrack this will be used for redirections in the emails",
+      "description": "Web URL for Utrack this will be used for redirections in the emails",
       "value": ""
     },
     "GITHUB_CLIENT_SECRET": {

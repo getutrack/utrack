@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { Tab } from "@headlessui/react";
-import { TCreatedIssuesWidgetFilters, TCreatedIssuesWidgetResponse } from "@youtrack/types";
+import { TCreatedIssuesWidgetFilters, TCreatedIssuesWidgetResponse } from "@utrack/types";
 // hooks
-import { Card } from "@youtrack/ui";
+import { Card } from "@utrack/ui";
 import {
   DurationFilterDropdown,
   IssuesErrorState,

@@ -2,7 +2,7 @@ import set from "lodash/set";
 import unset from "lodash/unset";
 import { observable, action, makeObservable, runInAction } from "mobx";
 // types
-import { TProjectPublishSettings } from "@youtrack/types";
+import { TProjectPublishSettings } from "@utrack/types";
 // services
 import { ProjectPublishService } from "@/services/project";
 // store

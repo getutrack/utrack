@@ -4,7 +4,7 @@ import { FC, Fragment, useState } from "react";
 import { DayPicker } from "react-day-picker";
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 export type InboxIssueSnoozeModalProps = {
   isOpen: boolean;

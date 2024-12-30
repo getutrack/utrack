@@ -2,8 +2,8 @@
 
 import { observer } from "mobx-react";
 // ui
-import { cn } from "@youtrack/editor";
-import { StateGroupIcon, Tooltip } from "@youtrack/ui";
+import { cn } from "@utrack/editor";
+import { StateGroupIcon, Tooltip } from "@utrack/ui";
 //hooks
 import { useStates } from "@/hooks/store";
 

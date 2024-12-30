@@ -4,7 +4,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { ArchiveIcon, Breadcrumbs, LayersIcon, Header } from "@youtrack/ui";
+import { ArchiveIcon, Breadcrumbs, LayersIcon, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink, Logo } from "@/components/common";
 import { IssueDetailQuickActions } from "@/components/issues";

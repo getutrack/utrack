@@ -6,9 +6,9 @@ import { useParams, usePathname } from "next/navigation";
 import { useForm, UseFormRegister } from "react-hook-form";
 import { PlusIcon } from "lucide-react";
 // types
-import { IProject, TIssue } from "@youtrack/types";
+import { IProject, TIssue } from "@utrack/types";
 // ui
-import { setPromiseToast } from "@youtrack/ui";
+import { setPromiseToast } from "@utrack/ui";
 // components
 import { CreateIssueToastActionItems } from "@/components/issues";
 // constants
@@ -19,8 +19,8 @@ import { cn } from "@/helpers/common.helper";
 import { createIssuePayload } from "@/helpers/issue.helper";
 // hooks
 import { useEventTracker } from "@/hooks/store";
-// youtrack web components
-import { QuickAddIssueFormRoot } from "@/youtrack-web/components/issues";
+// utrack web components
+import { QuickAddIssueFormRoot } from "@/utrack-web/components/issues";
 
 export type TQuickAddIssueForm = {
   ref: React.RefObject<HTMLFormElement>;

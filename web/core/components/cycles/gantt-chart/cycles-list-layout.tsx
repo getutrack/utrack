@@ -1,7 +1,7 @@
 import { FC, useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { ICycle } from "@youtrack/types";
+import { ICycle } from "@utrack/types";
 // components
 import { CycleGanttBlock } from "@/components/cycles";
 import { GanttChartRoot, IBlockUpdateData, CycleGanttSidebar, ChartDataType } from "@/components/gantt-chart";

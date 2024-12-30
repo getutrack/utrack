@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 import { Tab } from "@headlessui/react";
-import { TIssuesListTypes } from "@youtrack/types";
+import { TIssuesListTypes } from "@utrack/types";
 // helpers
 import { EDurationFilters, FILTERED_ISSUES_TABS_LIST, UNFILTERED_ISSUES_TABS_LIST } from "@/constants/dashboard";
 import { cn } from "@/helpers/common.helper";

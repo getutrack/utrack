@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { ChevronDown, LucideIcon } from "lucide-react";
 // ui
-import { ComboDropDown } from "@youtrack/ui";
+import { ComboDropDown } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks

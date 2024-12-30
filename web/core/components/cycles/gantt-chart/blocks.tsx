@@ -4,7 +4,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 // ui
-import { Tooltip, ContrastIcon } from "@youtrack/ui";
+import { Tooltip, ContrastIcon } from "@utrack/ui";
 // helpers
 import { renderFormattedDate } from "@/helpers/date-time.helper";
 // hooks

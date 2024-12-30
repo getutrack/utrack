@@ -3,7 +3,7 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // ui
-import { Breadcrumbs, Button, DiceIcon, Header } from "@youtrack/ui";
+import { Breadcrumbs, Button, DiceIcon, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink, Logo } from "@/components/common";
 import { ModuleViewHeader } from "@/components/modules";
@@ -11,7 +11,7 @@ import { ModuleViewHeader } from "@/components/modules";
 import { useCommandPalette, useEventTracker, useProject, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
 // constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const ModulesListHeader: React.FC = observer(() => {
   // router

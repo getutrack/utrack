@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Set Password - Youtrack",
+  title: "Set Password - Utrack",
 };
 
 export default function SetPasswordLayout({ children }: { children: React.ReactNode }) {

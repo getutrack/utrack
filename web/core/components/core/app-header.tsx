@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react";
 // components
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 import { SidebarHamburgerToggle } from "@/components/core";
 
 export interface AppHeaderProps {

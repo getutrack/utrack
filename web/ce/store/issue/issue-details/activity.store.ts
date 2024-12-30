@@ -7,11 +7,11 @@ import uniq from "lodash/uniq";
 import update from "lodash/update";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-import { TIssueActivityComment, TIssueActivity, TIssueActivityMap, TIssueActivityIdMap } from "@youtrack/types";
-// youtrack web constants
-import { EActivityFilterType } from "@/youtrack-web/constants/issues";
-// youtrack web store types
-import { RootStore } from "@/youtrack-web/store/root.store";
+import { TIssueActivityComment, TIssueActivity, TIssueActivityMap, TIssueActivityIdMap } from "@utrack/types";
+// utrack web constants
+import { EActivityFilterType } from "@/utrack-web/constants/issues";
+// utrack web store types
+import { RootStore } from "@/utrack-web/store/root.store";
 // services
 import { IssueActivityService } from "@/services/issue";
 

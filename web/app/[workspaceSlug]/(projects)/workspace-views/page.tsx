@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 // icons
 import { Search } from "lucide-react";
 // ui
-import { Input } from "@youtrack/ui";
+import { Input } from "@utrack/ui";
 // components
 import { PageHead } from "@/components/core";
 import { GlobalDefaultViewListItem, GlobalViewsList } from "@/components/workspace";

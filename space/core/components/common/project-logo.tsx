@@ -1,5 +1,5 @@
 // types
-import { TLogoProps } from "@youtrack/types";
+import { TLogoProps } from "@utrack/types";
 // helpers
 import { cn } from "@/helpers/common.helper";
 

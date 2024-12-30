@@ -4,9 +4,9 @@ import { FC, useMemo } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 // types
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // ui
-import { TOAST_TYPE, setPromiseToast, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/common";
 import { IssuePeekOverview } from "@/components/issues";
@@ -16,7 +16,7 @@ import { EIssuesStoreType } from "@/constants/issue";
 // hooks
 import { useAppTheme, useEventTracker, useIssueDetail, useIssues, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // images
 import emptyIssue from "@/public/empty-state/issue.svg";
 // local components

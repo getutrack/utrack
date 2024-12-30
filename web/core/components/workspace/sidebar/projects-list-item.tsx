@@ -23,8 +23,8 @@ import {
   Layers,
 } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // ui
 import {
   CustomMenu,
@@ -38,7 +38,7 @@ import {
   DragHandle,
   Intake,
   ControlLink,
-} from "@youtrack/ui";
+} from "@utrack/ui";
 // components
 import { Logo } from "@/components/common";
 import { LeaveProjectModal, PublishProjectModal } from "@/components/project";
@@ -49,7 +49,7 @@ import { cn } from "@/helpers/common.helper";
 import { useAppTheme, useEventTracker, useProject, useUserPermissions } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import { HIGHLIGHT_CLASS, highlightIssueOnDrop } from "../../issues/issue-layouts/utils";
 
 type Props = {

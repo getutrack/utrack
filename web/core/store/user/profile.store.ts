@@ -2,7 +2,7 @@ import cloneDeep from "lodash/cloneDeep";
 import set from "lodash/set";
 import { action, makeObservable, observable, runInAction } from "mobx";
 // types
-import { IUserTheme, TUserProfile } from "@youtrack/types";
+import { IUserTheme, TUserProfile } from "@utrack/types";
 // services
 import { UserService } from "@/services/user.service";
 // store

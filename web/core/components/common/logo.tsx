@@ -3,9 +3,9 @@
 import { FC } from "react";
 // emoji-picker-react
 import { Emoji } from "emoji-picker-react";
-import { TLogoProps } from "@youtrack/types";
+import { TLogoProps } from "@utrack/types";
 // helpers
-import { LUCIDE_ICONS_LIST } from "@youtrack/ui";
+import { LUCIDE_ICONS_LIST } from "@utrack/ui";
 import { emojiCodeToUnicode } from "@/helpers/emoji.helper";
 // import { icons } from "lucide-react";
 import useFontFaceObserver from "use-font-face-observer";

@@ -1,5 +1,5 @@
 services:
-  youtrack-redis:
+  utrack-redis:
     image: valkey/valkey:7.2.5-alpine
     restart: unless-stopped
     networks:
@@ -7,7 +7,7 @@ services:
     volumes:
       - redisdata:/data
 
-  youtrack-mq:
+  utrack-mq:
     image: rabbitmq:3.13.6-management-alpine
     restart: unless-stopped
     networks:
@@ -21,7 +21,7 @@ services:
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
       RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST}
 
-  youtrack-minio:
+  utrack-minio:
     image: minio/minio
     restart: unless-stopped
     networks:
@@ -35,7 +35,7 @@ services:
       MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID}
       MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY}
 
-  youtrack-db:
+  utrack-db:
     image: postgres:15.7-alpine
     restart: unless-stopped
     networks:
@@ -120,8 +120,8 @@ services:
     env_file:
       - ./apiserver/.env
     depends_on:
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   worker:
     build:
@@ -139,8 +139,8 @@ services:
       - ./apiserver/.env
     depends_on:
       - api
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   beat-worker:
     build:
@@ -158,8 +158,8 @@ services:
       - ./apiserver/.env
     depends_on:
       - api
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   migrator:
     build:
@@ -172,12 +172,12 @@ services:
       - dev_env
     volumes:
       - ./apiserver:/code
-    command: ./bin/docker-entrypoint-migrator.sh --settings=youtrack.settings.local
+    command: ./bin/docker-entrypoint-migrator.sh --settings=utrack.settings.local
     env_file:
       - ./apiserver/.env
     depends_on:
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   proxy:
     build:

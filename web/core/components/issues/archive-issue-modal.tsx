@@ -2,9 +2,9 @@
 
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // hooks
-import { Button, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, TOAST_TYPE, setToast } from "@utrack/ui";
 import { useProject } from "@/hooks/store";
 import { useIssues } from "@/hooks/store/use-issues";
 // ui

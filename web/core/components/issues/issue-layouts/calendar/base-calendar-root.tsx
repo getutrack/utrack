@@ -3,10 +3,10 @@
 import { FC, useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { EIssueGroupByToServerOptions } from "@youtrack/constants";
-import { TGroupedIssues } from "@youtrack/types";
+import { EIssueGroupByToServerOptions } from "@utrack/constants";
+import { TGroupedIssues } from "@utrack/types";
 // components
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 import { CalendarChart } from "@/components/issues";
 //constants
 import { EIssuesStoreType } from "@/constants/issue";
@@ -14,7 +14,7 @@ import { EIssuesStoreType } from "@/constants/issue";
 import { useIssues, useCalendarView, useUserPermissions } from "@/hooks/store";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import { useIssuesActions } from "@/hooks/use-issues-actions";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // types
 import { IQuickActionProps } from "../list/list-view-types";
 import { handleDragDrop } from "./utils";

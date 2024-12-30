@@ -8,8 +8,8 @@ import update from "lodash/update";
 import { action, observable, makeObservable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-// youtrack constants
-import { ALL_ISSUES } from "@youtrack/constants";
+// utrack constants
+import { ALL_ISSUES } from "@utrack/constants";
 import {
   TIssue,
   TLoader,
@@ -17,7 +17,7 @@ import {
   TIssuesResponse,
   ViewFlags,
   TBulkOperationsPayload,
-} from "@youtrack/types";
+} from "@utrack/types";
 // helpers
 import { getDistributionPathsPostUpdate } from "@/helpers/distribution-update.helper";
 import { BaseIssuesStore, IBaseIssuesStore } from "../helpers/base-issues.store";

@@ -163,7 +163,7 @@ export const ProfileActivityListPage: React.FC<Props> = observer((props) => {
                         <div className="min-w-0 flex-1 border-b border-custom-border-100 py-4">
                           <div className="break-words text-sm text-custom-text-200">
                             {activityItem.field === "archived_at" && activityItem.new_value !== "restore" ? (
-                              <span className="text-gray font-medium">Youtrack</span>
+                              <span className="text-gray font-medium">Utrack</span>
                             ) : activityItem.actor_detail.is_bot ? (
                               <span className="text-gray font-medium">{activityItem.actor_detail.first_name} Bot</span>
                             ) : (

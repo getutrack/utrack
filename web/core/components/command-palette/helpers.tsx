@@ -8,11 +8,11 @@ import {
   IWorkspacePageSearchResult,
   IWorkspaceProjectSearchResult,
   IWorkspaceSearchResult,
-} from "@youtrack/types";
+} from "@utrack/types";
 // ui
-import { ContrastIcon, DiceIcon } from "@youtrack/ui";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+import { ContrastIcon, DiceIcon } from "@utrack/ui";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 
 export const commandGroups: {
   [key: string]: {

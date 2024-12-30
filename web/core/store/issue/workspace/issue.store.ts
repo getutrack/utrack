@@ -7,9 +7,9 @@ import {
   TIssuesResponse,
   TLoader,
   ViewFlags,
-} from "@youtrack/types";
+} from "@utrack/types";
 // services
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 // types
 import { BaseIssuesStore, IBaseIssuesStore } from "../helpers/base-issues.store";
 import { IIssueRootStore } from "../root.store";

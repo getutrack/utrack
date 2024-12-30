@@ -11,8 +11,8 @@ import {
   TModuleEstimateDistribution,
   TModulePlotType,
   TStateGroups,
-} from "@youtrack/types";
-import { Avatar, StateGroupIcon } from "@youtrack/ui";
+} from "@utrack/types";
+import { Avatar, StateGroupIcon } from "@utrack/ui";
 // components
 import { SingleProgressStats } from "@/components/core";
 // helpers

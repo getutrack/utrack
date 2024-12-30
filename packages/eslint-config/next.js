@@ -72,7 +72,7 @@ module.exports = {
             position: "after",
           },
           {
-            pattern: "@youtrack/**",
+            pattern: "@utrack/**",
             group: "external",
             position: "after",
           },

@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { ExternalLink, LinkIcon, Pencil, Trash2, Lock } from "lucide-react";
 // types
-import { IWorkspaceView } from "@youtrack/types";
+import { IWorkspaceView } from "@utrack/types";
 // ui
-import { ContextMenu, CustomMenu, TContextMenuItem, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { ContextMenu, CustomMenu, TContextMenuItem, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { CreateUpdateWorkspaceViewModal, DeleteGlobalViewModal } from "@/components/workspace";
 // constants
@@ -17,7 +17,7 @@ import { cn } from "@/helpers/common.helper";
 import { copyUrlToClipboard } from "@/helpers/string.helper";
 // hooks
 import { useUser, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   parentRef: React.RefObject<HTMLElement>;

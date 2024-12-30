@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Layers } from "lucide-react";
 // types
-import { IProjectView } from "@youtrack/types";
+import { IProjectView } from "@utrack/types";
 // components
 import { Logo } from "@/components/common";
 import { ListItem } from "@/components/core/list";

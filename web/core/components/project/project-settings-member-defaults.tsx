@@ -5,16 +5,16 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import useSWR from "swr";
-import { IProject, IUserLite, IWorkspace } from "@youtrack/types";
+import { IProject, IUserLite, IWorkspace } from "@utrack/types";
 // ui
-import { Loader, TOAST_TYPE, ToggleSwitch, setToast } from "@youtrack/ui";
+import { Loader, TOAST_TYPE, ToggleSwitch, setToast } from "@utrack/ui";
 // components
 import { MemberSelect } from "@/components/project";
 // constants
 import { PROJECT_MEMBERS } from "@/constants/fetch-keys";
 // hooks
 import { useProject, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 // types
 

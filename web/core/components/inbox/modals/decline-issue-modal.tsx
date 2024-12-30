@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // types
-import type { TIssue } from "@youtrack/types";
+import type { TIssue } from "@utrack/types";
 // ui
-import { AlertModalCore } from "@youtrack/ui";
+import { AlertModalCore } from "@utrack/ui";
 // hooks
 import { useProject } from "@/hooks/store";
 

@@ -2,9 +2,9 @@
 
 import React, { FC, useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-import { IUserEmailNotificationSettings } from "@youtrack/types";
+import { IUserEmailNotificationSettings } from "@utrack/types";
 // ui
-import { Button, Checkbox, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Checkbox, TOAST_TYPE, setToast } from "@utrack/ui";
 // services
 import { UserService } from "@/services/user.service";
 // types

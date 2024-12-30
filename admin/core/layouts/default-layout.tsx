@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 // logo/ images
-import YoutrackBackgroundPatternDark from "public/auth/background-pattern-dark.svg";
-import YoutrackBackgroundPattern from "public/auth/background-pattern.svg";
-import BlackHorizontalLogo from "public/youtrack-logos/black-horizontal-with-blue-logo.png";
-import WhiteHorizontalLogo from "public/youtrack-logos/white-horizontal-with-blue-logo.png";
+import UtrackBackgroundPatternDark from "public/auth/background-pattern-dark.svg";
+import UtrackBackgroundPattern from "public/auth/background-pattern.svg";
+import BlackHorizontalLogo from "public/utrack-logos/black-horizontal-with-blue-logo.png";
+import WhiteHorizontalLogo from "public/utrack-logos/white-horizontal-with-blue-logo.png";
 
 type TDefaultLayout = {
   children: ReactNode;
@@ -19,7 +19,7 @@ export const DefaultLayout: FC<TDefaultLayout> = (props) => {
   const { children, withoutBackground = false } = props;
   // hooks
   const { resolvedTheme } = useTheme();
-  const patternBackground = resolvedTheme === "dark" ? YoutrackBackgroundPatternDark : YoutrackBackgroundPattern;
+  const patternBackground = resolvedTheme === "dark" ? UtrackBackgroundPatternDark : UtrackBackgroundPattern;
 
   const logo = resolvedTheme === "light" ? BlackHorizontalLogo : WhiteHorizontalLogo;
 
@@ -29,13 +29,13 @@ export const DefaultLayout: FC<TDefaultLayout> = (props) => {
         <div className="container h-[110px] flex-shrink-0 mx-auto px-5 lg:px-0 flex items-center justify-between gap-5 z-50">
           <div className="flex items-center gap-x-2 py-10">
             <Link href={`/`} className="h-[30px] w-[133px]">
-              <Image src={logo} alt="Youtrack logo" />
+              <Image src={logo} alt="Utrack logo" />
             </Link>
           </div>
         </div>
         {!withoutBackground && (
           <div className="absolute inset-0 z-0">
-            <Image src={patternBackground} className="w-screen h-full object-cover" alt="Youtrack background pattern" />
+            <Image src={patternBackground} className="w-screen h-full object-cover" alt="Utrack background pattern" />
           </div>
         )}
         <div className="relative z-10 flex-grow">{children}</div>

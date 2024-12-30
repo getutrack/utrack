@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // types
-import { IIssueDisplayFilterOptions, IIssueDisplayProperties, IIssueFilterOptions, IWorkspaceView } from "@youtrack/types";
+import { IIssueDisplayFilterOptions, IIssueDisplayProperties, IIssueFilterOptions, IWorkspaceView } from "@utrack/types";
 // ui
-import { Button, Input, TextArea } from "@youtrack/ui";
+import { Button, Input, TextArea } from "@utrack/ui";
 // components
 import { AppliedFiltersList, DisplayFiltersSelection, FilterSelection, FiltersDropdown } from "@/components/issues";
 // constants
@@ -16,7 +16,7 @@ import { EViewAccess } from "@/constants/views";
 import { getComputedDisplayFilters, getComputedDisplayProperties } from "@/helpers/issue.helper";
 // hooks
 import { useLabel, useMember } from "@/hooks/store";
-import { AccessController } from "@/youtrack-web/components/views/access-controller";
+import { AccessController } from "@/utrack-web/components/views/access-controller";
 
 type Props = {
   handleFormSubmit: (values: Partial<IWorkspaceView>) => Promise<void>;

@@ -3,8 +3,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { CalendarCheck2, CopyPlus, Signal, Tag, Users } from "lucide-react";
-import { TInboxDuplicateIssueDetails, TIssue } from "@youtrack/types";
-import { ControlLink, DoubleCircleIcon, Tooltip } from "@youtrack/ui";
+import { TInboxDuplicateIssueDetails, TIssue } from "@utrack/types";
+import { ControlLink, DoubleCircleIcon, Tooltip } from "@utrack/ui";
 // components
 import { DateDropdown, PriorityDropdown, MemberDropdown, StateDropdown } from "@/components/dropdowns";
 import { IssueLabel, TIssueOperations } from "@/components/issues";

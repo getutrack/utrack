@@ -5,7 +5,7 @@ import { Placement } from "@popperjs/core";
 import { usePopper } from "react-popper";
 import { Popover, Transition } from "@headlessui/react";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 type Props = {
   children: React.ReactNode;

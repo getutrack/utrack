@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { PanelLeft } from "lucide-react";
-import { Intake } from "@youtrack/ui";
+import { Intake } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/empty-state";
 import { InboxSidebar, InboxContentRoot } from "@/components/inbox";

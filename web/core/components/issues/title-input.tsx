@@ -3,7 +3,7 @@
 import { FC, useState, useEffect, useCallback } from "react";
 import { observer } from "mobx-react";
 // components
-import { TextArea } from "@youtrack/ui";
+import { TextArea } from "@utrack/ui";
 // types
 import { cn } from "@/helpers/common.helper";
 import useDebounce from "@/hooks/use-debounce";

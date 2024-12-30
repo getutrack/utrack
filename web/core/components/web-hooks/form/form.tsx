@@ -3,9 +3,9 @@
 import React, { FC, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-import { IWebhook, TWebhookEventTypes } from "@youtrack/types";
+import { IWebhook, TWebhookEventTypes } from "@utrack/types";
 // hooks
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 import {
   WebhookIndividualEventOptions,
   WebhookInput,

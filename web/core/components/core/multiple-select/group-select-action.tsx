@@ -1,6 +1,6 @@
 "use client";
 // ui
-import { Checkbox } from "@youtrack/ui";
+import { Checkbox } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks

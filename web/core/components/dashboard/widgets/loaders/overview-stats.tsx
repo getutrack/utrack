@@ -1,7 +1,7 @@
 "use client";
 
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 
 export const OverviewStatsWidgetLoader = () => (
   <Loader className="bg-custom-background-100 rounded-xl py-6 grid grid-cols-4 gap-36 px-12">

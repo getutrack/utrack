@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 // hooks
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 import { useIssueDetail } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // ui

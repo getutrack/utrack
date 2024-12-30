@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 import { Tags } from "lucide-react";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 import { useLabel } from "@/hooks/store";
 
 type Props = {

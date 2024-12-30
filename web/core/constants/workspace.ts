@@ -1,6 +1,6 @@
 // types
-import { TStaticViewTypes } from "@youtrack/types";
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+import { TStaticViewTypes } from "@utrack/types";
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 // services images
 import CSVLogo from "@/public/services/csv.svg";
 import ExcelLogo from "@/public/services/excel.svg";

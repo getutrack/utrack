@@ -2,7 +2,7 @@ import { observer } from "mobx-react";
 import Image from "next/image";
 import { useParams, useSearchParams } from "next/navigation";
 // components
-import { ContentWrapper, Row, ERowVariant } from "@youtrack/ui";
+import { ContentWrapper, Row, ERowVariant } from "@utrack/ui";
 import { ListLayout } from "@/components/core/list";
 import { EmptyState } from "@/components/empty-state";
 import { ModuleCardItem, ModuleListItem, ModulePeekOverview, ModulesListGanttChartView } from "@/components/modules";

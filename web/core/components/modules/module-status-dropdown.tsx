@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { observer } from 'mobx-react';
-import { IModule } from '@youtrack/types';
-import { CustomSelect, TModuleStatus, ModuleStatusIcon } from '@youtrack/ui'
+import { IModule } from '@utrack/types';
+import { CustomSelect, TModuleStatus, ModuleStatusIcon } from '@utrack/ui'
 import { MODULE_STATUS } from '@/constants/module'
 
 type Props = {

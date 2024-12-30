@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { Trash } from "lucide-react";
 // ui
-import { CustomMenu, Tooltip } from "@youtrack/ui";
+import { CustomMenu, Tooltip } from "@utrack/ui";
 // components
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";
 import { getFileIcon } from "@/components/icons";

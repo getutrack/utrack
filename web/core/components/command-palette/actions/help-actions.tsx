@@ -3,7 +3,7 @@ import { Command } from "cmdk";
 import { observer } from "mobx-react";
 import { FileText, GithubIcon, MessageSquare, Rocket } from "lucide-react";
 // ui
-import { DiscordIcon } from "@youtrack/ui";
+import { DiscordIcon } from "@utrack/ui";
 // hooks
 import { useCommandPalette, useTransient } from "@/hooks/store";
 
@@ -40,7 +40,7 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
       >
         <div className="flex items-center gap-2 text-custom-text-200">
           <FileText className="h-3.5 w-3.5" />
-          Open Youtrack documentation
+          Open Utrack documentation
         </div>
       </Command.Item>
       <Command.Item
@@ -58,7 +58,7 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
       <Command.Item
         onSelect={() => {
           closePalette();
-          window.open("https://github.com/getutrack/youtrack/issues/new/choose", "_blank");
+          window.open("https://github.com/getutrack/utrack/issues/new/choose", "_blank");
         }}
         className="focus:outline-none"
       >

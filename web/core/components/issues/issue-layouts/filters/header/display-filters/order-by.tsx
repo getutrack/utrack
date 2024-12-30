@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-import { TIssueOrderByOptions } from "@youtrack/types";
+import { TIssueOrderByOptions } from "@utrack/types";
 
 // components
 import { FilterHeader, FilterOption } from "@/components/issues";

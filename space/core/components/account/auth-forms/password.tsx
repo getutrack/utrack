@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { Eye, EyeOff, XCircle } from "lucide-react";
-import { Button, Input, Spinner } from "@youtrack/ui";
+import { Button, Input, Spinner } from "@utrack/ui";
 // components
 import { PasswordStrengthMeter } from "@/components/account";
 // helpers

@@ -18,4 +18,4 @@ export * from "./member-list-item";
 export * from "./project-settings-member-defaults";
 export * from "./send-project-invitation-modal";
 export * from "./confirm-project-member-remove";
-export * from "@/youtrack-web/components/projects/create/root";
+export * from "@/utrack-web/components/projects/create/root";

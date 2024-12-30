@@ -7,9 +7,9 @@ import { useTheme } from "next-themes";
 import { Controller, useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
 // types
-import { IUser, TUserProfile, TOnboardingSteps } from "@youtrack/types";
+import { IUser, TUserProfile, TOnboardingSteps } from "@utrack/types";
 // ui
-import { Button, Input, Spinner, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Input, Spinner, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { PasswordStrengthMeter } from "@/components/account";
 import { UserImageUploadModal } from "@/components/core";
@@ -284,11 +284,11 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
             <h3 className="text-3xl font-bold text-onboarding-text-100">
               {isCurrentStepUserPersonalization
                 ? `Looking good${user?.first_name && `, ${user.first_name}`}!`
-                : "Welcome to Youtrack!"}
+                : "Welcome to Utrack!"}
             </h3>
             <p className="font-medium text-onboarding-text-400">
               {isCurrentStepUserPersonalization
-                ? "Let’s personalize Youtrack for you."
+                ? "Let’s personalize Utrack for you."
                 : "Let’s setup your profile, tell us a bit about yourself."}
             </p>
           </div>

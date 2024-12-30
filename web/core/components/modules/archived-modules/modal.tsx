@@ -3,7 +3,7 @@
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { Button, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, TOAST_TYPE, setToast } from "@utrack/ui";
 // hooks
 import { useModule } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";

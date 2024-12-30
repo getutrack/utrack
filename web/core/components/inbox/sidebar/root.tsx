@@ -2,8 +2,8 @@
 
 import { FC, useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-import { TInboxIssueCurrentTab } from "@youtrack/types";
-import { Header, Loader, EHeaderVariant } from "@youtrack/ui";
+import { TInboxIssueCurrentTab } from "@utrack/types";
+import { Header, Loader, EHeaderVariant } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/empty-state";
 import { FiltersRoot, InboxIssueAppliedFilters, InboxIssueList } from "@/components/inbox";

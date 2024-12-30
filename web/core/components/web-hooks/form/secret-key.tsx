@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // icons
 import { Copy, Eye, EyeOff, RefreshCw } from "lucide-react";
-import { IWebhook } from "@youtrack/types";
+import { IWebhook } from "@utrack/types";
 // ui
-import { Button, Tooltip, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Tooltip, TOAST_TYPE, setToast } from "@utrack/ui";
 // helpers
 import { csvDownload } from "@/helpers/download.helper";
 import { copyTextToClipboard } from "@/helpers/string.helper";

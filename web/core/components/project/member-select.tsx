@@ -3,8 +3,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { Ban } from "lucide-react";
-// youtrack ui
-import { Avatar, CustomSearchSelect } from "@youtrack/ui";
+// utrack ui
+import { Avatar, CustomSearchSelect } from "@utrack/ui";
 // helpers
 import { getFileURL } from "@/helpers/file.helper";
 // hooks

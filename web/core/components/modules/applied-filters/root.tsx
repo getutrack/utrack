@@ -1,7 +1,7 @@
 import { X } from "lucide-react";
-import { TModuleDisplayFilters, TModuleFilters } from "@youtrack/types";
+import { TModuleDisplayFilters, TModuleFilters } from "@utrack/types";
 // components
-import { Header, EHeaderVariant, Tag } from "@youtrack/ui";
+import { Header, EHeaderVariant, Tag } from "@utrack/ui";
 import { AppliedDateFilters, AppliedMembersFilters, AppliedStatusFilters } from "@/components/modules";
 // helpers
 import { replaceUnderscoreIfSnakeCase } from "@/helpers/string.helper";

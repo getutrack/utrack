@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { observer } from "mobx-react";
-import { IIssueDisplayProperties } from "@youtrack/types";
+import { IIssueDisplayProperties } from "@utrack/types";
 
 interface IWithDisplayPropertiesHOC {
   displayProperties: IIssueDisplayProperties;

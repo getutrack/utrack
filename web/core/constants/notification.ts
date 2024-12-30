@@ -1,4 +1,4 @@
-import { TUnreadNotificationsCount } from "@youtrack/types";
+import { TUnreadNotificationsCount } from "@utrack/types";
 
 export enum ENotificationTab {
   ALL = "all",

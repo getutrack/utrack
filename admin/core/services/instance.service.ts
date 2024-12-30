@@ -5,7 +5,7 @@ import type {
   IInstanceAdmin,
   IInstanceConfiguration,
   IInstanceInfo,
-} from "@youtrack/types";
+} from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { APIService } from "@/services/api.service";

@@ -2,11 +2,11 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 // hooks
 import { useIssueDetail } from "@/hooks/store";
-// youtrack web components
-import { IssueAdditionalPropertiesActivity } from "@/youtrack-web/components/issues";
-import { IssueActivityWorklog } from "@/youtrack-web/components/issues/worklog/activity/root";
-// youtrack web constants
-import { TActivityFilters, filterActivityOnSelectedFilters } from "@/youtrack-web/constants/issues";
+// utrack web components
+import { IssueAdditionalPropertiesActivity } from "@/utrack-web/components/issues";
+import { IssueActivityWorklog } from "@/utrack-web/components/issues/worklog/activity/root";
+// utrack web constants
+import { TActivityFilters, filterActivityOnSelectedFilters } from "@/utrack-web/constants/issues";
 // components
 import { IssueActivityItem } from "./activity/activity-list";
 import { IssueCommentCard } from "./comments/comment-card";

@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-catch */
 import set from "lodash/set";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-import { IUserLite, TNotification, TNotificationData } from "@youtrack/types";
+import { IUserLite, TNotification, TNotificationData } from "@utrack/types";
 // services
 import workspaceNotificationService from "@/services/workspace-notification.service";
 // store

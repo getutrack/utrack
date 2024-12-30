@@ -1,7 +1,7 @@
 "use client";
 import React, { FC } from "react";
 // ui
-import { ControlLink, Row, Tooltip } from "@youtrack/ui";
+import { ControlLink, Row, Tooltip } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks

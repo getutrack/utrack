@@ -7,7 +7,7 @@ import { ProjectIssueQuickActions } from "@/components/issues";
 // types
 // constants
 import { useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import { BaseListRoot } from "../base-list-root";
 
 export const ListLayout: FC = observer(() => {

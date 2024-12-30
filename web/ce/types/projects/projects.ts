@@ -1,3 +1,3 @@
-import { IProject } from "@youtrack/types";
+import { IProject } from "@utrack/types";
 
 export type TProject = IProject;

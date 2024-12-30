@@ -2,11 +2,11 @@ import type {
   GithubRepositoriesResponse,
   ISearchIssueResponse,
   TProjectIssuesSearchParams,
-} from "@youtrack/types";
+} from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
-// youtrack web types
-import { TProject } from "@/youtrack-web/types";
+// utrack web types
+import { TProject } from "@/utrack-web/types";
 // services
 import { APIService } from "@/services/api.service";
 

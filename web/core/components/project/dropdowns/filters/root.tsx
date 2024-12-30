@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Search, X } from "lucide-react";
-import { TProjectDisplayFilters, TProjectFilters } from "@youtrack/types";
+import { TProjectDisplayFilters, TProjectFilters } from "@utrack/types";
 // components
 import { FilterOption } from "@/components/issues";
 import { FilterAccess, FilterCreatedDate, FilterLead, FilterMembers } from "@/components/project";

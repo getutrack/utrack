@@ -4,8 +4,8 @@ import { observer } from "mobx-react";
 
 // icons
 import { X } from "lucide-react";
-import { TStateGroups } from "@youtrack/types";
-import { StateGroupIcon } from "@youtrack/ui";
+import { TStateGroups } from "@utrack/types";
+import { StateGroupIcon } from "@utrack/ui";
 
 type Props = {
   handleRemove: (val: string) => void;

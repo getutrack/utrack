@@ -4,8 +4,8 @@ import { FC } from "react";
 import { isEmpty } from "lodash";
 import { observer } from "mobx-react";
 // ui
-import { IWorkspaceMember } from "@youtrack/types";
-import { TOAST_TYPE, Table, setToast } from "@youtrack/ui";
+import { IWorkspaceMember } from "@utrack/types";
+import { TOAST_TYPE, Table, setToast } from "@utrack/ui";
 // components
 import { MembersLayoutLoader } from "@/components/ui/loader/layouts/members-layout-loader";
 import { ConfirmWorkspaceMemberRemove } from "@/components/workspace";
@@ -14,7 +14,7 @@ import { WORKSPACE_MEMBER_LEAVE } from "@/constants/event-tracker";
 // hooks
 import { useEventTracker, useMember, useUser, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-import { useMemberColumns } from "@/youtrack-web/components/workspace/settings/useMemberColumns";
+import { useMemberColumns } from "@/utrack-web/components/workspace/settings/useMemberColumns";
 
 type Props = {
   memberDetails: (IWorkspaceMember | null)[];

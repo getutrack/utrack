@@ -4,9 +4,9 @@ import isEmpty from "lodash/isEmpty";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 // types
-import { IFormattedInstanceConfiguration, TInstanceGoogleAuthenticationConfigurationKeys } from "@youtrack/types";
+import { IFormattedInstanceConfiguration, TInstanceGoogleAuthenticationConfigurationKeys } from "@utrack/types";
 // ui
-import { Button, TOAST_TYPE, getButtonStyling, setToast } from "@youtrack/ui";
+import { Button, TOAST_TYPE, getButtonStyling, setToast } from "@utrack/ui";
 // components
 import {
   CodeBlock,
@@ -171,7 +171,7 @@ export const InstanceGoogleConfigForm: FC<Props> = (props) => {
       <div className="flex flex-col gap-8">
         <div className="grid grid-cols-2 gap-x-12 gap-y-8 w-full">
           <div className="flex flex-col gap-y-4 col-span-2 md:col-span-1 pt-1">
-            <div className="pt-2.5 text-xl font-medium">Google-provided details for Youtrack</div>
+            <div className="pt-2.5 text-xl font-medium">Google-provided details for Utrack</div>
             {GOOGLE_FORM_FIELDS.map((field) => (
               <ControllerInput
                 key={field.key}
@@ -202,7 +202,7 @@ export const InstanceGoogleConfigForm: FC<Props> = (props) => {
           </div>
           <div className="col-span-2 md:col-span-1">
             <div className="flex flex-col gap-y-4 px-6 pt-1.5 pb-4 bg-custom-background-80/60 rounded-lg">
-              <div className="pt-2 text-xl font-medium">Youtrack-provided details for Google</div>
+              <div className="pt-2 text-xl font-medium">Utrack-provided details for Google</div>
               {GOOGLE_SERVICE_DETAILS.map((field) => (
                 <CopyField key={field.key} label={field.label} url={field.url} description={field.description} />
               ))}

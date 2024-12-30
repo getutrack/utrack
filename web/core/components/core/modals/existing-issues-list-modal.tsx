@@ -4,16 +4,16 @@ import React, { useEffect, useState } from "react";
 import { Rocket, Search, X } from "lucide-react";
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 // types
-import { ISearchIssueResponse, TProjectIssuesSearchParams } from "@youtrack/types";
+import { ISearchIssueResponse, TProjectIssuesSearchParams } from "@utrack/types";
 // ui
-import { Button, Loader, ToggleSwitch, Tooltip, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, Loader, ToggleSwitch, Tooltip, TOAST_TYPE, setToast } from "@utrack/ui";
 // helpers
 import { getTabIndex } from "@/helpers/tab-indices.helper";
 // hooks
 import useDebounce from "@/hooks/use-debounce";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 // services
 import { ProjectService } from "@/services/project";
 // components

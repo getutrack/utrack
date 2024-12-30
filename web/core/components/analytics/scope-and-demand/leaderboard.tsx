@@ -1,5 +1,5 @@
-// youtrack ui
-import { Card } from "@youtrack/ui";
+// utrack ui
+import { Card } from "@utrack/ui";
 // components
 import { ProfileEmptyState } from "@/components/ui";
 // helpers

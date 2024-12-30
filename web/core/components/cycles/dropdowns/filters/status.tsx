@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-import { TCycleGroups } from "@youtrack/types";
+import { TCycleGroups } from "@utrack/types";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues";
 // types

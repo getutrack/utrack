@@ -2,8 +2,8 @@
 
 import { FormEvent, FC, useEffect, useState, useMemo } from "react";
 import { TwitterPicker } from "react-color";
-import { IState } from "@youtrack/types";
-import { Button, Popover, Input } from "@youtrack/ui";
+import { IState } from "@utrack/types";
+import { Button, Popover, Input } from "@utrack/ui";
 
 type TStateForm = {
   data: Partial<IState>;

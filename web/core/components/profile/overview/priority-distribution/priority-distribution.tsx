@@ -2,8 +2,8 @@
 
 // components
 // ui
-import { IUserPriorityDistribution } from "@youtrack/types";
-import { Loader } from "@youtrack/ui";
+import { IUserPriorityDistribution } from "@utrack/types";
+import { Loader } from "@utrack/ui";
 // types
 import { PriorityDistributionContent } from "./main-content";
 

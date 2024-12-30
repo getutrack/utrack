@@ -1,5 +1,5 @@
 // types
-import { TProjectPublishSettings } from "@youtrack/types";
+import { TProjectPublishSettings } from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 // services

@@ -1,6 +1,6 @@
 import { observable, action, makeObservable, runInAction } from "mobx";
 // types
-import { IInstance, IInstanceConfig } from "@youtrack/types";
+import { IInstance, IInstanceConfig } from "@utrack/types";
 // services
 import { InstanceService } from "@/services/instance.service";
 

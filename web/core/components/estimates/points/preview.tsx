@@ -1,13 +1,13 @@
 import { FC, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { GripVertical, Pencil, Trash2 } from "lucide-react";
-import { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@youtrack/types";
+import { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@utrack/types";
 // components
 import { EstimatePointUpdate } from "@/components/estimates/points";
-// youtrack web components
-import { EstimatePointDelete } from "@/youtrack-web/components/estimates";
-// youtrack web constants
-import { estimateCount } from "@/youtrack-web/constants/estimates";
+// utrack web components
+import { EstimatePointDelete } from "@/utrack-web/components/estimates";
+// utrack web constants
+import { estimateCount } from "@/utrack-web/constants/estimates";
 
 type TEstimatePointItemPreview = {
   workspaceSlug: string;

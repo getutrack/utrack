@@ -1,6 +1,6 @@
 import { captureException } from "@sentry/nextjs";
 import pick from "lodash/pick";
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 import { rootStore } from "@/lib/store-context";
 import { persistence } from "../storage.sqlite";
 import { updateIssue } from "./load-issues";

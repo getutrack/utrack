@@ -5,11 +5,11 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 // editor
-import { EditorRefApi } from "@youtrack/editor";
+import { EditorRefApi } from "@utrack/editor";
 // types
-import type { TIssue, ISearchIssueResponse, TWorkspaceDraftIssue } from "@youtrack/types";
+import type { TIssue, ISearchIssueResponse, TWorkspaceDraftIssue } from "@utrack/types";
 // hooks
-import { Button, ToggleSwitch, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, ToggleSwitch, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import {
   IssueDefaultProperties,
@@ -29,8 +29,8 @@ import { useIssueModal } from "@/hooks/context/use-issue-modal";
 import { useIssueDetail, useProject, useProjectState, useWorkspaceDraftIssues } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { useProjectIssueProperties } from "@/hooks/use-project-issue-properties";
-// youtrack web components
-import { IssueAdditionalProperties, IssueTypeSelect } from "@/youtrack-web/components/issues/issue-modal";
+// utrack web components
+import { IssueAdditionalProperties, IssueTypeSelect } from "@/utrack-web/components/issues/issue-modal";
 
 const defaultValues: Partial<TIssue> = {
   project_id: "",

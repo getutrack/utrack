@@ -2,7 +2,7 @@ import React from "react";
 
 // react hook form
 import { useFormContext } from "react-hook-form";
-import { IJiraImporterForm } from "@youtrack/types";
+import { IJiraImporterForm } from "@utrack/types";
 
 // types
 

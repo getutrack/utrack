@@ -9,7 +9,7 @@ import { UseFormSetValue } from "react-hook-form";
 import useSWR from "swr";
 // services
 // ui
-import { Button, Loader } from "@youtrack/ui";
+import { Button, Loader } from "@utrack/ui";
 // types
 import { IUserDetails, TFormValues, TIntegrationSteps } from "@/components/integration";
 // fetch-keys

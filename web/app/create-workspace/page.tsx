@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { IWorkspace } from "@youtrack/types";
+import { IWorkspace } from "@utrack/types";
 // components
 import { CreateWorkspaceForm } from "@/components/workspace";
 // hooks
@@ -14,8 +14,8 @@ import { useAppRouter } from "@/hooks/use-app-router";
 // wrappers
 import { AuthenticationWrapper } from "@/lib/wrappers";
 // images
-import BlackHorizontalLogo from "@/public/youtrack-logos/black-horizontal-with-blue-logo.png";
-import WhiteHorizontalLogo from "@/public/youtrack-logos/white-horizontal-with-blue-logo.png";
+import BlackHorizontalLogo from "@/public/utrack-logos/black-horizontal-with-blue-logo.png";
+import WhiteHorizontalLogo from "@/public/utrack-logos/white-horizontal-with-blue-logo.png";
 
 const CreateWorkspacePage = observer(() => {
   // router
@@ -48,7 +48,7 @@ const CreateWorkspacePage = observer(() => {
             href="/"
           >
             <div className="h-[30px] w-[133px]">
-              <Image src={logo} alt="Youtrack logo" />
+              <Image src={logo} alt="Utrack logo" />
             </div>
           </Link>
           <div className="absolute right-4 top-1/4 -translate-y-1/2 text-sm text-custom-text-100 sm:fixed sm:right-16 sm:top-12 sm:translate-y-0 sm:py-5">

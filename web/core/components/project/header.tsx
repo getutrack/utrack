@@ -4,17 +4,17 @@ import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { Search, Briefcase, X } from "lucide-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // ui
-import { Breadcrumbs, Button, Header } from "@youtrack/ui";
+import { Breadcrumbs, Button, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink } from "@/components/common";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks
 import { useCommandPalette, useEventTracker, useProjectFilter, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import HeaderFilters from "./filters";
 
 export const ProjectsBaseHeader = observer(() => {

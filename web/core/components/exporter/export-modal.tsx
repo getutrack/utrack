@@ -6,9 +6,9 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Dialog, Transition } from "@headlessui/react";
 // types
-import { IUser, IImporterService } from "@youtrack/types";
+import { IUser, IImporterService } from "@utrack/types";
 // ui
-import { Button, CustomSearchSelect, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, CustomSearchSelect, TOAST_TYPE, setToast } from "@utrack/ui";
 // hooks
 import { useProject, useUser } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";

@@ -3,14 +3,14 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { TInstanceConfigurationKeys } from "@youtrack/types";
-import { Loader, ToggleSwitch, setPromiseToast } from "@youtrack/ui";
+import { TInstanceConfigurationKeys } from "@utrack/types";
+import { Loader, ToggleSwitch, setPromiseToast } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks
 import { useInstance } from "@/hooks/store";
-// youtrack admin components
-import { AuthenticationModes } from "@/youtrack-admin/components/authentication";
+// utrack admin components
+import { AuthenticationModes } from "@/utrack-admin/components/authentication";
 
 const InstanceAuthenticationPage = observer(() => {
   // store

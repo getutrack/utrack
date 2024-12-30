@@ -3,16 +3,16 @@ import React, { FC } from "react";
 import isEmpty from "lodash/isEmpty";
 import { observer } from "mobx-react";
 import { LayersIcon, SquareUser, Users } from "lucide-react";
-// youtrack types
-import { ICycle } from "@youtrack/types";
-// youtrack ui
-import { Avatar, AvatarGroup, TextArea } from "@youtrack/ui";
+// utrack types
+import { ICycle } from "@utrack/types";
+// utrack ui
+import { Avatar, AvatarGroup, TextArea } from "@utrack/ui";
 // helpers
 import { getFileURL } from "@/helpers/file.helper";
 // hooks
 import { useMember, useProjectEstimates } from "@/hooks/store";
-// youtrack web constants
-import { EEstimateSystem } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { EEstimateSystem } from "@/utrack-web/constants/estimates";
 
 type Props = {
   projectId: string;

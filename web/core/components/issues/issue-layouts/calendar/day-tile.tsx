@@ -6,9 +6,9 @@ import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element
 import { differenceInCalendarDays } from "date-fns";
 import { observer } from "mobx-react";
 // types
-import { TGroupedIssues, TIssue, TIssueMap, TPaginationData } from "@youtrack/types";
+import { TGroupedIssues, TIssue, TIssueMap, TPaginationData } from "@utrack/types";
 // ui
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { CalendarIssueBlocks, ICalendarDate } from "@/components/issues";
 import { highlightIssueOnDrop } from "@/components/issues/issue-layouts/utils";

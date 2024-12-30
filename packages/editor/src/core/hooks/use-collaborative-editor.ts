@@ -6,8 +6,8 @@ import { IndexeddbPersistence } from "y-indexeddb";
 import { HeadingListExtension, SideMenuExtension } from "@/extensions";
 // hooks
 import { useEditor } from "@/hooks/use-editor";
-// youtrack editor extensions
-import { DocumentEditorAdditionalExtensions } from "@/youtrack-editor/extensions";
+// utrack editor extensions
+import { DocumentEditorAdditionalExtensions } from "@/utrack-editor/extensions";
 // types
 import { TCollaborativeEditorProps } from "@/types";
 

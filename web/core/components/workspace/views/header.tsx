@@ -4,9 +4,9 @@ import { useParams } from "next/navigation";
 // icons
 import { Plus } from "lucide-react";
 // types
-import { TStaticViewTypes } from "@youtrack/types";
+import { TStaticViewTypes } from "@utrack/types";
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import {
   CreateUpdateWorkspaceViewModal,
   DefaultWorkspaceViewQuickActions,
@@ -17,7 +17,7 @@ import { GLOBAL_VIEW_OPENED } from "@/constants/event-tracker";
 import { DEFAULT_GLOBAL_VIEWS_LIST } from "@/constants/workspace";
 // store hooks
 import { useEventTracker, useGlobalView, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const ViewTab = observer((props: { viewId: string }) => {
   const { viewId } = props;

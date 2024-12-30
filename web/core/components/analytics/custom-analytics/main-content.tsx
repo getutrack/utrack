@@ -3,9 +3,9 @@
 import { useParams } from "next/navigation";
 import { mutate } from "swr";
 // types
-import { IAnalyticsParams, IAnalyticsResponse } from "@youtrack/types";
+import { IAnalyticsParams, IAnalyticsResponse } from "@utrack/types";
 // ui
-import { Button, Loader } from "@youtrack/ui";
+import { Button, Loader } from "@utrack/ui";
 // components
 import { AnalyticsGraph, AnalyticsTable } from "@/components/analytics";
 // fetch-keys

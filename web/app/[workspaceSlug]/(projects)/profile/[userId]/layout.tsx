@@ -12,7 +12,7 @@ import { PROFILE_ADMINS_TAB, PROFILE_VIEWER_TAB } from "@/constants/profile";
 // hooks
 import { useUserPermissions } from "@/hooks/store";
 import useSize from "@/hooks/use-window-size";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // local components
 import { UserService } from "@/services/user.service";
 import { UserProfileHeader } from "./header";

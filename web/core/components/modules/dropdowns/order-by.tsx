@@ -1,9 +1,9 @@
 "use client";
 
 import { ArrowDownWideNarrow, ArrowUpWideNarrow, Check, ChevronDown } from "lucide-react";
-import { TModuleOrderByOptions } from "@youtrack/types";
+import { TModuleOrderByOptions } from "@utrack/types";
 // ui
-import { CustomMenu, getButtonStyling } from "@youtrack/ui";
+import { CustomMenu, getButtonStyling } from "@utrack/ui";
 // helpers
 import { MODULE_ORDER_BY_OPTIONS } from "@/constants/module";
 import { cn } from "@/helpers/common.helper";

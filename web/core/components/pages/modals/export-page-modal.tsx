@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { PageProps, pdf } from "@react-pdf/renderer";
 import { Controller, useForm } from "react-hook-form";
-// youtrack editor
-import { EditorReadOnlyRefApi, EditorRefApi } from "@youtrack/editor";
-// youtrack ui
-import { Button, CustomSelect, EModalPosition, EModalWidth, ModalCore, setToast, TOAST_TYPE } from "@youtrack/ui";
+// utrack editor
+import { EditorReadOnlyRefApi, EditorRefApi } from "@utrack/editor";
+// utrack ui
+import { Button, CustomSelect, EModalPosition, EModalWidth, ModalCore, setToast, TOAST_TYPE } from "@utrack/ui";
 // components
 import { PDFDocument } from "@/components/editor";
 // helpers

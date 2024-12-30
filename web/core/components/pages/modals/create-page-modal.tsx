@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from "react";
 
 // types
-import { TPage } from "@youtrack/types";
+import { TPage } from "@utrack/types";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@youtrack/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@utrack/ui";
 // components
 import { PageForm } from "@/components/pages";
 // constants

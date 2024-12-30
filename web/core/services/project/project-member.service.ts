@@ -1,5 +1,5 @@
 // types
-import type { IProjectBulkAddFormData, IProjectMember, IProjectMembership } from "@youtrack/types";
+import type { IProjectBulkAddFormData, IProjectMember, IProjectMembership } from "@utrack/types";
 import { API_BASE_URL } from "@/helpers/common.helper";
 // services
 import { APIService } from "@/services/api.service";

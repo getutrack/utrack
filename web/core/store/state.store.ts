@@ -3,12 +3,12 @@ import set from "lodash/set";
 import { makeObservable, observable, computed, action, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { IState } from "@youtrack/types";
+import { IState } from "@utrack/types";
 // helpers
 import { sortStates } from "@/helpers/state.helper";
 // services
 import { ProjectStateService } from "@/services/project";
-// youtrack web store
+// utrack web store
 import { CoreRootStore } from "./root.store";
 
 export interface IStateStore {

@@ -20,10 +20,10 @@ import DefaultLayout from "@/layouts/default-layout";
 // wrappers
 import { AuthenticationWrapper } from "@/lib/wrappers";
 // assets
-import YoutrackBackgroundPatternDark from "@/public/auth/background-pattern-dark.svg";
-import YoutrackBackgroundPattern from "@/public/auth/background-pattern.svg";
-import BlackHorizontalLogo from "@/public/youtrack-logos/black-horizontal-with-blue-logo.png";
-import WhiteHorizontalLogo from "@/public/youtrack-logos/white-horizontal-with-blue-logo.png";
+import UtrackBackgroundPatternDark from "@/public/auth/background-pattern-dark.svg";
+import UtrackBackgroundPattern from "@/public/auth/background-pattern.svg";
+import BlackHorizontalLogo from "@/public/utrack-logos/black-horizontal-with-blue-logo.png";
+import WhiteHorizontalLogo from "@/public/utrack-logos/white-horizontal-with-blue-logo.png";
 
 const HomePage = observer(() => {
   const { resolvedTheme } = useTheme();
@@ -37,23 +37,23 @@ const HomePage = observer(() => {
       <AuthenticationWrapper pageType={EPageTypes.NON_AUTHENTICATED}>
         <>
           <div className="relative w-screen h-screen overflow-hidden">
-            <PageHead title="Log in - Youtrack" />
+            <PageHead title="Log in - Utrack" />
             <div className="absolute inset-0 z-0">
               <Image
-                src={resolvedTheme === "dark" ? YoutrackBackgroundPatternDark : YoutrackBackgroundPattern}
+                src={resolvedTheme === "dark" ? UtrackBackgroundPatternDark : UtrackBackgroundPattern}
                 className="w-full h-full object-cover"
-                alt="Youtrack background pattern"
+                alt="Utrack background pattern"
               />
             </div>
             <div className="relative z-10 w-screen h-screen overflow-hidden overflow-y-auto flex flex-col">
               <div className="container min-w-full px-10 lg:px-20 xl:px-36 flex-shrink-0 relative flex items-center justify-between pb-4 transition-all">
                 <div className="flex items-center gap-x-2 py-10">
                   <Link href={`/`} className="h-[30px] w-[133px]">
-                    <Image src={logo} alt="Youtrack logo" />
+                    <Image src={logo} alt="Utrack logo" />
                   </Link>
                 </div>
                 <div className="flex flex-col items-end sm:items-center sm:gap-2 sm:flex-row text-center text-sm font-medium text-onboarding-text-300">
-                  New to Youtrack?{" "}
+                  New to Utrack?{" "}
                   <Link
                     href="/sign-up"
                     onClick={() => captureEvent(NAVIGATE_TO_SIGNUP, {})}

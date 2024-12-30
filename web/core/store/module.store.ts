@@ -5,7 +5,7 @@ import update from "lodash/update";
 import { action, computed, observable, makeObservable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { IModule, ILinkDetails, TModulePlotType } from "@youtrack/types";
+import { IModule, ILinkDetails, TModulePlotType } from "@utrack/types";
 // helpers
 import { DistributionUpdates, updateDistribution } from "@/helpers/distribution-update.helper";
 import { orderModules, shouldFilterModule } from "@/helpers/module.helper";

@@ -21,9 +21,9 @@ import {
   Underline,
 } from "lucide-react";
 // editor
-import { TEditorCommands, TEditorFontStyle } from "@youtrack/editor";
+import { TEditorCommands, TEditorFontStyle } from "@utrack/editor";
 // ui
-import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@youtrack/ui";
+import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@utrack/ui";
 // helpers
 import { convertRemToPixel } from "@/helpers/common.helper";
 

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
 // ui
-import { Loader, StateGroupIcon } from "@youtrack/ui";
+import { Loader, StateGroupIcon } from "@utrack/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/filters/helpers";
 // hooks

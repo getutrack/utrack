@@ -2,7 +2,7 @@ import { observer } from "mobx-react";
 import { Expand, Shrink } from "lucide-react";
 // hooks
 // helpers
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 import { VIEWS_LIST } from "@/components/gantt-chart/data";
 import { cn } from "@/helpers/common.helper";
 // types

@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import Image, { StaticImageData } from "next/image";
 import { X } from "lucide-react";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // components
 import { TourSidebar } from "@/components/onboarding";
 // constants
@@ -18,7 +18,7 @@ import IssuesTour from "@/public/onboarding/issues.webp";
 import ModulesTour from "@/public/onboarding/modules.webp";
 import PagesTour from "@/public/onboarding/pages.webp";
 import ViewsTour from "@/public/onboarding/views.webp";
-import YoutrackWhiteLogo from "@/public/youtrack-logos/white-horizontal.svg";
+import UtrackWhiteLogo from "@/public/utrack-logos/white-horizontal.svg";
 
 // constants
 
@@ -40,7 +40,7 @@ const TOUR_STEPS: {
     key: "issues",
     title: "Plan with issues",
     description:
-      "The issue is the building block of the Youtrack. Most concepts in Youtrack are either associated with issues and their properties.",
+      "The issue is the building block of the Utrack. Most concepts in Utrack are either associated with issues and their properties.",
     image: IssuesTour,
     nextStep: "cycles",
   },
@@ -97,14 +97,14 @@ export const TourRoot: React.FC<Props> = observer((props) => {
         <div className="h-3/4 w-4/5 overflow-hidden rounded-[10px] bg-custom-background-100 md:w-1/2 lg:w-2/5">
           <div className="h-full overflow-hidden">
             <div className="grid h-3/5 place-items-center bg-custom-primary-100">
-              <Image src={YoutrackWhiteLogo} alt="Youtrack White Logo" />
+              <Image src={UtrackWhiteLogo} alt="Utrack White Logo" />
             </div>
             <div className="flex h-2/5 flex-col overflow-y-auto p-6">
               <h3 className="font-semibold sm:text-xl">
-                Welcome to Youtrack, {currentUser?.first_name} {currentUser?.last_name}
+                Welcome to Utrack, {currentUser?.first_name} {currentUser?.last_name}
               </h3>
               <p className="mt-3 text-sm text-custom-text-200">
-                We{"'"}re glad that you decided to try out Youtrack. You can now manage your projects with ease. Get
+                We{"'"}re glad that you decided to try out Utrack. You can now manage your projects with ease. Get
                 started by creating a project.
               </p>
               <div className="flex h-full items-end">

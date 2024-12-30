@@ -3,8 +3,8 @@
 // nivo
 import { BarDatum } from "@nivo/bar";
 // components
-import { IAnalyticsParams, IAnalyticsResponse } from "@youtrack/types";
-import { Tooltip } from "@youtrack/ui";
+import { IAnalyticsParams, IAnalyticsResponse } from "@utrack/types";
+import { Tooltip } from "@utrack/ui";
 // ui
 import { BarGraph } from "@/components/ui";
 // helpers

@@ -1,6 +1,6 @@
 import { action, observable, makeObservable, computed, runInAction } from "mobx";
 // base class
-import { TIssue, TLoader, IssuePaginationOptions, TIssuesResponse, ViewFlags, TBulkOperationsPayload } from "@youtrack/types";
+import { TIssue, TLoader, IssuePaginationOptions, TIssuesResponse, ViewFlags, TBulkOperationsPayload } from "@utrack/types";
 import { UserService } from "@/services/user.service";
 
 // services

@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ChevronDown, XCircle } from "lucide-react";
 // ui
-import { CustomSelect, Tooltip, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { CustomSelect, Tooltip, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ConfirmWorkspaceMemberRemove } from "@/components/workspace";
 // constants
@@ -13,7 +13,7 @@ import { ROLE } from "@/constants/workspace";
 // hooks
 import { useMember, useUserPermissions } from "@/hooks/store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   invitationId: string;

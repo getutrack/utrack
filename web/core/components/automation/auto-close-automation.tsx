@@ -5,16 +5,16 @@ import { observer } from "mobx-react";
 // icons
 import { ArchiveX } from "lucide-react";
 // types
-import { IProject } from "@youtrack/types";
+import { IProject } from "@utrack/types";
 // ui
-import { CustomSelect, CustomSearchSelect, ToggleSwitch, StateGroupIcon, DoubleCircleIcon, Loader } from "@youtrack/ui";
+import { CustomSelect, CustomSearchSelect, ToggleSwitch, StateGroupIcon, DoubleCircleIcon, Loader } from "@utrack/ui";
 // component
 import { SelectMonthModal } from "@/components/automation";
 // constants
 import { PROJECT_AUTOMATION_MONTHS } from "@/constants/project";
 // hooks
 import { useProject, useProjectState, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   handleChange: (formData: Partial<IProject>) => Promise<void>;
@@ -81,7 +81,7 @@ export const AutoCloseAutomation: React.FC<Props> = observer((props) => {
             <div className="">
               <h4 className="text-sm font-medium">Auto-close issues</h4>
               <p className="text-sm tracking-tight text-custom-text-200">
-                Youtrack will automatically close issues that haven{"'"}t been completed or canceled.
+                Utrack will automatically close issues that haven{"'"}t been completed or canceled.
               </p>
             </div>
           </div>

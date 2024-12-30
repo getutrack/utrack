@@ -56,7 +56,7 @@ jobs:
     env:
       BUILD_TYPE: full
       AIO_BASE_TAG: ${{ needs.branch_build_setup.outputs.aio_base_tag }}
-      AIO_IMAGE_TAGS: getutrack/youtrack-aio-feature:${{ needs.branch_build_setup.outputs.flat_branch_name }}
+      AIO_IMAGE_TAGS: getutrack/utrack-aio-feature:${{ needs.branch_build_setup.outputs.flat_branch_name }}
       BUILDX_DRIVER: ${{ needs.branch_build_setup.outputs.gh_buildx_driver }}
       BUILDX_VERSION: ${{ needs.branch_build_setup.outputs.gh_buildx_version }}
       BUILDX_PLATFORMS: ${{ needs.branch_build_setup.outputs.gh_buildx_platforms }}
@@ -149,7 +149,7 @@ jobs:
               --set dockerhub.loginid=${{ secrets.DOCKER_USERNAME }} \
               --set dockerhub.password=${{ secrets.DOCKER_PASSWORD}} \
               --set config.feature_branch=${{ env.DEPLOYMENT_NAME }} \
-              --set ingress.primaryDomain=${{vars.FEATURE_PREVIEW_PRIMARY_DOMAIN || 'feature.youtrack.tools' }} \
+              --set ingress.primaryDomain=${{vars.FEATURE_PREVIEW_PRIMARY_DOMAIN || 'feature.utrack.tools' }} \
               --set ingress.tls_secret=${{vars.FEATURE_PREVIEW_INGRESS_TLS_SECRET || '' }} \
               --output json \
               --timeout 10m0s \

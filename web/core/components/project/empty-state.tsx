@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 type Props = {
   title: string;

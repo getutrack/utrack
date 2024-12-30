@@ -1,7 +1,7 @@
-// youtrack helpers
-import { sanitizeHTML } from "@youtrack/helpers";
-// youtrack ui
-import { TEmojiLogoProps } from "@youtrack/ui";
+// utrack helpers
+import { sanitizeHTML } from "@utrack/helpers";
+// utrack ui
+import { TEmojiLogoProps } from "@utrack/ui";
 // types
 import {
   EAttributeNames,

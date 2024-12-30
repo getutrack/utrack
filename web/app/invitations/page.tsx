@@ -10,9 +10,9 @@ import useSWR, { mutate } from "swr";
 // icons
 import { CheckCircle2 } from "lucide-react";
 // types
-import type { IWorkspaceMemberInvitation } from "@youtrack/types";
+import type { IWorkspaceMemberInvitation } from "@utrack/types";
 // ui
-import { Button, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/common";
 // constants
@@ -27,14 +27,14 @@ import { useEventTracker, useUser, useUserProfile, useWorkspace } from "@/hooks/
 import { useAppRouter } from "@/hooks/use-app-router";
 // services
 import { AuthenticationWrapper } from "@/lib/wrappers";
-// youtrack web constants
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
-// youtrack web services
-import { WorkspaceService } from "@/youtrack-web/services";
+// utrack web constants
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
+// utrack web services
+import { WorkspaceService } from "@/utrack-web/services";
 // images
 import emptyInvitation from "@/public/empty-state/invitation.svg";
-import BlackHorizontalLogo from "@/public/youtrack-logos/black-horizontal-with-blue-logo.png";
-import WhiteHorizontalLogo from "@/public/youtrack-logos/white-horizontal-with-blue-logo.png";
+import BlackHorizontalLogo from "@/public/utrack-logos/black-horizontal-with-blue-logo.png";
+import WhiteHorizontalLogo from "@/public/utrack-logos/white-horizontal-with-blue-logo.png";
 
 const workspaceService = new WorkspaceService();
 
@@ -138,7 +138,7 @@ const UserInvitationsPage = observer(() => {
           <div className="absolute left-0 top-1/2 h-[0.5px] w-full -translate-y-1/2 border-b-[0.5px] border-custom-border-200 sm:left-1/2 sm:top-0 sm:h-screen sm:w-[0.5px] sm:-translate-x-1/2 sm:translate-y-0 sm:border-r-[0.5px] md:left-1/3" />
           <div className="absolute left-5 top-1/2 grid -translate-y-1/2 place-items-center bg-custom-background-100 px-3 sm:left-1/2 sm:top-12 sm:-translate-x-[15px] sm:translate-y-0 sm:px-0 sm:py-5 md:left-1/3">
             <div className="h-[30px] w-[133px]">
-              <Image src={logo} alt="Youtrack logo" />
+              <Image src={logo} alt="Utrack logo" />
             </div>
           </div>
           <div className="absolute right-4 top-1/4 -translate-y-1/2 text-sm text-custom-text-100 sm:fixed sm:right-16 sm:top-12 sm:translate-y-0 sm:py-5">

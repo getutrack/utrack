@@ -10,7 +10,7 @@ import { IntegrationAndImportExportBanner, IntegrationsSettingsLoader } from "@/
 import { APP_INTEGRATIONS } from "@/constants/fetch-keys";
 // hooks
 import { useUserPermissions, useWorkspace } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // services
 import { IntegrationService } from "@/services/integrations";
 

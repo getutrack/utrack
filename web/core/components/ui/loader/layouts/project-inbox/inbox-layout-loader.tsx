@@ -2,7 +2,7 @@
 
 import React from "react";
 // ui
-import { Loader } from "@youtrack/ui";
+import { Loader } from "@utrack/ui";
 import { InboxSidebarLoader } from "./inbox-sidebar-loader";
 
 export const InboxLayoutLoader = () => (

@@ -2,7 +2,7 @@
 
 import { observer } from "mobx-react";
 import { ChevronDown } from "lucide-react";
-import { CustomMenu, Row } from "@youtrack/ui";
+import { CustomMenu, Row } from "@utrack/ui";
 import { MODULE_VIEW_LAYOUTS } from "@/constants/module";
 import { useModuleFilter, useProject } from "@/hooks/store";
 

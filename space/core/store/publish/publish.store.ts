@@ -6,7 +6,7 @@ import {
   TPublishEntityType,
   TProjectPublishSettings,
   TProjectPublishViewProps,
-} from "@youtrack/types";
+} from "@utrack/types";
 // store
 import { CoreRootStore } from "../root.store";
 

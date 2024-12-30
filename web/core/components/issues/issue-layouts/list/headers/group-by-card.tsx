@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 import { CircleDashed, Plus } from "lucide-react";
 // types
-import { TIssue, ISearchIssueResponse } from "@youtrack/types";
+import { TIssue, ISearchIssueResponse } from "@utrack/types";
 // ui
-import { CustomMenu, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { CustomMenu, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ExistingIssuesListModal, MultipleSelectGroupAction } from "@/components/core";
 import { CreateUpdateIssueModal } from "@/components/issues";

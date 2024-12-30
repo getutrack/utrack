@@ -6,9 +6,9 @@ import { useParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import { Check, ExternalLink, Globe2 } from "lucide-react";
 // types
-import { IProject, TProjectPublishLayouts, TProjectPublishSettings } from "@youtrack/types";
+import { IProject, TProjectPublishLayouts, TProjectPublishSettings } from "@utrack/types";
 // ui
-import { Button, Loader, ToggleSwitch, TOAST_TYPE, setToast, CustomSelect, ModalCore, EModalWidth } from "@youtrack/ui";
+import { Button, Loader, ToggleSwitch, TOAST_TYPE, setToast, CustomSelect, ModalCore, EModalWidth } from "@utrack/ui";
 // helpers
 import { SPACE_BASE_PATH, SPACE_BASE_URL } from "@/helpers/common.helper";
 import { copyTextToClipboard } from "@/helpers/string.helper";

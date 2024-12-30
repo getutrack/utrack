@@ -8,12 +8,12 @@ import { useDropzone } from "react-dropzone";
 import { Control, Controller } from "react-hook-form";
 import useSWR from "swr";
 import { Tab, Popover } from "@headlessui/react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
-// youtrack types
-import { EFileAssetType } from "@youtrack/types/src/enums";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
+// utrack types
+import { EFileAssetType } from "@utrack/types/src/enums";
 // ui
-import { Button, Input, Loader } from "@youtrack/ui";
+import { Button, Input, Loader } from "@utrack/ui";
 // constants
 import { MAX_STATIC_FILE_SIZE } from "@/constants/common";
 // helpers

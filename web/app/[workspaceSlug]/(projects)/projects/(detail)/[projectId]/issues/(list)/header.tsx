@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 // icons
 import { Briefcase, Circle, ExternalLink } from "lucide-react";
 // ui
-import { Breadcrumbs, Button, LayersIcon, Tooltip, Header } from "@youtrack/ui";
+import { Breadcrumbs, Button, LayersIcon, Tooltip, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink, CountChip, Logo } from "@/components/common";
 // constants
@@ -18,7 +18,7 @@ import { useEventTracker, useProject, useCommandPalette, useUserPermissions } fr
 import { useIssues } from "@/hooks/store/use-issues";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const ProjectIssuesHeader = observer(() => {
   // router

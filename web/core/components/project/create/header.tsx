@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { X } from "lucide-react";
-// youtrack types
-import { IProject } from "@youtrack/types";
-// youtrack ui
-import { CustomEmojiIconPicker, EmojiIconPickerTypes, Logo } from "@youtrack/ui";
+// utrack types
+import { IProject } from "@utrack/types";
+// utrack ui
+import { CustomEmojiIconPicker, EmojiIconPickerTypes, Logo } from "@utrack/ui";
 // components
 import { ImagePickerPopover } from "@/components/core";
 // constants

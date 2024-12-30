@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-// youtrack editor
-import { EditorReadOnlyRefApi, EditorRefApi, IMarking } from "@youtrack/editor";
+// utrack editor
+import { EditorReadOnlyRefApi, EditorRefApi, IMarking } from "@utrack/editor";
 // components
 import { OutlineHeading1, OutlineHeading2, OutlineHeading3 } from "./heading-components";
 

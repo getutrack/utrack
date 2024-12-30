@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArchiveRestoreIcon, Check, ExternalLink, LinkIcon, Lock, Settings, Trash2, UserPlus } from "lucide-react";
 // types
-import type { IProject } from "@youtrack/types";
+import type { IProject } from "@utrack/types";
 // ui
 import {
   Avatar,
@@ -19,7 +19,7 @@ import {
   ContextMenu,
   TContextMenuItem,
   FavoriteStar,
-} from "@youtrack/ui";
+} from "@utrack/ui";
 // components
 import { Logo } from "@/components/common";
 import { ArchiveRestoreProjectModal, DeleteProjectModal, JoinProjectModal } from "@/components/project";
@@ -32,8 +32,8 @@ import { copyUrlToClipboard } from "@/helpers/string.helper";
 import { useProject, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack-web constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack-web constants
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   project: IProject;

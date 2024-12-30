@@ -4,9 +4,9 @@ import React from "react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import useSWR, { mutate } from "swr";
-import { IWorkspaceIntegration } from "@youtrack/types";
+import { IWorkspaceIntegration } from "@utrack/types";
 // ui
-import { TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { SelectRepository, SelectChannel } from "@/components/integration";
 // constants

@@ -12,8 +12,8 @@ import {
 } from "@/components/estimates";
 // hooks
 import { useProject, useProjectEstimates } from "@/hooks/store";
-// youtrack web components
-import { UpdateEstimateModal } from "@/youtrack-web/components/estimates";
+// utrack web components
+import { UpdateEstimateModal } from "@/utrack-web/components/estimates";
 
 type TEstimateRoot = {
   workspaceSlug: string;

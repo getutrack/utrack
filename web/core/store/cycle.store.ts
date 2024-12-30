@@ -14,7 +14,7 @@ import {
   TCycleDistribution,
   TCycleEstimateType,
   TCycleProgress,
-} from "@youtrack/types";
+} from "@utrack/types";
 // helpers
 import { orderCycles, shouldFilterCycle, formatActiveCycle } from "@/helpers/cycle.helper";
 import { getDate } from "@/helpers/date-time.helper";

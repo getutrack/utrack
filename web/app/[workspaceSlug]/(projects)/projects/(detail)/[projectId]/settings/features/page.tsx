@@ -8,7 +8,7 @@ import { PageHead } from "@/components/core";
 import { ProjectFeaturesList } from "@/components/project";
 // hooks
 import { useProject, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const FeaturesSettingsPage = observer(() => {
   const { workspaceSlug, projectId } = useParams();

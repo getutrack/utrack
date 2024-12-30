@@ -9,9 +9,9 @@ import {
   IProjectMemberLite,
   IProjectMembership,
   IUserLite,
-} from "@youtrack/types";
-// youtrack-web constants
-import { EUserPermissions } from "@/youtrack-web/constants/user-permissions";
+} from "@utrack/types";
+// utrack-web constants
+import { EUserPermissions } from "@/utrack-web/constants/user-permissions";
 // services
 import { ProjectMemberService } from "@/services/project";
 // store

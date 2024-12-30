@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
-import { cn } from "@youtrack/editor";
-import { ContentWrapper } from "@youtrack/ui";
+import { cn } from "@utrack/editor";
+import { ContentWrapper } from "@utrack/ui";
 
 export const KanbanIssueBlockLoader = forwardRef<HTMLSpanElement, { cardHeight?: number; shouldAnimate?: boolean }>(
   ({ cardHeight = 100, shouldAnimate = true }, ref) => (

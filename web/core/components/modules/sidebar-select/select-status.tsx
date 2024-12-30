@@ -4,9 +4,9 @@
 import React from "react";
 // react-hook-form
 import { Control, Controller, UseFormWatch } from "react-hook-form";
-import { IModule } from "@youtrack/types";
+import { IModule } from "@utrack/types";
 // ui
-import { CustomSelect, DoubleCircleIcon } from "@youtrack/ui";
+import { CustomSelect, DoubleCircleIcon } from "@utrack/ui";
 // types
 import { MODULE_STATUS } from "@/constants/module";
 // common

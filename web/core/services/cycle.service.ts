@@ -7,7 +7,7 @@ import type {
   TCycleDistribution,
   TProgressSnapshot,
   TCycleEstimateDistribution,
-} from "@youtrack/types";
+} from "@utrack/types";
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { APIService } from "@/services/api.service";
 

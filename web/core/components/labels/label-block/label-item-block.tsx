@@ -2,12 +2,12 @@
 
 import { MutableRefObject, useRef, useState } from "react";
 import { LucideIcon, X } from "lucide-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // types
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 // ui
-import { CustomMenu, DragHandle } from "@youtrack/ui";
+import { CustomMenu, DragHandle } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // components

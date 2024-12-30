@@ -1,8 +1,8 @@
 "use client";
 
 // components
-import { IAppIntegration, IWorkspaceIntegration } from "@youtrack/types";
-import { Button } from "@youtrack/ui";
+import { IAppIntegration, IWorkspaceIntegration } from "@utrack/types";
+import { Button } from "@utrack/ui";
 import { GithubAuth, TIntegrationSteps } from "@/components/integration";
 // types
 

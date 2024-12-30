@@ -1,8 +1,8 @@
 "use client";
 
 // ui
-import { IUserProfileData } from "@youtrack/types";
-import { Loader, Card } from "@youtrack/ui";
+import { IUserProfileData } from "@utrack/types";
+import { Loader, Card } from "@utrack/ui";
 import { BarGraph, ProfileEmptyState } from "@/components/ui";
 // image
 import { capitalizeFirstLetter } from "@/helpers/string.helper";

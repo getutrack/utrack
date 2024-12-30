@@ -3,7 +3,7 @@
 import { Command } from "cmdk";
 import { ContrastIcon, FileText, Layers } from "lucide-react";
 // hooks
-import { DiceIcon } from "@youtrack/ui";
+import { DiceIcon } from "@utrack/ui";
 import { useCommandPalette, useEventTracker } from "@/hooks/store";
 // ui
 

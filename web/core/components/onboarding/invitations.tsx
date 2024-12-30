@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 // types
-import { IWorkspaceMemberInvitation } from "@youtrack/types";
+import { IWorkspaceMemberInvitation } from "@utrack/types";
 // ui
-import { Button, Checkbox, Spinner } from "@youtrack/ui";
+import { Button, Checkbox, Spinner } from "@utrack/ui";
 // constants
 import { MEMBER_ACCEPTED } from "@/constants/event-tracker";
 import { ROLE } from "@/constants/workspace";
@@ -14,7 +14,7 @@ import { getUserRole } from "@/helpers/user.helper";
 // hooks
 import { useEventTracker, useUserSettings, useWorkspace } from "@/hooks/store";
 // services
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 
 type Props = {
   invitations: IWorkspaceMemberInvitation[];

@@ -1,5 +1,5 @@
-// youtrack types
-import { IFavorite } from "@youtrack/types";
+// utrack types
+import { IFavorite } from "@utrack/types";
 // components
 import {
   generateFavoriteItemLink,

@@ -1,8 +1,8 @@
 "use client";
 
 import { FC, useState } from "react";
-import { IIssueDisplayFilterOptions, IIssueDisplayProperties, IIssueFilterOptions } from "@youtrack/types";
-import { Button } from "@youtrack/ui";
+import { IIssueDisplayFilterOptions, IIssueDisplayProperties, IIssueFilterOptions } from "@utrack/types";
+import { Button } from "@utrack/ui";
 // components
 import { CreateUpdateProjectViewModal } from "@/components/views";
 

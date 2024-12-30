@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import { useParams, useRouter } from "next/navigation";
 import { ArchiveRestoreIcon, ArrowUpToLine, Clipboard, Copy, History, Link, Lock, LockOpen } from "lucide-react";
 // document editor
-import { EditorReadOnlyRefApi, EditorRefApi } from "@youtrack/editor";
+import { EditorReadOnlyRefApi, EditorRefApi } from "@utrack/editor";
 // ui
-import { ArchiveIcon, CustomMenu, TOAST_TYPE, ToggleSwitch, setToast } from "@youtrack/ui";
+import { ArchiveIcon, CustomMenu, TOAST_TYPE, ToggleSwitch, setToast } from "@utrack/ui";
 // components
 import { ExportPageModal } from "@/components/pages";
 // helpers

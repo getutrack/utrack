@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { FileText, Layers, Timer } from "lucide-react";
-import { IProject } from "@youtrack/types";
-import { ContrastIcon, DiceIcon, Intake } from "@youtrack/ui";
+import { IProject } from "@utrack/types";
+import { ContrastIcon, DiceIcon, Intake } from "@utrack/ui";
 
 export type TProperties = {
   property: string;

@@ -1,6 +1,6 @@
 "use client";
 import { useMemo } from "react";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@youtrack/ui";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@utrack/ui";
 // type
 import { TAttachmentOperations } from "@/components/issues/attachment";
 // hooks

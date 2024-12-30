@@ -2,8 +2,8 @@
 import { FC, useState } from "react";
 import { observer } from "mobx-react";
 import { CircleDot, CopyPlus, XCircle } from "lucide-react";
-import { TIssue, TIssueRelationIdMap } from "@youtrack/types";
-import { Collapsible, RelatedIcon } from "@youtrack/ui";
+import { TIssue, TIssueRelationIdMap } from "@utrack/types";
+import { Collapsible, RelatedIcon } from "@utrack/ui";
 // components
 import { RelationIssueList } from "@/components/issues";
 import { DeleteIssueModal } from "@/components/issues/delete-issue-modal";

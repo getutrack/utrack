@@ -3,9 +3,9 @@
 import React, { FC, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 // types
-import { IFormattedInstanceConfiguration, TInstanceEmailConfigurationKeys } from "@youtrack/types";
+import { IFormattedInstanceConfiguration, TInstanceEmailConfigurationKeys } from "@utrack/types";
 // ui
-import { Button, CustomSelect, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, CustomSelect, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ControllerInput, TControllerInputFormField } from "@/components/common";
 // hooks

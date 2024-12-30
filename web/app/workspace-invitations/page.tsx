@@ -17,7 +17,7 @@ import { useUser } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
 // wrappers
 import { AuthenticationWrapper } from "@/lib/wrappers";
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 // services
 
 // service initialization
@@ -82,7 +82,7 @@ const WorkspaceInvitationPage = observer(() => {
           ) : (
             <EmptySpace
               title={`You have been invited to ${invitationDetail.workspace.name}`}
-              description="Your workspace is where you'll create projects, collaborate on your issues, and organize different streams of work in your Youtrack account."
+              description="Your workspace is where you'll create projects, collaborate on your issues, and organize different streams of work in your Utrack account."
             >
               <EmptySpaceItem Icon={Check} title="Accept" action={handleAccept} />
               <EmptySpaceItem Icon={X} title="Ignore" action={handleReject} />
@@ -92,14 +92,14 @@ const WorkspaceInvitationPage = observer(() => {
           invitationDetail?.accepted ? (
             <EmptySpace
               title={`You are already a member of ${invitationDetail.workspace.name}`}
-              description="Your workspace is where you'll create projects, collaborate on your issues, and organize different streams of work in your Youtrack account."
+              description="Your workspace is where you'll create projects, collaborate on your issues, and organize different streams of work in your Utrack account."
             >
               <EmptySpaceItem Icon={Boxes} title="Continue to home" href="/" />
             </EmptySpace>
           ) : (
             <EmptySpace
               title="This invitation link is not active anymore."
-              description="Your workspace is where you'll create projects, collaborate on your issues, and organize different streams of work in your Youtrack account."
+              description="Your workspace is where you'll create projects, collaborate on your issues, and organize different streams of work in your Utrack account."
               link={{ text: "Or start from an empty project", href: "/" }}
             >
               {!currentUser ? (

@@ -1,7 +1,7 @@
 "use client";
 import React, { FC, useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // components
 import { DeleteIssueModal } from "@/components/issues/delete-issue-modal";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal";

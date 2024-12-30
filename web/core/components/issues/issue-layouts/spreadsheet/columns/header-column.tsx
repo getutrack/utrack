@@ -2,8 +2,8 @@
 
 //ui
 import { ArrowDownWideNarrow, ArrowUpNarrowWide, CheckIcon, ChevronDownIcon, Eraser, MoveRight } from "lucide-react";
-import { IIssueDisplayFilterOptions, IIssueDisplayProperties, TIssueOrderByOptions } from "@youtrack/types";
-import { CustomMenu, Row } from "@youtrack/ui";
+import { IIssueDisplayFilterOptions, IIssueDisplayProperties, TIssueOrderByOptions } from "@utrack/types";
+import { CustomMenu, Row } from "@utrack/ui";
 //hooks
 import { SPREADSHEET_PROPERTY_DETAILS } from "@/constants/spreadsheet";
 import useLocalStorage from "@/hooks/use-local-storage";

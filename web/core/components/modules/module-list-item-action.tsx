@@ -6,9 +6,9 @@ import { useParams } from "next/navigation";
 // icons
 import { SquareUser } from "lucide-react";
 // types
-import { IModule } from "@youtrack/types";
+import { IModule } from "@utrack/types";
 // ui
-import { FavoriteStar, TOAST_TYPE, Tooltip, setPromiseToast, setToast } from "@youtrack/ui";
+import { FavoriteStar, TOAST_TYPE, Tooltip, setPromiseToast, setToast } from "@utrack/ui";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns";
 import { ModuleQuickActions } from "@/components/modules";
@@ -19,7 +19,7 @@ import { MODULE_STATUS } from "@/constants/module";
 // hooks
 import { renderFormattedPayloadDate, getDate } from "@/helpers/date-time.helper";
 import { useEventTracker, useMember, useModule, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 import { ButtonAvatars } from "../dropdowns/member/avatar";
 
 type Props = {

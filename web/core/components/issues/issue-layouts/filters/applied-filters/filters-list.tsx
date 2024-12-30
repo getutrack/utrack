@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
 // types
-import { IIssueFilterOptions, IIssueLabel, IState } from "@youtrack/types";
+import { IIssueFilterOptions, IIssueLabel, IState } from "@utrack/types";
 // components
-import { Tag } from "@youtrack/ui";
+import { Tag } from "@utrack/ui";
 import {
   AppliedCycleFilters,
   AppliedDateFilters,
@@ -20,9 +20,9 @@ import {
 import { replaceUnderscoreIfSnakeCase } from "@/helpers/string.helper";
 // hooks
 import { useUserPermissions } from "@/hooks/store";
-// youtrack web components
-import { AppliedIssueTypeFilters } from "@/youtrack-web/components/issues";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web components
+import { AppliedIssueTypeFilters } from "@/utrack-web/components/issues";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 type Props = {
   appliedFilters: IIssueFilterOptions;

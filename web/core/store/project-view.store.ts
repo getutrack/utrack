@@ -2,13 +2,13 @@ import { set } from "lodash";
 import { observable, action, makeObservable, runInAction, computed } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { IProjectView, TPublishViewDetails, TPublishViewSettings, TViewFilters } from "@youtrack/types";
+import { IProjectView, TPublishViewDetails, TPublishViewSettings, TViewFilters } from "@utrack/types";
 // constants
 import { EViewAccess } from "@/constants/views";
 // helpers
 import { getValidatedViewFilters, getViewName, orderViews, shouldFilterView } from "@/helpers/project-views.helpers";
 // services
-import { ViewService } from "@/youtrack-web/services";
+import { ViewService } from "@/utrack-web/services";
 // store
 import { CoreRootStore } from "./root.store";
 

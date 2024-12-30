@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import { usePopper } from "react-popper";
 import { Popover, Tab } from "@headlessui/react";
 import EmojiPicker from "emoji-picker-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // helpers
 import { cn } from "../../helpers";
 // hooks

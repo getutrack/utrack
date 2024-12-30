@@ -1,4 +1,4 @@
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 import { rootStore } from "@/lib/store-context";
 import { IssueService } from "@/services/issue";
 import { persistence } from "../storage.sqlite";

@@ -1,6 +1,6 @@
 // nivo
 import { BarTooltipProps } from "@nivo/bar";
-import { IAnalyticsParams, IAnalyticsResponse } from "@youtrack/types";
+import { IAnalyticsParams, IAnalyticsResponse } from "@utrack/types";
 import { DATE_KEYS } from "@/constants/analytics";
 import { renderMonthAndYear } from "@/helpers/analytics.helper";
 // types

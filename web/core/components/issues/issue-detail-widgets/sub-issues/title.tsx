@@ -1,7 +1,7 @@
 "use client";
 import React, { FC, useMemo } from "react";
 import { observer } from "mobx-react";
-import { CircularProgressIndicator, CollapsibleButton } from "@youtrack/ui";
+import { CircularProgressIndicator, CollapsibleButton } from "@utrack/ui";
 // components
 import { SubIssuesActionButton } from "@/components/issues/issue-detail-widgets";
 // hooks

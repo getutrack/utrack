@@ -11,7 +11,7 @@ import {
   TNotificationPaginatedInfo,
   TNotificationPaginatedInfoQueryParams,
   TUnreadNotificationsCount,
-} from "@youtrack/types";
+} from "@utrack/types";
 // constants
 import {
   ENotificationLoader,

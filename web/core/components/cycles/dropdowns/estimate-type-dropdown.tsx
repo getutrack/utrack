@@ -1,6 +1,6 @@
 import React from "react";
-import { TCycleEstimateType } from "@youtrack/types";
-import { CustomSelect } from "@youtrack/ui";
+import { TCycleEstimateType } from "@utrack/types";
+import { CustomSelect } from "@utrack/ui";
 import { useCycle, useProjectEstimates } from "@/hooks/store";
 import { cycleEstimateOptions } from "../analytics-sidebar";
 

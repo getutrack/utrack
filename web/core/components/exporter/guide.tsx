@@ -9,7 +9,7 @@ import useSWR, { mutate } from "swr";
 // icons
 import { MoveLeft, MoveRight, RefreshCw } from "lucide-react";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/empty-state";
 import { Exporter, SingleExport } from "@/components/exporter";
@@ -21,7 +21,7 @@ import { EXPORTERS_LIST } from "@/constants/workspace";
 // hooks
 import { useProject, useUser, useUserPermissions } from "@/hooks/store";
 import { useAppRouter } from "@/hooks/use-app-router";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // services
 import { IntegrationService } from "@/services/integrations";
 

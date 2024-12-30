@@ -7,9 +7,9 @@ import { Rocket, Search } from "lucide-react";
 // headless ui
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 // types
-import { ISearchIssueResponse } from "@youtrack/types";
+import { ISearchIssueResponse } from "@utrack/types";
 // ui
-import { Loader, ToggleSwitch, Tooltip } from "@youtrack/ui";
+import { Loader, ToggleSwitch, Tooltip } from "@utrack/ui";
 // components
 import { IssueSearchModalEmptyState } from "@/components/core";
 // helpers
@@ -17,8 +17,8 @@ import { getTabIndex } from "@/helpers/tab-indices.helper";
 // hooks
 import useDebounce from "@/hooks/use-debounce";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 // services
 import { ProjectService } from "@/services/project";
 

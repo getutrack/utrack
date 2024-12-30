@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
-import { TOverviewStatsWidgetResponse } from "@youtrack/types";
+import { TOverviewStatsWidgetResponse } from "@utrack/types";
 // hooks
-import { Card, ECardSpacing } from "@youtrack/ui";
+import { Card, ECardSpacing } from "@utrack/ui";
 import { WidgetLoader } from "@/components/dashboard/widgets";
 import { cn } from "@/helpers/common.helper";
 import { renderFormattedPayloadDate } from "@/helpers/date-time.helper";

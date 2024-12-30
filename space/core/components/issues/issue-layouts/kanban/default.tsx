@@ -11,7 +11,7 @@ import {
   TIssueGroupByOptions,
   TPaginationData,
   TLoader,
-} from "@youtrack/types";
+} from "@utrack/types";
 // hooks
 import { useMember, useModule, useStates, useLabel, useCycle } from "@/hooks/store";
 //

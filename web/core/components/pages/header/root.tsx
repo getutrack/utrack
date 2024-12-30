@@ -1,9 +1,9 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-import { TPageFilterProps, TPageNavigationTabs } from "@youtrack/types";
+import { TPageFilterProps, TPageNavigationTabs } from "@utrack/types";
 // components
-import { Header, EHeaderVariant } from "@youtrack/ui";
+import { Header, EHeaderVariant } from "@utrack/ui";
 import { FiltersDropdown } from "@/components/issues";
 import {
   PageAppliedFiltersList,

@@ -5,12 +5,12 @@ import { useState, useRef, forwardRef } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { MoreHorizontal } from "lucide-react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // types
-import { TIssue } from "@youtrack/types";
+import { TIssue } from "@utrack/types";
 // ui
-import { Tooltip, ControlLink } from "@youtrack/ui";
+import { Tooltip, ControlLink } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks
@@ -18,8 +18,8 @@ import { useIssueDetail, useIssues, useProjectState } from "@/hooks/store";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues/issue-details";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues/issue-details";
 // local components
 import { TRenderQuickActions } from "../list/list-view-types";
 import { CalendarStoreType } from "./base-calendar-root";

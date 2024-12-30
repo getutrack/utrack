@@ -20,9 +20,9 @@ import {
 // Core types
 import { TDocumentTypes } from "@/core/types/common.js";
 
-// Youtrack live libraries
-import { fetchDocument } from "@/youtrack-live/lib/fetch-document.js";
-import { updateDocument } from "@/youtrack-live/lib/update-document.js";
+// Utrack live libraries
+import { fetchDocument } from "@/utrack-live/lib/fetch-document.js";
+import { updateDocument } from "@/utrack-live/lib/update-document.js";
 
 export const getExtensions: () => Promise<Extension[]> = async () => {
   const extensions: Extension[] = [
@@ -123,7 +123,7 @@ export const getExtensions: () => Promise<Extension[]> = async () => {
             redisClient.disconnect();
           }
           manualLogger.warn(
-            `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple youtrack live servers)`,
+            `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple utrack live servers)`,
             error
           );
           reject(error);
@@ -137,13 +137,13 @@ export const getExtensions: () => Promise<Extension[]> = async () => {
       });
     } catch (error) {
       manualLogger.warn(
-        `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple youtrack live servers)`,
+        `Redis Client wasn't able to connect, continuing without Redis (you won't be able to sync data between multiple utrack live servers)`,
         error
       );
     }
   } else {
     manualLogger.warn(
-      "Redis URL is not set, continuing without Redis (you won't be able to sync data between multiple youtrack live servers)"
+      "Redis URL is not set, continuing without Redis (you won't be able to sync data between multiple utrack live servers)"
     );
   }
 

@@ -3,9 +3,9 @@
 import React, { useState, useRef } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { IIssueLabel } from "@youtrack/types";
+import { IIssueLabel } from "@utrack/types";
 // hooks
-import { Button, Loader } from "@youtrack/ui";
+import { Button, Loader } from "@utrack/ui";
 import { EmptyState } from "@/components/empty-state";
 import {
   CreateUpdateLabelInline,
@@ -15,7 +15,7 @@ import {
 } from "@/components/labels";
 import { EmptyStateType } from "@/constants/empty-state";
 import { useLabel, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // components
 // ui
 // types

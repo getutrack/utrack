@@ -7,9 +7,9 @@ import { Combobox, Dialog, Transition } from "@headlessui/react";
 // icons
 // components
 // types
-import { ISearchIssueResponse } from "@youtrack/types";
+import { ISearchIssueResponse } from "@utrack/types";
 // ui
-import { Loader, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Loader, TOAST_TYPE, setToast } from "@utrack/ui";
 import { EmptyState } from "@/components/empty-state";
 // constants
 import { EmptyStateType } from "@/constants/empty-state";

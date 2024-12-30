@@ -9,27 +9,27 @@ x-app-env: &app-env
     # Gunicorn Workers
     - GUNICORN_WORKERS=${GUNICORN_WORKERS:-1}
     #DB SETTINGS
-    - PGHOST=${PGHOST:-youtrack-db}
-    - PGDATABASE=${PGDATABASE:-youtrack}
-    - POSTGRES_USER=${POSTGRES_USER:-youtrack}
-    - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-youtrack}
-    - POSTGRES_DB=${POSTGRES_DB:-youtrack}
+    - PGHOST=${PGHOST:-utrack-db}
+    - PGDATABASE=${PGDATABASE:-utrack}
+    - POSTGRES_USER=${POSTGRES_USER:-utrack}
+    - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-utrack}
+    - POSTGRES_DB=${POSTGRES_DB:-utrack}
     - POSTGRES_PORT=${POSTGRES_PORT:-5432}
     - PGDATA=${PGDATA:-/var/lib/postgresql/data}
-    - DATABASE_URL=${DATABASE_URL:-postgresql://youtrack:youtrack@youtrack-db/youtrack}
+    - DATABASE_URL=${DATABASE_URL:-postgresql://utrack:utrack@utrack-db/utrack}
     # REDIS SETTINGS
-    - REDIS_HOST=${REDIS_HOST:-youtrack-redis}
+    - REDIS_HOST=${REDIS_HOST:-utrack-redis}
     - REDIS_PORT=${REDIS_PORT:-6379}
-    - REDIS_URL=${REDIS_URL:-redis://youtrack-redis:6379/}
+    - REDIS_URL=${REDIS_URL:-redis://utrack-redis:6379/}
 
     # RabbitMQ Settings
-    - RABBITMQ_HOST=${RABBITMQ_HOST:-youtrack-mq}
+    - RABBITMQ_HOST=${RABBITMQ_HOST:-utrack-mq}
     - RABBITMQ_PORT=${RABBITMQ_PORT:-5672}
-    - RABBITMQ_DEFAULT_USER=${RABBITMQ_USER:-youtrack}
-    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD:-youtrack}
-    - RABBITMQ_DEFAULT_VHOST=${RABBITMQ_VHOST:-youtrack}
-    - RABBITMQ_VHOST=${RABBITMQ_VHOST:-youtrack}
-    - AMQP_URL=${AMQP_URL:-amqp://youtrack:youtrack@youtrack-mq:5672/youtrack}
+    - RABBITMQ_DEFAULT_USER=${RABBITMQ_USER:-utrack}
+    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD:-utrack}
+    - RABBITMQ_DEFAULT_VHOST=${RABBITMQ_VHOST:-utrack}
+    - RABBITMQ_VHOST=${RABBITMQ_VHOST:-utrack}
+    - AMQP_URL=${AMQP_URL:-amqp://utrack:utrack@utrack-mq:5672/utrack}
     # Application secret
     - SECRET_KEY=${SECRET_KEY:-60gp0byfz2dvffa45cxl20p1scy9xbpf6d8c5y0geejgkyp1b5}
     # DATA STORE SETTINGS
@@ -37,7 +37,7 @@ x-app-env: &app-env
     - AWS_REGION=${AWS_REGION:-}
     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-"access-key"}
     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-"secret-key"}
-    - AWS_S3_ENDPOINT_URL=${AWS_S3_ENDPOINT_URL:-http://youtrack-minio:9000}
+    - AWS_S3_ENDPOINT_URL=${AWS_S3_ENDPOINT_URL:-http://utrack-minio:9000}
     - AWS_S3_BUCKET_NAME=${AWS_S3_BUCKET_NAME:-uploads}
     - MINIO_ROOT_USER=${MINIO_ROOT_USER:-"access-key"}
     - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD:-"secret-key"}
@@ -49,7 +49,7 @@ x-app-env: &app-env
 services:
   web:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-frontend:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-frontend:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped
@@ -62,7 +62,7 @@ services:
 
   space:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-space:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-space:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped
@@ -76,7 +76,7 @@ services:
 
   admin:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-admin:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-admin:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped
@@ -89,7 +89,7 @@ services:
 
   live:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-live:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-live:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped
@@ -102,7 +102,7 @@ services:
 
   api:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-backend:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-backend:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped
@@ -110,57 +110,57 @@ services:
     deploy:
       replicas: ${API_REPLICAS:-1}
     volumes:
-      - logs_api:/code/youtrack/logs
+      - logs_api:/code/utrack/logs
     depends_on:
-      - youtrack-db
-      - youtrack-redis
-      - youtrack-mq
+      - utrack-db
+      - utrack-redis
+      - utrack-mq
 
 
   worker:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-backend:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-backend:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped
     command: ./bin/docker-entrypoint-worker.sh
     volumes:
-      - logs_worker:/code/youtrack/logs
+      - logs_worker:/code/utrack/logs
     depends_on:
       - api
-      - youtrack-db
-      - youtrack-redis
-      - youtrack-mq
+      - utrack-db
+      - utrack-redis
+      - utrack-mq
 
   beat-worker:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-backend:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-backend:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped
     command: ./bin/docker-entrypoint-beat.sh
     volumes:
-      - logs_beat-worker:/code/youtrack/logs
+      - logs_beat-worker:/code/utrack/logs
     depends_on:
       - api
-      - youtrack-db
-      - youtrack-redis
-      - youtrack-mq
+      - utrack-db
+      - utrack-redis
+      - utrack-mq
 
   migrator:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-backend:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-backend:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: "no"
     command: ./bin/docker-entrypoint-migrator.sh
     volumes:
-      - logs_migrator:/code/youtrack/logs
+      - logs_migrator:/code/utrack/logs
     depends_on:
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
-  youtrack-db:
+  utrack-db:
     <<: *app-env
     image: postgres:15.7-alpine
     pull_policy: if_not_present
@@ -169,7 +169,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
-  youtrack-redis:
+  utrack-redis:
     <<: *app-env
     image: valkey/valkey:7.2.5-alpine
     pull_policy: if_not_present
@@ -177,14 +177,14 @@ services:
     volumes:
       - redisdata:/data
 
-  youtrack-mq:
+  utrack-mq:
     <<: *app-env
     image: rabbitmq:3.13.6-management-alpine
     restart: always
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
 
-  youtrack-minio:
+  utrack-minio:
     <<: *app-env
     image: minio/minio:latest
     pull_policy: if_not_present
@@ -196,7 +196,7 @@ services:
   # Comment this if you already have a reverse proxy running
   proxy:
     <<: *app-env
-    image: ${DOCKERHUB_USER:-getutrack}/youtrack-proxy:${APP_RELEASE:-stable}
+    image: ${DOCKERHUB_USER:-getutrack}/utrack-proxy:${APP_RELEASE:-stable}
     platform: ${DOCKER_PLATFORM:-}
     pull_policy: if_not_present
     restart: unless-stopped

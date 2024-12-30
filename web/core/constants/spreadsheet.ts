@@ -13,10 +13,10 @@ import {
   Users,
 } from "lucide-react";
 // types
-import { IIssueDisplayProperties, TIssue, TIssueOrderByOptions } from "@youtrack/types";
+import { IIssueDisplayProperties, TIssue, TIssueOrderByOptions } from "@utrack/types";
 // ui
-import { LayersIcon, DoubleCircleIcon, DiceIcon, ContrastIcon } from "@youtrack/ui";
-import { ISvgIcons } from "@youtrack/ui/src/icons/type";
+import { LayersIcon, DoubleCircleIcon, DiceIcon, ContrastIcon } from "@utrack/ui";
+import { ISvgIcons } from "@utrack/ui/src/icons/type";
 import {
   SpreadsheetAssigneeColumn,
   SpreadsheetAttachmentColumn,

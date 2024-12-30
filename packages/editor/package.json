@@ -1,7 +1,7 @@
 {
-  "name": "@youtrack/editor",
+  "name": "@utrack/editor",
   "version": "0.23.1",
-  "description": "Core Editor that powers Youtrack",
+  "description": "Core Editor that powers Utrack",
   "private": true,
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -36,8 +36,8 @@
   "dependencies": {
     "@floating-ui/react": "^0.26.4",
     "@hocuspocus/provider": "^2.13.5",
-    "@youtrack/helpers": "*",
-    "@youtrack/ui": "*",
+    "@utrack/helpers": "*",
+    "@utrack/ui": "*",
     "@tiptap/core": "^2.1.13",
     "@tiptap/extension-blockquote": "^2.1.13",
     "@tiptap/extension-character-count": "^2.6.5",
@@ -74,8 +74,8 @@
     "yjs": "^13.6.15"
   },
   "devDependencies": {
-    "@youtrack/eslint-config": "*",
-    "@youtrack/typescript-config": "*",
+    "@utrack/eslint-config": "*",
+    "@utrack/typescript-config": "*",
     "@types/node": "18.15.3",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.2.18",

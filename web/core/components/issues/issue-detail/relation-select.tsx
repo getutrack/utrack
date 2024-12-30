@@ -4,9 +4,9 @@ import React from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { CircleDot, CopyPlus, Pencil, X, XCircle } from "lucide-react";
-import { TIssueRelationTypes, ISearchIssueResponse } from "@youtrack/types";
+import { TIssueRelationTypes, ISearchIssueResponse } from "@utrack/types";
 // hooks
-import { RelatedIcon, Tooltip, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { RelatedIcon, Tooltip, TOAST_TYPE, setToast } from "@utrack/ui";
 import { ExistingIssuesListModal } from "@/components/core";
 import { cn } from "@/helpers/common.helper";
 import { useIssueDetail, useIssues, useProject } from "@/hooks/store";

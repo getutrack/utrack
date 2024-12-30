@@ -1,4 +1,4 @@
-import { TIssue, TIssuesResponse } from "@youtrack/types";
+import { TIssue, TIssuesResponse } from "@utrack/types";
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { APIService } from "@/services/api.service";
 // helpers

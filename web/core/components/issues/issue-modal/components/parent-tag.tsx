@@ -5,15 +5,15 @@ import { observer } from "mobx-react";
 import { Control, Controller } from "react-hook-form";
 import { X } from "lucide-react";
 // types
-import { ISearchIssueResponse, TIssue } from "@youtrack/types";
+import { ISearchIssueResponse, TIssue } from "@utrack/types";
 // constants
 import { ETabIndices } from "@/constants/tab-indices";
 // helpers
 import { getTabIndex } from "@/helpers/tab-indices.helper";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 
 type TIssueParentTagProps = {
   control: Control<TIssue>;

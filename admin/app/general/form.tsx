@@ -4,9 +4,9 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Telescope } from "lucide-react";
 // types
-import { IInstance, IInstanceAdmin } from "@youtrack/types";
+import { IInstance, IInstanceAdmin } from "@utrack/types";
 // ui
-import { Button, Input, TOAST_TYPE, ToggleSwitch, setToast } from "@youtrack/ui";
+import { Button, Input, TOAST_TYPE, ToggleSwitch, setToast } from "@utrack/ui";
 // components
 import { ControllerInput } from "@/components/common";
 import { useInstance } from "@/hooks/store";
@@ -117,10 +117,10 @@ export const GeneralConfigurationForm: FC<IGeneralConfigurationForm> = observer(
             </div>
             <div className="grow">
               <div className="text-sm font-medium text-custom-text-100 leading-5">
-                Allow Youtrack to collect anonymous usage events
+                Allow Utrack to collect anonymous usage events
               </div>
               <div className="text-xs font-normal text-custom-text-300 leading-5">
-                We collect usage events without any PII to analyse and improve Youtrack.{" "}
+                We collect usage events without any PII to analyse and improve Utrack.{" "}
                 <a
                   href="https://utrackdocs.digi-trans.org/self-hosting/telemetry"
                   target="_blank"

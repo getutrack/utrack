@@ -1,5 +1,5 @@
 // editor
-import { TExtensions } from "@youtrack/editor";
+import { TExtensions } from "@utrack/editor";
 
 /**
  * @description extensions disabled in various editors

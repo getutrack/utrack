@@ -4,8 +4,8 @@ import { observer } from "mobx-react";
 import { cn } from "@/helpers/common.helper";
 // hooks
 import { useEstimate, useProjectEstimates } from "@/hooks/store";
-// youtrack web components
-import { EstimateListItemButtons } from "@/youtrack-web/components/estimates";
+// utrack web components
+import { EstimateListItemButtons } from "@/utrack-web/components/estimates";
 
 type TEstimateListItem = {
   estimateId: string;

@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 // icons
 import { Plus, ChevronRight, Loader, Pencil } from "lucide-react";
 // types
-import { IUser, TIssue } from "@youtrack/types";
+import { IUser, TIssue } from "@utrack/types";
 // ui
-import { CircularProgressIndicator, CustomMenu, LayersIcon, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { CircularProgressIndicator, CustomMenu, LayersIcon, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { ExistingIssuesListModal } from "@/components/core";
 import { CreateUpdateIssueModal, DeleteIssueModal } from "@/components/issues";

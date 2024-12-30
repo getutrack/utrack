@@ -8,12 +8,12 @@ import { useParams } from "next/navigation";
 import { ChevronDown, Pencil } from "lucide-react";
 // headless ui
 import { Disclosure, Transition } from "@headlessui/react";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // types
-import { IUserProfileProjectSegregation } from "@youtrack/types";
-// youtrack ui
-import { Loader, Tooltip } from "@youtrack/ui";
+import { IUserProfileProjectSegregation } from "@utrack/types";
+// utrack ui
+import { Loader, Tooltip } from "@utrack/ui";
 // components
 import { Logo } from "@/components/common";
 // helpers

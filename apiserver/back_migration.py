@@ -2,8 +2,8 @@
 import uuid
 import random
 from django.contrib.auth.hashers import make_password
-from youtrack.db.models import ProjectIdentifier
-from youtrack.db.models import (
+from utrack.db.models import ProjectIdentifier
+from utrack.db.models import (
     Issue,
     IssueComment,
     User,

@@ -3,15 +3,15 @@
 import { FC, useEffect, useState, FormEvent } from "react";
 import { observer } from "mobx-react";
 import { Check, Info, X } from "lucide-react";
-import { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@youtrack/types";
-import { Spinner, TOAST_TYPE, Tooltip, setToast } from "@youtrack/ui";
+import { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@utrack/types";
+import { Spinner, TOAST_TYPE, Tooltip, setToast } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 import { isEstimatePointValuesRepeated } from "@/helpers/estimates";
 // hooks
 import { useEstimatePoint } from "@/hooks/store";
-// youtrack web constants
-import { EEstimateSystem, MAX_ESTIMATE_POINT_INPUT_LENGTH } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { EEstimateSystem, MAX_ESTIMATE_POINT_INPUT_LENGTH } from "@/utrack-web/constants/estimates";
 
 type TEstimatePointUpdate = {
   workspaceSlug: string;

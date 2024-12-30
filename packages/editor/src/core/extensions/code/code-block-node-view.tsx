@@ -7,7 +7,7 @@ import ts from "highlight.js/lib/languages/typescript";
 import { common, createLowlight } from "lowlight";
 import { CopyIcon, CheckIcon } from "lucide-react";
 // ui
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common";
 

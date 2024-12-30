@@ -1,9 +1,9 @@
 import set from "lodash/set";
 import { action, computed, observable, makeObservable, runInAction } from "mobx";
 // types
-import { IWorkspace } from "@youtrack/types";
+import { IWorkspace } from "@utrack/types";
 // services
-import { WorkspaceService } from "@/youtrack-web/services";
+import { WorkspaceService } from "@/utrack-web/services";
 // store
 import { CoreRootStore } from "@/store/root.store";
 // sub-stores

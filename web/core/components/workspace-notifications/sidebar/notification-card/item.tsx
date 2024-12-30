@@ -3,7 +3,7 @@
 import { FC, useState } from "react";
 import { observer } from "mobx-react";
 import { Clock } from "lucide-react";
-import { Avatar, Row } from "@youtrack/ui";
+import { Avatar, Row } from "@utrack/ui";
 // components
 import { NotificationOption } from "@/components/workspace-notifications";
 // helpers

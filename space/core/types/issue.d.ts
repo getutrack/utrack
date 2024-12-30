@@ -1,4 +1,4 @@
-import { IWorkspaceLite, TIssue, TIssuePriorities, TStateGroups } from "@youtrack/types";
+import { IWorkspaceLite, TIssue, TIssuePriorities, TStateGroups } from "@utrack/types";
 
 export type TIssueLayout = "list" | "kanban" | "calendar" | "spreadsheet" | "gantt";
 export type TIssueLayoutOptions = {

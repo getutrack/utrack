@@ -4,15 +4,15 @@ import { FC, useEffect, useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { ChevronLeft } from "lucide-react";
 // types
-import { IEstimateFormData, TEstimateSystemKeys, TEstimatePointsObject, TEstimateTypeError } from "@youtrack/types";
+import { IEstimateFormData, TEstimateSystemKeys, TEstimatePointsObject, TEstimateTypeError } from "@utrack/types";
 // ui
-import { Button, EModalPosition, EModalWidth, ModalCore, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, EModalPosition, EModalWidth, ModalCore, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { EstimateCreateStageOne, EstimatePointCreateRoot } from "@/components/estimates";
 // hooks
 import { useProjectEstimates } from "@/hooks/store";
-// youtrack web constants
-import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@/youtrack-web/constants/estimates";
+// utrack web constants
+import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@/utrack-web/constants/estimates";
 
 type TCreateEstimateModal = {
   workspaceSlug: string;

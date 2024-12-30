@@ -1,6 +1,6 @@
 // icons
 import { Globe2, Lock, LucideIcon } from "lucide-react";
-import { TProjectAppliedDisplayFilterKeys, TProjectOrderByOptions } from "@youtrack/types";
+import { TProjectAppliedDisplayFilterKeys, TProjectOrderByOptions } from "@utrack/types";
 
 export const NETWORK_CHOICES: {
   key: 0 | 2;

@@ -1,7 +1,7 @@
 import { Extensions } from "@tiptap/core";
 import { EditorProps } from "@tiptap/pm/view";
-// youtrack editor types
-import { TEmbedConfig } from "@/youtrack-editor/types";
+// utrack editor types
+import { TEmbedConfig } from "@/utrack-editor/types";
 // types
 import {
   EditorReadOnlyRefApi,

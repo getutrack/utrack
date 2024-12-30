@@ -3,8 +3,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 // hooks
-import { TInstanceAuthenticationMethodKeys } from "@youtrack/types";
-import { ToggleSwitch } from "@youtrack/ui";
+import { TInstanceAuthenticationMethodKeys } from "@utrack/types";
+import { ToggleSwitch } from "@utrack/ui";
 import { useInstance } from "@/hooks/store";
 // ui
 // types

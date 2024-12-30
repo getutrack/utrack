@@ -6,7 +6,7 @@ import { PageHead } from "@/components/core";
 import IntegrationGuide from "@/components/integration/guide";
 // hooks
 import { useUserPermissions, useWorkspace } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const ImportsPage = observer(() => {
   // store hooks

@@ -3,7 +3,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // ui
 import { ReactionSelector } from "@/components/ui";
 // helpers

@@ -1,5 +1,5 @@
 // type
-import { ICycle } from "@youtrack/types";
+import { ICycle } from "@utrack/types";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 // services

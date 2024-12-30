@@ -4,7 +4,7 @@ import { FC } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // components
-import { Header, Row, ERowVariant, EHeaderVariant, ContentWrapper } from "@youtrack/ui";
+import { Header, Row, ERowVariant, EHeaderVariant, ContentWrapper } from "@utrack/ui";
 import { CountChip } from "@/components/common";
 import {
   NotificationsLoader,

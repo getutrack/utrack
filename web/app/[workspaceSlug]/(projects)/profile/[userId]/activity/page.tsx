@@ -3,14 +3,14 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // components
 import { PageHead } from "@/components/core";
 import { DownloadActivityButton, WorkspaceActivityListPage } from "@/components/profile";
 // hooks
 import { useUserPermissions } from "@/hooks/store";
-// youtrack-web constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack-web constants
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const PER_PAGE = 100;
 

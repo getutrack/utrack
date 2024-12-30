@@ -2,7 +2,7 @@
 
 import { AlertTriangle, RefreshCcw } from "lucide-react";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 
 type Props = {
   isRefreshing: boolean;

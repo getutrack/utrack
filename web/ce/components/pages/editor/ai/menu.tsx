@@ -2,17 +2,17 @@
 
 import React, { RefObject, useEffect, useRef, useState } from "react";
 import { ChevronRight, CornerDownRight, LucideIcon, RefreshCcw, Sparkles, TriangleAlert } from "lucide-react";
-// youtrack editor
-import { EditorRefApi } from "@youtrack/editor";
-// youtrack ui
-import { Tooltip } from "@youtrack/ui";
+// utrack editor
+import { EditorRefApi } from "@utrack/editor";
+// utrack ui
+import { Tooltip } from "@utrack/ui";
 // components
 import { RichTextReadOnlyEditor } from "@/components/editor";
 // helpers
 import { cn } from "@/helpers/common.helper";
-// youtrack web constants
-import { AI_EDITOR_TASKS, LOADING_TEXTS } from "@/youtrack-web/constants/ai";
-// youtrack web services
+// utrack web constants
+import { AI_EDITOR_TASKS, LOADING_TEXTS } from "@/utrack-web/constants/ai";
+// utrack web services
 import { AIService, TTaskPayload } from "@/services/ai.service";
 import { AskPiMenu } from "./ask-pi-menu";
 const aiService = new AIService();

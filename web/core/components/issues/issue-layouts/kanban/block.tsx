@@ -5,12 +5,12 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { draggable, dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// youtrack helpers
-import { useOutsideClickDetector } from "@youtrack/helpers";
+// utrack helpers
+import { useOutsideClickDetector } from "@utrack/helpers";
 // types
-import { TIssue, IIssueDisplayProperties, IIssueMap } from "@youtrack/types";
+import { TIssue, IIssueDisplayProperties, IIssueMap } from "@utrack/types";
 // ui
-import { ControlLink, DropIndicator, TOAST_TYPE, Tooltip, setToast } from "@youtrack/ui";
+import { ControlLink, DropIndicator, TOAST_TYPE, Tooltip, setToast } from "@utrack/ui";
 // components
 import RenderIfVisible from "@/components/core/render-if-visible-HOC";
 import { HIGHLIGHT_CLASS } from "@/components/issues/issue-layouts/utils";
@@ -20,8 +20,8 @@ import { cn } from "@/helpers/common.helper";
 import { useIssueDetail, useKanbanView } from "@/hooks/store";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 // local components
 import { TRenderQuickActions } from "../list/list-view-types";
 import { IssueProperties } from "../properties/all-properties";

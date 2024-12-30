@@ -7,7 +7,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { usePopper } from "react-popper";
 import { LogOut } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
-import { Avatar, Button } from "@youtrack/ui";
+import { Avatar, Button } from "@utrack/ui";
 // helpers
 import { API_BASE_URL } from "@/helpers/common.helper";
 import { getFileURL } from "@/helpers/file.helper";

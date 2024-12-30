@@ -3,7 +3,7 @@
 import { observer } from "mobx-react";
 // ui
 import { List } from "lucide-react";
-import { CustomMenu } from "@youtrack/ui";
+import { CustomMenu } from "@utrack/ui";
 // icon
 // constants
 import { CYCLE_VIEW_LAYOUTS } from "@/constants/cycle";

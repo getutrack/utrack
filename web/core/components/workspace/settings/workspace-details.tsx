@@ -4,9 +4,9 @@ import { useEffect, useState, FC } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Pencil } from "lucide-react";
-import { IWorkspace } from "@youtrack/types";
+import { IWorkspace } from "@utrack/types";
 // ui
-import { Button, CustomSelect, Input, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { Button, CustomSelect, Input, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { LogoSpinner } from "@/components/common";
 import { WorkspaceImageUploadModal } from "@/components/core";
@@ -18,9 +18,9 @@ import { getFileURL } from "@/helpers/file.helper";
 import { copyUrlToClipboard } from "@/helpers/string.helper";
 // hooks
 import { useEventTracker, useUserPermissions, useWorkspace } from "@/hooks/store";
-// youtrack web components
-import { DeleteWorkspaceSection } from "@/youtrack-web/components/workspace";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web components
+import { DeleteWorkspaceSection } from "@/utrack-web/components/workspace";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const defaultValues: Partial<IWorkspace> = {
   name: "",

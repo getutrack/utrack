@@ -7,7 +7,7 @@ import {
   IssuePaginationOptions,
   TIssuesResponse,
   TBulkOperationsPayload,
-} from "@youtrack/types";
+} from "@utrack/types";
 // services
 // types
 import { BaseIssuesStore, IBaseIssuesStore } from "../helpers/base-issues.store";

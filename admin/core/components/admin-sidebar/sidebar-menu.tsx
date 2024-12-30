@@ -4,7 +4,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Image, BrainCog, Cog, Lock, Mail } from "lucide-react";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 // hooks
 import { cn } from "@/helpers/common.helper";
 import { useTheme } from "@/hooks/store";
@@ -37,7 +37,7 @@ const INSTANCE_ADMIN_LINKS = [
   },
   {
     Icon: Image,
-    name: "Images in Youtrack",
+    name: "Images in Utrack",
     description: "Allow third-party image libraries",
     href: `/image/`,
   },

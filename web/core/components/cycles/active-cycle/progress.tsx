@@ -3,9 +3,9 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 // types
-import { ICycle, IIssueFilterOptions } from "@youtrack/types";
+import { ICycle, IIssueFilterOptions } from "@utrack/types";
 // ui
-import { LinearProgressIndicator, Loader } from "@youtrack/ui";
+import { LinearProgressIndicator, Loader } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/empty-state";
 // constants

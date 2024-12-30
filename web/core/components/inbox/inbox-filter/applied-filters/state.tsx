@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react";
 import { X } from "lucide-react";
-import { StateGroupIcon, Tag } from "@youtrack/ui";
+import { StateGroupIcon, Tag } from "@utrack/ui";
 // hooks
 import { useProjectInbox, useProjectState } from "@/hooks/store";
 

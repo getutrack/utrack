@@ -2,12 +2,12 @@ import { useState } from "react";
 import Link from "next/link";
 import useSWR from "swr";
 import { TriangleAlert } from "lucide-react";
-// youtrack types
-import { TPageVersion } from "@youtrack/types";
-// youtrack ui
-import { Button, Loader } from "@youtrack/ui";
+// utrack types
+import { TPageVersion } from "@utrack/types";
+// utrack ui
+import { Button, Loader } from "@utrack/ui";
 // components
-import { YoutrackVersionsSidebarListItem } from "@/components/pages";
+import { UtrackVersionsSidebarListItem } from "@/components/pages";
 // helpers
 import { cn } from "@/helpers/common.helper";
 // hooks
@@ -78,7 +78,7 @@ export const PageVersionsSidebarList: React.FC<Props> = (props) => {
         </div>
       ) : versionsList ? (
         versionsList.map((version) => (
-          <YoutrackVersionsSidebarListItem
+          <UtrackVersionsSidebarListItem
             key={version.id}
             href={getVersionLink(version.id)}
             isActive={activeVersion === version.id}

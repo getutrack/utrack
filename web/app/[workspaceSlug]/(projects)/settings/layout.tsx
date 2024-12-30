@@ -7,8 +7,8 @@ import { NotAuthorizedView } from "@/components/auth-screens";
 import { AppHeader } from "@/components/core";
 // hooks
 import { useUserPermissions } from "@/hooks/store";
-// youtrack web constants
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web constants
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 // local components
 import { WorkspaceSettingHeader } from "./header";
 import { MobileWorkspaceSettingsTabs } from "./mobile-header-tabs";

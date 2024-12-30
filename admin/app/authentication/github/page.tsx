@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-import { Loader, ToggleSwitch, setPromiseToast } from "@youtrack/ui";
+import { Loader, ToggleSwitch, setPromiseToast } from "@utrack/ui";
 // components
 import { AuthenticationMethodCard } from "@/components/authentication";
 import { PageHeader } from "@/components/common";
@@ -63,12 +63,12 @@ const InstanceGithubAuthenticationPage = observer(() => {
   };
   return (
     <>
-      <PageHeader title="GitHub Authentication - Youtrack Web" />
+      <PageHeader title="GitHub Authentication - Utrack Web" />
       <div className="relative container mx-auto w-full h-full p-4 py-4 space-y-6 flex flex-col">
         <div className="border-b border-custom-border-100 mx-4 py-4 space-y-1 flex-shrink-0">
           <AuthenticationMethodCard
             name="Github"
-            description="Allow members to login or sign up to youtrack with their Github accounts."
+            description="Allow members to login or sign up to utrack with their Github accounts."
             icon={
               <Image
                 src={resolveGeneralTheme(resolvedTheme) === "dark" ? githubDarkModeImage : githubLightModeImage}

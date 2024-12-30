@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 // icons
 import { ChevronDown, ListFilter } from "lucide-react";
 // types
-import { TProjectFilters } from "@youtrack/types";
+import { TProjectFilters } from "@utrack/types";
 // hooks
 import { FiltersDropdown } from "@/components/issues/issue-layouts";
 import { ProjectFiltersSelection, ProjectOrderByDropdown } from "@/components/project/dropdowns";

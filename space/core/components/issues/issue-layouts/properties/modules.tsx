@@ -1,9 +1,9 @@
 "use client";
 
 import { observer } from "mobx-react";
-// youtracks
-import { cn } from "@youtrack/editor";
-import { DiceIcon, Tooltip } from "@youtrack/ui";
+// utracks
+import { cn } from "@utrack/editor";
+import { DiceIcon, Tooltip } from "@utrack/ui";
 // hooks
 import { useModule } from "@/hooks/store/use-module";
 

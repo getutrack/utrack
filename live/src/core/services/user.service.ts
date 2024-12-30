@@ -1,5 +1,5 @@
 // types
-import type { IUser } from "@youtrack/types";
+import type { IUser } from "@utrack/types";
 // services
 import { API_BASE_URL, APIService } from "@/core/services/api.service.js";
 

@@ -4,10 +4,10 @@ import { FC, FormEvent, useCallback, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 // editor
-import { EditorRefApi } from "@youtrack/editor";
+import { EditorRefApi } from "@utrack/editor";
 // types
-import { TIssue } from "@youtrack/types";
-import { Button, ToggleSwitch, TOAST_TYPE, setToast } from "@youtrack/ui";
+import { TIssue } from "@utrack/types";
+import { Button, ToggleSwitch, TOAST_TYPE, setToast } from "@utrack/ui";
 // components
 import { InboxIssueTitle, InboxIssueDescription, InboxIssueProperties } from "@/components/inbox/modals/create-modal";
 // constants

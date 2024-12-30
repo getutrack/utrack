@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 // services
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // helpers
 import { renderFormattedPayloadDate } from "@/helpers/date-time.helper";
 import { UserService } from "@/services/user.service";

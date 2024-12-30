@@ -8,11 +8,11 @@ import { LogoSpinner } from "@/components/common";
 import { SomethingWentWrongError } from "@/components/issues/issue-layouts/error";
 // hooks
 import { usePublish, usePublishList } from "@/hooks/store";
-// Youtrack web
-import { ViewNavbarRoot } from "@/youtrack-web/components/navbar";
-import { useView } from "@/youtrack-web/hooks/store";
+// Utrack web
+import { ViewNavbarRoot } from "@/utrack-web/components/navbar";
+import { useView } from "@/utrack-web/hooks/store";
 // assets
-import youtrackLogo from "@/public/youtrack-logo.svg";
+import utrackLogo from "@/public/utrack-logo.svg";
 
 type Props = {
   children: React.ReactNode;
@@ -60,10 +60,10 @@ const IssuesLayout = observer((props: Props) => {
         rel="noreferrer noopener"
       >
         <div className="relative grid h-6 w-6 place-items-center">
-          <Image src={youtrackLogo} alt="Youtrack logo" className="h-6 w-6" height="24" width="24" />
+          <Image src={utrackLogo} alt="Utrack logo" className="h-6 w-6" height="24" width="24" />
         </div>
         <div className="text-xs">
-          Powered by <span className="font-semibold">Youtrack Publish</span>
+          Powered by <span className="font-semibold">Utrack Publish</span>
         </div>
       </a>
     </div>

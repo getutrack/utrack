@@ -25,7 +25,7 @@ const Titles: TAuthHeaderDetails = {
   },
   [EAuthModes.SIGN_UP]: {
     header: "View, comment, and do more",
-    subHeader: "Sign up or log in to work with Youtrack Issues and Pages.",
+    subHeader: "Sign up or log in to work with Utrack Issues and Pages.",
   },
 };
 
@@ -39,7 +39,7 @@ export const AuthHeader: FC<TAuthHeader> = (props) => {
 
     return {
       header: "Comment or react to issues",
-      subHeader: "Use youtrack to add your valuable inputs to features.",
+      subHeader: "Use utrack to add your valuable inputs to features.",
     };
   };
 

@@ -1,5 +1,5 @@
 import { Lock } from "lucide-react";
-import { Tooltip } from "@youtrack/ui";
+import { Tooltip } from "@utrack/ui";
 
 export const LockedComponent = (props: { toolTipContent?: string }) => {
   const { toolTipContent } = props;

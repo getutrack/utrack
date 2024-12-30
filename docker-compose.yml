@@ -49,8 +49,8 @@ services:
     env_file:
       - ./apiserver/.env
     depends_on:
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   worker:
     container_name: bgworker
@@ -65,8 +65,8 @@ services:
       - ./apiserver/.env
     depends_on:
       - api
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   beat-worker:
     container_name: beatworker
@@ -81,11 +81,11 @@ services:
       - ./apiserver/.env
     depends_on:
       - api
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   migrator:
-    container_name: youtrack-migrator
+    container_name: utrack-migrator
     build:
       context: ./apiserver
       dockerfile: Dockerfile.api
@@ -96,11 +96,11 @@ services:
     env_file:
       - ./apiserver/.env
     depends_on:
-      - youtrack-db
-      - youtrack-redis
+      - utrack-db
+      - utrack-redis
 
   live:
-    container_name: youtrack-live
+    container_name: utrack-live
     build:
       context: .
       dockerfile: ./live/Dockerfile.live
@@ -109,8 +109,8 @@ services:
     restart: always
     command: node live/dist/server.js
 
-  youtrack-db:
-    container_name: youtrack-db
+  utrack-db:
+    container_name: utrack-db
     image: postgres:15.7-alpine
     restart: always
     command: postgres -c 'max_connections=1000'
@@ -124,15 +124,15 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /var/lib/postgresql/data
 
-  youtrack-redis:
-    container_name: youtrack-redis
+  utrack-redis:
+    container_name: utrack-redis
     image: valkey/valkey:7.2.5-alpine
     restart: always
     volumes:
       - redisdata:/data
 
-  youtrack-mq:
-    container_name: youtrack-mq
+  utrack-mq:
+    container_name: utrack-mq
     image: rabbitmq:3.13.6-management-alpine
     restart: always
     env_file:
@@ -144,8 +144,8 @@ services:
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
 
-  youtrack-minio:
-    container_name: youtrack-minio
+  utrack-minio:
+    container_name: utrack-minio
     image: minio/minio
     restart: always
     command: server /export --console-address ":9090"

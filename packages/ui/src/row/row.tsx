@@ -20,6 +20,6 @@ const Row = React.forwardRef<HTMLDivElement, RowProps>((props, ref) => {
   );
 });
 
-Row.displayName = "youtrack-ui-row";
+Row.displayName = "utrack-ui-row";
 
 export { Row, ERowVariant };

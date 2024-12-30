@@ -3,9 +3,9 @@
 import React, { FC } from "react";
 import { ChevronDown } from "lucide-react";
 // types
-import { TCycleGroups } from "@youtrack/types";
+import { TCycleGroups } from "@utrack/types";
 // icons
-import { Row, CycleGroupIcon } from "@youtrack/ui";
+import { Row, CycleGroupIcon } from "@utrack/ui";
 // helpers
 import { cn } from "@/helpers/common.helper";
 

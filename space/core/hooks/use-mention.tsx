@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import useSWR from "swr";
 // types
-import { IUser } from "@youtrack/types";
+import { IUser } from "@utrack/types";
 // services
 import { UserService } from "@/services/user.service";
 

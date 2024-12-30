@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 // icons
 import { BarChart2, PanelRight } from "lucide-react";
 // ui
-import { Breadcrumbs, Header } from "@youtrack/ui";
+import { Breadcrumbs, Header } from "@utrack/ui";
 // components
 import { BreadcrumbLink } from "@/components/common";
 // helpers

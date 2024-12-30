@@ -9,9 +9,9 @@ import useSWR, { mutate } from "swr";
 // icons
 import { RefreshCw } from "lucide-react";
 // types
-import { IImporterService } from "@youtrack/types";
+import { IImporterService } from "@utrack/types";
 // ui
-import { Button } from "@youtrack/ui";
+import { Button } from "@utrack/ui";
 // components
 import { EmptyState } from "@/components/empty-state";
 import { DeleteImportModal, GithubImporterRoot, JiraImporterRoot, SingleImport } from "@/components/integration";
@@ -66,7 +66,7 @@ const IntegrationGuide = observer(() => {
                 <div className="text-lg font-medium">Relocation Guide</div>
                 <div className="text-sm">
                   You can now transfer all the issues that you{"'"}ve created in other tracking
-                  services. This tool will guide you to relocate the issue to Youtrack.
+                  services. This tool will guide you to relocate the issue to Utrack.
                 </div>
               </div>
               <a

@@ -58,7 +58,7 @@ RUN yarn turbo run build --filter=web --filter=space --filter=admin
 # *****************************************************************************
 # STAGE 3: Copy the project and start it
 # *****************************************************************************
-FROM getutrack/youtrack-aio-base:${BUILD_TYPE}-${BASE_TAG} AS runner
+FROM getutrack/utrack-aio-base:${BUILD_TYPE}-${BASE_TAG} AS runner
 
 WORKDIR /app
 
@@ -77,7 +77,7 @@ RUN pip install -r ./api/requirements.txt --compile --no-cache-dir
 
 # Add in Django deps and generate Django's static files
 COPY apiserver/manage.py ./api/manage.py
-COPY apiserver/youtrack ./api/youtrack/
+COPY apiserver/utrack ./api/utrack/
 COPY apiserver/templates ./api/templates/
 COPY package.json ./api/package.json
 
@@ -156,12 +156,12 @@ ENV SECRET_KEY=60gp0byfz2dvffa45cxl20p1scy9xbpf6d8c5y0geejgkyp1b5
 # Gunicorn Workers
 ENV GUNICORN_WORKERS=1
 
-ENV POSTGRES_USER="youtrack"
-ENV POSTGRES_PASSWORD="youtrack"
-ENV POSTGRES_DB="youtrack"
+ENV POSTGRES_USER="utrack"
+ENV POSTGRES_PASSWORD="utrack"
+ENV POSTGRES_DB="utrack"
 ENV POSTGRES_HOST="localhost"
 ENV POSTGRES_PORT="5432"
-ENV DATABASE_URL="postgresql://youtrack:youtrack@localhost:5432/youtrack"
+ENV DATABASE_URL="postgresql://utrack:utrack@localhost:5432/utrack"
 
 ENV REDIS_HOST="localhost"
 ENV REDIS_PORT="6379"

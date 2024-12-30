@@ -1,5 +1,5 @@
 {
-  "name": "@youtrack/types",
+  "name": "@utrack/types",
   "version": "0.23.1",
   "private": true,
   "types": "./src/index.d.ts",

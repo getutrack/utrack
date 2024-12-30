@@ -1,3 +1,3 @@
-import { WorkspaceActiveCyclesUpgrade } from "@/youtrack-web/components/active-cycles";
+import { WorkspaceActiveCyclesUpgrade } from "@/utrack-web/components/active-cycles";
 
 export const WorkspaceActiveCyclesRoot = () => <WorkspaceActiveCyclesUpgrade />;

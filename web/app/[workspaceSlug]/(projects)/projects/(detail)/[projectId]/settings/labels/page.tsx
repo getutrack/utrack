@@ -10,7 +10,7 @@ import { PageHead } from "@/components/core";
 import { ProjectSettingsLabelList } from "@/components/labels";
 // hooks
 import { useProject, useUserPermissions } from "@/hooks/store";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const LabelsSettingsPage = observer(() => {
   // store hooks

@@ -1,6 +1,6 @@
 import { FC } from "react";
 // hooks
-import { IUser } from "@youtrack/types";
+import { IUser } from "@utrack/types";
 import { useCurrentTime } from "@/hooks/use-current-time";
 // types
 

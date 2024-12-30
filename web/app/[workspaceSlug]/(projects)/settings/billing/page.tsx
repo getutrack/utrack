@@ -6,9 +6,9 @@ import { NotAuthorizedView } from "@/components/auth-screens";
 import { PageHead } from "@/components/core";
 // hooks
 import { useUserPermissions, useWorkspace } from "@/hooks/store";
-// youtrack web components
-import { BillingRoot } from "@/youtrack-web/components/workspace";
-import { EUserPermissions, EUserPermissionsLevel } from "@/youtrack-web/constants/user-permissions";
+// utrack web components
+import { BillingRoot } from "@/utrack-web/components/workspace";
+import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 const BillingSettingsPage = observer(() => {
   // store hooks

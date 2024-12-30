@@ -81,7 +81,7 @@ tmp/
 ## packages
 dist
 .temp/
-deploy/selfhost/youtrack-app/
+deploy/selfhost/utrack-app/
 ## Storybook
 *storybook.log
 output.css

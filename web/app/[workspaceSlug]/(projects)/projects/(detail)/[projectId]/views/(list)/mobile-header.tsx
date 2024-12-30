@@ -4,7 +4,7 @@ import { observer } from "mobx-react";
 // icons
 import { ChevronDown, ListFilter } from "lucide-react";
 // components
-import { Row } from "@youtrack/ui";
+import { Row } from "@utrack/ui";
 import { FiltersDropdown } from "@/components/issues/issue-layouts";
 import { ViewFiltersSelection } from "@/components/views/filters/filter-selection";
 import { ViewOrderByDropdown } from "@/components/views/filters/order-by";

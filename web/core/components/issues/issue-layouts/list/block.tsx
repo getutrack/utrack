@@ -7,9 +7,9 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 // types
-import { TIssue, IIssueDisplayProperties, TIssueMap } from "@youtrack/types";
+import { TIssue, IIssueDisplayProperties, TIssueMap } from "@utrack/types";
 // ui
-import { Spinner, Tooltip, ControlLink, setToast, TOAST_TYPE, Row } from "@youtrack/ui";
+import { Spinner, Tooltip, ControlLink, setToast, TOAST_TYPE, Row } from "@utrack/ui";
 // components
 import { MultipleSelectEntityAction } from "@/components/core";
 import { IssueProperties } from "@/components/issues/issue-layouts/properties";
@@ -19,8 +19,8 @@ import { cn } from "@/helpers/common.helper";
 import { useAppTheme, useIssueDetail, useProject } from "@/hooks/store";
 import { TSelectionHelper } from "@/hooks/use-multiple-select";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// youtrack web components
-import { IssueIdentifier } from "@/youtrack-web/components/issues";
+// utrack web components
+import { IssueIdentifier } from "@/utrack-web/components/issues";
 // types
 import { TRenderQuickActions } from "./list-view-types";
 

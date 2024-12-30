@@ -5,8 +5,8 @@ import uniq from "lodash/uniq";
 import update from "lodash/update";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// youtrack constants
-import { ALL_ISSUES } from "@youtrack/constants";
+// utrack constants
+import { ALL_ISSUES } from "@utrack/constants";
 // types
 import {
   TIssueGroupByOptions,
@@ -18,7 +18,7 @@ import {
   TIssuePaginationData,
   TGroupedIssueCount,
   TPaginationData,
-} from "@youtrack/types";
+} from "@utrack/types";
 // services
 import IssueService from "@/services/issue.service";
 import { IIssue, TIssuesResponse } from "@/types/issue";

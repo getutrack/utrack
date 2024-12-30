@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { TAssignedIssuesWidgetResponse, TCreatedIssuesWidgetResponse, TIssue, TIssuesListTypes } from "@youtrack/types";
+import { TAssignedIssuesWidgetResponse, TCreatedIssuesWidgetResponse, TIssue, TIssuesListTypes } from "@utrack/types";
 // hooks
 // components
-import { Loader, getButtonStyling } from "@youtrack/ui";
+import { Loader, getButtonStyling } from "@utrack/ui";
 import {
   AssignedCompletedIssueListItem,
   AssignedIssuesEmptyState,

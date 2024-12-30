@@ -4,7 +4,7 @@ import { Dispatch, FC, Fragment, SetStateAction } from "react";
 import { observer } from "mobx-react";
 import { Clock } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
-import { Tooltip, setToast, TOAST_TYPE } from "@youtrack/ui";
+import { Tooltip, setToast, TOAST_TYPE } from "@utrack/ui";
 // components
 import { NotificationSnoozeModal } from "@/components/workspace-notifications";
 // constants

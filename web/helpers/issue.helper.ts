@@ -13,7 +13,7 @@ import {
   TStateGroups,
   TSubGroupedIssues,
   TUnGroupedIssues,
-} from "@youtrack/types";
+} from "@utrack/types";
 import { IGanttBlock } from "@/components/gantt-chart";
 // constants
 import { EIssueLayoutTypes, ISSUE_DISPLAY_FILTERS_BY_LAYOUT } from "@/constants/issue";

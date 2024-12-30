@@ -2,7 +2,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
-import { IAnalyticsParams } from "@youtrack/types";
+import { IAnalyticsParams } from "@utrack/types";
 // services
 // components
 import { CustomAnalyticsSelectBar, CustomAnalyticsMainContent, CustomAnalyticsSidebar } from "@/components/analytics";
