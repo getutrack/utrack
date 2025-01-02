@@ -86,7 +86,7 @@ export const PaidPlanUpgradeModal: FC<PaidPlanUpgradeModalProps> = (props) => {
               verticalFeatureList
               extraFeatures={
                 <p className="pt-1.5 text-center text-xs text-custom-primary-200 font-semibold underline">
-                  <a href="https://utrack.digi-trans.org/pro" target="_blank">
+                  <a href="https://getutrack.io/pro" target="_blank">
                     See full features list
                   </a>
                 </p>
@@ -99,7 +99,7 @@ export const PaidPlanUpgradeModal: FC<PaidPlanUpgradeModalProps> = (props) => {
               verticalFeatureList
               extraFeatures={
                 <p className="pt-1.5 text-center text-xs text-custom-primary-200 font-semibold underline">
-                  <a href="https://utrack.digi-trans.org/one" target="_blank">
+                  <a href="https://getutrack.io/one" target="_blank">
                     See full features list
                   </a>
                 </p>

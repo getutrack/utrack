@@ -5,11 +5,11 @@ Meet [Utrack](https://dub.sh/utrack-website-readme), an open-source project mana
 
 ## ⚡ Installation
 
-The easiest way to get started with Utrack is by creating a [Utrack Cloud](https://utrackapp.digi-trans.org) account.
+The easiest way to get started with Utrack is by creating a [Utrack Cloud](https://app.getutrack.io) account.
 
-If you would like to self-host Utrack, please see our [deployment guide](https://utrackdocs.digi-trans.org/docker-compose).
+If you would like to self-host Utrack, please see our [deployment guide](https://docs.getutrack.io/docker-compose).
 
-`Instance admins` can configure instance settings with [admin-mode](https://utrackdocs.digi-trans.org/instance-admin).
+`Instance admins` can configure instance settings with [admin-mode](https://docs.getutrack.io/instance-admin).
 
 ## 🚀 Features
 

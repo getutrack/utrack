@@ -71,7 +71,7 @@ def get_email_configuration():
             {
                 "key": "EMAIL_FROM",
                 "default": os.environ.get(
-                    "EMAIL_FROM", "Team Utrack <team@mailer.digi-trans.org>"
+                    "EMAIL_FROM", "Team Utrack <team@mailer.getutrack.io>"
                 ),
             },
         ]

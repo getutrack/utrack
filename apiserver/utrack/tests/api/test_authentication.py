@@ -16,7 +16,7 @@ from utrack.settings.redis import redis_instance
 class SignInEndpointTests(BaseAPITest):
     def setUp(self):
         super().setUp()
-        user = User.objects.create(email="user@digi-trans.org")
+        user = User.objects.create(email="user@getutrack.io")
         user.set_password("user@123")
         user.save()
 
@@ -41,7 +41,7 @@ class SignInEndpointTests(BaseAPITest):
         url = reverse("sign-in")
         response = self.client.post(
             url,
-            {"email": "user@digi-trans.org", "password": "user123"},
+            {"email": "user@getutrack.io", "password": "user123"},
             format="json",
         )
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
@@ -72,21 +72,21 @@ class SignInEndpointTests(BaseAPITest):
 
         response = self.client.post(
             url,
-            {"email": "user@digi-trans.org", "password": "user@123"},
+            {"email": "user@getutrack.io", "password": "user@123"},
             format="json",
         )
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(
             response.data.get("user").get("email"),
-            "user@digi-trans.org",
+            "user@getutrack.io",
         )
 
 
 class MagicLinkGenerateEndpointTests(BaseAPITest):
     def setUp(self):
         super().setUp()
-        user = User.objects.create(email="user@digi-trans.org")
+        user = User.objects.create(email="user@getutrack.io")
         user.set_password("user@123")
         user.save()
 
@@ -109,10 +109,10 @@ class MagicLinkGenerateEndpointTests(BaseAPITest):
         url = reverse("magic-generate")
 
         ri = redis_instance()
-        ri.delete("magic_user@digi-trans.org")
+        ri.delete("magic_user@getutrack.io")
 
         response = self.client.post(
-            url, {"email": "user@digi-trans.org"}, format="json"
+            url, {"email": "user@getutrack.io"}, format="json"
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -120,18 +120,18 @@ class MagicLinkGenerateEndpointTests(BaseAPITest):
         url = reverse("magic-generate")
 
         ri = redis_instance()
-        ri.delete("magic_user@digi-trans.org")
+        ri.delete("magic_user@getutrack.io")
 
         for _ in range(4):
             response = self.client.post(
                 url,
-                {"email": "user@digi-trans.org"},
+                {"email": "user@getutrack.io"},
                 format="json",
             )
 
         response = self.client.post(
             url,
-            {"email": "user@digi-trans.org"},
+            {"email": "user@getutrack.io"},
             format="json",
         )
 
@@ -145,7 +145,7 @@ class MagicLinkGenerateEndpointTests(BaseAPITest):
 class MagicSignInEndpointTests(BaseAPITest):
     def setUp(self):
         super().setUp()
-        user = User.objects.create(email="user@digi-trans.org")
+        user = User.objects.create(email="user@getutrack.io")
         user.set_password("user@123")
         user.save()
 
@@ -159,12 +159,12 @@ class MagicSignInEndpointTests(BaseAPITest):
 
     def test_expired_invalid_magic_link(self):
         ri = redis_instance()
-        ri.delete("magic_user@digi-trans.org")
+        ri.delete("magic_user@getutrack.io")
 
         url = reverse("magic-sign-in")
         response = self.client.post(
             url,
-            {"key": "magic_user@digi-trans.org", "token": "xxxx-xxxxx-xxxx"},
+            {"key": "magic_user@getutrack.io", "token": "xxxx-xxxxx-xxxx"},
             format="json",
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
@@ -175,15 +175,15 @@ class MagicSignInEndpointTests(BaseAPITest):
 
     def test_invalid_magic_code(self):
         ri = redis_instance()
-        ri.delete("magic_user@digi-trans.org")
+        ri.delete("magic_user@getutrack.io")
         ## Create Token
         url = reverse("magic-generate")
-        self.client.post(url, {"email": "user@digi-trans.org"}, format="json")
+        self.client.post(url, {"email": "user@getutrack.io"}, format="json")
 
         url = reverse("magic-sign-in")
         response = self.client.post(
             url,
-            {"key": "magic_user@digi-trans.org", "token": "xxxx-xxxxx-xxxx"},
+            {"key": "magic_user@getutrack.io", "token": "xxxx-xxxxx-xxxx"},
             format="json",
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
@@ -194,23 +194,23 @@ class MagicSignInEndpointTests(BaseAPITest):
 
     def test_magic_code_sign_in(self):
         ri = redis_instance()
-        ri.delete("magic_user@digi-trans.org")
+        ri.delete("magic_user@getutrack.io")
         ## Create Token
         url = reverse("magic-generate")
-        self.client.post(url, {"email": "user@digi-trans.org"}, format="json")
+        self.client.post(url, {"email": "user@getutrack.io"}, format="json")
 
         # Get the token
-        user_data = json.loads(ri.get("magic_user@digi-trans.org"))
+        user_data = json.loads(ri.get("magic_user@getutrack.io"))
         token = user_data["token"]
 
         url = reverse("magic-sign-in")
         response = self.client.post(
             url,
-            {"key": "magic_user@digi-trans.org", "token": token},
+            {"key": "magic_user@getutrack.io", "token": token},
             format="json",
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(
             response.data.get("user").get("email"),
-            "user@digi-trans.org",
+            "user@getutrack.io",
         )

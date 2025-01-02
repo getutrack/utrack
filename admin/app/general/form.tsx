@@ -122,7 +122,7 @@ export const GeneralConfigurationForm: FC<IGeneralConfigurationForm> = observer(
               <div className="text-xs font-normal text-custom-text-300 leading-5">
                 We collect usage events without any PII to analyse and improve Utrack.{" "}
                 <a
-                  href="https://utrackdocs.digi-trans.org/self-hosting/telemetry"
+                  href="https://docs.getutrack.io/self-hosting/telemetry"
                   target="_blank"
                   className="text-custom-primary-100 hover:underline"
                   rel="noreferrer"

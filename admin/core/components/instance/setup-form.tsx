@@ -338,7 +338,7 @@ export const InstanceSetupForm: FC = (props) => {
             </label>
             <a
               tabIndex={-1}
-              href="https://utrackdocs.digi-trans.org/telemetry"
+              href="https://docs.getutrack.io/telemetry"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-blue-500 hover:text-blue-600"

@@ -75,7 +75,7 @@ export const InstanceEmailForm: FC<IInstanceEmailForm> = (props) => {
       label: "Sender email address",
       description:
         "This is the email address your users will see when getting emails from this instance. You will need to verify this address.",
-      placeholder: "no-reply@digi-trans.org",
+      placeholder: "no-reply@getutrack.io",
       error: Boolean(errors.EMAIL_FROM),
       required: true,
     },
@@ -86,7 +86,7 @@ export const InstanceEmailForm: FC<IInstanceEmailForm> = (props) => {
       key: "EMAIL_HOST_USER",
       type: "text",
       label: "Username",
-      placeholder: "getitdone@digi-trans.org",
+      placeholder: "getitdone@getutrack.io",
       error: Boolean(errors.EMAIL_HOST_USER),
       required: false,
     },

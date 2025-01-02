@@ -70,7 +70,7 @@ const IntegrationGuide = observer(() => {
                 </div>
               </div>
               <a
-                href="https://utrackdocs.digi-trans.org/importers/github"
+                href="https://docs.getutrack.io/importers/github"
                 target="_blank"
                 rel="noopener noreferrer"
               >

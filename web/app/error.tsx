@@ -44,8 +44,8 @@ export default function CustomErrorComponent() {
               <p className="mx-auto md:w-1/2 text-sm text-custom-text-200">
                 That crashed Utrack, pun intended. No worries, though. Our engineers have been notified. If you have more
                 details, please write to{" "}
-                <a href="mailto:developers@digi-trans.org" className="text-custom-primary">
-                  developers@digi-trans.org
+                <a href="mailto:developers@getutrack.io" className="text-custom-primary">
+                  developers@getutrack.io
                 </a>{" "}
                 or on our{" "}
                 <a

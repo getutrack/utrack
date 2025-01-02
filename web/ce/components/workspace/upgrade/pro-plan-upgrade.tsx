@@ -45,8 +45,8 @@ export const ProPlanUpgrade: FC<ProPlanUpgradeProps> = (props) => {
   const yearlyPrice = PRO_PLAN_PRICES.find((price) => price.recurring === "year")?.price ?? 0;
   const yearlyDiscount = calculateYearlyDiscount(monthlyPrice, yearlyPrice);
   // env
-  const PRO_PLAN_MONTHLY_PAYMENT_URL = "https://utrackapp.digi-trans.org/upgrade/pro/self-hosted?plan=month";
-  const PRO_PLAN_YEARLY_PAYMENT_URL = "https://utrackapp.digi-trans.org/upgrade/pro/self-hosted?plan=year";
+  const PRO_PLAN_MONTHLY_PAYMENT_URL = "https://app.getutrack.io/upgrade/pro/self-hosted?plan=month";
+  const PRO_PLAN_YEARLY_PAYMENT_URL = "https://app.getutrack.io/upgrade/pro/self-hosted?plan=year";
 
   return (
     <div className="py-4 px-2 border border-custom-primary-200/30 rounded-xl bg-custom-primary-200/5">

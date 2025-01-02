@@ -11,7 +11,7 @@ export type ProductUpdatesProps = {
 export const ProductUpdates: FC<ProductUpdatesProps> = observer(() => (
   <CustomMenu.MenuItem>
     <Link
-      href="https://utrackgo.digi-trans.org/p-changelog"
+      href="https://go.getutrack.io/p-changelog"
       target="_blank"
       className="flex w-full items-center justify-start text-xs hover:bg-custom-background-80"
     >

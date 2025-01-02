@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Utrack | Simple, extensible, open-source project management tool.",
     description:
-      "Open-source project management tool to manage issues, sprints, and product roadmaps with peace of mind.",
-    url: "https://utrack.digi-trans.org/",
+      "A project management tool to manage issues, sprints, and product roadmaps with peace of mind.",
+    url: "https://getutrack.io/",
   },
   keywords:
     "software development, customer feedback, software, accelerate, code management, release management, project management, issue tracking, agile, scrum, kanban, collaboration",

@@ -17,7 +17,7 @@ import packageJson from "package.json";
 const helpOptions = [
   {
     name: "Documentation",
-    href: "https://utrackdocs.digi-trans.org/",
+    href: "https://docs.getutrack.io/",
     Icon: FileText,
   },
   {

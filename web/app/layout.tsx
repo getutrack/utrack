@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Utrack | Simple, extensible, open-source project management tool.",
     description:
       "Open-source project management tool to manage issues, sprints, and product roadmaps with peace of mind.",
-    url: "https://utrackapp.digi-trans.org/",
+    url: "https://app.getutrack.io/",
   },
   keywords:
     "software development, plan, ship, software, accelerate, code management, release management, project management, issue tracking, agile, scrum, kanban, collaboration",
