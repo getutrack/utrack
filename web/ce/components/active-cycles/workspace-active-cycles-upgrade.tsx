@@ -38,17 +38,21 @@ export const WorkspaceActiveCyclesUpgrade = observer(() => {
               Monitor cycles across projects, track high-priority issues, and zoom in cycles that need attention.
             </p>
           </div>
-          <div className="flex items-center gap-3">
-            <a
-              className={`${getButtonStyling("primary", "md")} cursor-pointer`}
-              href={MARKETING_PRICING_PAGE_LINK}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ProIcon className="h-3.5 w-3.5 text-white" />
-              Upgrade
-            </a>
-          </div>
+
+
+          {/*<div className="flex items-center gap-3">*/}
+          {/*  <a*/}
+          {/*    className={`${getButtonStyling("primary", "md")} cursor-pointer`}*/}
+          {/*    href={MARKETING_PRICING_PAGE_LINK}*/}
+          {/*    target="_blank"*/}
+          {/*    rel="noreferrer"*/}
+          {/*  >*/}
+          {/*    <ProIcon className="h-3.5 w-3.5 text-white" />*/}
+          {/*    Upgrade*/}
+          {/*  </a>*/}
+          {/*</div>*/}
+
+
           <span className="absolute left-0 top-0">
             <Image
               src={`/workspace-active-cycles/cta-l-1-${isDarkMode ? "dark" : "light"}.webp`}

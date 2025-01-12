@@ -38,7 +38,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
         title: "Cycles",
         description: "Timebox work as you see fit per project and change frequency from one period to the next.",
         icon: <ContrastIcon className="h-5 w-5 flex-shrink-0 rotate-180 text-custom-text-300" />,
-        isPro: false,
+        isPro: true,
         isEnabled: true,
       },
       modules: {
@@ -46,7 +46,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
         title: "Modules",
         description: "Group work into sub-project-like set-ups with their own leads and assignees.",
         icon: <DiceIcon width={20} height={20} className="flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
+        isPro: true,
         isEnabled: true,
       },
       views: {
@@ -54,7 +54,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
         title: "Views",
         description: "Save sorts, filters, and display options for later or share them.",
         icon: <Layers className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
+        isPro: true,
         isEnabled: true,
       },
       pages: {
@@ -62,7 +62,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
         title: "Pages",
         description: "Write anything like you write anything.",
         icon: <FileText className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
+        isPro: true,
         isEnabled: true,
       },
       inbox: {
@@ -70,7 +70,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
         title: "Intake",
         description: "Consider and discuss issues before you add them to your project.",
         icon: <Intake className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
+        isPro: true,
         isEnabled: true,
       },
     },
@@ -84,7 +84,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
         title: "Time Tracking",
         description: "Log time, see timesheets, and download full CSVs for your entire workspace.",
         icon: <Timer className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
+        isPro: true,
         isEnabled: true,
       },
     },

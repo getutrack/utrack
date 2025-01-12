@@ -32,8 +32,8 @@ export const calculateYearlyDiscount = (monthlyPrice: number, yearlyPricePerMont
 };
 
 const PRO_PLAN_PRICES: TProPlanPrice[] = [
-  { key: "monthly", currency: "$", price: 8, recurring: "month" },
-  { key: "yearly", currency: "$", price: 6, recurring: "year" },
+  { key: "monthly", currency: "$", price: 20, recurring: "month" },
+  { key: "yearly", currency: "$", price: 15, recurring: "year" },
 ];
 
 export const ProPlanUpgrade: FC<ProPlanUpgradeProps> = (props) => {
