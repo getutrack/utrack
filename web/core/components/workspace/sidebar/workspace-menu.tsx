@@ -22,7 +22,7 @@ import { useAppTheme, useEventTracker, useUserPermissions } from "@/hooks/store"
 import useLocalStorage from "@/hooks/use-local-storage";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // utrack web components
-// import { UpgradeBadge } from "@/utrack-web/components/workspace";
+import { UpgradeBadge } from "@/utrack-web/components/workspace";
 import { EUserPermissions, EUserPermissionsLevel } from "@/utrack-web/constants/user-permissions";
 
 export const SidebarWorkspaceMenu = observer(() => {
@@ -61,7 +61,7 @@ export const SidebarWorkspaceMenu = observer(() => {
 
   const indicatorElement = (
     <div className="flex-shrink-0">
-      {/*<UpgradeBadge />*/}
+      <UpgradeBadge />
     </div>
   );
 

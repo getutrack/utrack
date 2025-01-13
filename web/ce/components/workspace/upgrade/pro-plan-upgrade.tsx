@@ -90,6 +90,15 @@ export const ProPlanUpgrade: FC<ProPlanUpgradeProps> = (props) => {
                 </div>
                 <div className="text-sm text-custom-text-300">a user per month</div>
               </div>
+              <div className="flex justify-center w-full">
+                <a
+                  href={selectedPlan === "month" ? PRO_PLAN_MONTHLY_PAYMENT_URL : PRO_PLAN_YEARLY_PAYMENT_URL}
+                  target="_blank"
+                  className="relative inline-flex items-center justify-center w-56 px-4 py-2.5 text-white text-sm font-medium border border-[#E9DBBF99]/60 bg-gradient-to-r from-[#C78401] to-[#896828] rounded-lg focus:outline-none"
+                >
+                  Upgrade to Pro
+                </a>
+              </div>
               <div className="px-2 pt-6 pb-2">
                 <div className="p-2 text-sm font-semibold">{`Everything in ${basePlan} +`}</div>
                 <ul className="grid grid-cols-12 gap-x-4">
