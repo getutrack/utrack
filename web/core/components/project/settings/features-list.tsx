@@ -7,7 +7,7 @@ import { ToggleSwitch, Tooltip, setPromiseToast } from "@utrack/ui";
 // hooks
 import { useEventTracker, useProject, useUser } from "@/hooks/store";
 // utrack web components
-import { UpgradeBadge } from "@/utrack-web/components/workspace";
+// import { UpgradeBadge } from "@/utrack-web/components/workspace";
 // utrack web constants
 import { PROJECT_FEATURES_LIST } from "@/utrack-web/constants/project/settings";
 
@@ -80,11 +80,7 @@ export const ProjectFeaturesList: FC<Props> = observer((props) => {
                       <div>
                         <div className="flex items-center gap-2">
                           <h4 className="text-sm font-medium leading-5">{featureItem.title}</h4>
-                          {featureItem.isPro && (
-                            <Tooltip tooltipContent="Pro feature" position="top">
-                              <UpgradeBadge />
-                            </Tooltip>
-                          )}
+                          {featureItem.isPro}
                         </div>
                         <p className="text-sm leading-5 tracking-tight text-custom-text-300">
                           {featureItem.description}
