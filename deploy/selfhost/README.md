@@ -331,7 +331,7 @@ Backing Up utrack-app_pgdata
 Backing Up utrack-app_redisdata
 Backing Up utrack-app_uploads
 
-Backup completed successfully. Backup files are stored in /....../utrack-app/backup/20240502-1120
+Backup completed successfully. Backup files are stored in /....../utrack-app/backup/20250502-1120
 ```
 
 ---

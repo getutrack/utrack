@@ -87,3 +87,5 @@ deploy/selfhost/utrack-app/
 output.css
 
 archive/*
+
+ledger-key-pair.pem
