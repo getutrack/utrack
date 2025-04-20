@@ -2,9 +2,9 @@
 
 # Variables
 AWS_REGION="eu-west-1"
-INSTANCE_TYPE="t2.medium"
+INSTANCE_TYPE="t2.small"
 KEY_NAME="ledger-key-pair"
-SECURITY_GROUP="docker-ec2-sg"
+SECURITY_GROUP="utack-ec2-sg"
 AMI_ID="ami-047bb4163c506cd98" # Ensure this is Amazon Linux 2
 TAG_KEY="app"
 TAG_VALUE="utrack"
