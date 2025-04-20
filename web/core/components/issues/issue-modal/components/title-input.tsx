@@ -58,7 +58,7 @@ export const IssueTitleInput: React.FC<TIssueTitleInputProps> = observer((props)
               handleFormChange();
             }}
             ref={issueTitleRef || ref}
-            hasError={Boolean(errors.name)}
+            variant={Boolean(errors.name) ? "error" : "default"}
             placeholder="Title"
             className="w-full text-base"
             tabIndex={getIndex("name")}

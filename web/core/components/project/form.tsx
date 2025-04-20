@@ -260,7 +260,7 @@ export const ProjectDetailsForm: FC<IProjectDetailsForm> = (props) => {
                 ref={ref}
                 value={value}
                 onChange={onChange}
-                hasError={Boolean(errors.name)}
+                variant={Boolean(errors.name) ? "error" : "default"}
                 className="rounded-md !p-3 font-medium"
                 placeholder="Project name"
                 disabled={!isAdmin}
@@ -317,7 +317,7 @@ export const ProjectDetailsForm: FC<IProjectDetailsForm> = (props) => {
                     value={value}
                     onChange={handleIdentifierChange}
                     ref={ref}
-                    hasError={Boolean(errors.identifier)}
+                    variant={Boolean(errors.identifier) ? "error" : "default"}
                     placeholder="Enter project ID"
                     className="w-full font-medium"
                     disabled={!isAdmin}

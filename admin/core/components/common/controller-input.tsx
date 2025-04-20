@@ -53,7 +53,7 @@ export const ControllerInput: React.FC<Props> = (props) => {
               value={value}
               onChange={onChange}
               ref={ref}
-              hasError={error}
+              variant={error ? "error" : "default"}
               placeholder={placeholder}
               className={cn("w-full rounded-md font-medium", {
                 "pr-10": type === "password",

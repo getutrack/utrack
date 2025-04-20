@@ -247,6 +247,50 @@ module.exports = {
             loading: convertToRGB("--color-toast-loading-border"),
           },
         },
+        primary: {
+          50: '#eef2ff',
+          100: '#e0e7ff', 
+          200: '#c7d2fe',
+          300: '#a5b4fc',
+          400: '#818cf8',
+          500: '#6366f1',
+          600: '#4f46e5',
+          700: '#4338ca',
+          800: '#3730a3',
+          900: '#312e81',
+          950: '#1e1b4b',
+        },
+        gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280',
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+          950: '#030712',
+        },
+        success: {
+          50: '#ecfdf5',
+          100: '#d1fae5',
+          500: '#10b981',
+          700: '#047857',
+        },
+        warning: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          500: '#f59e0b',
+          700: '#b45309',
+        },
+        error: {
+          50: '#fef2f2',
+          100: '#fee2e2',
+          500: '#ef4444',
+          700: '#b91c1c',
+        },
       },
       keyframes: {
         leftToaster: {
@@ -287,7 +331,6 @@ module.exports = {
       screens: {
         "3xl": "1792px",
       },
-      // scale down font sizes to 90% of default
       fontSize: {
         xs: "0.675rem",
         sm: "0.7875rem",
@@ -303,7 +346,6 @@ module.exports = {
         "8xl": "5.4rem",
         "9xl": "7.2rem",
       },
-      // scale down spacing to 90% of default
       padding: {
         0: "0",
         0.5: "0.1125rem",
@@ -430,6 +472,16 @@ module.exports = {
         "onboarding-gradient-100": "var( --gradient-onboarding-100)",
         "onboarding-gradient-200": "var( --gradient-onboarding-200)",
         "onboarding-gradient-300": "var( --gradient-onboarding-300)",
+      },
+      borderRadius: {
+        'sm': '0.25rem',
+        DEFAULT: '0.375rem',
+        'md': '0.5rem',
+        'lg': '0.75rem',
+        'xl': '1rem',
+        '2xl': '1.5rem',
+        '3xl': '2rem',
+        'full': '9999px',
       },
     },
     fontFamily: {

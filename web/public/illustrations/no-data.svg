@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" fill="white" fill-opacity="0.01"/>
+  <rect x="50" y="130" width="140" height="70" rx="4" fill="#E2E8F0"/>
+  <path d="M50 140L190 140" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M50 160L190 160" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M50 180L190 180" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M70 130L70 200" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M90 130L90 200" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M110 130L110 200" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M130 130L130 200" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M150 130L150 200" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M170 130L170 200" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M70 60L120 40L170 60" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M120 40V80" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="95" r="15" fill="#CBD5E1"/>
+  <path d="M60 110C60 92.3269 74.3269 78 92 78H148C165.673 78 180 92.3269 180 110V110H60V110Z" fill="#94A3B8"/>
+  <rect x="80" y="110" width="80" height="20" fill="#64748B"/>
+</svg> 

@@ -45,7 +45,7 @@ export const JoinProject: React.FC = () => {
       <div>
         <Button
           variant="primary"
-          prependIcon={<ClipboardList color="white" />}
+          leftIcon={<ClipboardList color="white" />}
           loading={isJoiningProject}
           onClick={handleJoin}
         >

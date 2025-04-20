@@ -23,7 +23,7 @@ export const TransferIssues: React.FC<Props> = (props) => {
         <div>
           <Button
             variant="primary"
-            prependIcon={<TransferIcon color="white" />}
+            leftIcon={<TransferIcon color="white" />}
             onClick={handleClick}
             disabled={disabled}
           >

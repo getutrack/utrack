@@ -104,9 +104,9 @@ export const CycleForm: React.FC<Props> = (props) => {
                   placeholder="Title"
                   className="w-full text-base"
                   value={value}
-                  inputSize="md"
+                  size="md"
                   onChange={onChange}
-                  hasError={Boolean(errors?.name)}
+                  variant={Boolean(errors?.name) ? "error" : "default"}
                   tabIndex={getIndex("description")}
                   autoFocus
                 />

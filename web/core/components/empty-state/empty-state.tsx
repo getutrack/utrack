@@ -103,7 +103,7 @@ export const EmptyState: React.FC<EmptyStateProps> = observer((props) => {
       <Button
         size={size}
         variant="neutral-primary"
-        prependIcon={secondaryButton.icon}
+        leftIcon={secondaryButton.icon}
         onClick={secondaryButtonOnClick}
         disabled={!isEditingAllowed}
       >

@@ -52,7 +52,7 @@ export const JiraGetImportDetail: React.FC = observer(() => {
                 value={value}
                 onChange={onChange}
                 ref={ref}
-                hasError={Boolean(errors.metadata?.api_token)}
+                variant={Boolean(errors.metadata?.api_token) ? "error" : "default"}
                 placeholder="XXXXXXXX"
                 className="w-full"
                 autoComplete="off"
@@ -82,7 +82,7 @@ export const JiraGetImportDetail: React.FC = observer(() => {
                 value={value}
                 onChange={onChange}
                 ref={ref}
-                hasError={Boolean(errors.metadata?.project_key)}
+                variant={Boolean(errors.metadata?.project_key) ? "error" : "default"}
                 placeholder="LIN"
                 className="w-full"
               />
@@ -114,7 +114,7 @@ export const JiraGetImportDetail: React.FC = observer(() => {
                 value={value}
                 onChange={onChange}
                 ref={ref}
-                hasError={Boolean(errors.metadata?.email)}
+                variant={Boolean(errors.metadata?.email) ? "error" : "default"}
                 placeholder="name@company.com"
                 className="w-full"
               />
@@ -143,7 +143,7 @@ export const JiraGetImportDetail: React.FC = observer(() => {
                 value={value}
                 onChange={onChange}
                 ref={ref}
-                hasError={Boolean(errors.metadata?.cloud_hostname)}
+                variant={Boolean(errors.metadata?.cloud_hostname) ? "error" : "default"}
                 placeholder="my-company.atlassian.net"
                 className="w-full"
               />

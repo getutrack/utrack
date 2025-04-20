@@ -1,54 +1,66 @@
-import * as React from "react";
-// helpers
-import { cn } from "../../helpers";
+"use client";
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  mode?: "primary" | "transparent" | "true-transparent";
-  inputSize?: "xs" | "sm" | "md";
-  hasError?: boolean;
-  className?: string;
-  autoComplete?: "on" | "off";
+import * as React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "../helpers";
+
+const inputVariants = cva(
+  "flex w-full rounded-md border bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200",
+  {
+    variants: {
+      variant: {
+        default: "border-gray-200 focus-visible:border-primary-500 focus-visible:ring-primary-500",
+        error: "border-error-500 focus-visible:border-error-500 focus-visible:ring-error-500",
+        success: "border-success-500 focus-visible:border-success-500 focus-visible:ring-success-500",
+      },
+      size: {
+        sm: "h-8 px-3 py-1 text-xs",
+        md: "h-10 px-4 py-2 text-sm",
+        lg: "h-12 px-4 py-2 text-base",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "md",
+    },
+  }
+);
+
+export interface InputProps
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size">,
+    VariantProps<typeof inputVariants> {
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
 }
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const {
-    id,
-    type,
-    name,
-    mode = "primary",
-    inputSize = "sm",
-    hasError = false,
-    className = "",
-    autoComplete = "off",
-    ...rest
-  } = props;
-
-  return (
-    <input
-      id={id}
-      ref={ref}
-      type={type}
-      name={name}
-      className={cn(
-        "block rounded-md bg-transparent text-sm placeholder-custom-text-400 focus:outline-none",
-        {
-          "rounded-md border-[0.5px] border-custom-border-200": mode === "primary",
-          "rounded border-none bg-transparent ring-0 transition-all focus:ring-1 focus:ring-custom-primary":
-            mode === "transparent",
-          "rounded border-none bg-transparent ring-0": mode === "true-transparent",
-          "border-red-500": hasError,
-          "px-1.5 py-1": inputSize === "xs",
-          "px-3 py-2": inputSize === "sm",
-          "p-3": inputSize === "md",
-        },
-        className
-      )}
-      autoComplete={autoComplete}
-      {...rest}
-    />
-  );
-});
-
-Input.displayName = "form-input-field";
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ className, variant, size, leftIcon, rightIcon, type, ...props }, ref) => {
+    return (
+      <div className="relative flex items-center">
+        {leftIcon && (
+          <div className="absolute left-3 flex items-center justify-center text-gray-400">
+            {leftIcon}
+          </div>
+        )}
+        <input
+          type={type}
+          className={cn(
+            inputVariants({ variant, size, className }),
+            leftIcon && "pl-10",
+            rightIcon && "pr-10"
+          )}
+          ref={ref}
+          {...props}
+        />
+        {rightIcon && (
+          <div className="absolute right-3 flex items-center justify-center text-gray-400">
+            {rightIcon}
+          </div>
+        )}
+      </div>
+    );
+  }
+);
+Input.displayName = "Input";
 
 export { Input };

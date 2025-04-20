@@ -115,7 +115,7 @@ export const ModuleForm: React.FC<Props> = (props) => {
                   type="text"
                   value={value}
                   onChange={onChange}
-                  hasError={Boolean(errors?.name)}
+                  variant={Boolean(errors?.name) ? "error" : "default"}
                   placeholder="Title"
                   className="w-full text-base"
                   tabIndex={getIndex("name")}

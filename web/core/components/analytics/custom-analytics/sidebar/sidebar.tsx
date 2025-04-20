@@ -180,7 +180,7 @@ export const CustomAnalyticsSidebar: React.FC<Props> = observer((props) => {
       <div className="flex flex-wrap items-center justify-end gap-2">
         <Button
           variant="neutral-primary"
-          prependIcon={<RefreshCw className="h-3 w-3 md:h-3.5 md:w-3.5" />}
+          leftIcon={<RefreshCw className="h-3 w-3 md:h-3.5 md:w-3.5" />}
           onClick={() => {
             if (!workspaceSlug) return;
 
@@ -189,7 +189,7 @@ export const CustomAnalyticsSidebar: React.FC<Props> = observer((props) => {
         >
           <div className={cn(isProjectLevel ? "hidden md:block" : "")}>Refresh</div>
         </Button>
-        <Button variant="primary" prependIcon={<Download className="h-3.5 w-3.5" />} onClick={exportAnalytics}>
+        <Button variant="primary" leftIcon={<Download className="h-3.5 w-3.5" />} onClick={exportAnalytics}>
           <div className={cn(isProjectLevel ? "hidden md:block" : "")}>Export as CSV</div>
         </Button>
       </div>

@@ -21,7 +21,7 @@ export const IssuesErrorState: React.FC<Props> = (props) => {
         <p className="mt-7 text-custom-text-300 text-sm font-medium">There was an error in fetching widget details</p>
         <Button
           variant="neutral-primary"
-          prependIcon={<RefreshCcw className="h-3 w-3" />}
+          leftIcon={<RefreshCcw className="h-3 w-3" />}
           className="mt-2 mx-auto"
           onClick={onClick}
           loading={isRefreshing}

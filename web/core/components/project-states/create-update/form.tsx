@@ -75,7 +75,7 @@ export const StateForm: FC<TStateForm> = (props) => {
         placeholder="Name"
         value={formData?.name}
         onChange={(e) => handleFormData("name", e.target.value)}
-        hasError={(errors && Boolean(errors.name)) || false}
+        variant={(errors && Boolean(errors.name)) ? "error" : "default"}
         className="w-full"
         maxLength={100}
         autoFocus
@@ -89,7 +89,7 @@ export const StateForm: FC<TStateForm> = (props) => {
         placeholder="Description"
         value={formData?.description}
         onChange={(e) => handleFormData("description", e.target.value)}
-        hasError={(errors && Boolean(errors.description)) || false}
+        variant={(errors && Boolean(errors.description)) ? "error" : "default"}
         className="w-full"
       />
 

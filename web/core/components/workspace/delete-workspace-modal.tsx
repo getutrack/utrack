@@ -152,7 +152,7 @@ export const DeleteWorkspaceModal: React.FC<Props> = observer((props) => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.workspaceName)}
+                          variant={Boolean(errors.workspaceName) ? "error" : "default"}
                           placeholder="Workspace name"
                           className="mt-2 w-full"
                           autoComplete="off"
@@ -177,7 +177,7 @@ export const DeleteWorkspaceModal: React.FC<Props> = observer((props) => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.confirmDelete)}
+                          variant={Boolean(errors.confirmDelete) ? "error" : "default"}
                           placeholder="Enter 'delete my workspace'"
                           className="mt-2 w-full"
                           autoComplete="off"

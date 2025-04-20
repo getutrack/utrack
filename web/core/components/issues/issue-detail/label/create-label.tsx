@@ -136,7 +136,7 @@ export const LabelCreate: FC<ILabelCreate> = (props) => {
                 value={value ?? ""}
                 onChange={onChange}
                 ref={ref}
-                hasError={Boolean(errors.name)}
+                variant={Boolean(errors.name) ? "error" : "default"}
                 placeholder="Title"
                 className="w-full text-xs px-1.5 py-1"
                 disabled={isSubmitting}

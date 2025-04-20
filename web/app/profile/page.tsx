@@ -236,7 +236,7 @@ const ProfileSettingsPage = observer(() => {
                         value={value}
                         onChange={onChange}
                         ref={ref}
-                        hasError={Boolean(errors.first_name)}
+                        variant={Boolean(errors.first_name) ? "error" : "default"}
                         placeholder="Enter your first name"
                         className={`w-full rounded-md ${errors.first_name ? "border-red-500" : ""}`}
                         maxLength={24}
@@ -259,7 +259,7 @@ const ProfileSettingsPage = observer(() => {
                         value={value}
                         onChange={onChange}
                         ref={ref}
-                        hasError={Boolean(errors.last_name)}
+                        variant={Boolean(errors.last_name) ? "error" : "default"}
                         placeholder="Enter your last name"
                         className="w-full rounded-md"
                         maxLength={24}
@@ -295,7 +295,7 @@ const ProfileSettingsPage = observer(() => {
                         value={value}
                         onChange={onChange}
                         ref={ref}
-                        hasError={Boolean(errors?.display_name)}
+                        variant={Boolean(errors?.display_name) ? "error" : "default"}
                         placeholder="Enter your display name"
                         className={`w-full ${errors?.display_name ? "border-red-500" : ""}`}
                         maxLength={24}
@@ -323,7 +323,7 @@ const ProfileSettingsPage = observer(() => {
                         type="email"
                         value={value}
                         ref={ref}
-                        hasError={Boolean(errors.email)}
+                        variant={Boolean(errors.email) ? "error" : "default"}
                         placeholder="Enter your email"
                         className={`w-full cursor-not-allowed rounded-md !bg-custom-background-90 ${
                           errors.email ? "border-red-500" : ""

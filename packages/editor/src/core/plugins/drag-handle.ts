@@ -1,7 +1,6 @@
 import { Fragment, Slice, Node } from "@tiptap/pm/model";
 import { NodeSelection, TextSelection } from "@tiptap/pm/state";
-// @ts-expect-error __serializeForClipboard's is not exported
-import { __serializeForClipboard, EditorView } from "@tiptap/pm/view";
+import { EditorView } from "@tiptap/pm/view";
 // extensions
 import { SideMenuHandleOptions, SideMenuPluginProps } from "@/extensions";
 
@@ -167,11 +166,21 @@ export const DragHandlePlugin = (options: SideMenuPluginProps): SideMenuHandleOp
       }
     }
 
+    // Instead of using __serializeForClipboard, we'll use a simpler approach
     const slice = view.state.selection.content();
-    const { dom, text } = __serializeForClipboard(view, slice);
+    
+    // Create DOM representation
+    const tempDiv = document.createElement('div');
+    const serializer = view.someProp("clipboardSerializer");
+    if (serializer) {
+      tempDiv.appendChild(serializer.serializeFragment(slice.content));
+    }
+    
+    // Get plain text version
+    const text = node.textContent || '';
 
     event.dataTransfer.clearData();
-    event.dataTransfer.setData("text/html", dom.innerHTML);
+    event.dataTransfer.setData("text/html", tempDiv.innerHTML);
     event.dataTransfer.setData("text/plain", text);
     event.dataTransfer.effectAllowed = "copyMove";
 

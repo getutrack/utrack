@@ -188,7 +188,7 @@ export const CreateUpdateLabelInline = observer(
                   value={value}
                   onChange={onChange}
                   ref={ref}
-                  hasError={Boolean(errors.name)}
+                  variant={Boolean(errors.name) ? "error" : "default"}
                   placeholder="Label title"
                   className="w-full"
                 />

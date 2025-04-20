@@ -58,8 +58,8 @@ export const FiltersDropdown: React.FC<Props> = (props) => {
                   ref={setReferenceElement}
                   variant="neutral-primary"
                   size="sm"
-                  prependIcon={icon}
-                  appendIcon={
+                  leftIcon={icon}
+                  rightIcon={
                     <ChevronUp className={`transition-all ${open ? "" : "rotate-180"}`} size={14} strokeWidth={2} />
                   }
                   tabIndex={tabIndex}

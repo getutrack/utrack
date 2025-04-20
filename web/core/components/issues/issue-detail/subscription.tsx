@@ -69,7 +69,7 @@ export const IssueSubscription: FC<TIssueSubscription> = observer((props) => {
     <div>
       <Button
         size="sm"
-        prependIcon={isSubscribed ? <BellOff /> : <Bell className="h-3 w-3" />}
+        leftIcon={isSubscribed ? <BellOff /> : <Bell className="h-3 w-3" />}
         variant="outline-primary"
         className="hover:!bg-custom-primary-100/20"
         onClick={handleSubscription}

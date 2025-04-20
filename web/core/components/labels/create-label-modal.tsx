@@ -191,7 +191,7 @@ export const CreateLabelModal: React.FC<Props> = observer((props) => {
                               onChange={onChange}
                               ref={ref}
                               tabIndex={getIndex("name")}
-                              hasError={Boolean(errors.name)}
+                              variant={Boolean(errors.name) ? "error" : "default"}
                               placeholder="Label title"
                               className="w-full resize-none text-xl"
                             />

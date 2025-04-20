@@ -24,77 +24,71 @@
   :root {
     color-scheme: light !important;
 
-    --color-primary-10: 236, 241, 255;
-    --color-primary-20: 217, 228, 255;
-    --color-primary-30: 197, 214, 255;
-    --color-primary-40: 178, 200, 255;
-    --color-primary-50: 159, 187, 255;
-    --color-primary-60: 140, 173, 255;
-    --color-primary-70: 121, 159, 255;
-    --color-primary-80: 101, 145, 255;
-    --color-primary-90: 82, 132, 255;
-    --color-primary-100: 63, 118, 255;
-    --color-primary-200: 57, 106, 230;
-    --color-primary-300: 50, 94, 204;
-    --color-primary-400: 44, 83, 179;
-    --color-primary-500: 38, 71, 153;
-    --color-primary-600: 32, 59, 128;
-    --color-primary-700: 25, 47, 102;
-    --color-primary-800: 19, 35, 76;
-    --color-primary-900: 13, 24, 51;
+    /* Modern vibrant primary blue */
+    --color-primary-10: 239, 246, 255;
+    --color-primary-20: 219, 234, 254;
+    --color-primary-30: 191, 219, 254;
+    --color-primary-40: 147, 197, 253;
+    --color-primary-50: 96, 165, 250;
+    --color-primary-60: 59, 130, 246;
+    --color-primary-70: 37, 99, 235;
+    --color-primary-80: 29, 78, 216;
+    --color-primary-90: 30, 64, 175;
+    --color-primary-100: 30, 58, 138;
+    --color-primary-200: 25, 48, 115;
+    --color-primary-300: 21, 40, 95;
+    --color-primary-400: 17, 32, 76;
+    --color-primary-500: 13, 24, 57;
+    --color-primary-600: 9, 16, 38;
+    --color-primary-700: 7, 12, 29;
+    --color-primary-800: 4, 8, 19;
+    --color-primary-900: 2, 4, 9;
 
-    --color-error-10: 255 252 252;
-    --color-error-20: 255 247 247;
-    --color-error-30: 255, 219, 220;
-    --color-error-100: 244 170 170;
-    --color-error-200: 220 62 62;
-    --color-error-500: 140 51 58;
+    /* Updated error colors for better contrast */
+    --color-error-10: 254, 242, 242;
+    --color-error-20: 254, 226, 226;
+    --color-error-30: 254, 202, 202;
+    --color-error-100: 248, 113, 113;
+    --color-error-200: 220, 38, 38;
+    --color-error-500: 153, 27, 27;
 
     --color-background-100: 255, 255, 255; /* primary bg */
-    --color-background-90: 247, 247, 247; /* secondary bg */
-    --color-background-80: 232, 232, 232; /* tertiary bg */
+    --color-background-90: 250, 250, 250; /* secondary bg - lighter */
+    --color-background-80: 245, 245, 245; /* tertiary bg - lighter */
 
     --color-background-primary: var(--color-primary-10);
     --color-background-error: var(--color-error-20);
 
-    --color-text-100: 23, 23, 23; /* primary text */
-    --color-text-200: 58, 58, 58; /* secondary text */
-    --color-text-300: 82, 82, 82; /* tertiary text */
-    --color-text-350: 130, 130, 130;
-    --color-text-400: 163, 163, 163; /* placeholder text */
+    --color-text-100: 15, 23, 42; /* primary text - darker for better contrast */
+    --color-text-200: 51, 65, 85; /* secondary text */
+    --color-text-300: 71, 85, 105; /* tertiary text */
+    --color-text-350: 100, 116, 139;
+    --color-text-400: 148, 163, 184; /* placeholder text */
 
-    --color-text-primary: var(--color-primary-100);
+    --color-text-primary: var(--color-primary-70);
     --color-text-error: var(--color-error-200);
 
-    --color-scrollbar: 163, 163, 163; /* scrollbar thumb */
+    --color-scrollbar: 203, 213, 225; /* scrollbar thumb */
 
-    --color-border-100: 245, 245, 245; /* subtle border= 1 */
-    --color-border-200: 229, 229, 229; /* subtle border- 2 */
-    --color-border-300: 212, 212, 212; /* strong border- 1 */
-    --color-border-400: 185, 185, 185; /* strong border- 2 */
+    --color-border-100: 248, 250, 252; /* subtle border= 1 */
+    --color-border-200: 241, 245, 249; /* subtle border- 2 */
+    --color-border-300: 226, 232, 240; /* strong border- 1 */
+    --color-border-400: 203, 213, 225; /* strong border- 2 */
 
     --color-border-primary: var(--color-primary-40);
     --color-border-error: var(--color-error-100);
 
-    --color-shadow-2xs: 0px 0px 1px 0px rgba(23, 23, 23, 0.06), 0px 1px 2px 0px rgba(23, 23, 23, 0.06),
-      0px 1px 2px 0px rgba(23, 23, 23, 0.14);
-    --color-shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(16, 24, 40, 0.12),
-      0px 1px 8px -1px rgba(16, 24, 40, 0.1);
-    --color-shadow-sm: 0px 1px 4px 0px rgba(0, 0, 0, 0.01), 0px 4px 8px 0px rgba(0, 0, 0, 0.02),
-      0px 1px 12px 0px rgba(0, 0, 0, 0.12);
-    --color-shadow-rg: 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(16, 24, 40, 0.08),
-      0px 1px 12px 0px rgba(16, 24, 40, 0.04);
-    --color-shadow-md: 0px 4px 8px 0px rgba(0, 0, 0, 0.12), 0px 6px 12px 0px rgba(16, 24, 40, 0.12),
-      0px 1px 16px 0px rgba(16, 24, 40, 0.12);
-    --color-shadow-lg: 0px 6px 12px 0px rgba(0, 0, 0, 0.12), 0px 8px 16px 0px rgba(0, 0, 0, 0.12),
-      0px 1px 24px 0px rgba(16, 24, 40, 0.12);
-    --color-shadow-xl: 0px 0px 18px 0px rgba(0, 0, 0, 0.16), 0px 0px 24px 0px rgba(16, 24, 40, 0.16),
-      0px 0px 52px 0px rgba(16, 24, 40, 0.16);
-    --color-shadow-2xl: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 12px 24px 0px rgba(16, 24, 40, 0.12),
-      0px 1px 32px 0px rgba(16, 24, 40, 0.12);
-    --color-shadow-3xl: 0px 12px 24px 0px rgba(0, 0, 0, 0.12), 0px 16px 32px 0px rgba(0, 0, 0, 0.12),
-      0px 1px 48px 0px rgba(16, 24, 40, 0.12);
-    --color-shadow-4xl: 0px 8px 40px 0px rgba(0, 0, 61, 0.05), 0px 12px 32px -16px rgba(0, 0, 0, 0.05);
+    /* Modern shadow system with slightly softer shadows */
+    --color-shadow-2xs: 0px 1px 2px rgba(15, 23, 42, 0.04), 0px 1px 1px rgba(15, 23, 42, 0.02);
+    --color-shadow-xs: 0px 1px 2px rgba(15, 23, 42, 0.06), 0px 1px 3px rgba(15, 23, 42, 0.1);
+    --color-shadow-sm: 0px 2px 4px rgba(15, 23, 42, 0.03), 0px 1px 8px rgba(15, 23, 42, 0.05);
+    --color-shadow-rg: 0px 4px 6px rgba(15, 23, 42, 0.04), 0px 2px 16px rgba(15, 23, 42, 0.06);
+    --color-shadow-md: 0px 6px 12px rgba(15, 23, 42, 0.06), 0px 4px 24px rgba(15, 23, 42, 0.05);
+    --color-shadow-lg: 0px 8px 16px rgba(15, 23, 42, 0.08), 0px 12px 32px rgba(15, 23, 42, 0.07);
+    --color-shadow-xl: 0px 16px 24px rgba(15, 23, 42, 0.08), 0px 8px 48px rgba(15, 23, 42, 0.1);
+    --color-shadow-2xl: 0px 24px 48px rgba(15, 23, 42, 0.12), 0px 12px 64px rgba(15, 23, 42, 0.09);
+    --color-shadow-3xl: 0px 32px 64px rgba(15, 23, 42, 0.14), 0px 16px 80px rgba(15, 23, 42, 0.12);
+    --color-shadow-4xl: 0px 40px 80px rgba(15, 23, 42, 0.16), 0px 20px 100px rgba(15, 23, 42, 0.14);
 
     --color-sidebar-background-100: var(--color-background-100); /* primary sidebar bg */
     --color-sidebar-background-90: var(--color-background-90); /* secondary sidebar bg */
@@ -190,46 +184,64 @@
   }
 
   [data-theme="light-contrast"] {
-    --color-text-100: 11, 11, 11; /* primary text */
-    --color-text-200: 38, 38, 38; /* secondary text */
-    --color-text-300: 58, 58, 58; /* tertiary text */
-    --color-text-350: 80, 80, 80;
-    --color-text-400: 115, 115, 115; /* placeholder text */
+    --color-text-100: 0, 0, 0; /* Black text for maximum contrast */
+    --color-text-200: 38, 38, 38;
+    --color-text-300: 64, 64, 64;
+    --color-text-400: 115, 115, 115;
 
-    --color-scrollbar: 115, 115, 115; /* scrollbar thumb */
+    --color-border-100: 217, 217, 217;
+    --color-border-200: 191, 191, 191;
+    --color-border-300: 166, 166, 166;
+    --color-border-400: 140, 140, 140;
 
-    --color-border-100: 34, 34, 34; /* subtle border= 1 */
-    --color-border-200: 38, 38, 38; /* subtle border- 2 */
-    --color-border-300: 46, 46, 46; /* strong border- 1 */
-    --color-border-400: 58, 58, 58; /* strong border- 2 */
+    --color-primary-100: 12, 46, 140; /* Darker primary for better contrast */
+    --color-text-primary: 12, 46, 140;
   }
 
   [data-theme="dark"],
   [data-theme="dark-contrast"] {
     color-scheme: dark !important;
 
-    --color-background-100: 25, 25, 25; /* primary bg */
-    --color-background-90: 32, 32, 32; /* secondary bg */
-    --color-background-80: 44, 44, 44; /* tertiary bg */
+    /* Enhanced dark mode colors with better contrast */
+    --color-background-100: 17, 24, 39; /* primary bg - slightly lighter than pure black */
+    --color-background-90: 26, 32, 46; /* secondary bg */
+    --color-background-80: 30, 41, 59; /* tertiary bg */
+    
+    --color-background-primary: 30, 41, 59; /* More visible primary background */
+    --color-background-error: 127, 29, 29; /* More visible error background */
 
-    --color-background-primary: var(--color-background-90);
-    --color-background-error: var(--color-background-90);
+    /* Improved text colors for dark mode readability */
+    --color-text-100: 243, 244, 246; /* primary text - brighter for better readability */
+    --color-text-200: 229, 231, 235; /* secondary text */
+    --color-text-300: 209, 213, 219; /* tertiary text */
+    --color-text-350: 176, 185, 207; /* adjusted for dark mode */
+    --color-text-400: 156, 163, 175; /* placeholder text - improved contrast */
 
-    --color-text-primary: var(--color-primary-40);
-    --color-text-error: var(--color-error-100);
+    --color-text-primary: 147, 197, 253; /* Brighter primary text for dark mode */
+    --color-text-error: 248, 113, 113; /* Brighter error text for dark mode */
 
-    --color-border-primary: var(--color-primary-200);
-    --color-border-error: var(--color-error-500);
+    --color-scrollbar: 55, 65, 81; /* darker scrollbar thumb */
 
-    --color-shadow-2xs: 0px 0px 1px 0px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
-    --color-shadow-xs: 0px 0px 2px 0px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    --color-shadow-sm: 0px 0px 4px 0px rgba(0, 0, 0, 0.2), 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
-    --color-shadow-rg: 0px 0px 6px 0px rgba(0, 0, 0, 0.2), 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
-    --color-shadow-md: 0px 2px 8px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
-    --color-shadow-lg: 0px 4px 12px 0px rgba(0, 0, 0, 0.25), 0px 4px 10px 0px rgba(0, 0, 0, 0.55);
-    --color-shadow-xl: 0px 0px 14px 0px rgba(0, 0, 0, 0.25), 0px 6px 10px 0px rgba(0, 0, 0, 0.55);
-    --color-shadow-2xl: 0px 0px 18px 0px rgba(0, 0, 0, 0.25), 0px 8px 12px 0px rgba(0, 0, 0, 0.6);
-    --color-shadow-3xl: 0px 4px 24px 0px rgba(0, 0, 0, 0.3), 0px 12px 40px 0px rgba(0, 0, 0, 0.65);
+    /* Border colors with better visibility in dark mode */
+    --color-border-100: 31, 41, 55; /* subtle border 1 */
+    --color-border-200: 55, 65, 81; /* subtle border 2 */
+    --color-border-300: 75, 85, 99; /* strong border 1 */
+    --color-border-400: 107, 114, 128; /* strong border 2 */
+
+    --color-border-primary: 96, 165, 250; /* More vibrant primary border */
+    --color-border-error: 248, 113, 113; /* More vibrant error border */
+
+    /* Dark mode optimized shadows */
+    --color-shadow-2xs: 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.15);
+    --color-shadow-xs: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    --color-shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 8px rgba(0, 0, 0, 0.2);
+    --color-shadow-rg: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 2px 16px rgba(0, 0, 0, 0.25);
+    --color-shadow-md: 0px 6px 12px rgba(0, 0, 0, 0.3), 0px 4px 24px rgba(0, 0, 0, 0.25);
+    --color-shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.35), 0px 12px 32px rgba(0, 0, 0, 0.3);
+    --color-shadow-xl: 0px 16px 24px rgba(0, 0, 0, 0.35), 0px 8px 48px rgba(0, 0, 0, 0.3);
+    --color-shadow-2xl: 0px 24px 48px rgba(0, 0, 0, 0.4), 0px 12px 64px rgba(0, 0, 0, 0.35);
+    --color-shadow-3xl: 0px 32px 64px rgba(0, 0, 0, 0.4), 0px 16px 80px rgba(0, 0, 0, 0.35);
+    --color-shadow-4xl: 0px 40px 80px rgba(0, 0, 0, 0.45), 0px 20px 100px rgba(0, 0, 0, 0.4);
   }
 
   [data-theme="dark"] {

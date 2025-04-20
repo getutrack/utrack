@@ -167,7 +167,7 @@ export const LeaveProjectModal: FC<ILeaveProjectModal> = observer((props) => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.projectName)}
+                          variant={Boolean(errors.projectName) ? "error" : "default"}
                           placeholder="Enter project name"
                           className="mt-2 w-full"
                         />
@@ -190,7 +190,7 @@ export const LeaveProjectModal: FC<ILeaveProjectModal> = observer((props) => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.confirmLeave)}
+                          variant={Boolean(errors.confirmLeave) ? "error" : "default"}
                           placeholder="Enter 'leave project'"
                           className="mt-2 w-full"
                         />

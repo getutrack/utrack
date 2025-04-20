@@ -63,7 +63,7 @@ const ProjectCommonAttributes: React.FC<Props> = (props) => {
               type="text"
               value={value}
               onChange={handleNameChange(onChange)}
-              hasError={Boolean(errors.name)}
+              variant={Boolean(errors.name) ? "error" : "default"}
               placeholder="Project name"
               className="w-full focus:border-blue-400"
               tabIndex={getIndex("name")}
@@ -97,7 +97,7 @@ const ProjectCommonAttributes: React.FC<Props> = (props) => {
               type="text"
               value={value}
               onChange={handleIdentifierChange(onChange)}
-              hasError={Boolean(errors.identifier)}
+              variant={Boolean(errors.identifier) ? "error" : "default"}
               placeholder="Project ID"
               className={cn("w-full text-xs focus:border-blue-400 pr-7", {
                 uppercase: value,

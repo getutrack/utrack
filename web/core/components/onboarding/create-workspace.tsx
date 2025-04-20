@@ -184,7 +184,7 @@ export const CreateWorkspace: React.FC<Props> = observer((props) => {
                   }}
                   placeholder="Enter workspace name..."
                   ref={ref}
-                  hasError={Boolean(errors.name)}
+                  variant={Boolean(errors.name) ? "error" : "default"}
                   className="w-full border-onboarding-border-100 placeholder:text-custom-text-400"
                   autoFocus
                 />
@@ -227,7 +227,7 @@ export const CreateWorkspace: React.FC<Props> = observer((props) => {
                     onChange(e.target.value.toLowerCase());
                   }}
                   ref={ref}
-                  hasError={Boolean(errors.slug)}
+                  variant={Boolean(errors.slug) ? "error" : "default"}
                   className="w-full border-none !px-0"
                 />
               </div>

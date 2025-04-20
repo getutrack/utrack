@@ -32,7 +32,6 @@ const WorkspaceViewsPage = observer(() => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search"
-            mode="true-transparent"
           />
         </div>
         <div className="flex flex-col h-full w-full vertical-scrollbar scrollbar-lg">

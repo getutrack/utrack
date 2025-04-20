@@ -128,7 +128,7 @@ export const WorkspaceViewForm: React.FC<Props> = observer((props) => {
                   value={value}
                   onChange={onChange}
                   ref={ref}
-                  hasError={Boolean(errors.name)}
+                  variant={Boolean(errors.name) ? "error" : "default"}
                   placeholder="Title"
                   className="w-full text-base"
                 />

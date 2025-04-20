@@ -164,7 +164,7 @@ export const EstimatePointCreateRoot: FC<TEstimatePointCreateRoot> = observer((p
           />
         ))}
       {estimatePoints && estimatePoints.length + (estimatePointCreate?.length || 0) <= estimateCount.max - 1 && (
-        <Button variant="link-primary" size="sm" prependIcon={<Plus />} onClick={handleCreate}>
+        <Button variant="link-primary" size="sm" leftIcon={<Plus />} onClick={handleCreate}>
           Add {estimateType}
         </Button>
       )}

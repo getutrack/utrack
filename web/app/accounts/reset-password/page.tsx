@@ -150,7 +150,7 @@ export default function ResetPasswordPage() {
                       name="email"
                       type="email"
                       value={resetFormData.email}
-                      //hasError={Boolean(errors.email)}
+                      //variant={Boolean(errors.email) ? "error" : "default"}
                       placeholder="name@company.com"
                       className="h-[46px] w-full border border-onboarding-border-100 !bg-onboarding-background-200 pr-12 text-onboarding-text-400 cursor-not-allowed"
                       autoComplete="on"
@@ -168,7 +168,7 @@ export default function ResetPasswordPage() {
                       name="password"
                       value={resetFormData.password}
                       onChange={(e) => handleFormChange("password", e.target.value)}
-                      //hasError={Boolean(errors.password)}
+                      //variant={Boolean(errors.password) ? "error" : "default"}
                       placeholder="Enter password"
                       className="h-[46px] w-full border border-onboarding-border-100 !bg-onboarding-background-200 pr-12 placeholder:text-onboarding-text-400"
                       minLength={8}

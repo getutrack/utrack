@@ -6,10 +6,10 @@ import { Input } from "./input";
 import { usePopper } from "react-popper";
 import { Button } from "../button";
 // helpers
-import { cn } from "../../helpers";
+import { cn } from "../helpers";
 
 export interface InputColorPickerProps {
-  hasError: boolean;
+  hasError?: boolean;
   value: string | undefined;
   onChange: (value: string) => void;
   name: string;
@@ -19,7 +19,7 @@ export interface InputColorPickerProps {
 }
 
 export const InputColorPicker: React.FC<InputColorPickerProps> = (props) => {
-  const { value, hasError, onChange, name, className, style, placeholder } = props;
+  const { value, hasError = false, onChange, name, className, style, placeholder } = props;
 
   const [referenceElement, setReferenceElement] = React.useState<HTMLButtonElement | null>(null);
   const [popperElement, setPopperElement] = React.useState<HTMLDivElement | null>(null);
@@ -45,7 +45,7 @@ export const InputColorPicker: React.FC<InputColorPickerProps> = (props) => {
         type="text"
         value={value}
         onChange={handleInputChange}
-        hasError={hasError}
+        variant={hasError ? "error" : "default"}
         placeholder={placeholder}
         className={cn("border-[0.5px] border-custom-border-200", className)}
         style={style}
@@ -60,7 +60,7 @@ export const InputColorPicker: React.FC<InputColorPickerProps> = (props) => {
               <Popover.Button as={React.Fragment}>
                 <Button
                   ref={setReferenceElement}
-                  variant="neutral-primary"
+                  variant="ghost-primary"
                   size="sm"
                   className="border-none !bg-transparent"
                 >

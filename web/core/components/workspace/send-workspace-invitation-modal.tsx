@@ -151,7 +151,7 @@ export const SendWorkspaceInvitationModal: React.FC<Props> = observer((props) =>
                                     value={value}
                                     onChange={onChange}
                                     ref={ref}
-                                    hasError={Boolean(errors.emails?.[index]?.email)}
+                                    variant={Boolean(errors.emails?.[index]?.email) ? "error" : "default"}
                                     placeholder="Enter their email..."
                                     className="w-full text-xs sm:text-sm"
                                   />

@@ -144,7 +144,7 @@ export const DeleteProjectModal: React.FC<DeleteProjectModal> = (props) => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.projectName)}
+                          variant={Boolean(errors.projectName) ? "error" : "default"}
                           placeholder="Project name"
                           className="mt-2 w-full"
                           autoComplete="off"
@@ -168,7 +168,7 @@ export const DeleteProjectModal: React.FC<DeleteProjectModal> = (props) => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.confirmDelete)}
+                          variant={Boolean(errors.confirmDelete) ? "error" : "default"}
                           placeholder="Enter 'delete my project'"
                           className="mt-2 w-full"
                           autoComplete="off"

@@ -151,7 +151,7 @@ export default function ForgotPasswordPage() {
                         value={value}
                         onChange={onChange}
                         ref={ref}
-                        hasError={Boolean(errors.email)}
+                        variant={Boolean(errors.email) ? "error" : "default"}
                         placeholder="name@company.com"
                         className="h-[46px] w-full border border-onboarding-border-100 !bg-onboarding-background-200 pr-12 placeholder:text-onboarding-text-400"
                         autoComplete="on"

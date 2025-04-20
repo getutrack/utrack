@@ -129,7 +129,7 @@ const SecurityPage = observer(() => {
                       onChange={onChange}
                       placeholder="Old password"
                       className="w-full"
-                      hasError={Boolean(errors.old_password)}
+                      variant={Boolean(errors.old_password) ? "error" : "default"}
                     />
                   )}
                 />
@@ -164,7 +164,7 @@ const SecurityPage = observer(() => {
                       placeholder="New password"
                       onChange={onChange}
                       className="w-full"
-                      hasError={Boolean(errors.new_password)}
+                      variant={Boolean(errors.new_password) ? "error" : "default"}
                       onFocus={() => setIsPasswordInputFocused(true)}
                       onBlur={() => setIsPasswordInputFocused(false)}
                     />
@@ -204,7 +204,7 @@ const SecurityPage = observer(() => {
                       value={value}
                       onChange={onChange}
                       className="w-full"
-                      hasError={Boolean(errors.confirm_password)}
+                      variant={Boolean(errors.confirm_password) ? "error" : "default"}
                       onFocus={() => setIsRetryPasswordInputFocused(true)}
                       onBlur={() => setIsRetryPasswordInputFocused(false)}
                     />

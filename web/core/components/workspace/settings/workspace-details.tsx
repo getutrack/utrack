@@ -220,7 +220,7 @@ export const WorkspaceDetails: FC = observer(() => {
                     value={value}
                     onChange={onChange}
                     ref={ref}
-                    hasError={Boolean(errors.name)}
+                    variant={Boolean(errors.name) ? "error" : "default"}
                     placeholder="Name"
                     className="w-full rounded-md font-medium"
                     disabled={!isAdmin}
@@ -270,7 +270,7 @@ export const WorkspaceDetails: FC = observer(() => {
                     }/${currentWorkspace.slug}`}
                     onChange={onChange}
                     ref={ref}
-                    hasError={Boolean(errors.url)}
+                    variant={Boolean(errors.url) ? "error" : "default"}
                     className="w-full"
                     disabled
                   />

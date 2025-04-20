@@ -19,7 +19,7 @@ export const WebhookInput: React.FC<Props> = (props) => {
         onChange={(e) => onChange(e.target.value)}
         value={value}
         autoComplete="off"
-        hasError={hasError}
+        variant={hasError ? "error" : "default"}
         placeholder="https://example.com/post"
         autoFocus
       />

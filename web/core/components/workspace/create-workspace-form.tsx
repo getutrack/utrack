@@ -153,7 +153,7 @@ export const CreateWorkspaceForm: FC<Props> = observer((props) => {
                     });
                   }}
                   ref={ref}
-                  hasError={Boolean(errors.name)}
+                  variant={Boolean(errors.name) ? "error" : "default"}
                   placeholder="Enter workspace name..."
                   className="w-full"
                 />
@@ -189,7 +189,7 @@ export const CreateWorkspaceForm: FC<Props> = observer((props) => {
                     onChange(e.target.value.toLowerCase());
                   }}
                   ref={ref}
-                  hasError={Boolean(errors.slug)}
+                  variant={Boolean(errors.slug) ? "error" : "default"}
                   placeholder="Enter workspace url..."
                   className="block w-full rounded-md border-none bg-transparent !px-0 py-2 text-sm"
                 />

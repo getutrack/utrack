@@ -122,7 +122,7 @@ export const JiraImportUsers: FC = () => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.data?.users?.[index]?.email)}
+                          variant={Boolean(errors.data?.users?.[index]?.email) ? "error" : "default"}
                           className="w-full"
                         />
                       )}

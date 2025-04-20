@@ -312,7 +312,7 @@ export const InboxIssueActionsHeader: FC<TInboxIssueActionsHeader> = observer((p
                 <Button
                   variant="neutral-primary"
                   size="sm"
-                  prependIcon={<CircleCheck className="w-3 h-3" />}
+                  leftIcon={<CircleCheck className="w-3 h-3" />}
                   className="text-green-500 border-0.5 border-green-500 bg-green-500/20 focus:bg-green-500/20 focus:text-green-500 hover:bg-green-500/40 bg-opacity-20"
                   onClick={() =>
                     handleActionWithPermission(
@@ -332,7 +332,7 @@ export const InboxIssueActionsHeader: FC<TInboxIssueActionsHeader> = observer((p
                 <Button
                   variant="neutral-primary"
                   size="sm"
-                  prependIcon={<CircleX className="w-3 h-3" />}
+                  leftIcon={<CircleX className="w-3 h-3" />}
                   className="text-red-500 border-0.5 border-red-500 bg-red-500/20 focus:bg-red-500/20 focus:text-red-500 hover:bg-red-500/40 bg-opacity-20"
                   onClick={() =>
                     handleActionWithPermission(
@@ -351,7 +351,7 @@ export const InboxIssueActionsHeader: FC<TInboxIssueActionsHeader> = observer((p
               <div className="flex items-center gap-2">
                 <Button
                   variant="neutral-primary"
-                  prependIcon={<Link className="h-2.5 w-2.5" />}
+                  leftIcon={<Link className="h-2.5 w-2.5" />}
                   size="sm"
                   onClick={() => handleCopyIssueLink(issueLink)}
                 >
@@ -364,7 +364,7 @@ export const InboxIssueActionsHeader: FC<TInboxIssueActionsHeader> = observer((p
                   }
                   target="_self"
                 >
-                  <Button variant="neutral-primary" prependIcon={<ExternalLink className="h-2.5 w-2.5" />} size="sm">
+                  <Button variant="neutral-primary" leftIcon={<ExternalLink className="h-2.5 w-2.5" />} size="sm">
                     Open issue
                   </Button>
                 </ControlLink>

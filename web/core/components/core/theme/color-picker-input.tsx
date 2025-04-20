@@ -76,7 +76,7 @@ export const ColorPickerInput: FC<Props> = (props) => {
             value={watch("name")}
             onChange={onChange}
             ref={ref}
-            hasError={Boolean(error)}
+            variant={Boolean(error) ? "error" : "default"}
             placeholder="#FFFFFF"
           />
         )}

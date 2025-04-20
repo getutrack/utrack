@@ -145,7 +145,7 @@ export const InstanceSignInForm: FC = (props) => {
               id="email"
               name="email"
               type="email"
-              inputSize="md"
+              size="md"
               placeholder="name@company.com"
               value={formData.email}
               onChange={(e) => handleFormChange("email", e.target.value)}
@@ -164,7 +164,7 @@ export const InstanceSignInForm: FC = (props) => {
                 id="password"
                 name="password"
                 type={showPassword ? "text" : "password"}
-                inputSize="md"
+                size="md"
                 placeholder="Enter your password"
                 value={formData.password}
                 onChange={(e) => handleFormChange("password", e.target.value)}

@@ -22,7 +22,7 @@ export const ActivityFilter: FC<TActivityFilter> = observer((props) => {
         <Button
           variant="neutral-primary"
           size="sm"
-          prependIcon={<ListFilter className="h-3 w-3" />}
+          leftIcon={<ListFilter className="h-3 w-3" />}
           className="relative"
         >
           <span className="text-custom-text-200">Filters</span>

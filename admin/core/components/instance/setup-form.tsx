@@ -170,7 +170,7 @@ export const InstanceSetupForm: FC = (props) => {
                 id="first_name"
                 name="first_name"
                 type="text"
-                inputSize="md"
+                size="md"
                 placeholder="Wilber"
                 value={formData.first_name}
                 onChange={(e) => handleFormChange("first_name", e.target.value)}
@@ -187,7 +187,7 @@ export const InstanceSetupForm: FC = (props) => {
                 id="last_name"
                 name="last_name"
                 type="text"
-                inputSize="md"
+                size="md"
                 placeholder="Wright"
                 value={formData.last_name}
                 onChange={(e) => handleFormChange("last_name", e.target.value)}
@@ -205,11 +205,11 @@ export const InstanceSetupForm: FC = (props) => {
               id="email"
               name="email"
               type="email"
-              inputSize="md"
+              size="md"
               placeholder="name@company.com"
               value={formData.email}
               onChange={(e) => handleFormChange("email", e.target.value)}
-              hasError={errorData.type && errorData.type === EErrorCodes.INVALID_EMAIL ? true : false}
+              variant={errorData.type && errorData.type === EErrorCodes.INVALID_EMAIL ? "error" : "default"}
               autoComplete="on"
             />
             {errorData.type && errorData.type === EErrorCodes.INVALID_EMAIL && errorData.message && (
@@ -226,7 +226,7 @@ export const InstanceSetupForm: FC = (props) => {
               id="company_name"
               name="company_name"
               type="text"
-              inputSize="md"
+              size="md"
               placeholder="Company name"
               value={formData.company_name}
               onChange={(e) => handleFormChange("company_name", e.target.value)}
@@ -243,11 +243,11 @@ export const InstanceSetupForm: FC = (props) => {
                 id="password"
                 name="password"
                 type={showPassword.password ? "text" : "password"}
-                inputSize="md"
+                size="md"
                 placeholder="New password..."
                 value={formData.password}
                 onChange={(e) => handleFormChange("password", e.target.value)}
-                hasError={errorData.type && errorData.type === EErrorCodes.INVALID_PASSWORD ? true : false}
+                variant={errorData.type && errorData.type === EErrorCodes.INVALID_PASSWORD ? "error" : "default"}
                 onFocus={() => setIsPasswordInputFocused(true)}
                 onBlur={() => setIsPasswordInputFocused(false)}
                 autoComplete="on"
@@ -287,7 +287,7 @@ export const InstanceSetupForm: FC = (props) => {
                 type={showPassword.retypePassword ? "text" : "password"}
                 id="confirm_password"
                 name="confirm_password"
-                inputSize="md"
+                size="md"
                 value={formData.confirm_password}
                 onChange={(e) => handleFormChange("confirm_password", e.target.value)}
                 placeholder="Confirm password"

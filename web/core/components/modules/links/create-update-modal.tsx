@@ -101,7 +101,7 @@ export const CreateUpdateModuleLinkModal: FC<Props> = (props) => {
                     value={value}
                     onChange={onChange}
                     ref={ref}
-                    hasError={Boolean(errors.url)}
+                    variant={Boolean(errors.url) ? "error" : "default"}
                     placeholder="Type or paste a URL"
                     className="w-full"
                   />
@@ -123,7 +123,7 @@ export const CreateUpdateModuleLinkModal: FC<Props> = (props) => {
                     value={value}
                     onChange={onChange}
                     ref={ref}
-                    hasError={Boolean(errors.title)}
+                    variant={Boolean(errors.title) ? "error" : "default"}
                     placeholder="What you'd like to see this link as"
                     className="w-full"
                   />

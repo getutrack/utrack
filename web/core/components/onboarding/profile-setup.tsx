@@ -363,7 +363,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                           autoFocus
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.first_name)}
+                          variant={Boolean(errors.first_name) ? "error" : "default"}
                           placeholder="Wilbur"
                           className="w-full border-onboarding-border-100"
                           autoComplete="on"
@@ -397,7 +397,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                           value={value}
                           onChange={onChange}
                           ref={ref}
-                          hasError={Boolean(errors.last_name)}
+                          variant={Boolean(errors.last_name) ? "error" : "default"}
                           placeholder="Wright"
                           className="w-full border-onboarding-border-100"
                           autoComplete="on"
@@ -429,7 +429,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                               value={value}
                               onChange={onChange}
                               ref={ref}
-                              hasError={Boolean(errors.password)}
+                              variant={Boolean(errors.password) ? "error" : "default"}
                               placeholder="New password..."
                               className="w-full border-[0.5px] border-onboarding-border-100 pr-12 placeholder:text-onboarding-text-400"
                               onFocus={() => setIsPasswordInputFocused(true)}
@@ -472,7 +472,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                               value={value}
                               onChange={onChange}
                               ref={ref}
-                              hasError={Boolean(errors.confirm_password)}
+                              variant={Boolean(errors.confirm_password) ? "error" : "default"}
                               placeholder="Confirm password..."
                               className="w-full border-onboarding-border-100 pr-12 placeholder:text-onboarding-text-400"
                             />
