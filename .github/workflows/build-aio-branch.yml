@@ -87,7 +87,7 @@ jobs:
         uses: actions/checkout@v4
 
   full_build_push:
-    if: ${{ needs.branch_build_setup.outputs.do_full_build == 'true' }}
+#    if: ${{ needs.branch_build_setup.outputs.do_full_build == 'true' }}
     runs-on: ubuntu-22.04
     needs: [branch_build_setup]
     env:
@@ -147,7 +147,7 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
   slim_build_push:
-    if: ${{ needs.branch_build_setup.outputs.do_slim_build == 'true' }}
+#    if: ${{ needs.branch_build_setup.outputs.do_slim_build == 'true' }}
     runs-on: ubuntu-22.04
     needs: [branch_build_setup]
     env:
