@@ -58,12 +58,12 @@ jobs:
 
   full_base_build_push:
     runs-on: ubuntu-latest
-#    needs: [base_build_setup]
-#    env:
-#      BASE_IMG_TAG: getutrack/utrack-aio-base:full-${{ needs.base_build_setup.outputs.image_tag }}
+    needs: [base_build_setup]
+    env:
+      BASE_IMG_TAG: getutrack/utrack-aio-base:full-${{ needs.base_build_setup.outputs.image_tag }}
+      BUILDX_PLATFORMS: ${{ needs.base_build_setup.outputs.gh_buildx_platforms }}
 ##      BUILDX_DRIVER: ${{ needs.base_build_setup.outputs.gh_buildx_driver }}
 #      BUILDX_VERSION: ${{ needs.base_build_setup.outputs.gh_buildx_version }}
-#      BUILDX_PLATFORMS: ${{ needs.base_build_setup.outputs.gh_buildx_platforms }}
 #      BUILDX_ENDPOINT: ${{ needs.base_build_setup.outputs.gh_buildx_endpoint }}
     steps:
       - name: Check out the repo
