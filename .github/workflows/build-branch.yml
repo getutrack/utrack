@@ -267,7 +267,7 @@ jobs:
           buildx-endpoint: ${{ needs.branch_build_setup.outputs.gh_buildx_endpoint }}
 
   publish_release:
-#    if: ${{ needs.branch_build_setup.outputs.build_type == 'Release' }}
+    if: ${{ needs.branch_build_setup.outputs.build_type == 'Release' }}
     name: Build Release
     runs-on: ubuntu-22.04
     needs:

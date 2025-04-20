@@ -5,7 +5,7 @@ export default defineConfig((options: Options) => ({
   format: ["cjs", "esm"],
   dts: true,
   clean: false,
-  external: ["react"],
+  external: ["react", "class-variance-authority"],
   injectStyle: true,
   ...options,
 }));

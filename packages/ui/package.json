@@ -12,8 +12,8 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react --minify",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --external class-variance-authority --minify",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react --external class-variance-authority",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -32,6 +32,7 @@
     "@headlessui/react": "^1.7.3",
     "@popperjs/core": "^2.11.8",
     "@utrack/helpers": "*",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "emoji-picker-react": "^4.5.16",
     "lodash": "^4.17.21",
