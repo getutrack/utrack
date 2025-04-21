@@ -7,21 +7,7 @@ type TUpgradeBadge = {
   size?: "sm" | "md";
 };
 
-export const UpgradeBadge: FC<TUpgradeBadge> = (props) => {
-  const { className, size = "sm" } = props;
-
-  return (
-    <div
-      className={cn(
-        "w-fit cursor-pointer rounded-2xl text-custom-primary-200 bg-custom-primary-100/20 text-center font-medium outline-none",
-        {
-          "text-sm px-3": size === "md",
-          "text-xs px-2": size === "sm",
-        },
-        className
-      )}
-    >
-      Pro
-    </div>
-  );
+export const UpgradeBadge: FC<TUpgradeBadge> = () => {
+  // Return null instead of the badge
+  return null;
 };

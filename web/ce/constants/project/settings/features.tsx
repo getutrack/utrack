@@ -77,7 +77,7 @@ export const PROJECT_FEATURES_LIST: TProjectFeatures = {
   },
   project_others: {
     title: "Work management",
-    description: "Available only on some plans as indicated by the label next to the feature below.",
+    description: "Available for all users.",
     featureList: {
       is_time_tracking_enabled: {
         property: "is_time_tracking_enabled",

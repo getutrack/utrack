@@ -80,11 +80,6 @@ export const ProjectFeaturesList: FC<Props> = observer((props) => {
                       <div>
                         <div className="flex items-center gap-2">
                           <h4 className="text-sm font-medium leading-5">{featureItem.title}</h4>
-                          {featureItem.isPro && (
-                            <Tooltip tooltipContent="Pro feature" position="top">
-                              <UpgradeBadge />
-                            </Tooltip>
-                          )}
                         </div>
                         <p className="text-sm leading-5 tracking-tight text-custom-text-300">
                           {featureItem.description}
