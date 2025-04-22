@@ -9,7 +9,8 @@ import { cn } from "@/helpers/common.helper";
 import React from "react";
 
 type Props = {
-  selectedIssueIds: string[];
+  selectedIssueIds?: string[];
+  className?: string;
 };
 
 export const BulkOperationsUpgradeBanner: React.FC<Props> = () => {

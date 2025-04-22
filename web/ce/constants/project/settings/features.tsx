@@ -15,7 +15,7 @@ import {
   SprayCan,
   ClipboardList,
 } from "lucide-react";
-import { IProjectFeature } from "@/types";
+import { IProjectFeature } from "@/utrack-web/types/projects/projects";
 
 export type TProperties = {
   property: string;
