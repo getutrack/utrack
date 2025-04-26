@@ -2,6 +2,20 @@ import { ReactNode } from "react";
 import { FileText, Layers, Timer } from "lucide-react";
 import { IProject } from "@utrack/types";
 import { ContrastIcon, DiceIcon, Intake } from "@utrack/ui";
+import {
+  CalendarClock,
+  BrainCircuit,
+  Wrench,
+  LayoutGrid,
+  Presentation,
+  Zap,
+  Webhook,
+  EyeIcon,
+  TrendingUpIcon,
+  SprayCan,
+  ClipboardList,
+} from "lucide-react";
+import { IProjectFeature } from "@/utrack-web/types/projects/projects";
 
 export type TProperties = {
   property: string;
@@ -28,65 +42,101 @@ export type TProjectFeatures = {
   };
 };
 
-export const PROJECT_FEATURES_LIST: TProjectFeatures = {
-  project_features: {
-    title: "Projects and issues",
-    description: "Toggle these on or off this project.",
-    featureList: {
-      cycles: {
-        property: "cycle_view",
-        title: "Cycles",
-        description: "Timebox work as you see fit per project and change frequency from one period to the next.",
-        icon: <ContrastIcon className="h-5 w-5 flex-shrink-0 rotate-180 text-custom-text-300" />,
-        isPro: false,
-        isEnabled: true,
-      },
-      modules: {
-        property: "module_view",
-        title: "Modules",
-        description: "Group work into sub-project-like set-ups with their own leads and assignees.",
-        icon: <DiceIcon width={20} height={20} className="flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
-        isEnabled: true,
-      },
-      views: {
-        property: "issue_views_view",
-        title: "Views",
-        description: "Save sorts, filters, and display options for later or share them.",
-        icon: <Layers className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
-        isEnabled: true,
-      },
-      pages: {
-        property: "page_view",
-        title: "Pages",
-        description: "Write anything like you write anything.",
-        icon: <FileText className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
-        isEnabled: true,
-      },
-      inbox: {
-        property: "inbox_view",
-        title: "Intake",
-        description: "Consider and discuss issues before you add them to your project.",
-        icon: <Intake className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
-        isEnabled: true,
-      },
-    },
+export const PROJECT_FEATURES_LIST: IProjectFeature[] = [
+  {
+    title: "AI",
+    description: "Generate description, summary, acceptance criteria and subtasks for your issues using AI",
+    key: "ai_enabled",
+    icon: BrainCircuit,
+    isAvailable: true,
+    isPro: false,
   },
-  project_others: {
-    title: "Work management",
-    description: "Available only on some plans as indicated by the label next to the feature below.",
-    featureList: {
-      is_time_tracking_enabled: {
-        property: "is_time_tracking_enabled",
-        title: "Time Tracking",
-        description: "Log time, see timesheets, and download full CSVs for your entire workspace.",
-        icon: <Timer className="h-5 w-5 flex-shrink-0 text-custom-text-300" />,
-        isPro: false,
-        isEnabled: true,
-      },
-    },
+  {
+    title: "Cycles",
+    description: "Group issues together into delivery cycles",
+    key: "cycle_enabled",
+    icon: CalendarClock,
+    isAvailable: true,
+    isPro: false,
   },
-};
+  {
+    title: "Cycles automation",
+    description: "Automatically create cycles, drag incomplete issues and send reports",
+    key: "cycle_automation_enabled",
+    icon: Wrench,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "Tasks in views",
+    description: "Add tasks to different views",
+    key: "task_views_enabled",
+    icon: LayoutGrid,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "Modules",
+    description: "Track larger collections of issues across projects",
+    key: "module_enabled",
+    icon: Layers,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "Boards",
+    description: "Track bigger pieces of work",
+    key: "board_enabled",
+    icon: ClipboardList,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "Views",
+    description: "Customize your project view, save filters and layouts",
+    key: "issue_views_enabled",
+    icon: EyeIcon,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "Custom roles",
+    description: "Control authorization through predefined roles",
+    key: "project_custom_roles_enabled",
+    icon: Presentation,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "SLA",
+    description: "Track the performance of your team using SLA rules",
+    key: "sla_enabled",
+    icon: TrendingUpIcon,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "Automations",
+    description: "Create automation based on the issue event, a condition and an action",
+    key: "automation_enabled",
+    icon: Zap,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "Webhooks",
+    description: "Create endpoints for information to be sent to when certain events are triggered",
+    key: "webhook_enabled",
+    icon: Webhook,
+    isAvailable: true,
+    isPro: false,
+  },
+  {
+    title: "API",
+    description: "Enable API access to your project",
+    key: "api_enabled",
+    icon: SprayCan,
+    isAvailable: true,
+    isPro: false,
+  },
+];

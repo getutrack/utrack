@@ -57,59 +57,32 @@ export const ProjectFeaturesList: FC<Props> = observer((props) => {
 
   return (
     <div className="space-y-6">
-      {Object.keys(PROJECT_FEATURES_LIST).map((featureSectionKey) => {
-        const feature = PROJECT_FEATURES_LIST[featureSectionKey];
-        return (
-          <div key={featureSectionKey} className="">
-            <div className="flex flex-col justify-center pb-2 border-b border-custom-border-100">
-              <h3 className="text-xl font-medium">{feature.title}</h3>
-              <h4 className="text-sm leading-5 text-custom-text-200">{feature.description}</h4>
-            </div>
-            {Object.keys(feature.featureList).map((featureItemKey) => {
-              const featureItem = feature.featureList[featureItemKey];
-              return (
-                <div
-                  key={featureItemKey}
-                  className="gap-x-8 gap-y-2 border-b border-custom-border-100 bg-custom-background-100 pb-2 pt-4"
-                >
-                  <div key={featureItemKey} className="flex items-center justify-between">
-                    <div className="flex items-start gap-3">
-                      <div className="flex items-center justify-center rounded bg-custom-background-90 p-3">
-                        {featureItem.icon}
-                      </div>
-                      <div>
-                        <div className="flex items-center gap-2">
-                          <h4 className="text-sm font-medium leading-5">{featureItem.title}</h4>
-                          {featureItem.isPro && (
-                            <Tooltip tooltipContent="Pro feature" position="top">
-                              <UpgradeBadge />
-                            </Tooltip>
-                          )}
-                        </div>
-                        <p className="text-sm leading-5 tracking-tight text-custom-text-300">
-                          {featureItem.description}
-                        </p>
-                      </div>
-                    </div>
-
-                    <ToggleSwitch
-                      value={Boolean(currentProjectDetails?.[featureItem.property as keyof IProject])}
-                      onChange={() => handleSubmit(featureItemKey, featureItem.property)}
-                      disabled={!featureItem.isEnabled || !isAdmin}
-                      size="sm"
-                    />
-                  </div>
-                  <div className="pl-14">
-                    {currentProjectDetails?.[featureItem.property as keyof IProject] &&
-                      featureItem.renderChildren &&
-                      featureItem.renderChildren(currentProjectDetails, isAdmin, handleSubmit)}
-                  </div>
+      {PROJECT_FEATURES_LIST.map((feature) => (
+        <div key={feature.key} className="gap-x-8 gap-y-2 border-b border-custom-border-100 bg-custom-background-100 pb-2 pt-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-start gap-3">
+              <div className="flex items-center justify-center rounded bg-custom-background-90 p-3">
+                <feature.icon className="h-4 w-4" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h4 className="text-sm font-medium leading-5">{feature.title}</h4>
                 </div>
-              );
-            })}
+                <p className="text-sm leading-5 tracking-tight text-custom-text-300">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+
+            <ToggleSwitch
+              value={Boolean(currentProjectDetails?.[feature.key as keyof IProject])}
+              onChange={() => handleSubmit(feature.key, feature.key)}
+              disabled={!feature.isAvailable || !isAdmin}
+              size="sm"
+            />
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 });

@@ -26,7 +26,7 @@ inputs:
     description: "The build arguments"
     required: false
     default: ""
-  
+
   # Buildx Options
   buildx-driver:
     description: "Buildx driver"
@@ -112,7 +112,7 @@ runs:
       uses: actions/checkout@v4
 
     - name: Build and Push Docker Image
-      uses: docker/build-push-action@v5.1.0
+      uses: docker/build-push-action@v6.9.0
       with:
         context: ${{ inputs.build-context }}
         file: ${{ inputs.dockerfile-path }}

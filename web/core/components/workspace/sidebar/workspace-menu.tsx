@@ -59,12 +59,6 @@ export const SidebarWorkspaceMenu = observer(() => {
   }, [sidebarCollapsed, toggleWorkspaceMenu]);
   useOutsideClickDetector(actionSectionRef, () => setIsMenuActive(false));
 
-  const indicatorElement = (
-    <div className="flex-shrink-0">
-      <UpgradeBadge />
-    </div>
-  );
-
   return (
     <Disclosure as="div" defaultOpen>
       {!sidebarCollapsed && (
@@ -176,14 +170,9 @@ export const SidebarWorkspaceMenu = observer(() => {
                         isActive={link.highlight(pathname, `/${workspaceSlug}`)}
                       >
                         <div className="flex items-center gap-1.5 py-[1px]">
-                          <link.Icon
-                            className={cn("size-4", {
-                              "rotate-180": link.key === "active-cycles",
-                            })}
-                          />
+                          <link.Icon className="size-4" />
                           {!sidebarCollapsed && <p className="text-sm leading-5 font-medium">{link.label}</p>}
                         </div>
-                        {!sidebarCollapsed && link.key === "active-cycles" && indicatorElement}
                       </SidebarNavItem>
                     </Link>
                   </Tooltip>
