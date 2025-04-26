@@ -275,14 +275,6 @@ export const SIDEBAR_WORKSPACE_MENU_ITEMS: {
     Icon: Layers,
   },
   {
-    key: "active-cycles",
-    label: "Cycles",
-    href: `/active-cycles`,
-    access: [EUserPermissions.ADMIN, EUserPermissions.MEMBER],
-    highlight: (pathname: string, baseUrl: string) => pathname === `${baseUrl}/active-cycles/`,
-    Icon: ContrastIcon,
-  },
-  {
     key: "analytics",
     label: "Analytics",
     href: `/analytics`,

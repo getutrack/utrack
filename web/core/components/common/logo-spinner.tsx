@@ -1,17 +1,17 @@
-import Image from "next/image";
 import { useTheme } from "next-themes";
-// assets
-import LogoSpinnerDark from "@/public/images/logo-spinner-dark.gif";
-import LogoSpinnerLight from "@/public/images/logo-spinner-light.gif";
+// ui
+import { CircularBarSpinner } from "@utrack/ui";
 
 export const LogoSpinner = () => {
   const { resolvedTheme } = useTheme();
-
-  const logoSrc = resolvedTheme === "dark" ? LogoSpinnerDark : LogoSpinnerLight;
-
+  
   return (
     <div className="flex items-center justify-center">
-      <Image src={logoSrc} alt="logo" className="size-16 sm:size-20 mr-2" />
+      <CircularBarSpinner 
+        width="40px" 
+        height="40px" 
+        className={resolvedTheme === "dark" ? "text-white" : "text-blue-700"}
+      />
     </div>
   );
 };
