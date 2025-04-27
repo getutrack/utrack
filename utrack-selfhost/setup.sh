@@ -4,7 +4,7 @@ BRANCH=${BRANCH:-master}
 SCRIPT_DIR=$PWD
 SERVICE_FOLDER=utrack-app
 UTRACK_INSTALL_DIR=$PWD/$SERVICE_FOLDER
-export APP_RELEASE="v0.0.5"
+export APP_RELEASE="v0.0.7"
 export DOCKERHUB_USER=getutrack
 export PULL_POLICY=${PULL_POLICY:-if_not_present}
 
@@ -172,7 +172,7 @@ function buildYourOwnImage(){
     echo "Building images locally..."
 
     export DOCKERHUB_USER="getutrack"
-    export APP_RELEASE="v0.0.5"
+    export APP_RELEASE="v0.0.7"
     export PULL_POLICY="never"
     CUSTOM_BUILD="true"
 
@@ -245,7 +245,7 @@ function download() {
 
     if [ "$LOCAL_BUILD" == "true" ]; then
         export DOCKERHUB_USER="getutrack"
-        export APP_RELEASE="v0.0.5"
+        export APP_RELEASE="v0.0.7"
         export PULL_POLICY="never"
         CUSTOM_BUILD="true"
 
@@ -337,7 +337,7 @@ function upgrade() {
     stopServices
 
     echo
-    echo "***** DOWNLOADING v0.0.5 VERSION ****"
+    echo "***** DOWNLOADING v0.0.7 VERSION ****"
     install
 
     echo "***** PLEASE VALIDATE AND START SERVICES ****"
@@ -547,7 +547,7 @@ if [ -f "$DOCKER_ENV_PATH" ]; then
     fi
 
     if [ -z "$APP_RELEASE" ]; then
-        APP_RELEASE=v0.0.5
+        APP_RELEASE=v0.0.7
         updateEnvFile "APP_RELEASE" "$APP_RELEASE" "$DOCKER_ENV_PATH"
     fi
 
