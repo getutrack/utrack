@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     "utrack.license",
     "utrack.api",
     "utrack.authentication",
+    "utrack.risk_analyzer",
     # Third-party things
     "rest_framework",
     "corsheaders",

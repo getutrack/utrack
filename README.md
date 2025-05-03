@@ -1,4 +1,3 @@
-
 Meet [Utrack](https://dub.sh/utrack-website-readme), an open-source project management tool to track issues, run ~sprints~ cycles, and manage product roadmaps without the chaos of managing the tool itself. 🧘‍♀️
 
 > Utrack is evolving every day. Your suggestions, ideas, and reported bugs help us immensely. Do not hesitate to join in the conversation on [Discord](https://discord.com/invite/A92xrEGCge) or raise a GitHub issue. We read everything and respond to most.
@@ -25,6 +24,8 @@ If you would like to self-host Utrack, please see our [deployment guide](https:/
 - **Pages**: Utrack pages, equipped with AI and a rich text editor, let you jot down your thoughts on the fly. Format your text, upload images, hyperlink, or sync your existing ideas into an actionable item or issue.
 
 - **Analytics**: Get insights into all your Utrack data in real-time. Visualize issue data to spot trends, remove blockers, and progress your work.
+
+- **Risk Analyzer**: Leverage advanced analytics with our RAG-based risk analyzer that combines Neo4j graph database and Qdrant vector database to identify risks, analyze team dynamics, and optimize workflows.
 
 - **Drive** (_coming soon_): The drive helps you share documents, images, videos, or any other files that make sense to you or your team and align on the problem/solution.
 

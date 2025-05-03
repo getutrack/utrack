@@ -67,3 +67,9 @@ opentelemetry-api==1.27.0
 opentelemetry-sdk==1.27.0
 opentelemetry-instrumentation-django==0.48b0
 opentelemetry-exporter-otlp==1.27.0
+# Risk analyzer dependencies
+neo4j==5.15.0
+qdrant-client==1.6.3
+sentence-transformers==2.2.2
+aio-pika==9.3.0
+nltk==3.8.1

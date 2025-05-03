@@ -14,6 +14,7 @@ urlpatterns = [
     path("api/public/", include("utrack.space.urls")),
     path("api/instances/", include("utrack.license.urls")),
     path("api/v1/", include("utrack.api.urls")),
+    path("api/v1/risk-analyzer/", include("utrack.risk_analyzer.api.urls")),
     path("auth/", include("utrack.authentication.urls")),
     path("", include("utrack.web.urls")),
 ]
