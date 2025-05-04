@@ -11,7 +11,7 @@ This implementation uses a hybrid architecture combining:
 ┌───────────────────┐      ┌─────────────────┐      ┌───────────────────┐
 │   Data Sources    │      │  Processing     │      │  Storage Layer    │
 ├───────────────────┤      ├─────────────────┤      ├───────────────────┤
-│ - PostgreSQL DB   │──────┤ - Extraction    │──────┤ - Pinecone Vectors│
+│ - PostgreSQL DB   │──────┤ - Extraction    │──────┤ - Qdrant Vectors  │
 │ - Minio Files     │      │ - Embedding     │      │ - Neo4j Graph     │
 │ - Redis Cache     │      │ - Indexing      │      │ - Relationship    │
 └───────────────────┘      └─────────────────┘      └───────────────────┘
