@@ -1,78 +1,135 @@
-# Utrack Risk Analyzer
+# Risk Analyzer Module
 
-A RAG-based risk analysis service for Utrack projects that uses a hybrid vector-graph database approach.
+The Risk Analyzer module is a component of the Utrack application that analyzes project data to identify potential risks, inefficiencies, and opportunities for improvement.
 
 ## Features
 
-- **Hybrid Search**: Combines semantic similarity from vector embeddings with relationship data from graph structures
-- **Risk Analysis**: Analyzes projects and issues to identify potential risks
-- **Team Dynamics Analysis**: Examines team patterns to identify bottlenecks and collaboration opportunities
-- **Workflow Optimization**: Suggests improvements based on state transition patterns
+- Project risk analysis
+- Issue risk assessment
+- Team dynamics analysis
+- Workflow optimization
+- Vector search using Qdrant
+- Graph-based analysis with Neo4j
+- Hybrid search combining vector and graph databases
+- Real-time event processing with RabbitMQ
 
 ## Architecture
 
-- **Neo4j**: Graph database for storing relationships between projects, issues, users, and states
-- **Qdrant**: Vector database for storing text embeddings and enabling semantic search
-- **FastAPI**: API framework for exposing endpoints
-- **RabbitMQ**: Event bus for real-time updates and data synchronization
+The risk-analyzer is implemented as a standalone FastAPI service that integrates with the main Utrack application through:
+
+1. Database access (PostgreSQL)
+2. Object storage (Minio)
+3. Cache (Redis)
+4. Message queue (RabbitMQ)
+5. Vector database (Qdrant)
+6. Graph database (Neo4j)
+
+## Event-Driven Processing
+
+The Risk Analyzer implements an event-driven architecture using RabbitMQ to process changes in real-time:
+
+### Event Consumer
+
+The `event_consumer.py` module implements a robust RabbitMQ consumer that:
+
+- Consumes events from two primary queues: `vector_updates` and `graph_updates`
+- Updates Qdrant vector database with embeddings for text data
+- Updates Neo4j graph database with entity relationships
+- Handles connection issues and retries with exponential backoff
+- Processes all entity types (projects, issues, comments, documents)
+
+### Event Producer
+
+The `event_producer.py` module provides a way for the Django application to publish events:
+
+- Connects to model signals to automatically publish events on data changes 
+- Serializes Django models to JSON for event payloads
+- Provides utility functions for manual event publishing
+- Implements transaction-aware event publishing
+- Includes health checks and setup utilities
+
+## Integration with Django
+
+To integrate the event producer with your Django application:
+
+1. Install the required dependencies:
+   - `pip install pika`
+
+2. Import and set up the signal handlers in your app's `apps.py`:
+   ```python
+   from django.apps import AppConfig
+
+   class YourAppConfig(AppConfig):
+       name = 'your_app'
+       
+       def ready(self):
+           from risk_analyzer.event_producer import setup_signal_handlers
+           setup_signal_handlers()
+   ```
+
+3. Use the state change service in your views:
+   ```python
+   from risk_analyzer.event_producer import change_issue_state
+   
+   # In your view or service...
+   change_issue_state(issue, new_state, user)
+   ```
+
+4. Set up RabbitMQ queues and exchanges:
+   ```bash
+   python manage.py shell
+   >>> from risk_analyzer.event_producer import setup_rabbitmq
+   >>> setup_rabbitmq()
+   ```
+
+5. Start the event consumer:
+   ```bash
+   python -m risk_analyzer.event_consumer
+   ```
+
+See `integration_example.py` for more detailed integration examples.
 
 ## API Endpoints
 
-### Search
-- `GET /api/v1/search/hybrid` - Hybrid search across vector and graph databases
-- `GET /api/v1/search/semantic` - Semantic search using vector embeddings
-- `GET /api/v1/search/graph/{issue_id}` - Graph data for a specific issue
+The Risk Analyzer exposes the following API endpoints:
 
-### Risk Analysis
-- `GET /api/v1/risk/project/{project_id}` - Project-level risk analysis
-- `GET /api/v1/risk/issue/{issue_id}` - Issue-level risk analysis
+- `/health`: Health check endpoint
+- `/api/v1/risk/project/{project_id}`: Project risk analysis
+- `/api/v1/risk/issues/{project_id}`: Issue risk analysis
+- `/api/v1/risk/team/{project_id}`: Team dynamics analysis
+- `/api/v1/risk/workflow/{project_id}`: Workflow optimization
+- `/api/v1/search/hybrid`: Hybrid search combining vector and graph
+- `/api/v1/embedding`: Generate and manage embeddings
 
-### Team Analysis
-- `GET /api/v1/analysis/team-dynamics/{project_id}` - Team dynamics analysis
-- `GET /api/v1/analysis/workflow-optimization/{project_id}` - Workflow optimization suggestions
+## Configuration
 
-### Embedding
-- `POST /api/v1/embedding/generate` - Generate embedding for a single text
-- `POST /api/v1/embedding/batch` - Generate embeddings for multiple texts
+The Risk Analyzer can be configured through environment variables:
+
+- `LOG_LEVEL`: Logging level (default: INFO)
+- `RABBITMQ_HOST`, `RABBITMQ_PORT`, etc.: RabbitMQ connection settings
+- `NEO4J_URI`, `NEO4J_USER`, etc.: Neo4j connection settings
+- `QDRANT_HOST`, `QDRANT_PORT`, etc.: Qdrant connection settings
+- `EVENT_EXCHANGE`: RabbitMQ exchange name (default: utrack_events)
+- `VECTOR_QUEUE`: Queue for vector updates (default: vector_updates)
+- `GRAPH_QUEUE`: Queue for graph updates (default: graph_updates)
 
 ## Development
 
-### Setup
+To set up the development environment:
 
 1. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. Set up environment variables (or use .env file):
-```bash
-# Neo4j settings
-NEO4J_URI=bolt://localhost:7687
-NEO4J_USER=neo4j
-NEO4J_PASSWORD=password
+2. Configure environment variables in `.env`
 
-# Qdrant settings
-QDRANT_HOST=localhost
-QDRANT_PORT=6333
-```
+3. Start the development server:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
 
-3. Run the service:
-```bash
-uvicorn main:app --reload
-```
-
-### Docker
-
-Build and run with Docker:
-```bash
-docker build -t risk-analyzer .
-docker run -p 8000:8000 risk-analyzer
-```
-
-## Integration with Utrack
-
-The Risk Analyzer service integrates with Utrack through:
-
-1. RabbitMQ events for real-time data synchronization
-2. API endpoints for risk and team analytics
-3. Shared Neo4j and Qdrant instances for data storage 
+4. Run the event consumer (in a separate terminal):
+   ```bash
+   python -m risk_analyzer.event_consumer
+   ``` 
